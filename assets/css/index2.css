@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.background_image img {
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.form-container {
+    background-color: #fff;
+    margin: 50px auto;
+    padding: 10px 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.message{
+    margin-left: 7vw;
+}
+
+.google_button {
+    border: 1px solid;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.google_button img {
+    width: 30px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.inline-hr-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.line_one,
+.line_two {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #000;
+}
+
+.line_one {
+    margin-right: 10px;
+}
+
+.line_two {
+    margin-left: 10px;
+}
+
+.inline-text {
+    margin: 0;
+    padding: 0 10px;
+    white-space: nowrap;
+}
+
+.form input {
+    border: 1px solid #ced4da;
+    padding-left: 50px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.mail-icon,
+.password-icon,.user-icon {
+    position: absolute;
+    left: 10px;
+    top: 40px;
+}
+
+#password,#email,#name{
+    padding: 10px 50px;
+}
+
+.forget-text {
+    display: block;
+    /* position: absolute; */
+    margin-top: -30px;
+    /* margin-bottom: 20px; */
+    font-size: 15px;
+    margin-right: 10px;
+    text-align: end;
+}
+
+.login {
+    width: 100%;
+    padding: 10px;
+}
+
+.login_SSO {
+    font-size: 12px;
+}
+
+
+
+
+.footer_end {
+    margin-top: 30px;
+}
+
+
+.footer{
+    font-size: 10px;
+}
+
+ .comp_images {
+gap:2%;
+ }
+
+.help{
+
+    margin-left: 95%;
+    padding:1px 23px 0px 23px;
+    background: rgba(54, 54, 186, 0.132);
+}
+
+
+@media screen and (max-width: 500px) {
+   .background_image img{ width: 100%;
+    margin-right: 500px;
+    width: 1500px;
+    position: absolute;
+    margin-top: -110px;
+  }
+ .nav-btn a{
+    margin-top: -60px;
+    margin-left: 250px;
+ }
+
+}
