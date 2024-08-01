@@ -1,145 +1,247 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
-
+body {
+  background-color: #fafbfc;
+}
+main {
+  display: flex;
+  height: calc(100vh - 72px);
+}
+.login-header {
+  margin-top: 30px;
+  .container-fluid {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  p {
+    font-family: Segoe UI;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    margin-right: 20px !important;
+    color: #292d34;
+  }
+  .btn {
+    color: white;
+    background: #5f55ee;
+    box-shadow: 0px 10px 25px 0px #7f77f180;
+    width: Hug (93px) px;
+    height: Fixed (40px) px;
+    padding: 12.5px 20px 13.5px 20px;
+    gap: 0px;
+    border-radius: 9px;
+    opacity: 0px;
+    font-family: Segoe UI;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.4000000059604645px;
+    text-align: left;
+  }
+}
 .background_image img {
-    height: 100%;
-    position: fixed;
-    z-index: -1;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+  bottom: 0;
 }
 
 .form-container {
-    background-color: #fff;
-    margin: 50px auto;
-    padding: 10px 30px;
-    border-radius: 10px;
-    width: 100%;
-    max-width: 500px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative;
+  width: 480px;
+  height: 455px;
+  padding: 30px 60px 30px 60px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  background-color: white;
 }
 
 .google_button {
-    border: 1px solid;
-    padding: 10px;
-    width: 100%;
-    position: relative;
+  border: 1px solid #dadce0;
+  padding: 10px;
+  width: 100%;
+  position: relative;
+  font-size: 14px;
 }
 
 .google_button img {
-    width: 30px;
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
+  width: 30px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .inline-hr-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  hr {
+    margin: 0 auto;
+  }
 }
-
+form label {
+  font-size: 13px;
+  color: #292d34;
+}
+form {
+  input {
+    width: 360px;
+    height: 40px;
+    padding: 10.5px 21px 10.5px 37px;
+    border-radius: 9px;
+    border: 1px solid #d6d9de;
+  }
+  .login {
+    background: #5f55ee;
+    color: white;
+    border-radius: 9px;
+    font-family: Segoe UI;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 14px;
+    text-align: center;
+    height: 50px;
+    margin-top: 10px;
+  }
+}
 .line_one,
 .line_two {
-    flex: 1;
-    border: none;
-    border-top: 1px solid #000;
+  flex: 1;
+  border: none;
+  border-top: 1px solid #87909e;
 }
 
 .line_one {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .line_two {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 .inline-text {
-    margin: 0;
-    padding: 0 10px;
-    white-space: nowrap;
+  font-size: 13px;
+  margin: 0;
+  padding: 0 10px;
+  white-space: nowrap;
+  color: #87909e;
 }
 
 .form input {
-    border: 1px solid #ced4da;
-    padding-left: 50px;
-    width: 100%;
-    border-radius: 5px;
-    margin-bottom: 1rem;
+  border: 1px solid #ced4da;
+  padding-left: 50px;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 1rem;
 }
 
 .mail-icon,
 .password-icon {
-    position: absolute;
-    left: 10px;
-    top: 40px;
+  position: absolute;
+  left: 10px;
+  top: 35px;
 }
 
-#password,#email{
-    padding: 10px 50px;
+#password,
+#email {
+  padding: 10px 50px;
 }
 
 .forget-text {
-    display: block;
-    margin-top: -20px;
-    margin-bottom: 20px;
-    font-size: 15px;
-    text-align: end;
+  position: absolute;
+  top: 42px;
+  right: 17px;
+  font-size: 12px;
+  color: #5f55ee;
+  text-decoration: none;
 }
 
 .login {
-    width: 100%;
-    padding: 10px;
+  width: 100%;
+  padding: 10px;
 }
 
 .login_SSO {
+  text-align: center;
+  margin-top: 15px;
+  color: #5f55ee;
+  font-family: Segoe UI;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: center;
+  a {
     text-align: center;
     margin-top: 15px;
+    color: #5f55ee;
+    font-family: Segoe UI;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: center;
+    text-decoration: none;
+  }
 }
 
 .no_account {
-    margin-top: 30px;
-    text-align: center;
-    color: #ffffff;
+  margin-top: 30px;
+  text-align: center;
+  color: #ffffff;
 }
-
 
 .footer_end {
-    text-align: center;
-    color: white;
-    margin-top: 30px;
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+}
+.no_account {
+  font-size: 13px;
+  margin-bottom: 145px;
+}
+
+.footer {
+  font-size: 10px;
 }
 .no_account{
-    font-size: 13px;
+    a{
+        text-underline-offset:4px;
+    }
 }
-
-.footer{
-    font-size: 10px;
-}
-
-.help{
-margin-top: -60px;
-    margin-left: 95%;
-    padding:1px 23px 0px 23px;
-    background: rgba(54, 54, 186, 0.132);
+.help {
+  margin-top: -30px;
+  margin-left: 91%;
+  padding: 5px 14px 5px 14px;
+  background: #FFFFFF29;
+  border-radius:6px;
+  box-shadow: 0px 5px 15px 0px #101E3626;
+  p{
+    margin-bottom:0px;
+    font-weight:bold;
+  }
+  a{
+    text-decoration:none!important;
+  }
 }
 
 @media screen and (max-width: 500px) {
-   .background_image img{ width: 100%;
+  .background_image img {
+    width: 100%;
     margin-right: 500px;
     width: 1500px;
     position: absolute;
     margin-top: -110px;
   }
- .nav-btn a{
+  .nav-btn a {
     margin-top: -60px;
     margin-left: 250px;
- }
- .nav-btn p{
-    display:none;
- }
+  }
+  .nav-btn p {
+    display: none;
+  }
 }

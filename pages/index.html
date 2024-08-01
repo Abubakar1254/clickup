@@ -10,33 +10,31 @@
  
 </head>
 <body>
-    <header>
-        <div class="container mt-3">
-            <div class="row align-items-center">
-                <div class="col-12 col-md-8">
+    <header class="login-header">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-between align-items-center">
                     <img src="../assets/images/Link.png" alt="Logo" class="img-fluid">
-                </div>
-                <div class="nav-btn col-12 col-md-4  text-end d-flex justify-content-center justify-content-md-end align-items-center mt-3 mt-md-0">
+                <div class="nav-btn  text-end d-flex justify-content-center justify-content-md-end align-items-center mt-3 mt-md-0">
                     <p class="mb-0 me-2">Don't have an account?</p>
-                    <a href="#" class="btn btn-primary">Sign up</a>
+                    <a href="#" class="btn">Sign up</a>
                 </div>
             </div>
         </div>
     </header>
-    <main>
+    <div class="background_image">
+        <img src="../assets/images/Background.png" class="img-fluid w-100 mb-0" alt="">
+    </div>
+    <main class="align-items-end justify-content-center">
         <section>
-            <div class="background_image">
-                <img src="../assets/images/Background.png" class="img-fluid w-100 mb-0" alt="">
-            </div>
             <div class="form-container">
                 <form action="">
-                    <h1 class="text-center"><b>Welcome back</b></h1>
+                    <h1 class="text-center"><b>Welcome back !</b></h1>
                     <a href="#" class="google_button btn btn-white position-relative">
-                        <img src="../assets/images/google.jpg" alt=""> Continue with Google
+                        <img src="../assets/images/google.jpg" alt="" width="26"> Continue with Google
                     </a>
                     <div class="inline-hr-container">
                         <hr class="line_one">
-                        <span class="inline-text">or</span>
+                        <span class="inline-text text-uppercase">OR</span>
                         <hr class="line_two">
                     </div>
                     <div class="mb-3 position-relative">
@@ -48,8 +46,8 @@
                         <label for="password" class="form-label">Password</label>
                         <img class="password-icon" src="../assets/images/Container.svg" alt="">
                         <input type="password" name="password" id="password" class="form-control" placeholder="Enter password">
+                        <a href="#" class="forget-text">Forget password?</a>
                     </div>
-                    <a href="#" class="forget-text">Forget password?</a>
                     <button type="submit" class="btn btn-primary login">Login</button>
                     <div class="login_SSO">
                         <a href="#">or login with SSO</a>

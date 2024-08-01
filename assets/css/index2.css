@@ -3,7 +3,39 @@
     padding: 0;
     font-family: sans-serif;
 }
-
+.login-header {
+    margin-top: 30px;
+    .container-fluid {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    p {
+      font-family: Segoe UI;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+      text-align: left;
+      margin-right: 20px !important;
+      color: #292d34;
+    }
+    .btn {
+      color: white;
+      background: #5f55ee;
+      box-shadow: 0px 10px 25px 0px #7f77f180;
+      width: Hug (93px) px;
+      height: Fixed (40px) px;
+      padding: 12.5px 20px 13.5px 20px;
+      gap: 0px;
+      border-radius: 9px;
+      opacity: 0px;
+      font-family: Segoe UI;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 14px;
+      letter-spacing: 0.4000000059604645px;
+      text-align: left;
+    }
+  }
 .background_image img {
     height: 100%;
     position: fixed;
