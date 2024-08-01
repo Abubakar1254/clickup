@@ -91,7 +91,12 @@
 
 
             } */
-            .form1 {
+            .form1,
+            .form2,
+            .form3,
+            .form4,
+            .form5,
+            .form6 {
                 label {
                     cursor: pointer;
                     width: 180px;
@@ -101,12 +106,15 @@
                     align-items: center;
                     position: relative;
 
-                    input[type="radio"] {
+                    input[type="radio"],input[type="check"] {
                         appearance: none;
                         width: 180px;
                         height: 48px;
                         position: absolute;
                         cursor: pointer;
+                    }
+                    input[type="check"] {
+                        width: 200px !important;
                     }
 
                     input[type="radio"]:checked~span {
@@ -135,8 +143,29 @@
             }
         }
 
+        .form3,
+        .form4,
+        .form5 {
+            label {
+                width: auto !important;
 
+                input {
+                    width: auto !important;
+                }
 
+                span {
+
+                    padding: 0 20px;
+                }
+            }
+        }
+
+        .form5 {
+            span {
+
+                padding: 0 30px !important;
+            }
+        }
 
         .fieldset-heading2 {
             font-weight: 700;
@@ -165,11 +194,13 @@
             justify-content: center;
             align-items: center;
         } */
-        .button_desgin2 {
+        .button_desgin1,
+        .button_desgin2,
+        .button_desgin6 {
             justify-content: center;
             display: flex;
             flex-wrap: wrap;
-            gap: 10px
+            gap: 10px;
         }
 
         .box2 {
@@ -188,12 +219,22 @@
 
         }
 
-        .button_desgin3 {
+        .button_desgin3,
+        .button_desgin4,
+        .button_desgin5 {
             justify-content: center;
             display: flex;
             flex-wrap: wrap;
+            gap: 10px;
 
-            gap: 10px
+            width: 61%;
+            margin: 0 auto;
+        }
+
+        .button_desgin4,
+        .button_desgin5 {
+
+            width: 93% !important;
         }
 
         .box {
@@ -222,7 +263,7 @@
                     <div class="modal-body d-flex justify-content-center p-0">
                         <div class="form1 multistepform">
                             <h1 class="fieldset-heading">What would you like to use ClickUp for?</h1>
-                            <div class="button_desgin2">
+                            <div class="button_desgin1">
                                 <label>
                                     <input type="radio" name="check" id="work">
                                     <span class="">Work</span>
@@ -238,38 +279,237 @@
                             </div>
                         </div>
                         <div class="form2 multistepform display-none">
-                            <h1 class="fieldset-heading">What would you like to use ClickUp for?</h1>
+                            <h1 class="fieldset-heading">How large is your <br>company?</h1>
                             <div class="button_desgin2">
                                 <label>
                                     <input type="radio" name="check" id="work">
-                                    <span class="">Work</span>
+                                    <span class="">1-10</span>
                                 </label>
                                 <label>
                                     <input type="radio" name="check" id="work">
-                                    <span class="">Personal</span>
+                                    <span class="">11-25</span>
                                 </label>
                                 <label>
                                     <input type="radio" name="check" id="work">
-                                    <span class="">School</span>
+                                    <span class="">26-250</span>
                                 </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">251-500</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">500-2000</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">2000+</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">I don't know</span>
+                                </label>
+
 
                             </div>
                         </div>
                         <div class="form3 multistepform display-none">
-                            <h1 class="fieldset-heading">What would you like to use ClickUp for?</h1>
-                            <div class="button_desgin2">
+                            <h1 class="fieldset-heading">How many people will you<br>be working with?</h1>
+                            <div class="button_desgin3">
                                 <label>
                                     <input type="radio" name="check" id="work">
-                                    <span class="">Work</span>
+                                    <span class="">Just me</span>
                                 </label>
                                 <label>
                                     <input type="radio" name="check" id="work">
-                                    <span class="">Personal</span>
+                                    <span class="">2-10</span>
                                 </label>
                                 <label>
                                     <input type="radio" name="check" id="work">
-                                    <span class="">School</span>
+                                    <span class="">11-25</span>
                                 </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">26-50</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">51-250</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">251-500</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">501+</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">I don't know</span>
+                                </label>
+
+                            </div>
+                        </div>
+                        <div class="form4 multistepform display-none">
+                            <h1 class="fieldset-heading">Which solution would you like to start with?</h1>
+                            <div class="button_desgin4">
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">Sales & CRM</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">Finance & Accounting</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">Creative & Design</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">Support</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">Personal Use</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">Professional Services</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">PMO</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">HR & Recruiting</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">Engineering & Product</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">IT</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">Operations</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">Marketing</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">Other</span>
+                                </label>
+
+                            </div>
+                        </div>
+                        <div class="form5 multistepform display-none">
+                            <h1 class="fieldset-heading">How did you hear about us?</h1>
+                            <div class="button_desgin5">
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">Billboard</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">Search Engine (Google, Bing, etc.)</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">Facebook / Instagram</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">Friend / Colleague</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">TV / Streaming (Hulu, NBC, etc.)</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">LinkedIn</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">Podcast / Radio</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">YouTube</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">TikTok</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">Other</span>
+                                </label>
+
+
+                            </div>
+                        </div>
+                        <div class="form6 multistepform display-none">
+                            <h1 class="fieldset-heading">Do you use any of these tools?</h1>
+                            <div class="button_desgin6">
+                                <label>
+                                    <img src="../assets/images/excel.svg" alt="">
+                                    <span class="">Excel & CSV</span>
+                                    <input type="checkbox" name="check" id="work">
+                                </label>
+                                <label>
+                                    <img src="../assets/images/todoist.svg" alt="">
+                                    <span class="">Todoist</span>
+                                    <input type="checkbox" name="check" id="work">
+                                </label>
+                                <label>
+                                    <img src="../assets/images/trello.svg" alt="">
+                                    <span class="">Trello</span>
+                                    <input type="checkbox" name="check" id="work">
+                                </label>
+                                <label>
+                                    <img src="../assets/images/confluence.svg" alt="">
+                                    <span class="">Confluence</span>
+                                    <input type="checkbox" name="check" id="work">
+                                </label>
+                                <label>
+                                    <img src="../assets/images/basecamp.svg" alt="">
+                                    <span class="">Basecamp</span>
+                                    <input type="checkbox" name="check" id="work">
+                                </label>
+                                <label>
+                                    <img src="../assets/images/wrike.svg" alt="">
+                                    <span class="">Wrike</span>
+                                    <input type="checkbox" name="check" id="work">
+                                </label>
+                                <label>
+                                    <img src="../assets/images/jira.svg" alt="">
+                                    <span class="">Jira</span>
+                                    <input type="checkbox" name="check" id="work">
+                                </label>
+                                <label>
+                                    <img src="../assets/images/monday.svg" alt="">
+                                    <span class="">Monday</span>
+                                    <input type="checkbox" name="check" id="work">
+                                </label>
+                                <label>
+                                    <img src="../assets/images/notion.svg" alt="">
+                                    <span class="">Notion</span>
+                                    <input type="checkbox" name="check" id="work">
+                                </label>
+                                <label>
+                                    <img src="../assets/images/asana.svg" alt="">
+                                    <span class="">Asana</span>
+                                    <input type="checkbox" name="check" id="work">
+                                </label>
+
 
                             </div>
                         </div>
@@ -277,8 +517,9 @@
                     <div class="gradient-border">
                     </div>
                     <div class="modal-footer border-0">
-                        <button type="button" class="btn btn-White back" onclick="previousStep()">> Back </button>
-                        <button type="button" class="btn btn-White" onclick="nextStep()">Next ></button>
+                        <button type="button" class="btn btn-White back" onclick="previousStep()">
+                            < Back </button>
+                                <button type="button" class="btn btn-White" onclick="nextStep()">Next ></button>
                     </div>
                 </div>
             </div>
