@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link href="https://cdn.jsdelivr.net/npm/segoe-fonts@1.0.1/segoe-fonts.min.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../assets/css/index4.css" />
 </head>
 
@@ -21,12 +22,22 @@
             line-height: 30px;
             font-weight: 600;
             margin-bottom: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #2A2E34;
+
+
+        }
+
+        .display-none {
+            display: none;
         }
 
         #multiStepModal,
-        #multiStepModal2 ,
+        #multiStepModal2,
         #multiStepModal3,
-        #multiStepModal4{
+        #multiStepModal4 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
             .modal-dialog {
                 max-width: 920px;
 
@@ -45,12 +56,17 @@
             }
 
             .fieldset-heading {
-                font-weight: 700;
+                font-weight: 900;
                 font-size: 40px;
                 line-height: 50px;
                 text-align: center;
-                width: 513px;
+                width: 520px;
                 margin-bottom: 120px;
+                color: #2A2E34;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 40px;
+                margin-bottom: 100px;
             }
 
             .gradient-border {
@@ -59,7 +75,8 @@
                 margin: 0 auto;
                 background: linear-gradient(90deg, #6E56CF 0%, #4BC9FA 50%, #86EAD4 100%);
             }
-/* 
+
+            /* 
             .fa-solid {
                 display: flex;
                 width: 180px;
@@ -74,33 +91,52 @@
 
 
             } */
+            .form1 {
+                label {
+                    cursor: pointer;
+                    width: 180px;
+                    height: 48px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
 
-            .box{
-            display: flex;
-                width: 20%;
-                /* padding: 16px 70.55px 16px 70.53px; */
+                    input[type="radio"] {
+                        appearance: none;
+                        width: 180px;
+                        height: 48px;
+                        position: absolute;
+                        cursor: pointer;
+                    }
 
-    
-                padding: 2% 10px;
-                justify-content: center;
-                align-items: center;
-                border: 1px solid;
-                border-radius: 8px;
-                box-shadow: 0px 0px 8px 0px rgba(237, 240, 242, 0.60);
-                cursor: pointer;
+                    input[type="radio"]:checked~span {
+                        border: 1px solid #5C52ED;
+                        background-color: #5C52ED;
+                        color: white;
+                        box-shadow: 0px 6px 24px 0px #7F77F199 !important;
+                    }
 
-        }
+                    span {
 
-            input[type="radio"] {
-                display: none;
+                        width: 100%;
+                        height: 100%;
+                        line-height: 48px !important;
+                        border: 1px solid #E8EAED;
+                        box-shadow: 0px 0px 8px 0px #EDF0F299;
+                        border-radius: 8px;
+                        text-align: center;
+                        font-size: 16px;
+                        font-weight: 400;
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        line-height: 16px;
+                    }
+                }
+
             }
-
-
-
         }
 
 
-      
+
 
         .fieldset-heading2 {
             font-weight: 700;
@@ -120,6 +156,7 @@
             gap: 8px;
             bottom: 15px;
         }
+
         /* #multiStepModal2{
         .fa-solid{
             display: inline-flex;
@@ -133,45 +170,44 @@
             display: flex;
             flex-wrap: wrap;
             gap: 10px
-            
         }
-        .box2{
+
+        .box2 {
             display: flex;
-                /* width: 20%; */
-                /* padding: 16px 70.55px 16px 70.53px; */
+            /* width: 20%; */
+            /* padding: 16px 70.55px 16px 70.53px; */
 
-    
-                padding: 10px 20px;
-                justify-content: center;
-                align-items: center;
-                border: 1px solid;
-                border-radius: 8px;
-                box-shadow: 0px 0px 8px 0px rgba(237, 240, 242, 0.60);
-                cursor: pointer;
+
+            padding: 10px 20px;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid;
+            border-radius: 8px;
+            box-shadow: 0px 0px 8px 0px rgba(237, 240, 242, 0.60);
+            cursor: pointer;
 
         }
+
         .button_desgin3 {
             justify-content: center;
             display: flex;
             flex-wrap: wrap;
 
             gap: 10px
-            
         }
-        .box{
+
+        .box {
             display: flex;
-                width: 20%;
+            width: 20%;
 
-                justify-content: center;
-                align-items: center;
-                border: 1px solid;
-                border-radius: 8px;
-                box-shadow: 0px 0px 8px 0px rgba(237, 240, 242, 0.60);
-                cursor: pointer;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid;
+            border-radius: 8px;
+            box-shadow: 0px 0px 8px 0px rgba(237, 240, 242, 0.60);
+            cursor: pointer;
 
         }
-        
-       
     </style>
     <!-- Modal -->
     <form action="">
@@ -183,48 +219,72 @@
                         <img src="../assets/images/Link.png" alt="0" width="95" />
                         <p class="user-name">Welcome, AbdulKareem!</p>
                     </div>
-                    <div class="modal-body d-flex justify-content-center align-items-center">
-                        <div class="form1">
+                    <div class="modal-body d-flex justify-content-center p-0">
+                        <div class="form1 multistepform">
                             <h1 class="fieldset-heading">What would you like to use ClickUp for?</h1>
                             <div class="button_desgin2">
-                                <div class="box">
-                                
+                                <label>
                                     <input type="radio" name="check" id="work">
-                                    <span></span>
-                                    <i class="fa-solid fa-phone">Work</i>
-                                
+                                    <span class="">Work</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">Personal</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">School</span>
+                                </label>
                             </div>
-                            <div class="box">
+                        </div>
+                        <div class="form2 multistepform display-none">
+                            <h1 class="fieldset-heading">What would you like to use ClickUp for?</h1>
+                            <div class="button_desgin2">
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">Work</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">Personal</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">School</span>
+                                </label>
 
-                                
-                                    <input type="radio" name="check" id="personal">
-                                    <span></span>
-                                    <i class="fa-solid fa-phone">Personal</i>
-                                
                             </div>
-                            <div class="box">
-
-                                
-                                    <input type="radio" name="check" id="school">
-                                    <span></span>
-                                    <i class="fa-solid fa-phone">School</i>
-                                
-                            </div>
+                        </div>
+                        <div class="form3 multistepform display-none">
+                            <h1 class="fieldset-heading">What would you like to use ClickUp for?</h1>
+                            <div class="button_desgin2">
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">Work</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">Personal</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="check" id="work">
+                                    <span class="">School</span>
+                                </label>
 
                             </div>
                         </div>
                     </div>
                     <div class="gradient-border">
-
                     </div>
-                    <div class="modal-footer">
-
-                        <button type="button" class="btn btn-White">Next ></button>
+                    <div class="modal-footer border-0">
+                        <button type="button" class="btn btn-White back" onclick="previousStep()">> Back </button>
+                        <button type="button" class="btn btn-White" onclick="nextStep()">Next ></button>
                     </div>
                 </div>
             </div>
         </div>
     </form>
+
     <form action="">
         <div class="modal fade h-100 w-100" id="multiStepModal2" tabindex="-1" role="dialog"
             aria-labelledby="modalTitleId" aria-hidden="true">
@@ -248,7 +308,7 @@
                                     <span></span>
                                     <i class="fa-solid fa-phone">11-25</i>
                                 </div>
-                                <div class="box" >
+                                <div class="box">
                                     <input type="radio" name="check" id="school">
                                     <span></span>
                                     <i class="fa-solid fa-phone">26-250</i>
@@ -267,7 +327,7 @@
                                     <input type="radio" name="check" id="school">
                                     <span></span>
                                     <i class="fa-solid fa-phone">2000+</i>
-                                </div> 
+                                </div>
                                 <div class="box">
                                     <input type="radio" name="check" id="school">
                                     <span></span>
@@ -280,10 +340,9 @@
 
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-White back">
-                            < back </button>
 
-                                <button type="button" class="btn btn-White">Next ></button>
+
+                        <button type="button" class="btn btn-White">Next ></button>
                     </div>
                 </div>
             </div>
@@ -312,7 +371,7 @@
                                     <span></span>
                                     <i class="fa-solid fa-phone">2-10</i>
                                 </div>
-                                <div class="box" >
+                                <div class="box">
                                     <input type="radio" name="check" id="school">
                                     <span></span>
                                     <i class="fa-solid fa-phone">11-25</i>
@@ -331,12 +390,12 @@
                                     <input type="radio" name="check" id="school">
                                     <span></span>
                                     <i class="fa-solid fa-phone">251-500</i>
-                                </div> 
+                                </div>
                                 <div class="box">
                                     <input type="radio" name="check" id="school">
                                     <span></span>
                                     <i class="fa-solid fa-phone">501+</i>
-                                </div> 
+                                </div>
                                 <div class="box">
                                     <input type="radio" name="check" id="school">
                                     <span></span>
@@ -381,7 +440,7 @@
                                     <span></span>
                                     <i class="fa-solid fa-phone">Finance & Accounting</i>
                                 </div>
-                                <div class="box2" >
+                                <div class="box2">
                                     <input type="radio" name="check" id="school">
                                     <span></span>
                                     <i class="fa-solid fa-phone">Creative & Design</i>
@@ -400,12 +459,12 @@
                                     <input type="radio" name="check" id="school">
                                     <span></span>
                                     <i class="fa-solid fa-phone">Professional Services</i>
-                                </div> 
+                                </div>
                                 <div class="box2">
                                     <input type="radio" name="check" id="school">
                                     <span></span>
                                     <i class="fa-solid fa-phone">PMO</i>
-                                </div> 
+                                </div>
                                 <div class="box2">
                                     <input type="radio" name="check" id="school">
                                     <span></span>
@@ -425,7 +484,7 @@
                                     <input type="radio" name="check" id="school">
                                     <span></span>
                                     <i class="fa-solid fa-phone ">Operations</i>
-                                </div>                                
+                                </div>
                                 <div class="box2">
                                     <input type="radio" name="check" id="school">
                                     <span></span>
@@ -706,7 +765,26 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
+    <script>
+        formStepLength = $('.multistepform').length;
+        currentStep = 0;
+        const nextStep = () => {
+            $('.multistepform').eq(currentStep).fadeOut(400, function () {
+                currentStep++;
+                if (currentStep < $('.multistepform').length) {
+                    $('.multistepform').eq(currentStep).fadeIn(400);
+                }
+            });
+        }
+        const previousStep = () => {
+            $('.multistepform').eq(currentStep).fadeOut(400, function () {
+                currentStep--;
+                if (currentStep < $('.multistepform').length) {
+                    $('.multistepform').eq(currentStep).fadeIn(400);
+                }
+            });
+        }
+    </script>
     <script>
         function w3_open() {
             document.getElementById("mySidebar").style.display = "block";
