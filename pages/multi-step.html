@@ -47,7 +47,7 @@
 
                 .modal-content {
                     width: 920px;
-                    border-radius: 12px;
+                    border-radius: 20px;
                 }
 
                 .modal-body {
@@ -71,8 +71,8 @@
 
             .gradient-border {
                 height: 4px;
-                width: 872px;
-                margin: 0 auto;
+                width: 100;
+                margin: 0 24px;
                 background: linear-gradient(90deg, #6E56CF 0%, #4BC9FA 50%, #86EAD4 100%);
             }
 
@@ -96,7 +96,7 @@
             .form3,
             .form4,
             .form5,
-            .form6 {
+            .form {
                 label {
                     cursor: pointer;
                     width: 180px;
@@ -159,7 +159,49 @@
                 }
             }
         }
+        .form6 {
+                label {
+                    cursor: pointer;
+                    width: 180px;
+                    height: 48px;
 
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    position: relative;
+                    border: 1px solid #E8EAED;
+                    align-items: center;
+                    border-radius: 8px;
+                    box-shadow: 0px 0px 8px 0px #EDF0F299;
+                    padding-left: 18px;
+                    padding-right: 18px;
+                    input[type="radio"],input[type="check"] {
+                        appearance: none;
+                        width: 180px;
+                        height: 48px;
+                        position: absolute;
+                        cursor: pointer;
+                    }
+                    input[type="checkbox"] {
+                        accent-color: #5C52ED;
+                    }
+
+                    input[type="radio"]:checked~span {
+                        border: 1px solid #5C52ED;
+                        background-color: #5C52ED;
+                        color: white;
+                        box-shadow: 0px 6px 24px 0px #7F77F199 !important;
+                    }
+
+                    span {
+                        font-size: 16px;
+                        font-weight: 400;
+                        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                        line-height: 16px;
+                    }
+                }
+
+            }
         .form5 {
             span {
 
@@ -249,13 +291,179 @@
             cursor: pointer;
 
         }
+        .form7{
+            input{
+               width: 274px;
+               height: 48px;
+               border:1px solid #D6D9DE;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 21.28px;
+                text-align: left;
+            }
+            .fieldset-heading{
+                margin-bottom:60px !important;
+            }
+            p{
+                margin: 0 auto;
+                margin-top: 90px;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 21px;
+                text-align: center;
+                color:#ADB3BD;
+                width: 288.73px;
+            }
+        }
+        #backButton{
+            width:99px;
+            height: 48px;
+            border-radius: 10px;
+            border:1px solid #D6D9DE;
+            box-shadow: 0px 4px 8px 0px #EDF0F299;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+            margin: 0;
+        }
+        #nextButton{
+            width: 91px;
+            height: 48px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px 0px #EDF0F299;
+            background-color: #5C52ED;
+            color:white;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+            margin: 0;
+        }
+        .modal-footer{
+            height: 80px;
+            padding:0 21px;
+        }
+        .modal-content-2{
+            width: auto !important;
+            overflow: hidden !important;
+            .image-block{
+                position:relative;
+                overflow: hidden !important;
+                .overlay{
+                    background: #00000073;
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                }
+                .play-button{
+                    position: absolute;
+                    top:50%;
+                    left:50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 2;
+                }
+            }
+            img{
+
+                margin-top: -10px !important;
+            }
+            .content{
+                margin:48px;
+                display: flex;
+                justify-content: center;
+                h1{
+                    font-size: 24px;
+                    font-weight: 600;
+                    line-height: 28px;
+                    text-align: center;
+                    margin-bottom: 12px;
+                }
+                p{
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 22px;
+                    text-align: center;
+                    width: 313px;
+                    margin: 0 auto;
+                    margin-bottom: 32px;
+                }
+                a{
+                    width: 160px;
+                    height: 32px;
+                    border-radius: 6px;
+                    border: 1px solid #E8EAED;
+                    text-decoration: none;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 32px;
+                    text-align: center;
+                    color: #4F5762;
+                }
+            }
+        }
+        body{
+            overflow-x: hidden;
+        }
+        @media only screen and (min-width:768px) and (max-width:991px){
+            #multiStepModal{
+                .modal-dialog{
+                    max-width: 800px;
+                    .modal-content{
+                        width: 700px;
+                    }
+                }
+            }
+        }
+        @media only screen and (max-width:767px){
+            #multiStepModal{
+                .modal-dialog{
+                    max-width: 100% !important;
+                    width: 100%;
+                    justify-content: center;
+                    margin-left: 0 !important;
+                    .modal-content{
+                        max-width: 330px;
+                        .modal-header{
+                            padding: 8px;
+                            .user-name{
+                                font-size: 14px;
+                            }
+                        }
+                        .modal-body{
+                            height: auto;
+                            h1{
+                                width: auto !important;
+                                font-weight: 900;
+                                font-size: 22px;
+                                line-height: 33px;
+                                margin-top: 18px;
+                                margin-bottom: 18px;
+                            }
+                        }
+                        .gradient-border{
+                            margin-top: 10px;
+                        }
+                    }
+                    .modal-content-2{
+                        img{
+                            width: 100%;
+                        }
+                        .play-button{
+                            width: 43px !important;
+                        }
+                    }
+                }
+            }
+        }
     </style>
     <!-- Modal -->
     <form action="">
         <div class="modal fade h-100 w-100" id="multiStepModal" tabindex="-1" role="dialog"
             aria-labelledby="modalTitleId" aria-hidden="true">
             <div class="modal-dialog d-flex align-items-center h-100 mt-0" role="document">
-                <div class="modal-content">
+                <div class="modal-content form-step modal-content-1">
                     <div class="modal-header border-0 d-flex justify-content-between">
                         <img src="../assets/images/Link.png" alt="0" width="95" />
                         <p class="user-name">Welcome, AbdulKareem!</p>
@@ -460,293 +668,120 @@
                             <h1 class="fieldset-heading">Do you use any of these tools?</h1>
                             <div class="button_desgin6">
                                 <label>
-                                    <img src="../assets/images/excel.svg" alt="">
-                                    <span class="">Excel & CSV</span>
+                                    <div>
+                                        <img src="../assets/images/excel.svg" alt="" class="me-1">
+                                        <span class="">Excel & CSV</span>
+                                    </div>
                                     <input type="checkbox" name="check" id="work">
                                 </label>
                                 <label>
-                                    <img src="../assets/images/todoist.svg" alt="">
+                                    <div>
+                                        <img src="../assets/images/todoist.svg" alt="" class="me-1">
                                     <span class="">Todoist</span>
+                                    </div>
+                                    
                                     <input type="checkbox" name="check" id="work">
                                 </label>
                                 <label>
-                                    <img src="../assets/images/trello.svg" alt="">
+                                    <div>
+                                        <img src="../assets/images/trello.svg" alt="" class="me-1">
                                     <span class="">Trello</span>
+                                    </div>
+                                    
                                     <input type="checkbox" name="check" id="work">
                                 </label>
                                 <label>
-                                    <img src="../assets/images/confluence.svg" alt="">
-                                    <span class="">Confluence</span>
+                                    <div>   
+                                        <img src="../assets/images/confluence.svg" alt="" class="me-1">
+                                        <span class="">Confluence</span>
+                                    </div>
+                                  
                                     <input type="checkbox" name="check" id="work">
                                 </label>
                                 <label>
-                                    <img src="../assets/images/basecamp.svg" alt="">
+                                    <div>
+                                        <img src="../assets/images/basecamp.svg" alt="" class="me-1">
                                     <span class="">Basecamp</span>
+                                    </div>
+                                    
                                     <input type="checkbox" name="check" id="work">
                                 </label>
                                 <label>
-                                    <img src="../assets/images/wrike.svg" alt="">
-                                    <span class="">Wrike</span>
+                                    <div>
+                                        <img src="../assets/images/wrike.svg" alt="" class="me-1">
+                                        <span class="">Wrike</span>
+                                    </div>
+                                   
                                     <input type="checkbox" name="check" id="work">
                                 </label>
                                 <label>
-                                    <img src="../assets/images/jira.svg" alt="">
+                                    <div>   
+                                        <img src="../assets/images/jira.svg" alt="" class="me-1">
                                     <span class="">Jira</span>
+                                    </div>
+                                    
                                     <input type="checkbox" name="check" id="work">
                                 </label>
                                 <label>
-                                    <img src="../assets/images/monday.svg" alt="">
-                                    <span class="">Monday</span>
+                                    <div>
+                                        <img src="../assets/images/monday.svg" alt="" class="me-1">
+                                        <span class="">Monday</span>
+                                    </div>
                                     <input type="checkbox" name="check" id="work">
                                 </label>
                                 <label>
-                                    <img src="../assets/images/notion.svg" alt="">
+                                    <div>
+                                        <img src="../assets/images/notion.svg" alt="" class="me-1">
                                     <span class="">Notion</span>
+                                    </div>
                                     <input type="checkbox" name="check" id="work">
                                 </label>
                                 <label>
-                                    <img src="../assets/images/asana.svg" alt="">
-                                    <span class="">Asana</span>
+                                    <div>
+                                        <img src="../assets/images/asana.svg" alt="" class="me-1">
+                                        <span class="">Asana</span>
+                                    </div>
                                     <input type="checkbox" name="check" id="work">
                                 </label>
 
 
+                            </div>
+                        </div>
+                        <div class="form7 multistepform display-none">
+                            <h1 class="fieldset-heading">Lastly, <br> what would you like to
+                                name your Workspace?</h1>
+                            <div class="button_desgin5">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" name=""id="" placeholder="Jarvisatwork"/>
+                                </div>
+                                <p>Try the name of your company or organization.</p>
                             </div>
                         </div>
                     </div>
                     <div class="gradient-border">
                     </div>
                     <div class="modal-footer border-0">
-                        <button type="button" class="btn btn-White back" onclick="previousStep()">
-                            < Back </button>
-                                <button type="button" class="btn btn-White" onclick="nextStep()">Next ></button>
+                        <button type="button" class="btn btn-White back" id="backButton" onclick="previousStep()">< Back </button>
+                                <button type="button" class="btn btn-White" id="nextButton" onclick="nextStep()">Next ></button>
                     </div>
                 </div>
-            </div>
-        </div>
-    </form>
-
-    <form action="">
-        <div class="modal fade h-100 w-100" id="multiStepModal2" tabindex="-1" role="dialog"
-            aria-labelledby="modalTitleId" aria-hidden="true">
-            <div class="modal-dialog d-flex align-items-center h-100 mt-0" role="document">
-                <div class="modal-content">
-                    <div class="modal-header border-0 d-flex justify-content-between">
-                        <img src="../assets/images/Link.png" alt="0" width="95" />
-                        <p class="user-name"></p>
+                <div class="modal-content display-none modal-content-2">
+                    <div class="image-block">
+                        <img src="../assets/images/Iframe.png" alt="fdasf">
+                        <img src="../assets/images/Button - Video Play Button.png" alt="afds" class="play-button">
+                        <div class="overlay"></div>
                     </div>
-                    <div class="modal-body d-flex justify-content-center align-items-center">
-                        <div class="form1">
-                            <h1 class="text-center mb-5">How large is your <br>company?</h1>
-                            <div class="button_desgin2">
-                                <div class="box">
-                                    <input type="radio" name="check" id="work">
-                                    <span></span>
-                                    <i class="fa-solid fa-phone">1-10</i>
-                                </div>
-                                <div class="box">
-                                    <input type="radio" name="check" id="personal">
-                                    <span></span>
-                                    <i class="fa-solid fa-phone">11-25</i>
-                                </div>
-                                <div class="box">
-                                    <input type="radio" name="check" id="school">
-                                    <span></span>
-                                    <i class="fa-solid fa-phone">26-250</i>
-                                </div>
-                                <div class="box">
-                                    <input type="radio" name="check" id="work">
-                                    <span></span>
-                                    <i class="fa-solid fa-phone">251-500</i>
-                                </div>
-                                <div class="box">
-                                    <input type="radio" name="check" id="personal">
-                                    <span></span>
-                                    <i class="fa-solid fa-phone">500-2000</i>
-                                </div>
-                                <div class="box">
-                                    <input type="radio" name="check" id="school">
-                                    <span></span>
-                                    <i class="fa-solid fa-phone">2000+</i>
-                                </div>
-                                <div class="box">
-                                    <input type="radio" name="check" id="school">
-                                    <span></span>
-                                    <i class="fa-solid fa-phone ">I don't know</i>
-                                </div>
+                    <div class="content">
+                        <div>
+                            <h1>Welcome To ClickUp!</h1>
+                            <p>Watch this quick video to know how ClickUp
+                                can transform your productivity.</p>
+                            <div class="d-flex justify-content-center">
+                                <a href="" class="watch-video">Watch Video</a>
+
                             </div>
                         </div>
-                    </div>
-                    <div class="gradient-border">
-
-                    </div>
-                    <div class="modal-footer">
-
-
-                        <button type="button" class="btn btn-White">Next ></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </form>
-    <form action="">
-        <div class="modal fade h-100 w-100" id="multiStepModal3" tabindex="-1" role="dialog"
-            aria-labelledby="modalTitleId" aria-hidden="true">
-            <div class="modal-dialog d-flex align-items-center h-100 mt-0" role="document">
-                <div class="modal-content">
-                    <div class="modal-header border-0 d-flex justify-content-between">
-                        <img src="../assets/images/Link.png" alt="0" width="95" />
-                        <p class="user-name"></p>
-                    </div>
-                    <div class="modal-body d-flex justify-content-center align-items-center">
-                        <div class="form1">
-                            <h1 class="text-center mb-5">How many people will you<br>be working with?</h1>
-                            <div class="button_desgin2">
-                                <div class="box">
-                                    <input type="radio" name="check" id="work">
-                                    <span></span>
-                                    <i class="fa-solid fa-phone">Just me</i>
-                                </div>
-                                <div class="box">
-                                    <input type="radio" name="check" id="personal">
-                                    <span></span>
-                                    <i class="fa-solid fa-phone">2-10</i>
-                                </div>
-                                <div class="box">
-                                    <input type="radio" name="check" id="school">
-                                    <span></span>
-                                    <i class="fa-solid fa-phone">11-25</i>
-                                </div>
-                                <div class="box">
-                                    <input type="radio" name="check" id="work">
-                                    <span></span>
-                                    <i class="fa-solid fa-phone">26-50</i>
-                                </div>
-                                <div class="box">
-                                    <input type="radio" name="check" id="personal">
-                                    <span></span>
-                                    <i class="fa-solid fa-phone">51-250</i>
-                                </div>
-                                <div class="box">
-                                    <input type="radio" name="check" id="school">
-                                    <span></span>
-                                    <i class="fa-solid fa-phone">251-500</i>
-                                </div>
-                                <div class="box">
-                                    <input type="radio" name="check" id="school">
-                                    <span></span>
-                                    <i class="fa-solid fa-phone">501+</i>
-                                </div>
-                                <div class="box">
-                                    <input type="radio" name="check" id="school">
-                                    <span></span>
-                                    <i class="fa-solid fa-phone ">I don't know</i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gradient-border">
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-White back">
-                            < back </button>
-
-                                <button type="button" class="btn btn-White">Next ></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </form>
-    <form action="">
-        <div class="modal fade h-100 w-100" id="multiStepModal4" tabindex="-1" role="dialog"
-            aria-labelledby="modalTitleId" aria-hidden="true">
-            <div class="modal-dialog d-flex align-items-center h-100 mt-0" role="document">
-                <div class="modal-content">
-                    <div class="modal-header border-0 d-flex justify-content-between">
-                        <img src="../assets/images/Link.png" alt="0" width="95" />
-                        <p class="user-name"></p>
-                    </div>
-                    <div class="modal-body d-flex justify-content-center align-items-center">
-                        <div class="form1">
-                            <h1 class="text-center mb-5">Which solution would you like<br>to start with?</h1>
-                            <div class="button_desgin3">
-                                <div class="box2">
-                                    <input type="radio" name="check" id="work">
-                                    <span></span>
-                                    <i class="fa-solid fa-phone">Sales & CRM</i>
-                                </div>
-                                <div class="box2">
-                                    <input type="radio" name="check" id="personal">
-                                    <span></span>
-                                    <i class="fa-solid fa-phone">Finance & Accounting</i>
-                                </div>
-                                <div class="box2">
-                                    <input type="radio" name="check" id="school">
-                                    <span></span>
-                                    <i class="fa-solid fa-phone">Creative & Design</i>
-                                </div>
-                                <div class="box2">
-                                    <input type="radio" name="check" id="work">
-                                    <span></span>
-                                    <i class="fa-solid fa-phone">Support</i>
-                                </div>
-                                <div class="box2">
-                                    <input type="radio" name="check" id="personal">
-                                    <span></span>
-                                    <i class="fa-solid fa-phone">Personal Use</i>
-                                </div>
-                                <div class="box2">
-                                    <input type="radio" name="check" id="school">
-                                    <span></span>
-                                    <i class="fa-solid fa-phone">Professional Services</i>
-                                </div>
-                                <div class="box2">
-                                    <input type="radio" name="check" id="school">
-                                    <span></span>
-                                    <i class="fa-solid fa-phone">PMO</i>
-                                </div>
-                                <div class="box2">
-                                    <input type="radio" name="check" id="school">
-                                    <span></span>
-                                    <i class="fa-solid fa-phone ">HR & Recruiting</i>
-                                </div>
-                                <div class="box2">
-                                    <input type="radio" name="check" id="school">
-                                    <span></span>
-                                    <i class="fa-solid fa-phone ">Engineering & Product</i>
-                                </div>
-                                <div class="box2">
-                                    <input type="radio" name="check" id="school">
-                                    <span></span>
-                                    <i class="fa-solid fa-phone ">IT</i>
-                                </div>
-                                <div class="box2">
-                                    <input type="radio" name="check" id="school">
-                                    <span></span>
-                                    <i class="fa-solid fa-phone ">Operations</i>
-                                </div>
-                                <div class="box2">
-                                    <input type="radio" name="check" id="school">
-                                    <span></span>
-                                    <i class="fa-solid fa-phone ">Marketing</i>
-                                </div>
-                                <div class="box2">
-                                    <input type="radio" name="check" id="school">
-                                    <span></span>
-                                    <i class="fa-solid fa-phone">Other</i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gradient-border">
-
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-White back">
-                            < back </button>
-
-                                <button type="button" class="btn btn-White">Next ></button>
+                        
                     </div>
                 </div>
             </div>
@@ -1010,21 +1045,43 @@
         formStepLength = $('.multistepform').length;
         currentStep = 0;
         const nextStep = () => {
-            $('.multistepform').eq(currentStep).fadeOut(400, function () {
-                currentStep++;
-                if (currentStep < $('.multistepform').length) {
+            if(currentStep < formStepLength - 1){
+                $('#backButton,#nextButton').attr('disabled',true);
+                $('.multistepform').eq(currentStep).fadeOut(400, function () {
+                    currentStep++;
                     $('.multistepform').eq(currentStep).fadeIn(400);
-                }
-            });
+                    hideButtonsLogic();
+                    $('#backButton,#nextButton').removeAttr('disabled');
+                });
+            }
+            else{
+                $('.modal-content-1').fadeOut(400,function(){
+                    $('.modal-content-2').fadeIn(400);
+                })
+            }
         }
         const previousStep = () => {
             $('.multistepform').eq(currentStep).fadeOut(400, function () {
+                $('#backButton,#nextButton').attr('disabled',true);
                 currentStep--;
                 if (currentStep < $('.multistepform').length) {
                     $('.multistepform').eq(currentStep).fadeIn(400);
                 }
+                hideButtonsLogic();
+                $('#backButton,#nextButton').attr('disabled',false);
             });
         }
+        const hideButtonsLogic=()=>{
+            if(currentStep == 0){
+                $('#backButton').fadeOut();
+            }
+            else{
+                $('#backButton').fadeIn();
+            }
+        }
+        $(document).ready(function(){
+            hideButtonsLogic();
+        })
     </script>
     <script>
         function w3_open() {
