@@ -62,7 +62,11 @@
     
   
   }
-  
+  .input_buttons input{
+    width: 50px;
+    border: none;
+    border-bottom: 1px solid rgb(43, 140, 109);
+  }
   .google_button {
     border: 1px solid #dadce0;
     padding: 10px;
