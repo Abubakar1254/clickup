@@ -58,6 +58,9 @@ main {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: relative;
   background-color: white;
+  margin-bottom: -78px;
+  
+
 }
 
 .google_button {
@@ -116,7 +119,9 @@ form {
   border: none;
   border-top: 1px solid #87909e;
 }
-
+.nav-btn .btn-2 {
+  display: none;
+}
 .line_one {
   margin-right: 10px;
 }
@@ -228,20 +233,56 @@ form {
     text-decoration:none!important;
   }
 }
+@media only screen and (max-width: 600px) {
+.form-container{
+  width: 90%;
+        margin: 20px;
+        padding: 23px;
+        margin-bottom: 100px;
+    }
+    .background_image{
+     margin-bottom: 500px;
+     margin-top: -500px;
+    }
+    .nav-btn a {
+      margin-top: -11px;
+      margin-left: 50px;
+      width: 95px;
+    }
+    .nav-btn p {
+      display: none;
+    }
+    .btn-2 { 
+      width: 176px;
+      font-size: 20px;
+    }
+    .background_image img{       
+      height: 865px;
+      max-width: 413px;
+    }
+    .footer{
+      margin-top: -50px;
+      margin-bottom: 92px;
+    }
 
-@media screen and (max-width: 500px) {
-  .background_image img {
-    width: 100%;
-    margin-right: 500px;
-    width: 1500px;
-    position: absolute;
-    margin-top: -110px;
-  }
-  .nav-btn a {
-    margin-top: -60px;
-    margin-left: 250px;
-  }
-  .nav-btn p {
-    display: none;
-  }
 }
+
+@media only screen and (max-width: 400px) {
+  .form-container{
+    margin-top: 150px !important;
+  }
+  .no_account p{
+    
+    margin-bottom: -89px;
+  }
+
+}
+/* @media only screen and (max-width: 1800px) {
+.form-container{       
+margin-bottom: auto;
+justify-content: center;
+text-align: center;
+
+  } */
+
+
