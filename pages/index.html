@@ -10,8 +10,44 @@
  
 </head>
 <body>
+<style>
+            .img {
+            margin-top: 10%;
+        }
+
+        .a {
+            position: relative;
+            position: absolute;
+            height: 50%;
+            width: 100%;
+        }
+
+        .b {
+            width: 100%;
+            height: 50%;
+            position: fixed;
+        }
+
+        /* @media only screen and (max-width: 600px) {
+            .img {
+
+                .a {
+                    height: 169px;
+                    width: 100%;
+                    margin-top: -134px;
+                }
+
+                .b {
+                    margin-top: -23%;
+                    height: 61%;
+                }
+            }
+        } */
+</style>
+
     <header class="login-header">
         <div class="container-fluid">
+       
             <div class="d-flex justify-content-between align-items-center">
                 <div >
                     <img src="../assets/images/Link.png" alt="Logo" class="img-fluid">
@@ -24,8 +60,9 @@
             </div>
         </div>
     </header>
-    <div class="background_image">
-        <img src="../assets/images/Background.png" class="img-fluid w-100 mb-0" alt="">
+    <div class="img">
+        <img src="/assets/images/one.svg" class="b" alt="">
+        <img src="/assets/images/two.svg" class=" a position-absolute " alt="">
     </div>
     <main class="align-items-end justify-content-center">
         <section>
