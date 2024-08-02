@@ -6,9 +6,69 @@
   body {
     background-color: #fafbfc;
   }
+
+
+
+  .background-image {
+    position: absolute;
+    height: calc(100% - 17vh);
+    width: 100%;
+    top: 17vh;
+    left: 0;
+    overflow: hidden;
+    pointer-events: none;
+    background: url(/assets/images/one.svg) center 10px no-repeat;
+    background-size: cover;
+    z-index: -1;
+    .curve-vector {
+      display: block;
+      position: absolute;
+      width: 104%;
+      height: 100%;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-size: 100%;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .background-image {
+      .curve-vector {
+        display: block;
+        position: absolute;
+        width: 116%;
+        height: 22%;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-size: 100%;
+      }
+    }
+    .form-container{
+      margin:0 !important;
+      margin-left: 10px !important;
+      margin-right: 10px !important;
+      min-width:330px;
+      max-width:450px;
+      width:auto !important;
+    }
+    .no_account{
+      margin-bottom:140px !important;
+    }
+    .footer{
+      max-width:335px;
+      margin:0 auto;
+      margin-bottom:10px;
+    }
+  }
+
+
+
+
+
   main {
     display: flex;
-    height: calc(100vh - 72px);
+    height: calc(100vh - 78px);
   }
   .login-header {
     margin-top: 30px;
