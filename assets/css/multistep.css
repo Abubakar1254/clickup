@@ -1,3 +1,15 @@
+
+
+:root {
+    --yellow: #FFCC00;
+    --black: #000000;
+    --gray: #808080;
+}
+
+
+
+
+
 .user-name {
     font-size: 20px;
     line-height: 30px;
@@ -54,7 +66,7 @@
         height: 4px;
         width: 100;
         margin: 0 24px;
-        background: linear-gradient(90deg, #6E56CF 0%, #4BC9FA 50%, #86EAD4 100%);
+        background: linear-gradient(90deg, var(--yellow) 0%, var(--gray) 50%, var(--black) 100%);
     }
 
     /* 
@@ -99,10 +111,11 @@
             }
 
             input[type="radio"]:checked~span {
-                border: 1px solid #5C52ED;
-                background-color: #5C52ED;
-                color: white;
-                box-shadow: 0px 6px 24px 0px #7F77F199 !important;
+                border: 1px solid var(--yellow);
+                background-color:var(--yellow);
+                color: rgb(0, 0, 0);
+                
+                box-shadow: 0px 6px 24px 0px var(--yellow) !important;
             }
 
             span {
@@ -164,15 +177,16 @@
                 cursor: pointer;
             }
             input[type="checkbox"] {
-                accent-color: #5C52ED;
+                accent-color:var(--yellow);
             }
 
             input[type="radio"]:checked~span {
-                border: 1px solid #5C52ED;
-                background-color: #5C52ED;
+                border: 1px solid var(--yellow);
+                background-color:var(--yellow);
                 color: white;
-                box-shadow: 0px 6px 24px 0px #7F77F199 !important;
+                box-shadow: 0px 6px 24px 0px var(--yellow) !important;
             }
+           
 
             span {
                 font-size: 16px;
@@ -282,6 +296,11 @@
         line-height: 21.28px;
         text-align: left;
     }
+    .form-control:focus{
+        box-shadow: none !important;
+        border: 1px solid var(--yellow) !important;
+        
+    }
     .fieldset-heading{
         margin-bottom:60px !important;
     }
@@ -313,7 +332,7 @@
     height: 48px;
     border-radius: 10px;
     box-shadow: 0px 4px 8px 0px #EDF0F299;
-    background-color: #5C52ED;
+    background-color: var(--black);
     color:white;
     font-size: 16px;
     font-weight: 400;

@@ -61,9 +61,7 @@
       max-width:450px;
       width:auto !important;
     }
-    .no_account{
-      margin-bottom:140px !important;
-    }
+    
     .footer{
       max-width:335px;
       margin:0 auto;
@@ -79,10 +77,12 @@
 }
   main {
     display: flex;
-    height: calc(100vh - 113px);
+    /* height: calc(100vh - 113px); */
+    height: 80vh;
   }
   .login-header {
-    margin-top: 30px;
+    /* margin-top: 30px; */
+    height: 20vh;
     .container-fluid {
       padding-left: 30px;
       padding-right: 30px;
@@ -281,11 +281,13 @@
   .footer_end {
     text-align: center;
     color: white;
-    margin-top: 30px;
+    position: absolute;
+  bottom:0
+    /* margin-top: 30px; */
   }
   .no_account {
     font-size: 13px;
-    margin-bottom: 145px;
+    /* margin-bottom: 145px; */
   }
   
   .footer {
@@ -340,7 +342,7 @@
       }
       .background_image img{       
         height: 100vh;
-        max-width: 100%;
+        max-width: 200px%;
       }
       .footer{
         margin-top: -50px;
@@ -349,16 +351,7 @@
   
   }
   
-  @media only screen and (max-width: 400px) {
-    .form-container{
-      margin-top: 150px !important;
-    }
-    .no_account p{
-      
-      margin-bottom: -89px;
-    }
-  
-  }
+
   /* @media only screen and (max-width: 1800px) {
   .form-container{       
   margin-bottom: auto;

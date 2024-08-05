@@ -23,7 +23,7 @@
             <div class="modal-dialog d-flex align-items-center h-100 mt-0" role="document">
                 <div class="modal-content form-step modal-content-1">
                     <div class="modal-header border-0 d-flex justify-content-between">
-                        <img src=" assets/images/Link.png" alt="0" width="95" />
+                        <img src=" assets/images/logo.png" alt="0" width="95" />
                         <p class="user-name">Welcome, AbdulKareem!</p>
                     </div>
                     <div class="modal-body d-flex justify-content-center p-0">
@@ -310,7 +310,7 @@
                                 name your Workspace?</h1>
                             <div class="button_desgin5">
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" name=""id="" placeholder="Jarvisatwork"/>
+                                    <input type="text" class="form-control input_buttons"  name=""id="" placeholder="Jarvisatwork"/>
                                 </div>
                                 <p>Try the name of your company or organization.</p>
                             </div>
@@ -354,7 +354,7 @@
         });
     </script>
 
-    <header>
+    <!-- <header>
         <nav class="navbar navbar-expand-sm navbar-dark text-white">
             <div class="container-fluid">
                 <a class="navbar-brand" href="javascript:void(0)">
@@ -403,7 +403,7 @@
                 </div>
             </div>
         </nav>
-    </header>
+    </header> -->
     <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog custom-width">
             <div class="modal-content">
@@ -463,7 +463,7 @@
         </div>
     </div>
     <!-- Sidebar -->
-    <div class="w3-sidebar w3-bar-block w3-border-right" style="display: none" id="mySidebar">
+    <!-- <div class="w3-sidebar w3-bar-block w3-border-right" style="display: none" id="mySidebar">
         <div class="d-flex user_sidebar align-items-center p-2">
             <div class="user_icon mt-2">A</div>
             <h5 class="ms-3">abubakar</h5>
@@ -501,10 +501,10 @@
             <img src=" assets/images/home.svg" alt="" />
             <h5>Home</h5>
         </div>
-    </div>
+    </div> -->
 
     <main class="container data_show">
-        <h3>Afternoon, Abubakar</h3>
+        <!-- <h3>Afternoon, Abubakar</h3>
         <div class="row">
             <div class="col-sm-6 border p-3">
                 <div class="data_one">
@@ -581,11 +581,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#multiStepModal">
             Launch
         </button>
-        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#multiStepModal2">
+        <!-- <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#multiStepModal2">
             Second
         </button>
         <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#multiStepModal3">
@@ -593,7 +593,7 @@
         </button>
         <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#multiStepModal4">
             Third
-        </button>
+        </button> -->
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
@@ -619,8 +619,9 @@
             }
         }
         const previousStep = () => {
-            $('.multistepform').eq(currentStep).fadeOut(400, function () {
+        if(currentStep < formStepLength - 1){
                 $('#backButton,#nextButton').attr('disabled',true);
+            $('.multistepform').eq(currentStep).fadeOut(400, function () {
                 currentStep--;
                 if (currentStep < $('.multistepform').length) {
                     $('.multistepform').eq(currentStep).fadeIn(400);
@@ -628,6 +629,12 @@
                 hideButtonsLogic();
                 $('#backButton,#nextButton').attr('disabled',false);
             });
+        }
+        else{
+            $('.modal-content-1').fadeOut(400,function(){
+                    $('.modal-content-2').fadeIn(400);
+                })
+        }
         }
         const hideButtonsLogic=()=>{
             if(currentStep == 0){
