@@ -5,7 +5,11 @@
   }
 
 
- 
+  :root {
+    --yellow: #FFCC00;
+    --black: #000000;
+    --gray: #808080;
+}
   .background-image {
     position: absolute;
     height: calc(100% - 17vh);
@@ -14,7 +18,7 @@
     left: 0;
     overflow: hidden;
     pointer-events: none;
-    background: url(/assets/images/one.svg) center 10px no-repeat;
+    background: url("../images/one.svg") center 10px no-repeat;
     background-size: cover;
     z-index: -1;
     .curve-vector {
@@ -60,7 +64,9 @@
   }
 
 
-
+  .img-fluid{
+    width: 25%;
+  }
 
 
   
@@ -69,7 +75,7 @@
   }
   main {
     display: flex;
-    height: calc(100vh - 78px);
+    height: calc(100vh - 113px);
   }
   .login-header {
     margin-top: 30px;
@@ -88,8 +94,8 @@
     }
     .btn {
       color: white;
-      background: #5f55ee;
-      box-shadow: 0px 10px 25px 0px #7f77f180;
+      background: var(--black);
+      box-shadow: 0px 10px 25px 0px #31313580;
       width: Hug (93px) px;
       height: Fixed (40px) px;
       padding: 12.5px 20px 13.5px 20px;
@@ -120,7 +126,7 @@
     position: relative;
     background-color: white;
     /* margin-bottom: -78px; */
-    margin-bottom: 50px;
+    margin-bottom: 91px;
   
   }
   
@@ -162,7 +168,7 @@
       border: 1px solid #d6d9de;
     }
     .login {
-      background: #5f55ee;
+      background:var(--black);
       color: white;
       border-radius: 9px;
       font-family: Segoe UI;
@@ -173,6 +179,7 @@
       height: 50px;
       margin-top: 10px;
     }
+
   }
   .line_one,
   .line_two {
@@ -224,7 +231,7 @@
     top: 42px;
     right: 17px;
     font-size: 12px;
-    color: #5f55ee;
+    color: var(--black);
     text-decoration: none;
   }
   
@@ -299,11 +306,18 @@
     }
   }
   @media only screen and (max-width: 600px) {
-  .form-container{
+    .img-fluid{
+      width: 63%;
+    }
+  
+    .form-container{
     width: 90%;
           margin: 20px;
           padding: 23px;
           margin-bottom: 100px;
+      }
+      main {
+        height: calc(100vh - 112px);
       }
       .background_image{
        margin-bottom: 500px;
