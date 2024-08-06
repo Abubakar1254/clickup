@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expandable Sidebar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    background-color: #333;
+    overflow: hidden;
+    transition: width 0.3s;
+}
+
+.sidebar.expanded {
+    width: 200px;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.sidebar-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.item-name {
+    display: none;
+}
+
+.sidebar.expanded .item-name {
+    display: inline;
+}
+
+.toggle-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    color: #fff;
+    font-size: 20px;
+}
+
+</style>
+    <div id="sidebar" class="sidebar collapsed">
+        <div class="sidebar-content">
+            <div class="sidebar-item">
+                <img src="./assets/images/letter-a.svg" alt="Icon">
+                <span class="item-name">Item 1</span>
+            </div>
+            <div class="sidebar-item">
+                <img src="./assets/images/letter-b.svg" alt="Icon">
+                <span class="item-name">Item 2</span>
+            </div>
+            <div class="sidebar-item">
+                <img src="./assets/images/letter-c.svg" alt="Icon">
+                <span class="item-name">Item 3</span>
+            </div>
+            <!-- Add more items as needed -->
+        </div>
+        <div class="toggle-btn" onclick="toggleSidebar()">☰</div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('expanded');
+    sidebar.classList.toggle('collapsed');
+}
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

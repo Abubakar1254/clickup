@@ -12,121 +12,234 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-    <style>
-        :root {
-            --yellow: #FFCC00;
-            --black: #000000;
-            --gray: #808080;
-        }
-
-        .navbar-custom {
-            background: rgba(50, 52, 82, 1);
-            /* padding: 1px 0.5rem; */
-
-            height: 50px;
-        }
-
-        .nav-search {
-            position: relative;
-            background-color: rgba(255, 255, 255, 0.1);
-            width: 20vw;
-            height: 25px;
-            border-radius: 0.25rem;
-            color: white;
-        }
-
-        .nav-search {
-            color: rgba(255, 255, 255, 0.5);
-            position: absolute;
-        }
-
-        .btn-ask {
-            display: flex;
-            width: 80px;
-            height: 25px;
-            text-align: center;
-            justify-content: center;
-            font-size: 13px;
-            align-items: center;
-            border-radius: 10%;
-            background-color: rgb(78, 78, 146);
-            margin-left: 5px;
-            border: none;
-        }
-
-        .btn-ask p {
-            padding: 5px 2px;
-            color: #ffffff;
-            margin: 0;
-        }
-
-        .btn-ask img {
-            margin-right: 5px;
-        }
-
-        .Search_button {
-            position: relative;
-        }
-
-        .icons img {
-            margin: 0 5px;
-        }
-
-        .dropdown-menu {
-            min-width: 150px;
-        }
-
-        .search_icon {
-            margin-left: 50px;
-        }
-
-        .btn-ask {
-
-            margin-left: 44%;
-        }
-
-        .user-button {
-            background-color: rgba(97, 52, 52, 0.581);
-            border-radius: 25%;
-
-        }
-
-        .user_profile_st {
-            width: 20vw;
-            line-height: 15px;
-        }
-     
-       
-
-        .user_profile_st li {
-            display: flex;
-            margin-top: 15px;
-            margin-left: 10px;
-        }
-
-        .user_profile_st li p {
-            margin-bottom: -50px;
-            margin-left: 10px;
-        }
-
-       .drp_img{
-        width: 39px;
-        margin-bottom: 55px;
-       }
-
-        .user_info {
-            display: flex;
-            margin: 11px 20px -38px;
-    gap: 12px;
+        <style>
+            :root {
+                --yellow: #FFCC00;
+                --black: #000000;
+                --gray: #808080;
+            }
     
-        }
-        .drp{
-            width: 280px;
-        }
-        .offcanvas {
-          z-index: 1050; /* Ensure offcanvas appears above the content */
-        }
-    </style>
+            .navbar-custom {
+                background: rgba(50, 52, 82, 1);
+                height: 50px;
+            }
+    
+            .nav-search {
+                position: relative;
+                background-color: rgba(255, 255, 255, 0.1);
+                width: 20vw;
+                height: 25px;
+                border-radius: 0.25rem;
+                color: white;
+            }
+    
+            .nav-search {
+                color: rgba(255, 255, 255, 0.5);
+                position: absolute;
+            }
+    
+            .btn-ask {
+                display: flex;
+                width: 80px;
+                height: 25px;
+                text-align: center;
+                justify-content: center;
+                font-size: 13px;
+                align-items: center;
+                border-radius: 10%;
+                background-color: rgb(78, 78, 146);
+                margin-left: 5px;
+                border: none;
+            }
+    
+            .btn-ask p {
+                padding: 5px 2px;
+                color: #ffffff;
+                margin: 0;
+            }
+    
+            .btn-ask img {
+                margin-right: 5px;
+            }
+    
+            .Search_button {
+                position: relative;
+            }
+    
+            .icons img {
+                margin: 0 5px;
+            }
+    
+            .dropdown-menu {
+                min-width: 150px;
+            }
+    
+            .search_icon {
+                margin-left: 50px;
+            }
+    
+            .btn-ask {
+                margin-left: 44%;
+            }
+    
+            .user-button {
+                background-color: rgba(97, 52, 52, 0.581);
+                border-radius: 25%;
+            }
+    
+            .user_profile_st {
+                width: 20vw;
+                line-height: 15px;
+            }
+    
+            .user_profile_st li {
+                display: flex;
+                margin-top: 15px;
+                margin-left: 10px;
+            }
+    
+            .user_profile_st li p {
+                margin-bottom: -50px;
+                margin-left: 10px;
+            }
+    
+            .drp_img {
+                width: 39px;
+                margin-bottom: 55px;
+            }
+    
+            .user_info {
+                display: flex;
+                margin: 11px 20px -38px;
+                gap: 12px;
+            }
+    
+            .drp {
+                width: 280px;
+            }
+    
+            .offcanvas {
+                z-index: 1050;
+            }
+    
+            .sidebar {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: var(--gray);
+                color: var(--black);
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 60px;
+                margin-top: 50px;
+            }
+    
+            .user_side {
+                top: -48px;
+            }
+    
+            .user_sidebar_menu h5 {
+                margin-left: 41px;
+                margin-top: -36px;
+            }
+    
+            .sidebar a {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                color: var(--black);
+                display: block;
+                transition: 0.3s;
+                margin-bottom: 2px;
+            }
+    
+            .sidebar img {
+                position: absolute;
+                margin-top: 11px;
+                margin-left: 5px;
+            }
+    
+            .sidebar a:hover {
+                color: #f1f1f1;
+            }
+    
+            .sidebar .closebtn {
+                position: absolute;
+                top: 0;
+                right: 25px;
+                font-size: 36px;
+                margin-left: 50px;
+            }
+    
+            .openbtn {
+                font-size: 20px;
+                cursor: pointer;
+                background-color: #111;
+                color: white;
+                padding: 10px 15px;
+                border: none;
+                height: 56px;
+            }
+    
+            #main {
+                transition: margin-left .5s;
+                padding: 16px;
+            }
+    
+            .half_bar {
+                width: 50px;
+                height: calc(100vh - 50px);
+                background: var(--gray);
+                padding: 10px !important;
+                margin: -16px !important;
+            }
+
+
+
+
+
+
+
+
+
+
+            .box_one,.box_two {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: 10px;
+                            margin: 10px;
+                        }
+                
+                        .edit_one img {
+                            margin-right: 10px;
+                        }
+                
+                        .edit_one h5 {
+                            margin: 0;
+                        }
+                
+                        .other_one,.edit_one,.other_two,.edit_two  {
+                            display: flex;
+                            align-items: center;
+                        }
+                
+                        .other_one img {
+                            margin-left: 10px;
+                        }
+                        .today{
+                            margin-left: 50%;
+                            display: flex;
+                        }
+                        .today img{
+                            margin-left: 10px;
+                            margin-top: -10px;
+                        }
+                       
+                        
+        </style>
+    
        
 </head>
 
@@ -223,42 +336,372 @@
         </nav>
     </header>
 
-    <main>
-        <div class="container-fluid">
-          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
-            Enable body scrolling
-          </button>
-      
-          <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <p>Try scrolling the rest of the page to see this option in action.</p>
-            </div>
-          </div>
-      
-          <div class="row">
-            <div class="col-sm-4">
-              <h3>Column 1</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-            </div>
-            <div class="col-sm-4">
-              <h3>Column 2</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-            </div>
-            <div class="col-sm-4">
-              <h3>Column 3</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
-            </div>
-          </div>
+    <style>
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color:var(--gray);
+            color: var(--black);
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            margin-top: 50px;
+            dis
+        }
+        .user_side{
+            
+            top: -48px;
+        }
+        .user_sidebar_menu h5{
+            margin-left: 41px;
+            margin-top: -36px;
+        }
+
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            /* font-size: 25px; */
+            color:var(--black);
+            display: block;
+            transition: 0.3s;
+            margin-bottom: 2px;
+        }
+        .sidebar img{
+            position: absolute;
+    margin-top: 11px;
+    margin-left: 5px;
+        }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #111;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            height: 56px;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+        .half_bar{
+            width: 50px;
+            height:calc(100vh - 50px) ;
+    background:var(--gray);
+    padding: 10px !important;
+    margin: -16px !important;
+        }
+
+
+
+
+
+        .details_one .list{
+            display: flex; 
+            margin: 5px;
+            margin-left: 50px;
+        }
+        .details_one .list p{
+            margin: 8px;
+        }
+
+
+
+
+
+
+
+        #one_box{
+            border: 1px solid var(--yellow);
+            border-radius: 10px;
+            height:400px;
+            /* overflow: hidden; */
+            overflow-y: scroll;
+        }
+        /* width */
+::-webkit-scrollbar {
+width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1;
+
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888;
+height: 20px;
+
+
+}
+.date p{
+    margin-left: 2vw;
+}
+
+.date .a,.b{
+margin-top: -10px;
+margin-left: 55px;
+}
+.date .b{
+    
+margin-left: 0px !important;
+}
+
+.box-two{
+    margin-left: 37px;
+}
+.all-day{
+    margin-left: 72%;
+}
+#box-two{
+    border: 1px solid var(--yellow);
+    border-radius: 10px;
+}
+    </style>
+
+    <div id="mySidebar" class="sidebar">
+        <div class="user_sidebar_menu ">
+            <div class="CSM d-flex">            
+                <div class="btn-group dropend user_side">
+                <button type="button" class="btn btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  A
+                </button>
+                <ul class="dropdown-menu">
+                  <!-- Dropdown menu links -->
+                </ul>
+              </div>
+            <h5>abubakar</h5>
         </div>
-      </main>
-      
+       <div class="menu_sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="./assets/images/menu2.svg" alt=""></a>
+    </div>
+    </div>
+        <div class="sidebar-content">
+            <img src="./assets/images/home.svg" alt="">
+        <a href="#">Home</a>
+        <img src="./assets/images/inbox.svg" alt="">
+        <a href="#">Inbox</a>
+        <img src="./assets/images/doc.svg" alt="">
+        <a href="#">Docs</a>
+        <img src="./assets/images/single.svg" alt="">
+        <a href="#">Dashboard</a>
+        <img src="./assets/images/video.svg" alt="">
+        <a href="#">Clips</a>
+        <img src="./assets/images/timer.svg" alt="">
+        <a href="#">Timesheets</a>
+        <img src="./assets/images/dot.svg" alt="">
+        <a href="#">More</a>
+        <hr>
+        <a href="#">Favorites ></a>
+        <a href="#">Spaces</a>
+        <img src="./assets/images/sno.svg" alt="">
+        <a href="#">Everything</a>
+        <img src="./assets/images/e.svg" alt="">
+        <a href="#">Engineering</a>
+        <img src="./assets/images/d.svg" alt="">
+        <a href="#">DCA</a>
+        <img src="./assets/images/m.svg" alt="">
+        <a href="#">Machine Automation</a>
+        <img src="./assets/images/menu2.svg" alt="">
+        <a href="#">View all space</a>
+        <img src="./assets/images/add.svg" alt="">
+
+        <a href="#">Create Space</a>
+    </div>
+    </div>
+    
+    <div id="main">
+        <div id="half_sidebar" class="half_sidebar position-absolute d-flex " onclick="halfbar()">
+            <div class="half_bar">
+            <div class="btn-group dropend">
+                <button type="button" class="btn btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  A
+                </button>
+                <ul class="dropdown-menu">
+                  <!-- Dropdown menu links -->
+                </ul>
+              </div>
+             <a href="0"> <img src="./assets/images/menu.svg" alt=""></a>
+             <a href="0"> <img src="./assets/images/menu.svg" alt=""></a>
+             <a href="0"> <img src="./assets/images/menu.svg" alt=""></a>
+             <a href="0"> <img src="./assets/images/menu.svg" alt=""></a>
+             <a href="0"> <img src="./assets/images/menu.svg" alt=""></a>
+             <a href="0"> <img src="./assets/images/menu.svg" alt=""></a>
+             <a href="0"> <img src="./assets/images/menu.svg" alt=""></a>
+             <a href="0"> <img src="./assets/images/menu.svg" alt=""></a>
+             <a href="0"> <img src="./assets/images/menu.svg" alt=""></a>
+             <a href="0"> <img src="./assets/images/menu.svg" alt=""></a>
+             <a href="0"> <img src="./assets/images/menu.svg" alt=""></a>
+             <a href="0"> <img src="./assets/images/menu.svg" alt=""></a>
+             <a href="0"> <img src="./assets/images/menu.svg" alt=""></a>
+             <a href="0"> <img src="./assets/images/menu.svg" alt=""></a>
+             <a href="0"> <img src="./assets/images/menu.svg" alt=""></a>
+            </div>
+             <button class="openbtn" onclick="openNav()"><img src="./assets/images/menu2.svg" alt=""></button>
+            </div>
+            <div class="container">
+                <h1>Abubakar</h1>
+                <div class="row">
+                    <!-- First Column -->
+                    <div id="one_box" class="col-sm-6">
+                        <div class="box_one">
+                            <div class="edit_one d-flex">
+                                <img src="./assets/images/dot.svg" alt="">
+                                <h5 class="mt-1">React</h5>
+                            </div>
+                            <div class="other_one">
+                                <img src="./assets/images/size.png" alt="">
+                                <img src="./assets/images/menu_dot.png" alt="">
+                            </div>
+                        </div>
+                        <div class="details_one">
+                            <div class="list">
+                                <img src="./assets/images/home/doc.svg" alt="">
+                                <p>lorem Ipsum</p>
+                            </div>
+                            <div class="list">
+                                <img src="./assets/images/home/doc.svg" alt="">
+                                <p>Systems & Tools</p>
+                            </div>
+                            <div class="list">
+                                <img src="./assets/images/home/map.svg" alt="">
+                                <p>Office Information</p>
+                            </div>
+                            <div class="list">
+                                <img src="./assets/images/home/book.svg" alt="">
+                                <p>Employee Handbook</p>
+                            </div>
+                            <div class="list">
+                                <img src="./assets/images/home/flower.svg" alt="">
+                                <p>Growth & Career</p>
+                            </div>
+                            <div class="list">
+                                <img src="./assets/images/home/users.svg" alt="">
+                                <p>Departments</p>
+                            </div>
+                            <div class="list">
+                                <img src="./assets/images/home/menu_list.svg" alt="">
+                                <p>Productivity Resources</p>
+                            </div>
+                            <div class="list">
+                                <img src="./assets/images/home/win.svg" alt="">
+                                <p>Mission & Vision</p>
+                            </div>
+                            <div class="list">
+                                <img src="./assets/images/home/heart.svg" alt="">
+                                <p>Core Values</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Second Column -->
+                    <div id="box-two" class="col-sm-6">
+                        <div class="box_two">
+                            <div class="edit_two d-flex">
+                                <img src="./assets/images/dot.svg" alt="">
+                                <h5 class="mt-2">Agenda</h5>
+                            </div>
+                            <div class="other_two">
+                                <img src="./assets/images/size.png" alt="">
+                                <img src="./assets/images/menu_dot.png" alt="">
+                            </div>
+                        </div>
+                    <div class="date d-flex">
+                        <p>Jul 12,Fri</p>
+                        <img class="a" src="./assets/images/home/lessden.svg"  alt="">
+                        <img class="b" src="./assets/images/home/greaterden.svg" alt="">
+                        <div class="today">
+                            <p>Today</p>
+                            <img src="./assets/images/home/today.svg" alt="">
+                        </div> 
+                    </div> 
+                    <hr>
+                    <div class="box-two d-flex">
+                    <img src="./assets/images/home/timer_clock.svg" alt="">
+                    <p class="mt-2">Lorem Ipsum</p>
+                    <p class="all-day">All day</p>
+                </div>
+                     </div>
+                     <div id="box-three" class="col-sm-6">
+                        <div class="box_two">
+                            <div class="edit_two d-flex">
+                                <img src="./assets/images/dot.svg" alt="">
+                                <h5 class="mt-2">Agenda</h5>
+                            </div>
+                            <div class="other_two">
+                                <img src="./assets/images/home/setting.svg" alt="">
+                                <img src="./assets/images/size.png" alt="">
+                                <img src="./assets/images/menu_dot.png" alt="">
+                            </div>
+                        </div>
+                    <div class="myWork d-flex">
+                   
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <!-- Home Tab -->
+                                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="row mt-3">
+                               
+                                </div>
+                           
+                            </div>
+                        </div>
+                    
+                </div>
+                     </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+        function halfbar() {
+            // // document.getElementById("half_sidebar").style.width = "500px";
+            // document.getElementById("half_sidebar").style.marginLeft = "-130px";
+            
+            // document.getElementById("half_sidebar").style.position = "-130px";
+        }
+    
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+        }
+    </script>
+    
 
     <footer>
         <!-- place footer here -->
