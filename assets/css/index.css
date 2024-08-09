@@ -292,8 +292,7 @@ form {
     margin-top: -500px;
   }
   .nav-btn a {
-    margin-top: -11px;
-    margin-left: 50px;
+  
     width: 95px;
   }
   .img-fluid {
@@ -313,6 +312,7 @@ form {
     height: 865px;
     max-width: 200px;
   }
+ 
 }
 
 /* @media only screen and (max-width: 1800px) {

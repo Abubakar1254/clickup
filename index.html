@@ -40,10 +40,18 @@
         height: 50%;
         position: fixed;
       }
+      .main-navabar{
+        justify-content: space-between;
+      }
+      #sign_up {
+        text-align: center !important;
+    width: 128px !important;
+   
+      }
     </style>
     <header class="login-header">
       <div
-        class="container-fluid d-flex justify-content-between align-items-center"
+        class="container-fluid d-flex main-navabar"
       >
         <div>
           <img src=" assets/images/logo.png" alt="Logo" class="img-fluid" />
@@ -53,7 +61,7 @@
           class="nav-btn text-end d-flex justify-content-center justify-content-md-end align-items-center mt-3 mt-md-0"
         >
           <p class="mb-0 me-2">Don't have an account?</p>
-          <a href="#" class="btn">Sign up</a>
+          <a href="#" id="sign_up" class="btn">Sign up</a>
         </div>
       </div>
     </header>
