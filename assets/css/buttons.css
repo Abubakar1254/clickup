@@ -1,0 +1,48 @@
+.btn_yellow_outline{
+    border: 1px solid var(--btn_y);
+    background: var(--btn_w);
+    color: var(--btn_g);
+}
+.btn_yellow_outline:hover{
+    background: var(--btn_y);
+    color: var(--btn_b);
+}
+.btn_yellow_button{
+    background: var(--btn_y);
+    color: var(--btn_b);
+}
+.btn_yellow_button:hover{
+    background: var(--btn_g);
+    color: var(--black-y);
+}
+.btn_gray_button{
+    background: var(--btn_g);
+    color: var(--btn_w);
+}
+.btn_gray_button:hover{
+    background: var(--btn_b);
+    color: var(--btn_w);
+}
+.btn_black_button{
+    background: var(--btn_b);
+    color: var(--btn_y);
+}
+.btn_black_button:hover{
+    background: var(--btn_b);
+    color: var(--btn_w);
+} 
+.btn_white_button{
+    background: var(--btn_w);
+    color: var(--btn_b);
+}
+.btn_white_button:hover{
+    background: var(--btn_g);
+    color: var(--btn_w);
+} 
+.form-check-input{
+    background-color: var(--btn_y);
+}  
+.form-check-input:checked {
+background-color: #030303;
+border-color: #030303;
+}
