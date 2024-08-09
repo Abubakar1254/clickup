@@ -1,94 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Button Click Effect</title>
     <style>
-        /* Basic styling */
-        body {
-            font-family: Arial, sans-serif;
-        }
+      /* Basic styling */
+      body {
+        font-family: Arial, sans-serif;
+      }
 
-        .card_main {
-            margin: 20px;
-        }
+      .card_main {
+        margin: 20px;
+      }
 
-        .card {
-            display: flex;
-            align-items: center;
-        }
+      .card {
+        display: flex;
+        align-items: center;
+      }
 
-        .img img {
-            width: 50px;
-            height: 50px;
-        }
+      .img img {
+        width: 50px;
+        height: 50px;
+      }
 
-        .card_button {
-            margin-left: 10px;
-        }
+      .card_button {
+        margin-left: 10px;
+      }
 
-        #toggleButton {
-            display: flex;
-            align-items: center;
-            background-color: white; /* Default background color */
-            color: black; /* Default text color */
-            border: 1px solid black; /* Border color for visibility */
-            padding: 10px;
-            cursor: pointer;
-            transition: background-color 0.3s, color 0.3s;
-        }
+      #toggleButton {
+        display: flex;
+        align-items: center;
+        background-color: white; /* Default background color */
+        color: black; /* Default text color */
+        border: 1px solid black; /* Border color for visibility */
+        padding: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+      }
 
-        #toggleButton.clicked {
-            background-color: black;
-            color: white;
-        }
+      #toggleButton.clicked {
+        background-color: black;
+        color: white;
+      }
 
-        #toggleButton.clicked p {
-            color: white; /* Ensure text color changes to white */
-        }
+      #toggleButton.clicked p {
+        color: white; /* Ensure text color changes to white */
+      }
     </style>
-</head>
-<body>
-
-<div class="card_main my-2">
-    <div class="card d-flex">
+  </head>
+  <body>
+    <div class="card_main my-2">
+      <div class="card d-flex">
         <div class="img">
-            <img src="./assets/images/home/start_sidebar.svg" alt="Icon">
+          <img src="./assets/images/home/start_sidebar.svg" alt="Icon" />
         </div>
         <div class="card_button d-flex">
-            <button id="toggleButton">
-                <img src="./assets/images/home/add_plus.svg" class="mt-1" alt="Plus Icon">
-                <p>Add to Home</p>
-            </button>
+          <button id="toggleButton">
+            <img
+              src="./assets/images/home/add_plus.svg"
+              class="mt-1"
+              alt="Plus Icon"
+            />
+            <p>Add to Home</p>
+          </button>
         </div>
-    </div>
-    <div class="second_contain">
+      </div>
+      <div class="second_contain">
         <div class="card_button_2 d-flex">
-            <h5>AI StandUp™</h5>
-            <button>New</button>
+          <h5>AI StandUp™</h5>
+          <button>New</button>
         </div>
         <p>AI generated standup.</p>
+      </div>
     </div>
-</div>
 
-<script>
-    // Select the button
-    const button = document.getElementById('toggleButton');
+    <script>
+      // Select the button
+      const button = document.getElementById("toggleButton");
 
-    // Add click event listener
-    button.addEventListener('click', () => {
+      // Add click event listener
+      button.addEventListener("click", () => {
         // Toggle the 'clicked' class on the button
-        button.classList.toggle('clicked');
-        
-        // Change text content based on the button's state
-        if (button.classList.contains('clicked')) {
-            button.querySelector('p').textContent = 'Added to Home';
-        } else {
-            button.querySelector('p').textContent = 'Add to Home';
-        }
-    });
-</script>
+        button.classList.toggle("clicked");
 
-</body>
+        // Change text content based on the button's state
+        if (button.classList.contains("clicked")) {
+          button.querySelector("p").textContent = "Added to Home";
+        } else {
+          button.querySelector("p").textContent = "Add to Home";
+        }
+      });
+    </script>
+  </body>
 </html>

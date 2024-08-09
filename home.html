@@ -12,145 +12,264 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 <link rel="stylesheet" href="./assets/css/home.css">
-        <style>
+       
+<style>
   
                         
-  .nav_2_one{
-                display: flex;
-    height: 30px;
-    background: white;
-    border: none;
+    .nav_2_one{
+                  display: flex;
+      height: 30px;
+      background: white;
+      border: none;
+              }
+              .nav_2{
+                  justify-content: space-between;
+                  display: flex;
+              }
+              .nav_2_two .btn_mang,.btn_setting{
+                  background-color: var(--black);
+                  color: var(--white);
+                  justify-content: space-evenly;
+                  padding: 10px;
+                  border-radius: 10px;
+              }
+              .btn_setting{
+                  background-color: var(--white) !important;
+                  border: none;
+              }
+              .form-switch{
+                              width: 100%;
+                          }
+                          #switch{
+                              width: 350px;
+                          }
+                          .switch_button {
+                              justify-content: space-between;
+                          }
+                          .form-check h5{
+                              color: var(--gray);
+                              font-size: 15px;
+                          }
+  
+                 
+                          .modal-header .main_modal {
+                      display: flex;
+                  }
+            
+                  .modal_two{
+                      gap: 6px;
+                  }
+                  .modal_two .one_button{
+                      background: var(--white);
+                      color: var(--gray);
+                      border-radius: 10px;
+                      border: 0.5px solid var(--gray) ;
+                  }
+                  .btn-close{
+                      height: 2px;
+                  }
+                  .modal-dialog{
+                      max-width: 804px;
+                  }
+                  .modal_one_content{
+                      justify-content: start;
+                  }
+               
+  
+                  .Since_drp{
+                          background-color: var(--white);
+                          text-align: start;
+                      }
+                      :root {
+    --yellow: #ffcc00;
+    --black: #000000;
+    --gray: #808080;
+    --white : #ffffff;
+  }
+      .card{
+          justify-content: space-between;
+          flex-direction: row;
+          border: none
+      }
+      .card_button button{
+          gap: 5px;
+          width: 123px;
+      justify-content: space-evenly;
+      }
+      .card_main{
+          border: 1px solid var(--gray);
+      padding: 11px;
+      border-radius: 10px;
+      }
+      .card_button button{
+          background-color:var(--gray);
+          color:var(--white);
+          /* padding: 6px; */
+          justify-content: space-evenly;
+          border-radius: 10px;
+          cursor: pointer;
+          display: flex;
+      height: 30px;
+      width: 146px;
+      }
+      .card_button_2 button{
+          border-radius: 10px;
+          background-color: var(--gray);
+          color:var(--white);
+          padding: 0px 18px;
+      }
+  
+      #check{
+          width: auto;
+      background: black;
+      padding: 0pc 10px
+      }
+      .box_two{
+                              display: flex;
+                          }
+        
+        
+        
+    .format_button button{
+                                  border-radius: 10px;
+                                  width: 100vw;
+                                  height: 50px;
+                                  gap: 5px;
+                                  color: var(--gray);
+                                  border: none;
+                              }
+                             
+                              .format_check{
+                                  background: var(--white);
+      border: 1px solid var(--black) !important;
+                              }
+                              .nav-link{
+                                  color: var(--black);
+                              }
+                              .nav-link:hover{
+                                  color: var(--gray);
+                              }
+                              .h_nav_askai{
+                width: 40%;
             }
-            .nav_2{
-                justify-content: space-between;
-                display: flex;
+            .h_nav_end {
+                gap: 20px;
             }
-            .nav_2_two .btn_mang,.btn_setting{
-                background-color: var(--black);
-                color: var(--white);
-                justify-content: space-evenly;
-                padding: 10px;
-                border-radius: 10px;
-            }
-            .btn_setting{
-                background-color: var(--white) !important;
+            .h_nav_end button{
+                background-color: var(--yellow);
+                /* padding: 5px; */
                 border: none;
-            }
-            .form-switch{
-                            width: 100%;
+                            }
+                            .h_main_nav{
+                                height:45px ;
+                            }
+                
+                                        .btn_warning_outline{
+                                border: 1px solid var(--btn_y);
+                                background: var(--btn_w);
+                                color: var(--btn_g);
+                            }
+                            .btn_warning_outline:hover{
+                                background: var(--btn_y);
+                                color: var(--btn_b);
+                            }
+                            .btn_warning_button{
+                                background: var(--btn_y);
+                                color: var(--btn_b);
+                            }
+                            .btn_warning_button:hover{
+                                background: var(--btn_g);
+                                color: var(--black-y);
+                            }
+                            :root {
+    --yellow: #ffcc00;
+    --black: #000000;
+    --gray: #808080;
+    --white : #ffffff;
+  }
+
+                     
+                        .h_modal_input{
+                            border: none;
                         }
-                        #switch{
-                            width: 350px;
+                        .h_modal_button{
+                            gap: 10px;
                         }
-                        .switch_button {
+                        .h_drp_one button{
+                            justify-content: space-evenly;
+                        }
+                        .h_modal_first{
                             justify-content: space-between;
                         }
-                        .form-check h5{
-                            color: var(--gray);
-                            font-size: 15px;
+                        .first_end{
+                            gap: 10px;
                         }
+                        .h_reminder_input{
+                            border: none;
+                        }
+                        .h_reminder_button{
+                                gap: 30px;
+                        }
+                        .h_reminder_button button{
+                            padding: 6px 14px;
+                            border-radius: 10px;
+                        }
+                        .h_reminder_end{
+                            justify-content: end;
+                            gap: 10px;
+                        }
+                        .h_chat_input{
+                            border: none;
+                        }
+                        .h_chat_img {
+                            background: var(--white);
+                            border-radius: 20px;
+                            border: none;
+                        }
+                        .h_chat_footer{
+                            justify-content: space-around;
+                        }
+                        .h_chat_end{
+                            /* flex-direction: column; */
+                            gap: 10px;
+                        }
+                        .create_end{
+                           width:  126px;
+                        }
+                        .whiteboard_end,.dashboard_end{
+                           width:  169px;
+                        }
+                        .modal_two p,.h_bulb_img p{
+                                        margin-top: 0;
+                                        margin-bottom: 0;
+                                        line-height: 41px;
+                                    }
+                                    .modal_two img{
+                                        gap: 2px;
+                                    }
+                                    .h_drp_list_modal{
+                                        border: 1px solid var(--gray);
+                                    }
+                                    .h_bulb_img{
+                                        display: flex;
 
-               
-                        .modal-header .main_modal {
-                    display: flex;
-                }
-          
-                .modal_two{
-                    gap: 6px;
-                }
-                .modal_two .one_button{
-                    background: var(--white);
-                    color: var(--gray);
-                    border-radius: 10px;
-                    border: 0.5px solid var(--gray) ;
-                }
-                .btn-close{
-                    height: 2px;
-                }
-                .modal-dialog{
-                    max-width: 804px;
-                }
-                .modal_one_content{
-                    justify-content: start;
-                }
-             
-
-                .Since_drp{
-                        background-color: var(--white);
-                        text-align: start;
+                                    }
+                                    .h_discount_two{
+                        position: absolute;
+    right: 0;
+    margin-top: -60px;
                     }
-                    :root {
-  --yellow: #ffcc00;
-  --black: #000000;
-  --gray: #808080;
-  --white : #ffffff;
+                    .h_d_offer_end{
+                    line-height: 0px;
+    font-size: 13px;
+    color: gray;
 }
-    .card{
-        justify-content: space-between;
-        flex-direction: row;
-        border: none
-    }
-    .card_button button{
-        gap: 5px;
-        width: 123px;
-    justify-content: space-evenly;
-    }
-    .card_main{
-        border: 1px solid var(--gray);
-    padding: 11px;
-    border-radius: 10px;
-    }
-    .card_button button{
-        background-color:var(--gray);
-        color:var(--white);
-        /* padding: 6px; */
-        justify-content: space-evenly;
-        border-radius: 10px;
-        cursor: pointer;
-        display: flex;
-    height: 30px;
-    width: 146px;
-    }
-    .card_button_2 button{
-        border-radius: 10px;
-        background-color: var(--gray);
-        color:var(--white);
-        padding: 0px 18px;
-    }
+.h_d_offer{
+    gap: 18px;
 
-    #check{
-        width: auto;
-    background: black;
-    padding: 0pc 10px
-    }
-    .box_two{
-                            display: flex;
-                        }
-      
-      
-      
-  .format_button button{
-                                border-radius: 10px;
-                                width: 100vw;
-                                height: 50px;
-                                gap: 5px;
-                                color: var(--gray);
-                                border: none;
-                            }
-                           
-                            .format_check{
-                                background: var(--white);
-    border: 1px solid var(--black) !important;
-                            }
-                            .nav-link{
-                                color: var(--black);
-                            }
-                            .nav-link:hover{
-                                color: var(--gray);
-                            }
-                           
-      </style>
-    
+}
+                             
+        </style>
        
 </head>
 
@@ -248,25 +367,7 @@
             </div>
             
         </nav>  -->
-        <style>
-            .h_nav_askai{
-                width: 40%;
-            }
-            .h_nav_end {
-                gap: 20px;
-            }
-            .h_nav_end button{
-                background-color: #ffcc00;
-                /* padding: 5px; */
-                border: none;
-                            }
-                            .h_main_nav{
-                                height:45px ;
-                            }
-                            .h_user_content{
-                                justify-content: ;
-                            }
-        </style>
+ 
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark h_main_nav">
             <div class="container-fluid">
               <a class="navbar-brand mx-2" href="javascript:void(0)"><img src="assets/images/logo.svg" alt=""></a>
@@ -312,7 +413,9 @@
           </nav>
         <style>
    
-                       
+  
+        
+        </style>
 
         </style>
         <div class="nav_2">
@@ -1125,69 +1228,12 @@
                     <!-- Tab content -->
                     <div class="tab-content mt-3">
                     <style>
-:root {
-    --yellow: #ffcc00;
-    --black: #000000;
-    --gray: #808080;
-    --white : #ffffff;
-  }
 
-                     
-                        .h_modal_input{
-                            border: none;
-                        }
-                        .h_modal_button{
-                            gap: 10px;
-                        }
-                        .h_drp_one button{
-                            justify-content: space-evenly;
-                        }
-                        .h_modal_first{
-                            justify-content: space-between;
-                        }
-                        .first_end{
-                            gap: 10px;
-                        }
-                        .h_reminder_input{
-                            border: none;
-                        }
-                        .h_reminder_button{
-                                gap: 30px;
-                        }
-                        .h_reminder_button button{
-                            padding: 6px 14px;
-                            border-radius: 10px;
-                        }
-                        .h_reminder_end{
-                            justify-content: end;
-                            gap: 10px;
-                        }
-                        .h_chat_input{
-                            border: none;
-                        }
-                        .h_chat_img {
-                            background: var(--white);
-                            border-radius: 20px;
-                            border: none;
-                        }
-                        .h_chat_footer{
-                            justify-content: space-around;
-                        }
-                        .h_chat_end{
-                            /* flex-direction: column; */
-                            gap: 10px;
-                        }
-                        .create_end{
-                           width:  126px;
-                        }
-                        .whiteboard_end,.dashboard_end{
-                           width:  169px;
-                        }
                     </style>
                         <div class="tab-pane fade h_drp_one show active" id="Task" role="tabpanel" aria-labelledby="Task-tab">
                     <div class=" d-flex">
                             <div class="dropdown">
-                                <button class="btn btn-outline-warning text-dark dropdown-toggle h_drp_button mx-2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button class="btn btn_warning_outline dropdown-toggle h_drp_button mx-2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                   <img src="./assets/images/menu_list.svg" alt="">
                                     Select List...
                                 </button>
@@ -1198,7 +1244,7 @@
                                 </ul>
                               </div>
                               <div class="dropdown">
-                                <button class="btn btn-outline-warning text-dark dropdown-toggle h_drp_button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <button class="btn btn_warning_outline dropdown-toggle h_drp_button" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                  
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -1218,18 +1264,18 @@
                                 <input type="text" class="form-control h_modal_input mx-4" placeholder="Write with AI" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                               </div>
                               <div class="h_modal_button d-flex">
-                                <button type="button" class="btn btn-outline-warning text-dark">Open</button>
-                                <button type="button" class="btn btn-outline-warning text-dark"><img src="./assets/images/home/2users.svg" alt="">Assignee</button>
-                                <button type="button" class="btn btn-outline-warning text-dark"><img src="./assets/images/home/Duedate.svg" alt="">Due date</button>
-                                <button type="button" class="btn btn-outline-warning text-dark"><img src="./assets/images/home/priority.svg" alt="">Priority</button>
-                                <button type="button" class="btn btn-outline-warning text-dark"><img src="./assets/images/home/tags.svg" alt="">Tags</button>
-                                <button type="button" class="btn btn-outline-warning text-dark"><img src="./assets/images/menu_dot.png" alt=""></button>
+                                <button type="button" class="btn btn_warning_outline">Open</button>
+                                <button type="button" class="btn btn_warning_outline"><img src="./assets/images/home/2users.svg" alt="">Assignee</button>
+                                <button type="button" class="btn btn_warning_outline"><img src="./assets/images/home/Duedate.svg" alt="">Due date</button>
+                                <button type="button" class="btn btn_warning_outline"><img src="./assets/images/home/priority.svg" alt="">Priority</button>
+                                <button type="button" class="btn btn_warning_outline"><img src="./assets/images/home/tags.svg" alt="">Tags</button>
+                                <button type="button" class="btn btn_warning_outline"><img src="./assets/images/menu_dot.png" alt=""></button>
                               </div>
                               <hr>
                               <div class="h_modal_first d-flex">
                                 <div class="first_start">
                             
-                                    <button type="button" class="btn btn-outline-warning text-dark"> <img src="./assets/images/magic.svg" alt="">Templates</button>
+                                    <button type="button" class="btn btn_warning_outline"> <img src="./assets/images/magic.svg" alt="">Templates</button>
                               
                                 </div>
                                 <div class="first_end">
@@ -1237,8 +1283,8 @@
                                   <img src="./assets/images/home/not_clock.svg" alt="">
                                     <!-- Example split danger button -->
 <div class="btn-group">
-    <button type="button" class="btn btn-warning">Action</button>
-    <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+    <button type="button" class="btn btn_warning_button">Action</button>
+    <button type="button" class="btn btn_warning_button dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
       <span class="visually-hidden">Toggle Dropdown</span>
     </button>
     <ul class="dropdown-menu">
@@ -1255,7 +1301,7 @@
                         <div class="tab-pane fade" id="Doc" role="tabpanel" aria-labelledby="Doc-tab">
                             <div class=" d-flex">
                                 <div class="dropdown">
-                                    <button class="btn btn-outline-warning text-dark dropdown-toggle h_drp_button mx-2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <button class="btn btn_warning_outline dropdown-toggle h_drp_button mx-2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                       <img src="./assets/images/home/add_menu.svg" alt="">
                                       Add to location
                                     </button>
@@ -1277,22 +1323,7 @@
                                     <input type="text" class="form-control h_modal_input mx-4" placeholder="Write with AI" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
                                   </div>
                                   <style>
-                                    .modal_two p,.h_bulb_img p{
-                                        margin-top: 0;
-                                        margin-bottom: 0;
-                                        line-height: 41px;
-                                    }
-                                    .modal_two img{
-                                        gap: 2px;
-                                    }
-                                    .h_drp_list_modal{
-                                        border: 1px solid var(--gray);
-                                    }
-                                    .h_bulb_img{
-                                        display: flex;
-
-                                    }
-                                   
+                           
                                    
                                   </style>
                                   <div class="h_modal_two">
@@ -1375,7 +1406,7 @@
                                     </div>
                                     <div class="first_end">
                                         <!-- Example split danger button -->
-   <button class="btn btn-warning">Create Doc</button>
+   <button class="btn btn_warning_button">Create Doc</button>
                                     </div>
                                   </div>
 
@@ -1386,19 +1417,19 @@
                               </div>
                               <div class="h_reminder_button mt-2 d-flex">
                                 <div >
-                                    <button type="button" class="btn btn-outline-warning text-dark ms-3">
+                                    <button type="button" class="btn btn_warning_outline ms-3">
                                         <img src="./assets/images/home/check_calender.svg" alt="">
                                         <span>Today</span>
                                     </button>
                                 </div>
                                 <div>
-                                    <button type="button" class="btn btn-outline-warning text-dark">
+                                    <button type="button" class="btn btn_warning_outline">
                                         <img src="./assets/images/user_profile.svg" alt="">
                                         <span>For me</span>
                                     </button>
                                 </div>
                                 <div>
-                                    <button type="button" class="btn btn-outline-warning text-dark">
+                                    <button type="button" class="btn btn_warning_outline">
                                         <img src="./assets/images/home/not_clock.svg" alt="">
                                         <span>Notify me</span>
                                     </button>
@@ -1407,7 +1438,7 @@
                             <hr class="mt-5"> 
                             <div class="h_reminder_end d-flex">
                                 <img src="./assets/images/home/attached.svg" alt="">
-                                <button class="btn btn-warning text-dark">Create Reminder</button>
+                                <button class="btn btn_warning_button text-dark">Create Reminder</button>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="Chat" role="tabpanel" aria-labelledby="Chat-tab">
@@ -1438,7 +1469,7 @@
                                 <button class="h_chat_img">
                                     <img src="./assets/images/home/not_clock.svg" alt="">
                                 </button>
-                                <button class="btn btn-warning create_end">Create Chat</button>
+                                <button class="btn btn_warning_button create_end">Create Chat</button>
                               </div>
                           </div>
                     </div>
@@ -1466,7 +1497,7 @@
                                   </div>
                                   <div class="h_whiteboard_end ">
                                 
-                                    <button class="btn btn-warning whiteboard_end">Create Whiteboard</button>
+                                    <button class="btn btn_warning_button whiteboard_end">Create Whiteboard</button>
                                   </div>
                               </div>
                         </div>
@@ -1494,7 +1525,7 @@
                                       </div>
                                       <div class="h_whiteboard_end ">
                                     
-                                        <button class="btn btn-warning dashboard_end">Create Dashboard</button>
+                                        <button class="btn btn_warning_button dashboard_end">Create Dashboard</button>
                                       </div>
                                   </div>
                             </div>
@@ -1509,7 +1540,7 @@
 
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3">
-    Launch demo modal
+buttonclick
   </button>
   
   <!-- Modal -->
@@ -1517,11 +1548,88 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+         <div >
+            
+            <p>That feature isn't available on your current plan</p>
+            <h3>Upgrade to Business to unlock Private Docs</h3>
+        </div>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          ...
+          <div>
+            <div class="row">
+                <div class="col-sm-6">
+                  <h3>Private Docs</h3>
+                  <p >Upgrade to Unlimited to make Docs private and unlock more
+                    amazing features.</p>
+                    <img src="./assets/images/home/boardview.svg" alt="">
+                    <li>Make a Doc only visible to you</li>
+                    <li>Advanced public sharing</li>
+                  <li>  Access Notepad</li>
+                </div>
+                <style>
+   
+                </style>
+                <div class="col-sm-6">
+                    <div class="h_discount_two">
+                    <img src="./assets/images/home/discount.svg" alt="">
+                </div>
+                    <h3>Business</h3>
+                  <button class="btn btn_warning_button">Popular</button>
+                  <p>Unlock Private Docs and much more</p>
+                  <div class="d-flex h_d_offer ">
+                    <div>
+                <h1>$12</h1>
+            </div>
+                <div class="h_d_offer_end my-3">
+                <p>member</p>
+                <p>per month</p>
+            </div>
+            </div>
+                <button class="btn btn_warning_button"></button>
+                <div>
+                <img src="./assets/images/home/check.svg" alt="">
+                <span>Unlimited Activity View</span>
+                </div>
+                <div>
+                <img src="./assets/images/home/check.svg" alt="">
+                <span>Unlimited Mind Maps</span>
+                </div>
+                <div>
+                <img src="./assets/images/home/check.svg" alt="">
+                <span>Export Lists & Views</span>
+                </div>
+                <div>
+                <img src="./assets/images/home/check.svg" alt="">
+                <span>Export Gantt Charts</span>
+                </div>
+                <div>
+                <img src="./assets/images/home/check.svg" alt="">
+                <span>Required Custom Fields</span>
+                </div>
+                <div>
+                <img src="./assets/images/home/check.svg" alt="">
+                <span>Work-in-Progress Limits</span>
+                </div>
+                <div>
+                <img src="./assets/images/home/check.svg" alt="">
+                <span>Default views</span>
+                </div>
+                <div>
+                <img src="./assets/images/home/check.svg" alt="">
+                <span>Private docs</span>
+                </div>
+                <div>
+                <img src="./assets/images/home/check.svg" alt="">
+                <span>Private views</span>
+                </div>
+                <div>
+                <img src="./assets/images/home/check.svg" alt="">
+                <span>Additional Free Guests</span>
+                </div>
+                </div>
+              </div>
+          </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

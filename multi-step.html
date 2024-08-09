@@ -1,357 +1,423 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Title</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
-    <link href="https://cdn.jsdelivr.net/npm/segoe-fonts@1.0.1/segoe-fonts.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/segoe-fonts@1.0.1/segoe-fonts.min.css"
+      rel="stylesheet"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href=" assets/css/index4.css" />
-    <link rel="stylesheet" href=" assets/css/multistep.cHss">
-</head>
+    <link rel="stylesheet" href=" assets/css/multistep.cHss" />
+  </head>
 
-<body>
-
+  <body>
     <!-- Modal -->
     <form action="">
-        <div class="modal fade h-100 w-100" id="multiStepModal" tabindex="-1" role="dialog"
-            aria-labelledby="modalTitleId" aria-hidden="true">
-            <div class="modal-dialog d-flex align-items-center h-100 mt-0" role="document">
-                <div class="modal-content form-step modal-content-1">
-                    <div class="modal-header border-0 d-flex justify-content-between">
-                        <img src=" assets/images/logo.png" alt="0" width="95" />
-                        <p class="user-name">Welcome, AbdulKareem!</p>
-                    </div>
-                    <div class="modal-body d-flex justify-content-center p-0">
-                        <div class="form1 multistepform">
-                            <h1 class="fieldset-heading">What would you like to use ClickUp for?</h1>
-                            <div class="button_desgin1">
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">Work</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">Personal</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">School</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="form2 multistepform display-none">
-                            <h1 class="fieldset-heading">How large is your <br>company?</h1>
-                            <div class="button_desgin2">
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">1-10</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">11-25</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">26-250</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">251-500</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">500-2000</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">2000+</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">I don't know</span>
-                                </label>
-
-
-                            </div>
-                        </div>
-                        <div class="form3 multistepform display-none">
-                            <h1 class="fieldset-heading">How many people will you<br>be working with?</h1>
-                            <div class="button_desgin3">
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">Just me</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">2-10</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">11-25</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">26-50</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">51-250</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">251-500</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">501+</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">I don't know</span>
-                                </label>
-
-                            </div>
-                        </div>
-                        <div class="form4 multistepform display-none">
-                            <h1 class="fieldset-heading">Which solution would you like to start with?</h1>
-                            <div class="button_desgin4">
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">Sales & CRM</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">Finance & Accounting</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">Creative & Design</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">Support</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">Personal Use</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">Professional Services</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">PMO</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">HR & Recruiting</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">Engineering & Product</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">IT</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">Operations</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">Marketing</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">Other</span>
-                                </label>
-
-                            </div>
-                        </div>
-                        <div class="form5 multistepform display-none">
-                            <h1 class="fieldset-heading">How did you hear about us?</h1>
-                            <div class="button_desgin5">
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">Billboard</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">Search Engine (Google, Bing, etc.)</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">Facebook / Instagram</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">Friend / Colleague</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">TV / Streaming (Hulu, NBC, etc.)</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">LinkedIn</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">Podcast / Radio</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">YouTube</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">TikTok</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="check" id="work">
-                                    <span class="">Other</span>
-                                </label>
-
-
-                            </div>
-                        </div>
-                        <div class="form6 multistepform display-none">
-                            <h1 class="fieldset-heading">Do you use any of these tools?</h1>
-                            <div class="button_desgin6">
-                                <label>
-                                    <div>
-                                        <img src=" assets/images/excel.svg" alt="" class="me-1">
-                                        <span class="">Excel & CSV</span>
-                                    </div>
-                                    <input type="checkbox" name="check" id="work">
-                                </label>
-                                <label>
-                                    <div>
-                                        <img src=" assets/images/todoist.svg" alt="" class="me-1">
-                                    <span class="">Todoist</span>
-                                    </div>
-                                    
-                                    <input type="checkbox" name="check" id="work">
-                                </label>
-                                <label>
-                                    <div>
-                                        <img src=" assets/images/trello.svg" alt="" class="me-1">
-                                    <span class="">Trello</span>
-                                    </div>
-                                    
-                                    <input type="checkbox" name="check" id="work">
-                                </label>
-                                <label>
-                                    <div>   
-                                        <img src=" assets/images/confluence.svg" alt="" class="me-1">
-                                        <span class="">Confluence</span>
-                                    </div>
-                                  
-                                    <input type="checkbox" name="check" id="work">
-                                </label>
-                                <label>
-                                    <div>
-                                        <img src=" assets/images/basecamp.svg" alt="" class="me-1">
-                                    <span class="">Basecamp</span>
-                                    </div>
-                                    
-                                    <input type="checkbox" name="check" id="work">
-                                </label>
-                                <label>
-                                    <div>
-                                        <img src=" assets/images/wrike.svg" alt="" class="me-1">
-                                        <span class="">Wrike</span>
-                                    </div>
-                                   
-                                    <input type="checkbox" name="check" id="work">
-                                </label>
-                                <label>
-                                    <div>   
-                                        <img src=" assets/images/jira.svg" alt="" class="me-1">
-                                    <span class="">Jira</span>
-                                    </div>
-                                    
-                                    <input type="checkbox" name="check" id="work">
-                                </label>
-                                <label>
-                                    <div>
-                                        <img src=" assets/images/monday.svg" alt="" class="me-1">
-                                        <span class="">Monday</span>
-                                    </div>
-                                    <input type="checkbox" name="check" id="work">
-                                </label>
-                                <label>
-                                    <div>
-                                        <img src=" assets/images/notion.svg" alt="" class="me-1">
-                                    <span class="">Notion</span>
-                                    </div>
-                                    <input type="checkbox" name="check" id="work">
-                                </label>
-                                <label>
-                                    <div>
-                                        <img src=" assets/images/asana.svg" alt="" class="me-1">
-                                        <span class="">Asana</span>
-                                    </div>
-                                    <input type="checkbox" name="check" id="work">
-                                </label>
-
-
-                            </div>
-                        </div>
-                        <div class="form7 multistepform display-none">
-                            <h1 class="fieldset-heading">Lastly, <br> what would you like to
-                                name your Workspace?</h1>
-                            <div class="button_desgin5">
-                                <div class="mb-3">
-                                    <input type="text" class="form-control input_buttons"  name=""id="" placeholder="Jarvisatwork"/>
-                                </div>
-                                <p>Try the name of your company or organization.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="gradient-border">
-                    </div>
-                    <div class="modal-footer border-0">
-                        <button type="button" class="btn btn-White back" id="backButton" onclick="previousStep()">< Back </button>
-                                <button type="button" class="btn btn-White" id="nextButton" onclick="nextStep()">Next ></button>
-                    </div>
-                </div>
-                <div class="modal-content display-none modal-content-2">
-                    <div class="image-block">
-                        <img src=" assets/images/Iframe.png" alt="fdasf">
-                        <img src=" assets/images/Button - Video Play Button.png" alt="afds" class="play-button">
-                        <div class="overlay"></div>
-                    </div>
-                    <div class="content">
-                        <div>
-                            <h1>Welcome To ClickUp!</h1>
-                            <p>Watch this quick video to know how ClickUp
-                                can transform your productivity.</p>
-                            <div class="d-flex justify-content-center">
-                                <a href="" class="watch-video">Watch Video</a>
-
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
+      <div
+        class="modal fade h-100 w-100"
+        id="multiStepModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modalTitleId"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog d-flex align-items-center h-100 mt-0"
+          role="document"
+        >
+          <div class="modal-content form-step modal-content-1">
+            <div class="modal-header border-0 d-flex justify-content-between">
+              <img src=" assets/images/logo.png" alt="0" width="95" />
+              <p class="user-name">Welcome, AbdulKareem!</p>
             </div>
+            <div class="modal-body d-flex justify-content-center p-0">
+              <div class="form1 multistepform">
+                <h1 class="fieldset-heading">
+                  What would you like to use ClickUp for?
+                </h1>
+                <div class="button_desgin1">
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">Work</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">Personal</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">School</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form2 multistepform display-none">
+                <h1 class="fieldset-heading">
+                  How large is your <br />company?
+                </h1>
+                <div class="button_desgin2">
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">1-10</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">11-25</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">26-250</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">251-500</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">500-2000</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">2000+</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">I don't know</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form3 multistepform display-none">
+                <h1 class="fieldset-heading">
+                  How many people will you<br />be working with?
+                </h1>
+                <div class="button_desgin3">
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">Just me</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">2-10</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">11-25</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">26-50</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">51-250</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">251-500</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">501+</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">I don't know</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form4 multistepform display-none">
+                <h1 class="fieldset-heading">
+                  Which solution would you like to start with?
+                </h1>
+                <div class="button_desgin4">
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">Sales & CRM</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">Finance & Accounting</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">Creative & Design</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">Support</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">Personal Use</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">Professional Services</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">PMO</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">HR & Recruiting</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">Engineering & Product</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">IT</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">Operations</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">Marketing</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">Other</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form5 multistepform display-none">
+                <h1 class="fieldset-heading">How did you hear about us?</h1>
+                <div class="button_desgin5">
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">Billboard</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">Search Engine (Google, Bing, etc.)</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">Facebook / Instagram</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">Friend / Colleague</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">TV / Streaming (Hulu, NBC, etc.)</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">LinkedIn</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">Podcast / Radio</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">YouTube</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">TikTok</span>
+                  </label>
+                  <label>
+                    <input type="radio" name="check" id="work" />
+                    <span class="">Other</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form6 multistepform display-none">
+                <h1 class="fieldset-heading">Do you use any of these tools?</h1>
+                <div class="button_desgin6">
+                  <label>
+                    <div>
+                      <img src=" assets/images/excel.svg" alt="" class="me-1" />
+                      <span class="">Excel & CSV</span>
+                    </div>
+                    <input type="checkbox" name="check" id="work" />
+                  </label>
+                  <label>
+                    <div>
+                      <img
+                        src=" assets/images/todoist.svg"
+                        alt=""
+                        class="me-1"
+                      />
+                      <span class="">Todoist</span>
+                    </div>
+
+                    <input type="checkbox" name="check" id="work" />
+                  </label>
+                  <label>
+                    <div>
+                      <img
+                        src=" assets/images/trello.svg"
+                        alt=""
+                        class="me-1"
+                      />
+                      <span class="">Trello</span>
+                    </div>
+
+                    <input type="checkbox" name="check" id="work" />
+                  </label>
+                  <label>
+                    <div>
+                      <img
+                        src=" assets/images/confluence.svg"
+                        alt=""
+                        class="me-1"
+                      />
+                      <span class="">Confluence</span>
+                    </div>
+
+                    <input type="checkbox" name="check" id="work" />
+                  </label>
+                  <label>
+                    <div>
+                      <img
+                        src=" assets/images/basecamp.svg"
+                        alt=""
+                        class="me-1"
+                      />
+                      <span class="">Basecamp</span>
+                    </div>
+
+                    <input type="checkbox" name="check" id="work" />
+                  </label>
+                  <label>
+                    <div>
+                      <img src=" assets/images/wrike.svg" alt="" class="me-1" />
+                      <span class="">Wrike</span>
+                    </div>
+
+                    <input type="checkbox" name="check" id="work" />
+                  </label>
+                  <label>
+                    <div>
+                      <img src=" assets/images/jira.svg" alt="" class="me-1" />
+                      <span class="">Jira</span>
+                    </div>
+
+                    <input type="checkbox" name="check" id="work" />
+                  </label>
+                  <label>
+                    <div>
+                      <img
+                        src=" assets/images/monday.svg"
+                        alt=""
+                        class="me-1"
+                      />
+                      <span class="">Monday</span>
+                    </div>
+                    <input type="checkbox" name="check" id="work" />
+                  </label>
+                  <label>
+                    <div>
+                      <img
+                        src=" assets/images/notion.svg"
+                        alt=""
+                        class="me-1"
+                      />
+                      <span class="">Notion</span>
+                    </div>
+                    <input type="checkbox" name="check" id="work" />
+                  </label>
+                  <label>
+                    <div>
+                      <img src=" assets/images/asana.svg" alt="" class="me-1" />
+                      <span class="">Asana</span>
+                    </div>
+                    <input type="checkbox" name="check" id="work" />
+                  </label>
+                </div>
+              </div>
+              <div class="form7 multistepform display-none">
+                <h1 class="fieldset-heading">
+                  Lastly, <br />
+                  what would you like to name your Workspace?
+                </h1>
+                <div class="button_desgin5">
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control input_buttons"
+                      name=""
+                      id=""
+                      placeholder="Jarvisatwork"
+                    />
+                  </div>
+                  <p>Try the name of your company or organization.</p>
+                </div>
+              </div>
+            </div>
+            <div class="gradient-border"></div>
+            <div class="modal-footer border-0">
+              <button
+                type="button"
+                class="btn btn-White back"
+                id="backButton"
+                onclick="previousStep()"
+              >
+                < Back
+              </button>
+              <button
+                type="button"
+                class="btn btn-White"
+                id="nextButton"
+                onclick="nextStep()"
+              >
+                Next >
+              </button>
+            </div>
+          </div>
+          <div class="modal-content display-none modal-content-2">
+            <div class="image-block">
+              <img src=" assets/images/Iframe.png" alt="fdasf" />
+              <img
+                src=" assets/images/Button - Video Play Button.png"
+                alt="afds"
+                class="play-button"
+              />
+              <div class="overlay"></div>
+            </div>
+            <div class="content">
+              <div>
+                <h1>Welcome To ClickUp!</h1>
+                <p>
+                  Watch this quick video to know how ClickUp can transform your
+                  productivity.
+                </p>
+                <div class="d-flex justify-content-center">
+                  <a href="" class="watch-video">Watch Video</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </form>
     <script>
-        var modalId = document.getElementById("multiStepModal");
+      var modalId = document.getElementById("multiStepModal");
 
-        modalId.addEventListener("show.bs.modal", function (event) {
-            let button = event.relatedTarget;
-            let recipient = button.getAttribute("data-bs-whatever");
-        });
+      modalId.addEventListener("show.bs.modal", function (event) {
+        let button = event.relatedTarget;
+        let recipient = button.getAttribute("data-bs-whatever");
+      });
     </script>
 
     <!-- <header>
@@ -404,63 +470,92 @@
             </div>
         </nav>
     </header> -->
-    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog custom-width">
-            <div class="modal-content">
-                <!-- Modal Header -->
-                <div class="modal-header">
-                    <h4 class="modal-title" id="exampleModalLabel">
-                        <ul class="list-inline">
-                            <li class="list-inline-item">Task</li>
-                            <li class="list-inline-item">Doc</li>
-                            <li class="list-inline-item">Reminder</li>
-                            <li class="list-inline-item">Chat</li>
-                            <li class="list-inline-item">Whiteboard</li>
-                            <li class="list-inline-item">Dashboard</li>
-                        </ul>
-                    </h4>
-                    <a href="#" class="down_close" data-bs-dismiss="modal" aria-label="Close">
-                        <img src=" assets/images/down_close.svg" alt="" />
-                    </a>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <!-- Modal Body -->
-                <div class="modal-body">
-                    <!-- Modal body content goes here -->
-                    <button class="btn_1 rounded bg-white">
-                        <img src=" assets/images/menu_list.svg" alt="" />Personal List
-                    </button>
-                    <button class="btn_2 rounded bg-white mb-2">
-                        <img src=" assets/images/down_arrow.svg" alt="" />
-                    </button>
-                    <div class="modal_input mt-2 mb-4">
-                        <input type="text" placeholder="Task name" name="name" id="name" />
-                    </div>
-                    <div class="content_two">
-                        <img src=" assets/images/blank_doc.svg" alt="" />
-                        <input type="text" placeholder="Add description" />
-                    </div>
-                    <div class="content_three mb-2">
-                        <input type="text" placeholder="Write With AI" />
-                    </div>
-                    <div class="modal_buttons mb-2">
-                        <a href="#" class="btn btn-danger">Button 1</a>
-                        <a href="#" class="btn btn-white">Button 2</a>
-                        <a href="#" class="btn btn-white">Button 3</a>
-                        <a href="#" class="btn btn-white">Button 4</a>
-                    </div>
-                </div>
-                <!-- Modal Footer -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-white model_left">
-                        <img src=" assets/images/magic.svg" class="text-white" alt="" />Templates
-                    </button>
-                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">
-                        Close
-                    </button>
-                </div>
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog custom-width">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title" id="exampleModalLabel">
+              <ul class="list-inline">
+                <li class="list-inline-item">Task</li>
+                <li class="list-inline-item">Doc</li>
+                <li class="list-inline-item">Reminder</li>
+                <li class="list-inline-item">Chat</li>
+                <li class="list-inline-item">Whiteboard</li>
+                <li class="list-inline-item">Dashboard</li>
+              </ul>
+            </h4>
+            <a
+              href="#"
+              class="down_close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <img src=" assets/images/down_close.svg" alt="" />
+            </a>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- Modal Body -->
+          <div class="modal-body">
+            <!-- Modal body content goes here -->
+            <button class="btn_1 rounded bg-white">
+              <img src=" assets/images/menu_list.svg" alt="" />Personal List
+            </button>
+            <button class="btn_2 rounded bg-white mb-2">
+              <img src=" assets/images/down_arrow.svg" alt="" />
+            </button>
+            <div class="modal_input mt-2 mb-4">
+              <input
+                type="text"
+                placeholder="Task name"
+                name="name"
+                id="name"
+              />
             </div>
+            <div class="content_two">
+              <img src=" assets/images/blank_doc.svg" alt="" />
+              <input type="text" placeholder="Add description" />
+            </div>
+            <div class="content_three mb-2">
+              <input type="text" placeholder="Write With AI" />
+            </div>
+            <div class="modal_buttons mb-2">
+              <a href="#" class="btn btn-danger">Button 1</a>
+              <a href="#" class="btn btn-white">Button 2</a>
+              <a href="#" class="btn btn-white">Button 3</a>
+              <a href="#" class="btn btn-white">Button 4</a>
+            </div>
+          </div>
+          <!-- Modal Footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-white model_left">
+              <img
+                src=" assets/images/magic.svg"
+                class="text-white"
+                alt=""
+              />Templates
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Sidebar -->
     <!-- <div class="w3-sidebar w3-bar-block w3-border-right" style="display: none" id="mySidebar">
@@ -504,7 +599,7 @@
     </div> -->
 
     <main class="container data_show">
-        <!-- <h3>Afternoon, Abubakar</h3>
+      <!-- <h3>Afternoon, Abubakar</h3>
         <div class="row">
             <div class="col-sm-6 border p-3">
                 <div class="data_one">
@@ -582,10 +677,15 @@
                 </div>
             </div>
         </div> -->
-        <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#multiStepModal">
-            Launch
-        </button>
-        <!-- <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#multiStepModal2">
+      <button
+        type="button"
+        class="btn btn-primary btn-lg"
+        data-bs-toggle="modal"
+        data-bs-target="#multiStepModal"
+      >
+        Launch
+      </button>
+      <!-- <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#multiStepModal2">
             Second
         </button>
         <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#multiStepModal3">
@@ -600,63 +700,63 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
-        formStepLength = $('.multistepform').length;
-        currentStep = 0;
-        const nextStep = () => {
-            if(currentStep < formStepLength - 1){
-                $('#backButton,#nextButton').attr('disabled',true);
-                $('.multistepform').eq(currentStep).fadeOut(400, function () {
-                    currentStep++;
-                    $('.multistepform').eq(currentStep).fadeIn(400);
-                    hideButtonsLogic();
-                    $('#backButton,#nextButton').removeAttr('disabled');
-                });
-            }
-            else{
-                $('.modal-content-1').fadeOut(400,function(){
-                    $('.modal-content-2').fadeIn(400);
-                })
-            }
-        }
-        const previousStep = () => {
-        if(currentStep < formStepLength - 1){
-                $('#backButton,#nextButton').attr('disabled',true);
-            $('.multistepform').eq(currentStep).fadeOut(400, function () {
-                currentStep--;
-                if (currentStep < $('.multistepform').length) {
-                    $('.multistepform').eq(currentStep).fadeIn(400);
-                }
-                hideButtonsLogic();
-                $('#backButton,#nextButton').attr('disabled',false);
+      formStepLength = $(".multistepform").length;
+      currentStep = 0;
+      const nextStep = () => {
+        if (currentStep < formStepLength - 1) {
+          $("#backButton,#nextButton").attr("disabled", true);
+          $(".multistepform")
+            .eq(currentStep)
+            .fadeOut(400, function () {
+              currentStep++;
+              $(".multistepform").eq(currentStep).fadeIn(400);
+              hideButtonsLogic();
+              $("#backButton,#nextButton").removeAttr("disabled");
             });
+        } else {
+          $(".modal-content-1").fadeOut(400, function () {
+            $(".modal-content-2").fadeIn(400);
+          });
         }
-        else{
-            $('.modal-content-1').fadeOut(400,function(){
-                    $('.modal-content-2').fadeIn(400);
-                })
+      };
+      const previousStep = () => {
+        if (currentStep < formStepLength - 1) {
+          $("#backButton,#nextButton").attr("disabled", true);
+          $(".multistepform")
+            .eq(currentStep)
+            .fadeOut(400, function () {
+              currentStep--;
+              if (currentStep < $(".multistepform").length) {
+                $(".multistepform").eq(currentStep).fadeIn(400);
+              }
+              hideButtonsLogic();
+              $("#backButton,#nextButton").attr("disabled", false);
+            });
+        } else {
+          $(".modal-content-1").fadeOut(400, function () {
+            $(".modal-content-2").fadeIn(400);
+          });
         }
+      };
+      const hideButtonsLogic = () => {
+        if (currentStep == 0) {
+          $("#backButton").fadeOut();
+        } else {
+          $("#backButton").fadeIn();
         }
-        const hideButtonsLogic=()=>{
-            if(currentStep == 0){
-                $('#backButton').fadeOut();
-            }
-            else{
-                $('#backButton').fadeIn();
-            }
-        }
-        $(document).ready(function(){
-            hideButtonsLogic();
-        })
+      };
+      $(document).ready(function () {
+        hideButtonsLogic();
+      });
     </script>
     <script>
-        function w3_open() {
-            document.getElementById("mySidebar").style.display = "block";
-        }
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+      }
 
-        function w3_close() {
-            document.getElementById("mySidebar").style.display = "none";
-        }
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+      }
     </script>
-</body>
-
+  </body>
 </html>
