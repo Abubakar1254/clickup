@@ -1,4 +1,17 @@
 @import url(./app.css);
+
+.img-fluid {
+  width: 25%;
+}
+
+body {
+  background-color: #fafbfc;
+}
+main {
+  display: flex;
+  /* height: calc(100vh - 114px); */
+  height: 80vh;
+}
 .background-image {
   position: absolute;
   height: calc(100% - 17vh);
@@ -46,22 +59,10 @@
   .footer {
     max-width: 335px;
     margin: 0 auto;
+    margin-bottom: 10px;
   }
 }
-
-.img-fluid {
-  width: 25%;
-}
-
-body {
-  background-color: #fafbfc;
-}
-main {
-  display: flex;
-  height: calc(100vh - 113px);
-  height: 80vh;
-}
-.login-header {
+header {
   /* margin-top: 30px; */
   height: 20vh;
   .container-fluid {
@@ -104,15 +105,12 @@ main {
 
 .form-container {
   width: 480px;
-  height: 512px;
+  height: 455px;
   padding: 30px 60px 30px 60px;
   border-radius: 12px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: relative;
   background-color: white;
-  /* margin-bottom: -78px; */
-  margin-bottom: 91px;
-  
 }
 
 .google_button {
@@ -228,7 +226,7 @@ form {
 .login_SSO {
   text-align: center;
   margin-top: 15px;
-  color: #000000;
+  color: #5f55ee;
   font-family: Segoe UI;
   font-size: 12px;
   font-weight: 400;
@@ -237,7 +235,7 @@ form {
   a {
     text-align: center;
     margin-top: 15px;
-    color: #5f55ee;
+    color: var(--black);
     font-family: Segoe UI;
     font-size: 12px;
     font-weight: 400;
@@ -256,13 +254,12 @@ form {
 .footer_end {
   text-align: center;
   color: white;
-  /* position: absolute; */
-  /* bottom: 0; */
+  position: absolute;
+  bottom: 0;
   /* margin-top: 30px; */
 }
 .no_account {
   font-size: 13px;
-  /* margin-bottom: 145px; */
 }
 
 .footer {
@@ -272,10 +269,6 @@ form {
   a {
     text-underline-offset: 4px;
   }
-}
-.comp_images {
-  /* margin-bottom: 50px; */
-  gap: 33px;
 }
 .help {
   margin-top: -30px;
@@ -293,51 +286,36 @@ form {
   }
 }
 @media only screen and (max-width: 600px) {
-  .img-fluid {
-    width: 63%;
-  }
-
-  .form-container {
-    width: 90%;
-    margin: 20px;
-    padding: 23px;
-    margin-bottom: 100px;
-  }
-
   .background_image {
     margin-bottom: 500px;
     margin-top: -500px;
   }
   .nav-btn a {
-    margin-top: -11px;
-    margin-left: 50px;
     width: 95px;
   }
-  .footer_end {
-    margin: 4%;
+  .img-fluid {
+    width: 40%;
+  }
+  main {
+    display: flex;
   }
   .nav-btn p {
     display: none;
   }
   .btn-2 {
     width: 176px;
-    font-size: 20px;
+    font-size: 14px;
   }
   .background_image img {
     height: 865px;
     max-width: 200px;
   }
-
-  .comp_images {
-    /* margin-bottom: 50px; */
-    gap: 17px;
-  }
 }
 
 /* @media only screen and (max-width: 1800px) {
-  .form-container{       
-  margin-bottom: auto;
-  justify-content: center;
-  text-align: center;
-  
-    } */
+.form-container{       
+margin-bottom: auto;
+justify-content: center;
+text-align: center;
+
+  } */
