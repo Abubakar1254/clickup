@@ -853,3 +853,100 @@
     background-color: var(--yellow);
     border-radius: 10px;
 }
+
+
+.h_main_profile{
+    position: absolute;
+right: 0;
+left: 60vh
+}
+
+
+
+
+.h_sidebar_proend{
+display: flex;
+justify-content: space-between !important;
+}
+
+.h_footer_2part{
+flex-grow: 1; 
+padding: 0 15px;
+background-color: var(--yellow);
+border-radius:10px ;
+}
+.sibebar_footer_button button{
+padding: 5px 5px;
+border-radius: 10px;
+}
+.image_footer img{
+padding: 10px;
+border-radius: 10px;
+border: 1px solid var(--gray);
+background: var(--yellow);
+}
+.main_contain_footer{
+background-color: var(--yellow);
+padding: 10px;
+margin: 10px;
+border: 1px solid var(--gray);
+border-radius: 10px;
+}
+.send_button{
+display: flex;
+}
+
+
+
+.h_notepad{
+margin: 50px;
+border-radius:10px;
+height: 45%;
+}
+.note_pad_title{
+gap: 10px;
+}
+.notepad_main{
+background-color: var(--yellow);
+}
+.notepad_content{
+justify-content: center;
+text-align: center;
+}
+.h_profile_id{
+width: 600px !important;
+}
+.profile_header{
+display: flex;
+gap: 350px;
+}
+.profile_header button{
+
+border-radius:10px ;
+padding: 5px 10px;
+}
+.profile_button_type{
+display:flex;
+justify-content:space-around;
+padding-inline: 10px;
+
+}
+.profile_button_type h4{
+font-size: 18px;
+}
+.profile_button_type p{
+font-size: 12px;
+}
+.main_activity{
+display: flex;
+justify-content: space-around;
+}
+.h_activity_profile{
+text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+.profile_header{
+gap: 200px;
+}
+}
