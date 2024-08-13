@@ -14,7 +14,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="./assets/css/home.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -90,17 +90,46 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="mynavbar">
-
-                    <form class="d-flex mx-auto">
-                        <input class="form-control me-2" type="text" placeholder="Search">
-                        <button class="btn btn_gray_button h_nav_askai" type="button"><img src="assets/images/start.svg"
-                                alt=""><span>Ask AI</span></button>
-
+                    <form class="d-flex mx-auto gap-2">
+                        <button class="search-button">
+                            <i class="bi bi-search"></i>
+                            <span>Search...</span>
+                        </button>
+                        <button class="border-0 ask-ai d-flex align-items-center">
+                            <div class="image">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_6616_14831)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.9274 1.45473C10.7695 0.909621 9.93725 0.909621 9.77931 1.45473L9.55578 2.22685C9.07358 3.89044 8.41465 5.18994 6.62438 5.63787L5.79354 5.84578C5.20684 5.99253 5.20684 6.76593 5.79354 6.91268L6.62438 7.12056C8.41465 7.5685 9.07358 8.86803 9.55578 10.5316L9.77931 11.3037C9.93725 11.8488 10.7695 11.8488 10.9274 11.3037L11.1512 10.5316C11.6332 8.86803 12.2924 7.5685 14.0826 7.12056L14.9135 6.91268C15.5002 6.76593 15.5002 5.99253 14.9135 5.84578C14.3268 5.69904 14.0826 5.63787 14.0826 5.63787C12.2924 5.18994 11.6332 3.89044 11.1512 2.22685L10.9274 1.45473Z"
+                                            fill="url(#paint0_linear_6616_14831)" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M4.0299 9.30145C3.93515 8.96072 3.43577 8.96072 3.34102 9.30145L3.2069 9.78398C2.91759 10.8238 2.52224 11.6359 1.44807 11.9159L0.94956 12.0458C0.597542 12.1376 0.597542 12.6209 0.94956 12.7126L1.44807 12.8426C2.52224 13.1226 2.91759 13.9347 3.2069 14.9745L3.34102 15.457C3.43577 15.7978 3.93515 15.7978 4.0299 15.457L4.16419 14.9745C4.45333 13.9347 4.84885 13.1226 5.92303 12.8426L6.42153 12.7126C6.77355 12.6209 6.77355 12.1376 6.42153 12.0458C6.06951 11.9541 5.92303 11.9159 5.92303 11.9159C4.84885 11.6359 4.45333 10.8238 4.16419 9.78398L4.0299 9.30145Z"
+                                            fill="url(#paint1_linear_6616_14831)" />
+                                    </g>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_6616_14831" x1="10.2602" y1="11.5792"
+                                            x2="15.3802" y2="1.33926" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#FF02F0" />
+                                            <stop offset="1" stop-color="#FFC800" />
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_6616_14831" x1="3.53891" y1="15.7392"
+                                            x2="6.73888" y2="9.33925" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#8930FD" />
+                                            <stop offset="1" stop-color="#49CCF9" />
+                                        </linearGradient>
+                                        <clipPath id="clip0_6616_14831">
+                                            <rect width="16" height="16" fill="white"
+                                                transform="translate(0.0195312 0.378906)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <span>Ask AI</span>
+                        </button>
                     </form>
                     <div class="d-flex h_nav_end">
                         <ul class="navbar-end_button mb-0">
-
-
                             <button class="mx-2 text-white" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img
                                     src="assets/images/add.png" alt=""><span> New </span></button>
                             <button class="mx-2" type="button" data-bs-toggle="offcanvas"
@@ -136,7 +165,7 @@
         </nav>
     </header>
     <main class="d-flex">
-        <aside class="sidebarnew">
+        <aside class="sidebarnew inactive">
             <header>
                 <div class="dropdown">
                     <button class=" dropdown-toggle border-0 bg-transparent p-1 d-flex align-items-center gap-2"
@@ -157,8 +186,7 @@
             <hr>
             <ul class="nav d-block top-nav">
                 <li class="nav-item active">
-                    <a href="" class="nav-link "><span
-                            class="hide-text">Home</span></a>
+                    <a href="" class="nav-link "><span class="hide-text">Home</span></a>
                 </li>
                 <li class="nav-item">
                     <a href="" class="nav-link"><span class="hide-text ">Inbox</span></a>
@@ -189,22 +217,28 @@
                     <a class="nav-link active " href="#" aria-current="page"><span class="hide-text">Spaces</span></a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link"><img src="./assets/images/sno.svg" alt=""><span class="hide-text">Everything</span></a>
+                    <a href="" class="nav-link"><img src="./assets/images/sno.svg" alt=""><span
+                            class="hide-text">Everything</span></a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link"><img src="./assets/images/e.svg" alt=""><span class="hide-text">Engineering</span></a>
+                    <a href="" class="nav-link"><img src="./assets/images/e.svg" alt=""><span
+                            class="hide-text">Engineering</span></a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link"><img src="./assets/images/d.svg" alt=""><span class="hide-text">DCA</span></a>
+                    <a href="" class="nav-link"><img src="./assets/images/d.svg" alt=""><span
+                            class="hide-text">DCA</span></a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link"><img src="./assets/images/m.svg" alt=""><span class="hide-text">M Automation</span></a>
+                    <a href="" class="nav-link"><img src="./assets/images/m.svg" alt=""><span class="hide-text">M
+                            Automation</span></a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link"><img src="./assets/images/menu_more.svg" alt=""><span class="hide-text">View all Spaces</span></a>
+                    <a href="" class="nav-link"><img src="./assets/images/menu_more.svg" alt=""><span
+                            class="hide-text">View all Spaces</span></a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link"><img src="./assets/images/add.svg" alt=""><span class="hide-text">Create Space</span></a>
+                    <a href="" class="nav-link"><img src="./assets/images/add.svg" alt=""><span class="hide-text">Create
+                            Space</span></a>
                 </li>
             </ul>
         </aside>
@@ -227,7 +261,7 @@
                     </div>
                 </div>
                 <div class="nav_2_two d-flex">
-                    <button class="btn btn_gray_button fs-6" type="button" class="btn btn_gray_button"
+                    <button class="btn fs-6 primary" type="button" class="btn primary"
                         data-bs-toggle="modal" data-bs-target="#exampleModal">Manage cards </button>
                     <button class="btn btn_white_button dropdown-toggle btn_setting" type="button"
                         id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
