@@ -837,7 +837,7 @@
 .top-nav img,
 .h_sidebar_two img {
     margin: 8px;
-    margin-left: 16px;
+    /* margin-left: 16px; */
 }
 .h_discount_text span {
     font-size: 14px;
