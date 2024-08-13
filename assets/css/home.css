@@ -887,7 +887,7 @@ background: var(--yellow);
 }
 .main_contain_footer{
 background-color: var(--yellow);
-padding: 10px;
+padding: 18px;
 margin: 10px;
 border: 1px solid var(--gray);
 border-radius: 10px;
@@ -896,7 +896,37 @@ border-radius: 10px;
 display: flex;
 }
 
+.h_sidebar_threeButton{
+    justify-content: space-around;
+    display: flex;
+}
+.h_sidebar_threeButton button{
+    justify-content: space-around;
+    display: flex;
+}
+.h_profile_sidebar{
+    margin: 58px;
+    width:  506px !important;
+    background-color: aquamarine;
+}
+.h_siderbar_button{
+    display: flex;
+    justify-content: end;
+}
+.h_sidebar_content2{
+    padding: 14px;
+    border-radius: 10px;
+    background-color: var(--yellow);
+    margin: 15px;
+}
 
+.h_sidebar_content1 img{
+    
+    background: var(--yellow);
+    border: 1px solid var(--black);
+    padding: 8px;
+    border-radius: 11px;
+}
 
 .h_notepad{
 margin: 50px;
@@ -944,6 +974,13 @@ justify-content: space-around;
 .h_activity_profile{
 text-align: center;
 }
+.h_delegted_profile h4{
+    font-size: 15px;
+font-weight: 700;
+}
+.h_delegted_profile p{
+    font-size: 11px;
+ }
 
 @media only screen and (max-width: 600px) {
 .profile_header{

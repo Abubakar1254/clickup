@@ -1401,7 +1401,7 @@
                     </div>
                     <div>
                         
-                        <button class="h_feedback_sidebar">Feedback <img src="./assets/images/home/arrowup.svg" alt=""></button>
+                        <button class="h_feedback_sidebar p-1 rounded-3">Feedback <img src="./assets/images/home/arrowup.svg" alt=""></button>
                         <img src="./assets/images/home/idea.svg" width="25px" alt="">
                         <img src="./assets/images/home/menu_dot.svg" width="25px" alt="">
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -1412,8 +1412,8 @@
                     <div class="h_siderbar_button">
                 <button class="btn btn_gray_button">Write StandUp</button>
             </div>
-            <div class="h_sidebar_content mt-3" >
-<div class="h_sidebar_content1">
+            <div class="h_sidebar_content mt-3 d-flex" >
+<div class="h_sidebar_content1 mt-3">
     <img src="./assets/images/start.svg" alt="">
 </div>
 <div class="h_sidebar_content2">
@@ -1471,13 +1471,14 @@
 
 <div class="mt-3 h_sidebar1_button">
     <p>Format</p>
-    <button class="col-3 btn_gray_button">Bulleted list</button>
-    <button class="col-3 btn_gray_button">Short</button>
-    <button class="col-3 btn_gray_button">Traditional</button>
-    
+    <div class="h_sidebar_threeButton">
+    <button class="col-3 btn_gray_button p-1 rounded-3">Bulleted list</button>
+    <button class="col-3 btn_gray_button p-1 rounded-3">Short</button>
+    <button class="col-3 btn_gray_button p-1 rounded-3">Traditional</button>
+</div>
 </div>
 <div>
-    <button class="col-12 mt-3 btn_black_button p-2 h_generate">
+    <button class="col-12 mt-3 btn_black_button p-2 rounded-3 h_generate">
         Generate
     </button>
 </div>
@@ -1611,13 +1612,13 @@
                         <div class="tab-pane fade" id="nav-work" role="tabpanel" aria-labelledby="nav-work-tab">
                             <ul class="nav nav-underline mt-3" id="myTab" role="tablist">
                                 <li class="nav-item" role="presentation">
-                                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+                                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">To do</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+                                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Done</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+                                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Delegated</button>
                                 </li>
                                
                               </ul>
@@ -1660,12 +1661,223 @@
                                     </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">...</div>
-                                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
+                                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                                    <div>
+                                    <p class="m-3">Done</p>
+                                    <hr class="mt-2">
+                                    <hr class="mt-2">
+                                </div>
+                                </div>
+                                 
+                 
+
+                                 
+                                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                                    <div >
+                                        <p class="m-3">Delegated</p>
+                                        <hr class="mt-2">
+                                        <div class="h_delegted_profile text-center ">
+                                            <h4>Forgetting? Forget about it! Delegate a Reminder to make sure it gets done.</h4>
+                                            <p><a href="">Assign a Reminder</a> to someone and keep track of it here. You can also see Reminders you delegate in anyone's </p>
+                                            <button class="p-2 rounded-3 btn_yellow_outline">Learn more about delegating</button>
+                                        </div>
+                                        <hr class="mt-2">
+                                    </div>
+                                </div>
                               </div>
                         </div>
                         <div class="tab-pane fade" id="nav-assigned" role="tabpanel" aria-labelledby="nav-assigned-tab">heello</div>
-                        <div class="tab-pane fade" id="nav-calendar" role="tabpanel" aria-labelledby="nav-calendar-tab">hi</div>
+                        <div class="tab-pane fade" id="nav-calendar" role="tabpanel" aria-labelledby="nav-calendar-tab">
+                            
+
+                            <style>
+   
+                                .calendar {
+                                  border: 1px solid #ccc;
+                                  border-radius: 5px;
+                                  padding: 10px;
+                                }
+                                .calendar table {
+                                  width: 100%;
+                                  border-collapse: collapse;
+                                }
+                                .calendar th, .calendar td {
+                                  text-align: center;
+                                  border: 1px solid #ccc;
+                                  padding: 5px;
+                                }
+                                .calendar th {
+                                  background-color: #f0f0f0;
+                                }
+                                .calendar .today {
+                                  background-color: #f5f5f5;
+                                }
+                                .calendar .event {
+                                  background-color: #f0f0ff;
+                                  cursor: pointer;
+                                }
+                              </style>
+  <div class="container">
+    <div class="card">
+      <div class="card-body">
+        <div class="calendar">
+          <div class="row">
+          
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" class="form-control" id="date" value="2023-07-12">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="time">Time:</label>
+                <input type="time" class="form-control" id="time" value="16:42">
+              </div>
+            </div>
+ 
+          </div>
+          <table class="table table-bordered mt-3">
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+                <th>Sat</th>
+                <th>Sun</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>4:42 pm</td>
+                <td class="today event" data-event-time="16:42"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>5pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>6pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>7pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>8pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>9pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>10pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>11pm</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // Add event listener to add event button
+    document.getElementById('addEventBtn').addEventListener('click', function() {
+      // Get event details
+      var date = document.getElementById('date').value;
+      var time = document.getElementById('time').value;
+
+      // Create event element
+      var eventElement = document.createElement('td');
+      eventElement.classList.add('event');
+      eventElement.dataset.eventTime = time; // Store event time in data attribute
+      
+
+      // Add event element to the calendar table
+      var dateIndex = new Date(date).getDay(); // Get the day index (0 for Sunday, 1 for Monday, etc.)
+      var calendarTable = document.querySelector('.calendar table tbody');
+      var row = calendarTable.querySelectorAll('tr')[dateIndex + 1]; // Get the correct row for the date
+      row.querySelector('td:nth-child(2 + ' + dateIndex + ')').appendChild(eventElement); // Add event to the correct column
+    });
+
+    // Add event listener to event elements for opening modal
+    document.addEventListener('click', function(event) {
+      if (event.target.classList.contains('event')) {
+        // Open modal with event details
+        // You can use a modal library or implement your own modal
+        // Here is an example using Bootstrap modal:
+        // var eventTime = event.target.dataset.eventTime;
+        // var modal = document.getElementById('eventModal');
+        // var modalBody = modal.querySelector('.modal-body');
+        // modalBody.textContent = 'Event at ' + eventTime;
+        // $('#eventModal').modal('show');
+      }
+    });
+  </script>
+
+                            
+                        </div>
                       </div>
                 </div>
               </div>
