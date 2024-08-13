@@ -365,7 +365,7 @@
 
 .navbar-custom {
     background: rgba(50, 52, 82, 1);
-    height: 50px;
+    
 }
 
 .nav-search {
@@ -529,6 +529,8 @@
 #main {
     transition: margin-left .5s;
     padding: 16px;
+    height: 900px;
+    overflow-y: scroll;
 }
 
 .half_bar {
@@ -743,16 +745,14 @@
 #box-ten {
     border: 1px solid var(--yellow);
     border-radius: 10px;
-    height: 500px;
+    height: 600px;
 }
 
 #box-two {
     height: 400px !important;
 }
 
-#box-five {
-    height: 500px !important;
-}
+
 
 .myWork_list {
     display: flex;
@@ -810,9 +810,11 @@
 .drp_down_2 {
     gap: 25px;
 }
-
+.navbar-end_button ul{
+    margin-bottom: 1rem;
+} 
 .navbar {
-    height: 50px;
+  
     background: var(--gray) !important;
 }
 
@@ -835,6 +837,7 @@
 .top-nav img,
 .h_sidebar_two img {
     margin: 8px;
+    margin-left: 16px;
 }
 .h_discount_text span {
     font-size: 14px;
@@ -906,8 +909,10 @@ display: flex;
 }
 .h_profile_sidebar{
     margin: 58px;
-    width:  506px !important;
-    background-color: aquamarine;
+    width: 506px !important;
+    box-shadow: 1px 11px 33px 8px var(--gray);
+    border-radius: 12px
+    
 }
 .h_siderbar_button{
     display: flex;
@@ -981,7 +986,30 @@ font-weight: 700;
 .h_delegted_profile p{
     font-size: 11px;
  }
-
+ .calendar {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .calendar table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .calendar th, .calendar td {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+  }
+  .calendar th {
+    background-color: #f0f0f0;
+  }
+  .calendar .today {
+    background-color: #f5f5f5;
+  }
+  .calendar .event {
+    background-color: #f0f0ff;
+    cursor: pointer;
+  }
 @media only screen and (max-width: 600px) {
 .profile_header{
 gap: 200px;
