@@ -14,4 +14,8 @@
     --btn_b : #000000;
     --btn_g : #808080;
     --btn_w : #ffffff;
+    
+    //sidebar
+    --sidebar_nav_active_bg_color:#E5E4FC;
+    --sidebar_nav_active_text_color:#544DC9;
   }
