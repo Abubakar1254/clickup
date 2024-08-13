@@ -295,7 +295,7 @@
 
             </div>
             <div class="container-fluid">
-                <h3>Good afternoon, Abubakar</h3>
+                <h3 class="user_name">Good afternoon, Abubakar</h3>
 
                 <div class="row">
                     <!-- First Column -->
@@ -405,7 +405,7 @@
                         <div class="box_two">
                             <div class="edit_two d-flex">
                                 <img src="./assets/images/dot.svg" alt="">
-                                <h5 class="mt-2">Agenda</h5>
+                                <h5 class="mt-2">My work</h5>
                             </div>
                             <div class="other_two">
                                 <img src="./assets/images/home/setting.svg" alt="">
@@ -537,7 +537,7 @@
                                     <div class="row mt-3 Personal_list_content">
                                         <img class="personal_list" src="./assets/images/home/personal_list.svg" alt="">
                                         <p>Personal List is a home for your tasks. <a href=""> Learn more</a></p>
-                                        <button class="btn_black_button">+ Create a task</button>
+                                        <button class="home_crad_button">+ Create a task</button>
                                     </div>
 
                                 </div>
@@ -575,7 +575,7 @@
                                     <div class="row mt-3 Personal_list_content">
                                         <img class="check_box_img" src="./assets/images/home/check_box_img.svg" alt="">
                                         <p>Tasks assigned to you will appear here. <a href=""> Learn more</a></p>
-                                        <button class="btn_black_button">+ Add task</button>
+                                        <button class="home_crad_button">+ Add task</button>
                                     </div>
 
                                 </div>
@@ -1742,210 +1742,363 @@
                         <div class="tab-pane fade" id="nav-assigned" role="tabpanel" aria-labelledby="nav-assigned-tab">
                             heello</div>
                         <div class="tab-pane fade" id="nav-calendar" role="tabpanel" aria-labelledby="nav-calendar-tab">
+                            
+<style>
+    .calendar{
+        gap: 20px;
+    }
+    .vertical_row{
+        width: 100%;
+    border: 1px solid;
+    margin-left: 16px;
+    }
+    .calendar_time{
+        height: 550px;
+    overflow-y: scroll;
+    }
+    .calendar_button{
+        display: flex;
+        width: 100%;
+        height: 60px;
+        flex-direction: column;
+        border: 1px solid var(--gray);
+        
+    }
+    .calendar_one_button,.calendar_two_button{
+        height: 30px;
+        background-color: var(--white);
+    }
+    .calendar_one_button:hover,.calendar_two_button:hover{
+   background-color:var(--calender);
+   
+    }
+    
 
-                            <style>
-                                .calendar {
-                                    gap: 20px;
-                                }
-
-                                .calendar_time {
-                                    height: 546px;
-                                    overflow-y: scroll;
-                                }
-                            </style>
-
-                            <div class="calendar d-flex justify-content-between border-0">
-                                <div>
-                                    <p>
-                                        <span> Jul 12,Friday </span>
-                                        <img src="./assets/images/home/lessden.svg" alt="">
-                                        <img src="./assets/images/home/greaterden.svg" alt="">
-                                    </p>
-                                </div>
-                                <div>
-                                    <span> Today </span>
-                                    <span class="mx-2"><img src="./assets/images/home/today.svg" alt="">0
-                                        Calendars</span>
-                                    <img src="./assets/images/home/setting.svg" alt="">
-                                </div>
-
-                            </div>
-
-
-
-
-
-
-
-                            <table class="table table-hover">
+  
+  
 
 
-                                <tr>
-                                    <th>1</th>
-                                </tr>
+</style>
 
-                                <th>2</th>
-                                </tr>
-                                <tr>
-                                    <th>3</th>
-                                </tr>
-                                <tr>
-                                    <th>1</th>
-                                </tr>
-
-                                <th>2</th>
-                                </tr>
-                                <tr>
-                                    <th>3</th>
-                                </tr>
-                                <tr>
-                                    <th>1</th>
-                                </tr>
-
-                                <th>2</th>
-                                </tr>
-                                <tr>
-                                    <th>3</th>
-                                </tr>
-                                <tr>
-                                    <th>1</th>
-                                </tr>
-
-                                <th>2</th>
-                                </tr>
-                                <tr>
-                                    <th>3</th>
-                                </tr>
-                                <tr>
-                                    <th>1</th>
-                                </tr>
-
-                                <th>2</th>
-                                </tr>
-                                <tr>
-                                    <th>3</th>
-                                </tr>
-                                <tr>
-                                    <th>1</th>
-                                </tr>
-
-                                <th>2</th>
-                                </tr>
-                                <tr>
-                                    <th>3</th>
-                                </tr>
-                                <tr>
-                                    <th>1</th>
-                                </tr>
-
-                                <th>2</th>
-                                </tr>
-                                <tr>
-                                    <th>3</th>
-                                </tr>
-                                <tr>
-                                    <th>1</th>
-                                </tr>
-
-                                <th>2</th>
-                                </tr>
-                                <tr>
-                                    <th>3</th>
-                                </tr>
-
-                            </table>
+<div class="calendar d-flex justify-content-between border-0">
+    <div>
+        <p>
+            <span> Jul 12,Friday </span>
+            <img src="./assets/images/home/lessden.svg" alt="">
+            <img src="./assets/images/home/greaterden.svg" alt="">
+        </p>
+    </div>
+    <div>
+       <span> Today </span>
+        <span class="mx-2"><img src="./assets/images/home/today.svg" alt="">0 Calendars</span>
+        <img src="./assets/images/home/setting.svg" alt="">
+    </div>
+    
+</div>
+<div>
+    <p>All day</p>
+</div>
 
 
 
 
 
-
-                            <div class="calendar_time d-flex">
-                                <div>
-                                    <div class="my-5 d-flex">
-                                        <div>
-                                            <p>12am</p>
-                                        </div>
-                                        <div>
-                                            <hr>
-                                        </div>
-                                    </div>
-                                    <div class="my-5">
-                                        <p>1am</p>
-                                    </div>
-                                    <div class="my-5">
-                                        <p>2am</p>
-                                    </div>
-                                    <div class="my-5">
-                                        <p>3am</p>
-                                    </div>
-                                    <div class="my-5 ">
-                                        <p>4am</p>
-                                        <div class="calender_line"></div>
-                                    </div>
-                                    <div class="my-5">
-                                        <p>5am</p>
-                                    </div>
-                                    <div class="my-5">
-                                        <p>6am</p>
-                                    </div>
-                                    <div class="my-5">
-                                        <p>7am</p>
-                                    </div>
-                                    <div class="my-5">
-                                        <p>8am</p>
-                                    </div>
-                                    <div class="my-5">
-                                        <p>9am</p>
-                                    </div>
-                                    <div class="my-5">
-                                        <p>10am</p>
-                                    </div>
-                                    <div class="my-5">
-                                        <p>11am</p>
-                                    </div>
-                                    <div class="my-5">
-                                        <p>12pm</p>
-                                    </div>
-                                    <div class="my-5">
-                                        <p>1pm</p>
-                                    </div>
-                                    <div class="my-5">
-                                        <p>2pm</p>
-                                    </div>
-                                    <div class="my-5">
-                                        <p>3pm</p>
-                                    </div>
-                                    <div class="my-5">
-                                        <p>4pm</p>
-                                    </div>
-                                    <div class="my-5">
-                                        <p>5pm</p>
-                                    </div>
-                                    <div class="my-5">
-                                        <p>6pm</p>
-                                    </div>
-                                    <div class="my-5">
-                                        <p>7pm</p>
-                                    </div>
-                                    <div class="my-5">
-                                        <p>8pm</p>
-                                    </div>
-                                    <div class="my-5">
-                                        <p>9pm</p>
-                                    </div>
-                                    <div class="my-5">
-                                        <p>10pm</p>
-                                    </div>
-                                    <div class="my-5">
-                                        <p>11pm</p>
-                                    </div>
-                                </div>
+<div class="calendar_time">
 
 
+<div class="d-flex">
+    <div class="my-3">
+        12am
+    </div>
+    <div class="vertical_row">
+    <div class="calendar_button">
+        <button class="border-0  calendar_one_button" ></button>
+        <button  class="border-0  calendar_two_button"> </button>
+    </div>
+</div>
+</div>
 
-                            </div>
+<div class="d-flex">
+    <div class="my-3">
+        1am
+    </div>
+    <div class="vertical_row">
+    <div class="calendar_button">
+        <button class="border-0  calendar_one_button" ></button>
+        <button  class="border-0  calendar_two_button"> </button>
+    </div>
+</div>
+</div>
 
+<div class="d-flex">
+    <div class="my-3">
+        2am
+    </div>
+    <div class="vertical_row">
+    <div class="calendar_button">
+        <button class="border-0  calendar_one_button" ></button>
+        <button  class="border-0  calendar_two_button"> </button>
+    </div>
+</div>
+</div>
+
+<style>
+   
+    .active_calender_button{
+        width: 39vw;
+        height: 5px;
+        background-color:var(--yellow);
+    }
+    .active_calender span{
+
+        background-color:var(--yellow);
+        padding: 5px;
+    } 
+</style>
+
+<div class="active_calender d-flex">
+    <div>
+        <span>2:45</span>
+    </div>
+    <div>
+        <button class="active_calender_button" ></button>
+    </div>
+
+</div>
+
+<div class="d-flex">
+    <div class="my-3">
+        3am
+    </div>
+    <div class="vertical_row">
+    <div class="calendar_button">
+        <button class="border-0  calendar_one_button" ></button>
+        <button  class="border-0  calendar_two_button"> </button>
+    </div>
+</div>
+</div>
+
+<div class="d-flex">
+    <div class="my-3">
+        4am
+    </div>
+    <div class="vertical_row">
+    <div class="calendar_button">
+        <button class="border-0  calendar_one_button" ></button>
+        <button  class="border-0  calendar_two_button"> </button>
+    </div>
+</div>
+</div>
+
+<div class="d-flex">
+    <div class="my-3">
+        5am
+    </div>
+    <div class="vertical_row">
+    <div class="calendar_button">
+        <button class="border-0  calendar_one_button" ></button>
+        <button  class="border-0  calendar_two_button"> </button>
+    </div>
+</div>
+</div>
+<div class="d-flex">
+    <div class="my-3">
+        6am
+    </div>
+    <div class="vertical_row">
+    <div class="calendar_button">
+        <button class="border-0  calendar_one_button" ></button>
+        <button  class="border-0  calendar_two_button"> </button>
+    </div>
+</div>
+</div>
+<div class="d-flex">
+    <div class="my-3">
+        7am
+    </div>
+    <div class="vertical_row">
+    <div class="calendar_button">
+        <button class="border-0  calendar_one_button" ></button>
+        <button  class="border-0  calendar_two_button"> </button>
+    </div>
+</div>
+</div>
+<div class="d-flex">
+    <div class="my-3">
+        8am
+    </div>
+    <div class="vertical_row">
+    <div class="calendar_button">
+        <button class="border-0  calendar_one_button" ></button>
+        <button  class="border-0  calendar_two_button"> </button>
+    </div>
+</div>
+</div>
+<div class="d-flex">
+    <div class="my-3">
+        9am
+    </div>
+    <div class="vertical_row">
+    <div class="calendar_button">
+        <button class="border-0  calendar_one_button" ></button>
+        <button  class="border-0  calendar_two_button"> </button>
+    </div>
+</div>
+</div>
+<div class="d-flex">
+    <div class="my-3">
+        10am
+    </div>
+    <div class="vertical_row">
+    <div class="calendar_button">
+        <button class="border-0  calendar_one_button" ></button>
+        <button  class="border-0  calendar_two_button"> </button>
+    </div>
+</div>
+</div>
+<div class="d-flex">
+    <div class="my-3">
+        11am
+    </div>
+    <div class="vertical_row">
+    <div class="calendar_button">
+        <button class="border-0  calendar_one_button" ></button>
+        <button  class="border-0  calendar_two_button"> </button>
+    </div>
+</div>
+</div>
+<div class="d-flex">
+    <div class="my-3">
+        12pm
+    </div>
+    <div class="vertical_row">
+    <div class="calendar_button">
+        <button class="border-0  calendar_one_button" ></button>
+        <button  class="border-0  calendar_two_button"> </button>
+    </div>
+</div>
+</div>
+<div class="d-flex">
+    <div class="my-3">
+        1pm
+    </div>
+    <div class="vertical_row">
+    <div class="calendar_button">
+        <button class="border-0  calendar_one_button" ></button>
+        <button  class="border-0  calendar_two_button"> </button>
+    </div>
+</div>
+</div>
+<div class="d-flex">
+    <div class="my-3">
+        2pm
+    </div>
+    <div class="vertical_row">
+    <div class="calendar_button">
+        <button class="border-0  calendar_one_button" ></button>
+        <button  class="border-0  calendar_two_button"> </button>
+    </div>
+</div>
+</div>
+<div class="d-flex">
+    <div class="my-3">
+        3pm
+    </div>
+    <div class="vertical_row">
+    <div class="calendar_button">
+        <button class="border-0  calendar_one_button" ></button>
+        <button  class="border-0  calendar_two_button"> </button>
+    </div>
+</div>
+</div>
+<div class="d-flex">
+    <div class="my-3">
+        4pm
+    </div>
+    <div class="vertical_row">
+    <div class="calendar_button">
+        <button class="border-0  calendar_one_button" ></button>
+        <button  class="border-0  calendar_two_button"> </button>
+    </div>
+</div>
+</div>
+<div class="d-flex">
+    <div class="my-3">
+        5pm
+    </div>
+    <div class="vertical_row">
+    <div class="calendar_button">
+        <button class="border-0  calendar_one_button" ></button>
+        <button  class="border-0  calendar_two_button"> </button>
+    </div>
+</div>
+</div>
+<div class="d-flex">
+    <div class="my-3">
+        6pm
+    </div>
+    <div class="vertical_row">
+    <div class="calendar_button">
+        <button class="border-0  calendar_one_button" ></button>
+        <button  class="border-0  calendar_two_button"> </button>
+    </div>
+</div>
+</div>
+<div class="d-flex">
+    <div class="my-3">
+        7pm
+    </div>
+    <div class="vertical_row">
+    <div class="calendar_button">
+        <button class="border-0  calendar_one_button" ></button>
+        <button  class="border-0  calendar_two_button"> </button>
+    </div>
+</div>
+</div>
+<div class="d-flex">
+    <div class="my-3">
+        8pm
+    </div>
+    <div class="vertical_row">
+    <div class="calendar_button">
+        <button class="border-0  calendar_one_button" ></button>
+        <button  class="border-0  calendar_two_button"> </button>
+    </div>
+</div>
+</div>
+<div class="d-flex">
+    <div class="my-3">
+        9pm
+    </div>
+    <div class="vertical_row">
+    <div class="calendar_button">
+        <button class="border-0  calendar_one_button" ></button>
+        <button  class="border-0  calendar_two_button"> </button>
+    </div>
+</div>
+</div>
+<div class="d-flex">
+    <div class="my-3">
+        10pm
+    </div>
+    <div class="vertical_row">
+    <div class="calendar_button">
+        <button class="border-0  calendar_one_button" ></button>
+        <button  class="border-0  calendar_two_button"> </button>
+    </div>
+</div>
+</div>
+<div class="d-flex">
+    <div class="my-3">
+        11pm
+    </div>
+    <div class="vertical_row">
+    <div class="calendar_button">
+        <button class="border-0  calendar_one_button" ></button>
+        <button  class="border-0  calendar_two_button"> </button>
+    </div>
+</div>
+</div>
 
                         </div>
                     </div>

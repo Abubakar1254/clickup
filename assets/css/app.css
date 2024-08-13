@@ -14,8 +14,12 @@
     --btn_b : #000000;
     --btn_g : #808080;
     --btn_w : #ffffff;
+    --button_primary_bg_color :  #544DC9;
+    --button_primary_text_color :  white;
     
-    //sidebar
+    /* sidebar */
     --sidebar_nav_active_bg_color:#E5E4FC;
     --sidebar_nav_active_text_color:#544DC9;
   }
+
+

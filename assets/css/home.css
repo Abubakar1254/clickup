@@ -1,5 +1,7 @@
 @import url(./app.css);
 @import url(./buttons.css);
+@import url("./assets/css/buttons.css");
+
 
 :root {
     --yellow: #ffcc00;
@@ -184,6 +186,13 @@ body {
     }
 }
 
+.home_crad_button{
+    background-color: var(--button_primary_bg_color) ;
+    color:var(--button_primary_text_color);
+}
+.user_name{
+    font-size: 24px;
+}
 .sidebarnew.inactive {
     max-width: 60px;
     min-width: 60px;
@@ -309,6 +318,9 @@ body {
     width: 146px;
 }
 
+.card_button_2 h5{
+    font-size: 16px;
+}
 .card_button_2 button {
     border-radius: 10px;
     background-color: var(--gray);
@@ -408,14 +420,6 @@ body {
 }
 
 
-@import url("./assets/css/buttons.css");
-
-:root {
-    --yellow: #ffcc00;
-    --black: #000000;
-    --gray: #808080;
-    --white: #ffffff;
-}
 
 
 .h_modal_input {
