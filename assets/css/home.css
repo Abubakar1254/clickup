@@ -1171,4 +1171,41 @@ body {
     .profile_header {
         gap: 200px;
     }
+    .nav_2_two span{
+        font-size: 11px;
+    }
+    .one_button_manage{
+        height: 37px;
+        width: 97px;;
+    }
+    .user_name{
+        font-size: 19px;
+    margin-top: 13px;
+    }
+    #one_box {
+        height: 352px;
+    }
+    .search-button{
+        width: 72% !important;
+    }
+    .h_nav_end{
+      gap: 0px !important;
+    }
+    #switch{
+        width: 253px;
+    }
+    ol, ul {
+        padding-left:0px !important;
+    }
+    .h_main_profile {
+    
+        left: 40% !important;
+    }
+  
+
 }
+
+
+
+
+
