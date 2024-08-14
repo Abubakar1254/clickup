@@ -307,8 +307,8 @@ body {
 }
 
 .card_button button {
-    background-color: var(--gray);
-    color: var(--white);
+    background-color: var(--button-primary-bg-color);
+    color: var(--button-primary-text-color);
     /* padding: 6px; */
     justify-content: space-evenly;
     border-radius: 10px;
@@ -323,14 +323,15 @@ body {
 }
 .card_button_2 button {
     border-radius: 10px;
-    background-color: var(--gray);
-    color: var(--white);
+    background-color: var(--button-primary-bg-color);
+    color: var(--button_primary_text_color);
     padding: 0px 18px;
 }
 
 #check {
     width: auto;
-    background: black;
+    background-color:var(--button_dark_bg_color);
+    color:var(--button_dark_text_color);
     padding: 0pc 10px
 }
 
@@ -429,7 +430,10 @@ body {
 .h_modal_button {
     gap: 10px;
 }
-
+.h_modal_button button,.first_start button {
+    background-color: var(--button_outline_warning_bg_color);
+    color: var(--button_warning_outline_text_color);
+}
 .h_drp_one button {
     justify-content: space-evenly;
 }
@@ -590,7 +594,9 @@ body {
 .offcanvas {
     z-index: 1050;
 }
-
+.h_sidebar_two{
+    margin-left: -10px;
+}
 .sidebar {
     height: 100%;
     width: 0;
@@ -1201,7 +1207,31 @@ body {
     
         left: 40% !important;
     }
-  
+    .sidebarnew{
+        min-width: 200px;
+    }
+    .nav_search_form,.h_nav_end{
+        margin-top: 20px;
+    }
+   /* #box_two h5,#box_three h5,#box_four h5,#box_five h5,#box_six h5,#box_seven h5,#box_eight h5,#box_ten h5{
+    font-size: 10px;
+   } */
+
+   .edit_two h5,.edit_four h5,.edit_one h5{
+    font-size: 15px;
+   }
+   .edit_two img,.edit_four img{
+    width: 20px;
+   }
+   #myTab{
+    font-size: 12px;
+   }
+   .h_profile_sidebar{
+    margin: 0;
+   }
+   .h_notepad{
+    margin: 0px;
+   }
 
 }
 

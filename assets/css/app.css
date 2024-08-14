@@ -14,9 +14,16 @@
     --btn_b : #000000;
     --btn_g : #808080;
     --btn_w : #ffffff;
+
+
+    /* Add card and home pages button */
     --button_primary_bg_color :  #544DC9;
     --button_primary_text_color :  white;
-    
+    --button_dark_bg_color :  #000000;
+    --button_dark_text_color :  white;
+    /* Modal outline button */
+    --button_outline_warning_bg_color :  #ffcc00;
+    --button_outline_warning_text_color :  white;
     /* sidebar */
     --sidebar_nav_active_bg_color:#E5E4FC;
     --sidebar_nav_active_text_color:#544DC9;
