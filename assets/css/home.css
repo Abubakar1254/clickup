@@ -1,25 +1,9 @@
 @import url(./app.css);
 @import url(./buttons.css);
-@import url("./assets/css/buttons.css");
 
 
 :root {
-    --yellow: #ffcc00;
-    --black: #000000;
-    --gray: #808080;
-    --white: #ffffff;
-    /* primary button */
-    --button-primary-bg-color: #5F55EE;
-    --button-primary-text-color: white;
-    /* siderbar */
-    --sidebar_nav_active_bg: #E5E4FC;
-    --sidebar_nav_active_text_color: #544DC9;
-    --sidebar_nav_inactive_text_color: #2A2E34;
-    /* navbar */
-    --navbar_background_color: #323452;
-    --navbar_text_color: white;
-    --navbar-search-bg-color:#FFFFFF1A;
-    --navbar-ask-ai-bg-color:#43418D !important;
+
 }
 .btn.primary{
     background-color: var(--button-primary-bg-color);
@@ -238,7 +222,12 @@ body {
 .form-switch {
     width: 100%;
 }
-
+.form-switch input{
+    background-color:var( --button_switch_bg_color);
+}
+.form-switch input:checked{
+    background-color:var( --button_switch_active_bg_color);
+}
 #switch {
     width: 350px;
 }
@@ -307,8 +296,8 @@ body {
 }
 
 .card_button button {
-    background-color: var(--button-primary-bg-color);
-    color: var(--button-primary-text-color);
+    border:1px solid var(--sidebar_nav_border_color);
+    color: var(--sidebar_nav_text_color);
     /* padding: 6px; */
     justify-content: space-evenly;
     border-radius: 10px;
@@ -323,15 +312,16 @@ body {
 }
 .card_button_2 button {
     border-radius: 10px;
-    background-color: var(--button-primary-bg-color);
-    color: var(--button_primary_text_color);
+    background:var(--sidebar_new_bg_color);
+    color: var(--sidebar_new_text_color);
+    border:1px solid var(--sidebar_new_border_color);
     padding: 0px 18px;
 }
 
 #check {
     width: auto;
-    background-color:var(--button_dark_bg_color);
-    color:var(--button_dark_text_color);
+    background-color:var(--button-primary-bg-color);
+    color:var(--button-primary-text-color);
     padding: 0pc 10px
 }
 
@@ -419,10 +409,13 @@ body {
 
     }
 }
-
+.action_button_modal{
+    background:var(--button_modal_bg_color);
+    color: var(--button_modal_text_color);
+}
 .h_modal_outline_button{
-    border:1px solid var(--button_outline_gray_border_color);
-    color: var(--button_outline_gray_text_color);
+    border:1px solid var(--button_outline_modal_border_color);
+    color: var(--button_outline_modal_text_color);
 }
 
 .nav-underline .nav-link.active, .nav-underline .show>.nav-link {
@@ -436,9 +429,17 @@ body {
 .h_modal_button {
     gap: 10px;
 }
-.h_modal_button button,.first_start button,.h_modal_button_action button ,.profile_button{
-    background-color: var(--button_warning_bg_color);
-    color: var(--button_warning_text_color);
+.h_modal_button button:hover,.h_modal_outline_button:hover{
+    background-color: var(--button_active_modal_bg_color);
+    color: var(--button_active_modal_text_color);
+}
+.h_modal_button button{
+    border:1px solid var(--button_outline_modal_border_color);
+    color: var(--button_outline_modal_border_color);
+}
+.first_start button,.h_modal_button_action button ,.profile_button{
+    background-color: var(--button_modal_bg_color);
+    color: var(--button_modal_text_color);
 }
 .h_drp_one button {
     justify-content: space-evenly;
@@ -996,7 +997,7 @@ body {
 }
 
 .h_discount_first {
-    background-color: var(--button_warning_bg_color);
+    background-color: var(--discount_modal_background_color);
     border-radius: 10px;
 }
 
@@ -1071,10 +1072,10 @@ background-color:var(--calender);
 }
 
 .main_contain_footer {
-   border: 1px solid var(--button_outline_gray_border_color);
+   border: 1px solid var(--button_outline_modal_border_color);
     padding: 18px;
     margin: 10px;
-    color: var(--button_outline_gray_text_color);
+    color: var(--button_outline_modal_text_color);
     border-radius: 10px;
 }
 
@@ -1109,7 +1110,7 @@ justify-content: space-around;
     padding: 14px;
     border-radius: 10px;
     /* background-color: var(--yellow); */
-    border: 1px solid  var(--button_outline_gray_border_color);
+    border: 1px solid  var(--button_outline_modal_border_color);
     margin: 15px;
 }
 
@@ -1132,7 +1133,8 @@ justify-content: space-around;
 }
 
 .notepad_main {
-    background-color: var(--yellow);
+    background-color: var(--notepad_nav_bg_color);
+    color: var(--notepad_nav_text_color);
 }
 
 .notepad_content {

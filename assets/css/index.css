@@ -218,6 +218,30 @@ form {
   margin-top: 31px;
 }
 
+.img {
+  margin-top: 10%;
+}
+
+.a {
+  position: relative;
+  position: absolute;
+  height: 50%;
+  width: 100%;
+}
+
+.b {
+  width: 100%;
+  height: 50%;
+  position: fixed;
+}
+.main-navabar {
+  justify-content: space-between;
+}
+#sign_up {
+  text-align: center !important;
+  width: 128px !important;
+}
+
 .login {
   width: 100%;
   padding: 10px;

@@ -1,39 +1,69 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
-
 :root {
-    --yellow: #ffcc00;
-    --black: #000000;
-    --gray: #808080;
-    --white : #ffffff;
-    --btn_y : #ffcc00;
-    --btn_b : #000000;
-    --btn_g : #808080;
-    --btn_w : #ffffff;
+  --yellow: #ffcc00;
+  --black: #000000;
+  --gray: #808080;
+  --white: #ffffff;
+  --btn_y: #ffcc00;
+  --btn_b: #000000;
+  --btn_g: #808080;
+  --btn_w: #ffffff;
 
+  /* Add card and home pages button */
+  --button_primary_bg_color: #544dc9;
+  --button_primary_text_color: white;
+  --button_dark_bg_color: #000000;
+  --button_dark_text_color: white;
+  /* Modal button button */
+  --button_modal_bg_color: #5f55ee;
+  --button_modal_text_color: white;
+  /* Modal submit button */
+  --button_modal_bg_color: #5f55ee;
+  --button_modal_text_color: white;
+  /* Modal outline button */
+  --button_outline_modal_border_color: #808080;
+  --button_outline_modal_text_color: #808080;
+  /* Modal active button */
+  --button_active_modal_border_color: #808080;
+  --button_active_modal_bg_color: #808080;
+  --button_active_modal_text_color: #ffffff;
+  /* notepad nav */
+  --notepad_nav_bg_color:yellow;
+  --notepad_nav_text_color:rgb(255, 255, 255);
 
-    /* Add card and home pages button */
-    --button_primary_bg_color :  #544DC9;
-    --button_primary_text_color :  white;
-    --button_dark_bg_color :  #000000;
-    --button_dark_text_color :  white;
-    /* Modal button button */
-    --button_warning_bg_color :  #ffcc00;
-    --button_warning_text_color :  white;
-    /* Modal outline button */
-    --button_outline_gray_border_color :  #808080;
-    --button_outline_gray_text_color :  #808080;
-    /* sidebar */
-    --sidebar_nav_active_bg_color:#E5E4FC;
-    --sidebar_nav_active_text_color:#544DC9;
-    /* nav tabs  */
-    --nav_tabs_text_color:#ffcc00;
-    --nav_tabs_border_color:#ffcc00;
-
-  }
-
-
+  /* switch button */
+  --button_switch_bg_color: rgb(202, 138, 138);
+  /* switch active button */
+  --button_switch_active_bg_color: rgb(41, 172, 15);
+  /* sidebar */
+  --sidebar_nav_active_bg_color: #e5e4fc;
+  --sidebar_nav_active_text_color: #544dc9;
+  --sidebar_nav_border_color: #808080;
+  --sidebar_nav_text_color: #808080;
+  /* sidebar new */
+  --sidebar_new_bg_color: #f2f1fe;
+  --sidebar_new_text_color: #544dc9;
+  --sidebar_new_border_color: #ffffff;
+  /* nav tabs  */
+  --nav_tabs_text_color: #000000;
+  --nav_tabs_border_color: #5f55ee;
+/* discount modal color */
+--discount_modal_background_color:#F2F1FE;
+  /* primary button */
+  --button-primary-bg-color: #5f55ee;
+  --button-primary-text-color: white;
+  /* siderbar */
+  --sidebar_nav_active_bg: #e5e4fc;
+  --sidebar_nav_active_text_color: #544dc9;
+  --sidebar_nav_inactive_text_color: #2a2e34;
+  /* navbar */
+  --navbar_background_color: #323452;
+  --navbar_text_color: white;
+  --navbar-search-bg-color: #ffffff1a;
+  --navbar-ask-ai-bg-color: #43418d !important;
+}
