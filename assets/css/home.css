@@ -420,9 +420,15 @@ body {
     }
 }
 
+.h_modal_outline_button{
+    border:1px solid var(--button_outline_gray_border_color);
+    color: var(--button_outline_gray_text_color);
+}
 
-
-
+.nav-underline .nav-link.active, .nav-underline .show>.nav-link {
+    border-bottom: 1px solid var(--nav_tabs_border_color);
+    color: var(--nav_tabs_text_color);
+}
 .h_modal_input {
     border: none;
 }
@@ -430,9 +436,9 @@ body {
 .h_modal_button {
     gap: 10px;
 }
-.h_modal_button button,.first_start button {
-    background-color: var(--button_outline_warning_bg_color);
-    color: var(--button_warning_outline_text_color);
+.h_modal_button button,.first_start button,.h_modal_button_action button ,.profile_button{
+    background-color: var(--button_warning_bg_color);
+    color: var(--button_warning_text_color);
 }
 .h_drp_one button {
     justify-content: space-evenly;
@@ -701,10 +707,12 @@ body {
 .edit_one {
     display: flex;
     align-items: center;
+   
 }
 
 .other_one img {
     margin-left: 10px;
+
 }
 
 
@@ -988,7 +996,7 @@ body {
 }
 
 .h_discount_first {
-    background-color: var(--yellow);
+    background-color: var(--button_warning_bg_color);
     border-radius: 10px;
 }
 
@@ -1022,15 +1030,14 @@ body {
 .image_footer img {
     padding: 10px;
     border-radius: 10px;
-    border: 1px solid var(--gray);
-    background: var(--yellow);
+
 }
 
 .main_contain_footer {
-    background-color: var(--yellow);
+   border: 1px solid var(--button_outline_gray_border_color);
     padding: 18px;
     margin: 10px;
-    border: 1px solid var(--gray);
+    color: var(--button_outline_gray_text_color);
     border-radius: 10px;
 }
 
@@ -1039,13 +1046,14 @@ body {
 }
 
 .h_sidebar_threeButton {
-    justify-content: space-around;
+justify-content: space-around;
     display: flex;
 }
 
 .h_sidebar_threeButton button {
     justify-content: space-around;
     display: flex;
+    width: 100px;
 }
 
 .h_profile_sidebar {
@@ -1063,7 +1071,8 @@ body {
 .h_sidebar_content2 {
     padding: 14px;
     border-radius: 10px;
-    background-color: var(--yellow);
+    /* background-color: var(--yellow); */
+    border: 1px solid  var(--button_outline_gray_border_color);
     margin: 15px;
 }
 
@@ -1232,7 +1241,24 @@ body {
    .h_notepad{
     margin: 0px;
    }
-
+   .h_modal_button,.h_reminder_button,.sibebar_footer_button{
+    flex-wrap: wrap;
+   }
+   .h_sidebar_threeButton{
+    display: flex;
+    gap: 5px;
+    justify-content: normal;
+   }
+   .h_sidebar_threeButton button{
+    width: 23vw;
+    padding: 0;
+   }
+   .responsive_card{
+    margin-top: 27%;
+   }
+   .responsive_discount{
+    margin-top: 50px;
+   }
 }
 
 

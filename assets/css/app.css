@@ -21,12 +21,19 @@
     --button_primary_text_color :  white;
     --button_dark_bg_color :  #000000;
     --button_dark_text_color :  white;
+    /* Modal button button */
+    --button_warning_bg_color :  #ffcc00;
+    --button_warning_text_color :  white;
     /* Modal outline button */
-    --button_outline_warning_bg_color :  #ffcc00;
-    --button_outline_warning_text_color :  white;
+    --button_outline_gray_border_color :  #808080;
+    --button_outline_gray_text_color :  #808080;
     /* sidebar */
     --sidebar_nav_active_bg_color:#E5E4FC;
     --sidebar_nav_active_text_color:#544DC9;
+    /* nav tabs  */
+    --nav_tabs_text_color:#ffcc00;
+    --nav_tabs_border_color:#ffcc00;
+
   }
 
 

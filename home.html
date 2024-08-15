@@ -82,7 +82,7 @@
         </div>
     </div>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark h_main_nav">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark h_main_nav">
             <div class="container-fluid">
                 <a class="navbar-brand mx-2" href="javascript:void(0)"><img src="assets/images/logo.png" width="70px"
                         alt=""></a>
@@ -130,21 +130,21 @@
                     </form>
                     <div class="d-flex h_nav_end">
                         <ul class="navbar-end_button mb-0">
-                            <button class="mx-2 " data-bs-toggle="modal" data-bs-target="#exampleModal2"><img
+                            <button class="mx-1 " data-bs-toggle="modal" data-bs-target="#exampleModal2"><img
                                     src="assets/images/add.png" alt=""><span> New </span></button>
-                            <button class="mx-2" type="button" data-bs-toggle="offcanvas"
+                            <button class="mx-1" type="button" data-bs-toggle="offcanvas"
                                 data-bs-target="#offcanvasScrolling4" aria-controls="offcanvasScrolling"><img
                                     src="assets/images/check_navbar.svg" alt="Check"></button>
-                            <button class="mx-2" type="button" data-bs-toggle="offcanvas"
+                            <button class="mx-1" type="button" data-bs-toggle="offcanvas"
                                 data-bs-target="#offcanvasScrolling3" aria-controls="offcanvasScrolling"><img
                                     src="assets/images/doc2.svg" alt="Documents"></button>
-                            <button class="mx-2"><img src="assets/images/video2.svg" alt="Video"></button>
-                            <button class="mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img
+                            <button class="mx-1"><img src="assets/images/video2.svg" alt="Video"></button>
+                            <button class="mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img
                                     src="assets/images/clock.svg" alt="Clock"></button>
-                            <button class="mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img
+                            <button class="mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal2"><img
                                     src="assets/images/doc_left.svg" alt="Left Document"></button>
-                            <button class="mx-2"><img src="assets/images/menu.svg" alt="Menu"></button>
-                            <button class="mx-2">
+                            <button class="mx-1"><img src="assets/images/menu.svg" alt="Menu"></button>
+                            <button class="mx-1">
                                 <div class="dropdown">
                                     <button class="btn btn dropdown-toggle" type="button" id="dropdownMenuButton2"
                                         data-bs-toggle="dropdown" aria-expanded="false">
@@ -532,9 +532,9 @@
 
                             <div class="tab-content" id="myTabContent">
                                 <!-- Home Tab -->
-                                <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                <div class="tab-pane fade show active responsive_card" id="home" role="tabpanel"
                                     aria-labelledby="home-tab">
-                                    <div class="row mt-3 Personal_list_content">
+                                    <div class="row mt-3 Personal_list_content ">
                                         <img class="personal_list" src="./assets/images/home/personal_list.svg" alt="">
                                         <p>Personal List is a home for your tasks. <a href=""> Learn more</a></p>
                                         <button class="home_crad_button">+ Create a task</button>
@@ -546,7 +546,7 @@
                         </div>
                     </div>
                     <div id="box-six" class="col-sm-6 mx-2 my-2">
-                        <div class="four_two d-flex">
+                        <div class="four_two d-flex ">
                             <div class="edit_four d-flex my-2">
                                 <img src="./assets/images/dot.svg" width="20px" alt="">
                                 <h5 class="mt-2">Assigned to me</h5>
@@ -570,7 +570,7 @@
 
                             <div class="tab-content" id="myTabContent">
                                 <!-- Home Tab -->
-                                <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                <div class="tab-pane fade show active responsive_card" id="home" role="tabpanel"
                                     aria-labelledby="home-tab">
                                     <div class="row mt-3 Personal_list_content">
                                         <img class="check_box_img" src="./assets/images/home/check_box_img.svg" alt="">
@@ -609,7 +609,7 @@
 
                             <div class="tab-content" id="myTabContent">
                                 <!-- Home Tab -->
-                                <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                <div class="tab-pane fade show active responsive_card" id="home" role="tabpanel"
                                     aria-labelledby="home-tab">
                                     <div class="row mt-3 Personal_list_content">
                                         <img class="check_box_img" src="./assets/images/home/commit_img.svg" alt="">
@@ -649,7 +649,7 @@
 
                             <div class="tab-content" id="myTabContent">
                                 <!-- Home Tab -->
-                                <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                <div class="tab-pane fade show active responsive_card" id="home" role="tabpanel"
                                     aria-labelledby="home-tab">
                                     <div class="row mt-3 Personal_list_content">
                                         <img class="check_box_img" src="./assets/images/home/check_box_add.svg" alt="">
@@ -763,7 +763,7 @@
                 </div>
 
             </div>
-            <button class="btn btn_gray_button" type="button" data-bs-toggle="offcanvas"
+            <button class="btn h_modal_outline_button" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Enable body scrolling</button>
 
 
@@ -893,7 +893,7 @@
             </div>
 
             <!-- Button to trigger modal -->
-            <button type="button" class="btn btn_gray_button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+            <button type="button" class="btn h_modal_outline_button" data-bs-toggle="modal" data-bs-target="#exampleModal2">
                 Open Modal
             </button>
 
@@ -943,9 +943,10 @@
                                 <div class="tab-pane fade h_drp_one show active" id="Task" role="tabpanel"
                                     aria-labelledby="Task-tab">
                                     <div class=" d-flex">
-                                        <div class="dropdown">
-                                            <button class="btn dropdown-toggle h_drp_button mx-2"
+                                        <div class="dropdown ">
+                                            <button class="btn  h_modal_outline_button dropdown-toggle  mx-2"
                                                 type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+
                                                 aria-expanded="false">
                                                 <img src="./assets/images/menu_list.svg" alt="">
                                                 Select List...
@@ -956,8 +957,8 @@
                                                 <li><a class="dropdown-item" href="#">Something else here</a></li>
                                             </ul>
                                         </div>
-                                        <div class="dropdown">
-                                            <button class="btn btn_yellow_outline dropdown-toggle h_drp_button"
+                                        <div class="dropdown ">
+                                            <button class="btn h_modal_outline_button dropdown-toggle "
                                                 type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
                                                 aria-expanded="false">
 
@@ -998,9 +999,9 @@
                                     </div>
                                     <hr>
                                     <div class="h_modal_first d-flex">
-                                        <div class="first_start">
+                                        <div class="  ">
 
-                                            <button type="button" class="btn"> <img
+                                            <button type="button" class="btn h_modal_outline_button"> <img
                                                     src="./assets/images/magic.svg" alt="">Templates</button>
 
                                         </div>
@@ -1008,10 +1009,10 @@
                                             <img src="./assets/images/home/attached.svg" alt="">
                                             <img src="./assets/images/home/not_clock.svg" alt="">
                                             <!-- Example split danger button -->
-                                            <div class="btn-group">
-                                                <button type="button" class="btn btn_yellow_button">Action</button>
+                                            <div class="btn-group h_modal_button_action">
+                                                <button type="button" class="btn ">Action</button>
                                                 <button type="button"
-                                                    class="btn btn_yellow_button dropdown-toggle dropdown-toggle-split"
+                                                    class="btn  dropdown-toggle dropdown-toggle-split"
                                                     data-bs-toggle="dropdown" aria-expanded="false">
                                                     <span class="visually-hidden">Toggle Dropdown</span>
                                                 </button>
@@ -1030,8 +1031,8 @@
                                 </div>
                                 <div class="tab-pane fade" id="Doc" role="tabpanel" aria-labelledby="Doc-tab">
                                     <div class=" d-flex">
-                                        <div class="dropdown">
-                                            <button class="btn btn_yellow_outline dropdown-toggle h_drp_button mx-2"
+                                        <div class="dropdown  ">
+                                            <button class="btn dropdown-toggle h_modal_outline_button h_drp_button mx-2"
                                                 type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
                                                 aria-expanded="false">
                                                 <img src="./assets/images/home/add_menu.svg" alt="">
@@ -1078,8 +1079,8 @@
                                             <p>ClickUp List</p>
                                         </div>
                                         <div class="h_drp_button d-flex">
-                                            <div class="dropdown open">
-                                                <button class="btn btn_white_button dropdown-toggle h_drp_list_modal"
+                                            <div class="dropdown open  ">
+                                                <button class="btn h_modal_outline_button  dropdown-toggle h_drp_list_modal"
                                                     type="button" id="triggerId" data-bs-toggle="dropdown"
                                                     aria-haspopup="true" aria-expanded="false">
                                                     AI Tools: Choose a department
@@ -1137,9 +1138,9 @@
                                             </div>
                                             <span>Private</span>
                                         </div>
-                                        <div class="first_end">
+                                        <div class="first_end  h_modal_button ">
                                             <!-- Example split danger button -->
-                                            <button class="btn btn_yellow_button">Create Doc</button>
+                                            <button class="btn ">Create Doc</button>
                                         </div>
                                     </div>
 
@@ -1152,35 +1153,35 @@
                                             aria-describedby="inputGroup-sizing-lg">
                                     </div>
                                     <div class="h_reminder_button mt-2 d-flex">
-                                        <div>
-                                            <button type="button" class="btn btn_yellow_outline ms-3">
+                                        <div class=" ">
+                                            <button type="button" class="btn h_modal_outline_button ms-3">
                                                 <img src="./assets/images/home/check_calender.svg" alt="">
                                                 <span>Today</span>
                                             </button>
                                         </div>
-                                        <div>
-                                            <button type="button" class="btn btn_yellow_outline">
+                                        <div class=" ">
+                                            <button type="button" class="btn h_modal_outline_button ">
                                                 <img src="./assets/images/user_profile.svg" alt="">
                                                 <span>For me</span>
                                             </button>
                                         </div>
-                                        <div>
-                                            <button type="button" class="btn btn_yellow_outline">
+                                        <div class=" ">
+                                            <button type="button" class="btn h_modal_outline_button">
                                                 <img src="./assets/images/home/not_clock.svg" alt="">
                                                 <span>Notify me</span>
                                             </button>
                                         </div>
                                     </div>
                                     <hr class="mt-5">
-                                    <div class="h_reminder_end d-flex">
+                                    <div class="h_reminder_end d-flex  h_modal_button">
                                         <img src="./assets/images/home/attached.svg" alt="">
-                                        <button class="btn btn_yellow_button text-dark">Create Reminder</button>
+                                        <button class="btn">Create Reminder</button>
                                     </div>
                                 </div>
                                 <div class="tab-pane fade" id="Chat" role="tabpanel" aria-labelledby="Chat-tab">
                                     <div>
-                                        <div class="dropdown">
-                                            <button class="btn btn_white_button dropdown-toggle" type="button"
+                                        <div class="dropdown  ">
+                                            <button class="btn h_modal_outline_button dropdown-toggle" type="button"
                                                 id="dropdownMenuButton1" data-bs-toggle="dropdown"
                                                 aria-expanded="false">
                                                 <img src="assets/images/home.svg" alt=""> Workspace
@@ -1208,11 +1209,11 @@
                                                     id="flexSwitchCheckChecked" checked>
                                                 <span>Private</span>
                                             </div>
-                                            <div class="h_chat_end d-flex">
-                                                <button class="h_chat_img">
+                                            <div class="h_chat_end d-flex  h_modal_button">
+                                                
                                                     <img src="./assets/images/home/not_clock.svg" alt="">
-                                                </button>
-                                                <button class="btn btn_yellow_button create_end">Create Chat</button>
+                                               
+                                                <button class="btn  create_end">Create Chat</button>
                                             </div>
                                         </div>
                                     </div>
@@ -1220,8 +1221,8 @@
                                 <div class="tab-pane fade" id="Whiteboard" role="tabpanel"
                                     aria-labelledby="Whiteboard-tab">
                                     <div>
-                                        <div class="dropdown">
-                                            <button class="btn btn_white_button dropdown-toggle" type="button"
+                                        <div class="dropdown  ">
+                                            <button class="btn h_modal_outline_button dropdown-toggle" type="button"
                                                 id="dropdownMenuButton1" data-bs-toggle="dropdown"
                                                 aria-expanded="false">
                                                 <img src="assets/images/home.svg" alt=""> Workspace
@@ -1244,9 +1245,9 @@
                                                     id="flexSwitchCheckChecked" checked>
                                                 <span>Private</span>
                                             </div>
-                                            <div class="h_whiteboard_end ">
+                                            <div class="h_whiteboard_end   h_modal_button">
 
-                                                <button class="btn btn_yellow_button whiteboard_end">Create
+                                                <button class="btn  whiteboard_end">Create
                                                     Whiteboard</button>
                                             </div>
                                         </div>
@@ -1255,8 +1256,8 @@
                                 <div class="tab-pane fade" id="Dashboard" role="tabpanel"
                                     aria-labelledby="Dashboard-tab">
                                     <div>
-                                        <div class="dropdown">
-                                            <button class="btn btn_white_button dropdown-toggle" type="button"
+                                        <div class="dropdown  ">
+                                            <button class="btn h_modal_outline_button dropdown-toggle" type="button"
                                                 id="dropdownMenuButton1" data-bs-toggle="dropdown"
                                                 aria-expanded="false">
                                                 <img src="assets/images/home.svg" alt=""> Workspace
@@ -1279,9 +1280,9 @@
                                                     id="flexSwitchCheckChecked" checked>
                                                 <span>Private</span>
                                             </div>
-                                            <div class="h_whiteboard_end ">
+                                            <div class="h_whiteboard_end  h_modal_button">
 
-                                                <button class="btn btn_yellow_button dashboard_end">Create
+                                                <button class="btn  dashboard_end">Create
                                                     Dashboard</button>
                                             </div>
                                         </div>
@@ -1296,7 +1297,7 @@
             </div>
 
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn_gray_button" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+            <button type="button" class="btn h_modal_outline_button" data-bs-toggle="modal" data-bs-target="#exampleModal3">
                 Launch demo modal
             </button>
 
@@ -1306,35 +1307,35 @@
                 <div class="modal-dialog">
                     <div class="modal-content p-2">
                         <div class="modal-header">
-                            <div>
+                            <div class="">
 
                                 <p>That feature isn't available on your current plan</p>
-                                <h3>Upgrade to Business to unlock Private Docs</h3>
+                                <h5>Upgrade to Business to unlock Private Docs</h5>
                             </div>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <div>
                                 <div class="row">
-                                    <div class="col-sm-6 h_discount_first">
+                                    <div class="col-sm-6 h_discount_first p-3">
                                         <h4>Private Docs</h4>
                                         <p>Upgrade to Unlimited to make Docs private and unlock more
                                             amazing features.</p>
-                                        <img src="./assets/images/home/boardview.svg" alt="">
-                                        <li>Make a Doc only visible to you</li>
+                                        <img src="./assets/images/home/boardview.svg" width="340px" alt="">
+                                        <li class="mt-3">Make a Doc only visible to you</li>
                                         <li>Advanced public sharing</li>
                                         <li> Access Notepad</li>
                                     </div>
 
 
 
-                                    <div class="col-sm-6">
+                                    <div class="col-sm-6 responsive_discount">
                                         <div class="h_discount_two">
                                             <img src="./assets/images/home/discount.svg" alt="">
                                         </div>
-                                        <div class="d-flex h_business_title">
+                                        <div class="d-flex h_business_title h_modal_button">
                                             <h3>Business</h3>
-                                            <button class="btn btn_yellow_button">Popular</button>
+                                            <button class="btn ">Popular</button>
                                         </div>
                                         <p>Unlock Private Docs and much more</p>
                                         <div class="d-flex h_d_offer ">
@@ -1349,8 +1350,10 @@
 
 
                                         </div>
-                                        <button class="btn btn_yellow_button h_discount_text col-12">Contact your
+                                      <div class="h_modal_button">
+                                        <button class="btn  h_discount_text col-12">Contact your
                                             admin</button>
+                                        </div>
                                         <div>
                                             <img src="./assets/images/home/check.svg" alt="">
                                             <span>Unlimited Activity View</span>
@@ -1404,7 +1407,7 @@
 
 
 
-            <button class="btn btn_gray_button" type="button" data-bs-toggle="offcanvas"
+            <button class="btn h_modal_outline_button" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasScrolling2" aria-controls="offcanvasScrolling">profile</button>
 
             <div class="offcanvas offcanvas-end h_profile_sidebar" data-bs-scroll="true" data-bs-backdrop="false"
@@ -1419,7 +1422,7 @@
                     </div>
                     <div>
 
-                        <button class="h_feedback_sidebar p-1 rounded-3">Feedback <img
+                        <button class="h_feedback_sidebar h_modal_outline_button p-1 rounded-3">Feedback <img
                                 src="./assets/images/home/arrowup.svg" alt=""></button>
                         <img src="./assets/images/home/idea.svg" width="25px" alt="">
                         <img src="./assets/images/home/menu_dot.svg" width="25px" alt="">
@@ -1428,16 +1431,17 @@
                     </div>
                 </div>
                 <div class="offcanvas-body">
-                    <div class="h_siderbar_button">
-                        <button class="btn btn_gray_button">Write StandUp</button>
+                    <div class="h_siderbar_button h_modal_button">
+                        <button class="btn ">Write StandUp</button>
                     </div>
                     <div class="h_sidebar_content mt-3 d-flex">
-                        <div class="h_sidebar_content1 mt-3">
-                            <img src="./assets/images/start.svg" alt="">
+                        <div class="  mt-3">
+                            <img src="./assets/images/start.svg"  class="h_modal_outline_button p-2 rounded-5" alt="">
                         </div>
                         <div class="h_sidebar_content2">
-                            <div>
-                                <h4>StandUp™</h4>
+                            <div class="justify-content-between d-flex">
+                                <h5>StandUp™</h5>
+                                <p>Edit</p>
                             </div>
                             <div>
                                 <h5>Automate work updates with AI StandUp™</h5>
@@ -1446,7 +1450,8 @@
                             <div>
                                 <p>People or Teams</p>
                                 <div class="dropdown open">
-                                    <button class="btn btn_gray_button dropdown-toggle col-12 h_sibebar_button"
+                                    
+                                    <button class="btn h_modal_outline_button dropdown-toggle col-12 h_sibebar_button"
                                         type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true"
                                         aria-expanded="false">
                                         <img src="./assets/images/user_profile.svg" class="justify-content-start"
@@ -1464,7 +1469,7 @@
                             <div class="mt-3">
                                 <p>Since</p>
                                 <div class="dropdown open">
-                                    <button class="btn btn_gray_button dropdown-toggle col-12 h_sibebar_button"
+                                    <button class="btn h_modal_outline_button dropdown-toggle col-12 h_sibebar_button"
                                         type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true"
                                         aria-expanded="false">
                                         <span>Last 24 hours</span>
@@ -1481,14 +1486,14 @@
 
                             <div class="mt-3 h_sidebar1_button">
                                 <p>Format</p>
-                                <div class="h_sidebar_threeButton">
-                                    <button class="col-3 btn_gray_button p-1 rounded-3">Bulleted list</button>
-                                    <button class="col-3 btn_gray_button p-1 rounded-3">Short</button>
-                                    <button class="col-3 btn_gray_button p-1 rounded-3">Traditional</button>
+                                <div class="h_sidebar_threeButton h_modal_button">
+                                    <button class="col-3  p-1 rounded-3">Bulleted list</button>
+                                    <button class="col-3  p-1 rounded-3">Short</button>
+                                    <button class="col-3  p-1 rounded-3">Traditional</button>
                                 </div>
                             </div>
-                            <div>
-                                <button class="col-12 mt-3 btn_black_button p-2 rounded-3 h_generate">
+                            <div class="h_modal_button">
+                                <button class="col-12 mt-3  p-2 rounded-3 h_generate">
                                     Generate
                                 </button>
                             </div>
@@ -1502,17 +1507,17 @@
 
 
                     <div class="footer_main_sidebar d-flex">
-                        <div class="image_footer">
-                            <img src="./assets/images/start.svg" alt="">
+                        <div class="image_footer ">
+                            <img src="./assets/images/start.svg" class="h_modal_outline_button rounded-5" alt="">
                         </div>
                         <div class="main_contain_footer">
                             <p>No updates in the last 24 hours.</p>
                             <div class="sibebar_footer_button d-flex">
-                                <div>
-                                    <button class="btn_gray_button"><img src="./assets/images/add.svg"
+                                <div class="h_modal_button">
+                                    <button class=" p-2"><img src="./assets/images/add.svg"
                                             alt="Create">Create</button>
-                                    <button class="btn_gray_button">Copy</button>
-                                    <button class="btn_gray_button">Regenerate</button>
+                                    <button class=" p-2">Copy</button>
+                                    <button class=" p-2">Regenerate</button>
                                 </div>
                                 <div class="mx-4 sidebar_button">
                                     <span><img src="./assets/images/home/like.svg" alt="Like"></span>
@@ -1520,8 +1525,8 @@
                                 </div>
                             </div>
                             <div class="input_footer mt-3">
-                                <div class="row">
-                                    <input type="text" class="col-9 p-2 mx-2  rounded-3"
+                                <div class="row ">
+                                    <input type="text" class="col-9 p-2 mx-2 h_modal_outline_button  rounded-3"
                                         placeholder="Tell Al what to do next">
                                     <img src="./assets/images/home/send.svg" class="send_button col-2" alt="">
                                 </div>
@@ -1538,7 +1543,7 @@
 
                 </div>
             </div>
-            <button class="btn btn_gray_button" type="button" data-bs-toggle="offcanvas"
+            <button class="btn h_modal_outline_button" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasScrolling3" aria-controls="offcanvasScrolling">Enable body scrolling</button>
 
             <div class="offcanvas offcanvas-end h_notepad" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
@@ -1555,16 +1560,16 @@
                     </div>
                 </div>
                 <div class="offcanvas-body">
-                    <div class="notepad_content mt-4">
+                    <div class="notepad_content mt-4 h_modal_button">
                         <img src="./assets/images/home/doc_add.svg" alt="">
                         <h4>Create personal notes</h4>
                         <p>Capture your thoughts or ideas and access them
                             anywhere in ClickUp!</p>
-                        <button class="btn_gray_button p-2 rounded-3"> Create a note</button>
+                        <button class=" p-2 rounded-3"> Create a note</button>
                     </div>
                 </div>
             </div>
-            <button class="btn btn_gray_button" type="button" data-bs-toggle="offcanvas"
+            <button class="btn h_modal_outline_button" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasScrolling4" aria-controls="offcanvasScrolling">User id profile</button>
 
 
@@ -1574,15 +1579,15 @@
                     <div>
                         <img src="./assets/images/user_profile.svg" width="50px" alt="">
                     </div>
-                    <div class="profile_header">
+                    <div class="profile_header ">
                         <h6 class="mt-2"> Arushi </h6>
 
-                        <button class="btn_yellow_outline">Online</button>
+                        <button class="h_modal_outline_button ">Online</button>
                     </div>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
 
                 </div>
-                <div class="profile_button_type d-flex">
+                <div class="profile_button_type d-flex h_modal_button">
 
                     <div>
                         <div>
@@ -1610,7 +1615,7 @@
                     </div>
                 </div>
 
-                <button class="btn_gray_button p-2 mx-5 rounded-3"> <img src="./assets/images/start.svg" alt="">Write
+                <button class="  p-2 mx-5 rounded-3 profile_button"> <img src="./assets/images/start.svg" alt="">Write
                     StandUp</button>
                 <div class="offcanvas-body">
                     <nav>
@@ -1731,7 +1736,7 @@
                                                 done.</h4>
                                             <p><a href="">Assign a Reminder</a> to someone and keep track of it here.
                                                 You can also see Reminders you delegate in anyone's </p>
-                                            <button class="p-2 rounded-3 btn_yellow_outline">Learn more about
+                                            <button class="p-2 rounded-3 h_modal_outline_button">Learn more about
                                                 delegating</button>
                                         </div>
                                         <hr class="mt-2">
