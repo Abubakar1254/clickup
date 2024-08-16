@@ -1265,6 +1265,57 @@ justify-content: space-around;
     cursor: pointer;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* INBOX AI */
+
+
+
+
+
+
+#main_inbox{
+    width: 100vw;
+}
+.i_nav_one_side{
+    gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 600px) {
     .profile_header {
         gap: 200px;
