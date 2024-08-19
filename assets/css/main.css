@@ -2,13 +2,13 @@
 @import url(./buttons.css);
 
 
-:root {
+:root {}
 
-}
-.btn.primary{
+.btn.primary {
     background-color: var(--button-primary-bg-color);
     color: var(--button-primary-text-color);
 }
+
 body {
     overflow-y: hidden
 }
@@ -161,22 +161,25 @@ body {
         opacity: 0.80;
         border: 0;
     }
-    .ask-ai{
+
+    .ask-ai {
         height: 34px;
         padding: 7px;
         border-radius: 6px;
-        color:var(--navbar_text_color);
+        color: var(--navbar_text_color);
         background-color: var(--navbar-ask-ai-bg-color);
     }
 }
 
-.home_crad_button{
-    background-color: var(--button_primary_bg_color) ;
-    color:var(--button_primary_text_color);
+.home_crad_button {
+    background-color: var(--button_primary_bg_color);
+    color: var(--button_primary_text_color);
 }
-.user_name{
+
+.user_name {
     font-size: 24px;
 }
+
 .sidebarnew.inactive {
     max-width: 60px;
     min-width: 60px;
@@ -222,12 +225,15 @@ body {
 .form-switch {
     width: 100%;
 }
-.form-switch input{
-    background-color:var( --button_switch_bg_color);
+
+.form-switch input {
+    background-color: var(--button_switch_bg_color);
 }
-.form-switch input:checked{
-    background-color:var( --button_switch_active_bg_color);
+
+.form-switch input:checked {
+    background-color: var(--button_switch_active_bg_color);
 }
+
 #switch {
     width: 350px;
 }
@@ -296,7 +302,7 @@ body {
 }
 
 .card_button button {
-    border:1px solid var(--sidebar_nav_border_color);
+    border: 1px solid var(--sidebar_nav_border_color);
     color: var(--sidebar_nav_text_color);
     /* padding: 6px; */
     justify-content: space-evenly;
@@ -307,21 +313,22 @@ body {
     width: 146px;
 }
 
-.card_button_2 h5{
+.card_button_2 h5 {
     font-size: 16px;
 }
+
 .card_button_2 button {
     border-radius: 10px;
-    background:var(--sidebar_new_bg_color);
+    background: var(--sidebar_new_bg_color);
     color: var(--sidebar_new_text_color);
-    border:1px solid var(--sidebar_new_border_color);
+    border: 1px solid var(--sidebar_new_border_color);
     padding: 0px 18px;
 }
 
 #check {
     width: auto;
-    background-color:var(--button-primary-bg-color);
-    color:var(--button-primary-text-color);
+    background-color: var(--button-primary-bg-color);
+    color: var(--button-primary-text-color);
     padding: 0pc 10px
 }
 
@@ -409,21 +416,25 @@ body {
 
     }
 }
-.action_button_modal{
-    background:var(--button_modal_bg_color);
+
+.action_button_modal {
+    background: var(--button_modal_bg_color);
     color: var(--button_modal_text_color);
 }
-.h_modal_outline_button{
-    border:1px solid var(--button_outline_modal_border_color);
+
+.h_modal_outline_button {
+    border: 1px solid var(--button_outline_modal_border_color);
     color: var(--button_outline_modal_text_color);
     height: 29px;
     font-size: 12px;
 }
 
-.nav-underline .nav-link.active, .nav-underline .show>.nav-link {
+.nav-underline .nav-link.active,
+.nav-underline .show>.nav-link {
     border-bottom: 1px solid var(--nav_tabs_border_color);
     color: var(--nav_tabs_text_color);
 }
+
 .h_modal_input {
     border: none;
 }
@@ -431,18 +442,26 @@ body {
 .h_modal_button {
     gap: 10px;
 }
-.h_modal_button button:hover,.h_modal_outline_button:hover{
+
+.h_modal_button button:hover,
+.h_modal_outline_button:hover {
     background-color: var(--button_active_modal_bg_color);
     color: var(--button_active_modal_text_color);
 }
-.h_modal_button button{
-    border:1px solid var(--button_outline_modal_border_color);
+
+.h_modal_button button {
+    border: 1px solid var(--button_outline_modal_border_color);
     color: var(--button_outline_modal_border_color);
 }
-.first_start button,.h_modal_button_action button ,.profile_button,.action_button{
+
+.first_start button,
+.h_modal_button_action button,
+.profile_button,
+.action_button {
     background-color: var(--button_modal_bg_color);
     color: var(--button_modal_text_color);
 }
+
 .h_drp_one button {
     justify-content: space-evenly;
 }
@@ -603,9 +622,11 @@ body {
 .offcanvas {
     z-index: 1050;
 }
-.h_sidebar_two{
+
+.h_sidebar_two {
     margin-left: -10px;
 }
+
 .sidebar {
     height: 100%;
     width: 0;
@@ -710,7 +731,7 @@ body {
 .edit_one {
     display: flex;
     align-items: center;
-   
+
 }
 
 .other_one img {
@@ -1011,39 +1032,6 @@ body {
 }
 
 
-.calendar{
-    gap: 20px;
-}
-.vertical_row{
-    width: 100%;
-border: 1px solid;
-margin-left: 16px;
-}
-.calendar_time{
-    height: 550px;
-overflow-y: scroll;
-}
-.calendar_button{
-    display: flex;
-    width: 100%;
-    height: 60px;
-    flex-direction: column;
-    border: 1px solid var(--gray);
-    
-}
-.calendar_one_button,.calendar_two_button{
-    height: 30px;
-    background-color: var(--white);
-}
-.calendar_one_button:hover,.calendar_two_button:hover{
-background-color:var(--calender);
-
-}
-.active_calender_button {
-    width: 39vw;
-    height: 5px;
-    background-color: var(--yellow);
-}
 .calendar {
     gap: 20px;
 }
@@ -1079,21 +1067,67 @@ background-color:var(--calender);
     background-color: var(--calender);
 
 }
+
+.active_calender_button {
+    width: 39vw;
+    height: 5px;
+    background-color: var(--yellow);
+}
+
+.calendar {
+    gap: 20px;
+}
+
+.vertical_row {
+    width: 100%;
+    border: 1px solid;
+    margin-left: 16px;
+}
+
+.calendar_time {
+    height: 550px;
+    overflow-y: scroll;
+}
+
+.calendar_button {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    flex-direction: column;
+    border: 1px solid var(--gray);
+
+}
+
+.calendar_one_button,
+.calendar_two_button {
+    height: 30px;
+    background-color: var(--white);
+}
+
+.calendar_one_button:hover,
+.calendar_two_button:hover {
+    background-color: var(--calender);
+
+}
+
 .active_calender span {
 
     background-color: var(--yellow);
     padding: 5px;
 }
-.active_calender_button{
+
+.active_calender_button {
     width: 39vw;
     height: 5px;
-    background-color:var(--yellow);
+    background-color: var(--yellow);
 }
-.active_calender span{
 
-    background-color:var(--yellow);
+.active_calender span {
+
+    background-color: var(--yellow);
     padding: 5px;
-} 
+}
+
 .h_sidebar_proend {
     display: flex;
     justify-content: space-between !important;
@@ -1118,7 +1152,7 @@ background-color:var(--calender);
 }
 
 .main_contain_footer {
-   border: 1px solid var(--button_outline_modal_border_color);
+    border: 1px solid var(--button_outline_modal_border_color);
     padding: 18px;
     margin: 10px;
     color: var(--button_outline_modal_text_color);
@@ -1130,7 +1164,7 @@ background-color:var(--calender);
 }
 
 .h_sidebar_threeButton {
-justify-content: space-around;
+    justify-content: space-around;
     display: flex;
 }
 
@@ -1156,7 +1190,7 @@ justify-content: space-around;
     padding: 14px;
     border-radius: 10px;
     /* background-color: var(--yellow); */
-    border: 1px solid  var(--button_outline_modal_border_color);
+    border: 1px solid var(--button_outline_modal_border_color);
     margin: 15px;
 }
 
@@ -1270,26 +1304,6 @@ justify-content: space-around;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* INBOX AI */
 
 
@@ -1297,21 +1311,436 @@ justify-content: space-around;
 
 
 
-#main_inbox{
+#main_inbox {
     width: 100vw;
+    overflow: scroll;
+    height: 100vh;
 }
-.i_nav_one_side{
+
+.i_nav_one_side {
     gap: 20px;
 }
 
+.i_card_notification {
+    height: 500px;
+    text-align: center;
+}
+
+.i_card_notification img {
+    margin-top: 8%;
+}
+
+.i_card_notification p,
+.i_content_two p {
+    color: var(--gray);
+}
+
+.i_clickTip div {
+    width: 200px;
+    text-align: center;
+}
+
+.i_content_two {
+    text-align: center;
+    padding: 50px 35%;
+}
+
+.i_modal_invite {
+    justify-content: space-between;
+    display: flex;
+    border: 1px solid var(--gray);
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.i_modal_dialog_invite {
+    max-width: 587px;
+}
+
+.i_modal_dialog_invite p {
+    font-size: 12px;
+}
+
+.i_content_one h4 {
+    font-size: 18px;
+}
+
+.i_modal_dialog_invite label {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.i_content_two h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.i_clickUp_brain {
+    margin: 70px 20px;
+    width: 500px !important;
+    border-radius: 10px;
+    box-shadow: 1px 11px 33px 8px var(--gray);
+}
+
+.i_click_content {
+    padding: 10px 20px;
+}
+
+.i_click_content span {
+    color: var(--gray);
+}
+
+.i_modal_body_invite p {
+    font-size: 14px;
+}
+
+.i_modal_para_clickupBrain span {
+    font-size: 14px;
+}
+
+.i_click_content_line {
+    font-size: 12px;
+    color: var(--gray);
+}
+
+.i_brain_button button {
+    border: 1px solid var(--button_border_color);
+    color: var(--button_text_color);
+    background: var(--button_bg_color);
+}
+
+.i_brain_button button:hover {
+    border: 1px solid var(--button_active_border_color);
+    color: var(--button_active_text_color);
+    background: var(--button_active_bg_color);
+}
+
+.i_projectUpdate_modal {
+    gap: 116px;
+    display: flex;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .nav_2 {
+        flex-wrap: wrap;
+    }
+
+    .i_content_two {
+        padding: 50px 2%;
+    }
+
+    .i_card_notification {
+        height: 300px;
+    }
+
+    .i_clickTip div {
+        width: 268px;
+    }
+
+    .i_nav_one_side {
+        gap: 7px;
+    }
+
+    .i_clickUp_brain {
+        margin: 0;
+    }
+
+    .i_brand_send img {
+        margin-left: 0 !important;
+    }
+
+    .modal_title {
+        font-size: 10px;
+    }
+}
+
+.i_checkbox_modal {
+    background-color: var(--button_switch_bg_color);
+}
+
+.i_checkbox_modal:checked {
+    background-color: var(--button_switch_active_bg_color);
+}
+
+.i_projectUpdate_card {
+    padding: 11px;
+    background: var(--background_color_modal);
+    color: var(--text_color_modal);
+    ;
+    border-radius: 10px;
+}
+
+.i_projectUpdate_card p {
+    font-size: 14px;
+}
+
+.h_modal_button_action {
+    justify-content: end;
+    display: flex;
+}
+
+.modal_get_team_update {
+
+
+
+    .modal_content_header h5 {
+        font-size: 14px;
+
+    }
+
+    .dropdown-toggle::after {
+        margin-top: 10px;
+    }
+
+    .user_drop {
+        display: flex;
+        justify-content: space-between;
+        height: 40px;
+    }
+
+    .modal_button {
+        background-color: var(--background_color_modal);
+        border-radius: 10px;
+    }
+
+    .modal_button button:hover {
+        border: 1px solid var(--text_color_hover_modal);
+        background-color: var(--background_color_hover_modal);
+        color: var(--text_color_hover_modal);
+
+    }
+
+    .modal_button button {
+        width: 32%;
+        font-size: 12px;
+
+    }
+
+    .modal_content_one h5 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+.template_Center {
+    .modal_dialog {
+        max-width: 1300px !important;
+    }
+
+    .Complexity div,
+    .template_type div {
+        padding: 8px;
+
+    }
+
+    .Complexity div label,
+    .template_type label {
+        margin-left: 5px;
+        color: var(--text_templates_sidebar_modal);
+        font-size: 14px;
+
+    }
+
+    .modal_sidebar {
+        margin-top: -65px;
+        background-color: var(--background_templates_sidebar_modal);
+        color: var(--text_templates_sidebar_modal);
+        border-radius: 10px;
+    }
+
+    .modal_sidebar h1 {
+        font-size: 16px;
+
+
+        margin: 8px 0 0 4px;
+    }
+
+    .Complexity h5,
+    .template_type h5 {
+        color: var(----text_templates_sidebar_modal);
+        font-size: 12px;
+
+    }
+
+    .activityLog {
+        margin-top: 40%;
+    }
+
+    .one_content span,
+    .activityLog span {
+        font-size: 14px;
+        color: var(--text_templates_sidebar_modal);
+
+    }
+
+    .input_buttons span {
+        font-size: 14px;
+    }
+
+    .alert-dismissible button {
+        height: 28.99px;
+        font-size: 12px;
+    }
+
+    .alert-dismissible {
+        height: 65px;
+        background-color: var(--background_colour_alert_modal);
+        color: var(--text_colour_alert_modal);
+    }
+
+    .two_content h1 {
+        font-size: 18px;
+    }
+
+    .template_card h1 {
+        font-size: 16px;
+    }
+
+    .Card_formate {
+        background: var(--background_templates_card_modal);
+        padding: 2px;
+        border-radius: 10px;
+    }
+
+    .Card_footer span {
+        font-size: 14px;
+    }
+
+    .card_main {
+        height: 650px;
+        overflow: scroll;
+        border: none;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .activityLog {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .alert-dismissible {
+            height: 85px;
+        }
+
+        .alert-dismissible button {
+            height: 50px;
+
+
+        }
+    }
 
 
 
 
+}
 
+.templates_more_info {
+    .modal-dialog {
+        max-width: 1300px;
+    }
 
+    .modal_content {
+        display: flex;
+        gap: 20px;
+    }
 
+    .modal_content h3 {
+        font-size: 24px;
+    }
 
+    .profile_description p span {
+        font-size: 12px;
+
+    }
+
+    .profile_description span {
+        width: 89px;
+        text-align: center;
+        background-color: var(--bg_templates_buget_modal);
+        color: var(--text_templates_buget_modal);
+        border-radius: 5px;
+        height: 28px;
+    }
+
+    .user_title {
+        gap: 10px;
+    }
+
+    .modal-header h5 {
+        font-size: 16px;
+    }
+
+    .null_button {
+        height: 100px;
+        width: 100px;
+
+    }
+
+    .content_two h3 {
+        font-size: 14px;
+
+    }
+
+    .content_two p {
+        font-weight: 400;
+        font-size: 12px;
+    }
+
+    .sidear_content_two h4 {
+        font-size: 11px;
+        color: var(--text_templates_sidebar_modal);
+    }
+
+    .sidear_content_two p {
+        font-size: 14px;
+    }
+
+    .Social_card {
+        background-color: var(--background_templates_card_modal);
+    }
+
+    .card_detail h3 {
+        font-size: 16px;
+    }
+
+    .card_detail p {
+        font-size: 14px;
+    }
+
+    .drop_down_button {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .dropend .dropdown-toggle::after {
+
+        margin-top: 20px;
+    }
+
+    .content_three h3 {
+        font-size: 16px;
+    }
+
+    .modal-content {
+        height: 750px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .modal-content {
+            height: 1000px;
+        }
+
+        .use_templates {
+            font-size: 10px;
+            width: 90px;
+
+        }
+    }
+}
 
 
 
@@ -1322,82 +1751,106 @@ justify-content: space-around;
     .profile_header {
         gap: 200px;
     }
-    .nav_2_two span{
+
+    .nav_2_two span {
         font-size: 11px;
     }
-    .one_button_manage{
+
+    .one_button_manage {
         height: 37px;
-        width: 97px;;
+        width: 97px;
+        ;
     }
-    .user_name{
+
+    .user_name {
         font-size: 19px;
-    margin-top: 13px;
+        margin-top: 13px;
     }
+
     #one_box {
         height: 352px;
     }
-    .search-button{
+
+    .search-button {
         width: 72% !important;
     }
-    .h_nav_end{
-      gap: 0px !important;
+
+    .h_nav_end {
+        gap: 0px !important;
     }
-    #switch{
+
+    #switch {
         width: 253px;
     }
-    ol, ul {
-        padding-left:0px !important;
+
+    ol,
+    ul {
+        padding-left: 0px !important;
     }
+
     .h_main_profile {
-    
+
         left: 40% !important;
     }
-    .sidebarnew{
+
+    .sidebarnew {
         min-width: 200px;
     }
-    .nav_search_form,.h_nav_end{
+
+    .nav_search_form,
+    .h_nav_end {
         margin-top: 20px;
     }
-   /* #box_two h5,#box_three h5,#box_four h5,#box_five h5,#box_six h5,#box_seven h5,#box_eight h5,#box_ten h5{
+
+    /* #box_two h5,#box_three h5,#box_four h5,#box_five h5,#box_six h5,#box_seven h5,#box_eight h5,#box_ten h5{
     font-size: 10px;
    } */
 
-   .edit_two h5,.edit_four h5,.edit_one h5{
-    font-size: 15px;
-   }
-   .edit_two img,.edit_four img{
-    width: 20px;
-   }
-   #myTab{
-    font-size: 12px;
-   }
-   .h_profile_sidebar{
-    margin: 0;
-   }
-   .h_notepad{
-    margin: 0px;
-   }
-   .h_modal_button,.h_reminder_button,.sibebar_footer_button{
-    flex-wrap: wrap;
-   }
-   .h_sidebar_threeButton{
-    display: flex;
-    gap: 5px;
-    justify-content: normal;
-   }
-   .h_sidebar_threeButton button{
-    width: 23vw;
-    padding: 0;
-   }
-   .responsive_card{
-    margin-top: 27%;
-   }
-   .responsive_discount{
-    margin-top: 50px;
-   }
+    .edit_two h5,
+    .edit_four h5,
+    .edit_one h5 {
+        font-size: 15px;
+    }
+
+    .edit_two img,
+    .edit_four img {
+        width: 20px;
+    }
+
+    #myTab {
+        font-size: 12px;
+    }
+
+    .h_profile_sidebar {
+        margin: 0;
+    }
+
+    .h_notepad {
+        margin: 0px;
+    }
+
+    .h_modal_button,
+    .h_reminder_button,
+    .sibebar_footer_button {
+        flex-wrap: wrap;
+    }
+
+    .h_sidebar_threeButton {
+        display: flex;
+        gap: 5px;
+        justify-content: normal;
+    }
+
+    .h_sidebar_threeButton button {
+        width: 23vw;
+        padding: 0;
+    }
+
+    .responsive_card {
+        margin-top: 27%;
+    }
+
+    .responsive_discount {
+        margin-top: 50px;
+    }
 }
-
-
-
-
-

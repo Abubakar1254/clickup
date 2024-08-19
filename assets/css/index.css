@@ -7,11 +7,13 @@
 body {
   background-color: #fafbfc;
 }
+
 main {
   display: flex;
   /* height: calc(100vh - 114px); */
   height: 80vh;
 }
+
 .background-image {
   position: absolute;
   height: calc(100% - 17vh);
@@ -23,6 +25,7 @@ main {
   background: url("../images/one.svg") center 10px no-repeat;
   background-size: cover;
   z-index: -1;
+
   .curve-vector {
     display: block;
     position: absolute;
@@ -34,6 +37,7 @@ main {
     background-size: 100%;
   }
 }
+
 @media only screen and (max-width: 768px) {
   .background-image {
     .curve-vector {
@@ -47,6 +51,7 @@ main {
       background-size: 100%;
     }
   }
+
   .form-container {
     margin: 0 !important;
     margin-left: 10px !important;
@@ -62,13 +67,16 @@ main {
     margin-bottom: 10px;
   }
 }
+
 header {
   /* margin-top: 30px; */
   height: 20vh;
+
   .container-fluid {
     padding-left: 30px;
     padding-right: 30px;
   }
+
   p {
     font-family: Segoe UI;
     font-size: 14px;
@@ -78,6 +86,7 @@ header {
     margin-right: 20px !important;
     color: #292d34;
   }
+
   .btn {
     color: white;
     background: var(--black);
@@ -96,6 +105,7 @@ header {
     text-align: left;
   }
 }
+
 .background_image img {
   width: 100%;
   position: fixed;
@@ -134,14 +144,17 @@ header {
   align-items: center;
   justify-content: center;
   margin: 10px 0;
+
   hr {
     margin: 0 auto;
   }
 }
+
 form label {
   font-size: 13px;
   color: #292d34;
 }
+
 form {
   input {
     width: 360px;
@@ -150,6 +163,7 @@ form {
     border-radius: 9px;
     border: 1px solid #d6d9de;
   }
+
   .login {
     background: var(--black);
     color: white;
@@ -163,15 +177,18 @@ form {
     margin-top: 10px;
   }
 }
+
 .line_one,
 .line_two {
   flex: 1;
   border: none;
   border-top: 1px solid #87909e;
 }
+
 .nav-btn .btn-2 {
   display: none;
 }
+
 .line_one {
   margin-right: 10px;
 }
@@ -234,9 +251,11 @@ form {
   height: 50%;
   position: fixed;
 }
+
 .main-navabar {
   justify-content: space-between;
 }
+
 #sign_up {
   text-align: center !important;
   width: 128px !important;
@@ -256,6 +275,7 @@ form {
   font-weight: 400;
   line-height: 12px;
   text-align: center;
+
   a {
     text-align: center;
     margin-top: 15px;
@@ -282,6 +302,7 @@ form {
   bottom: 0;
   /* margin-top: 30px; */
 }
+
 .no_account {
   font-size: 13px;
 }
@@ -289,11 +310,13 @@ form {
 .footer {
   font-size: 10px;
 }
+
 .no_account {
   a {
     text-underline-offset: 4px;
   }
 }
+
 .help {
   margin-top: -30px;
   margin-left: 91%;
@@ -301,35 +324,44 @@ form {
   background: #ffffff29;
   border-radius: 6px;
   box-shadow: 0px 5px 15px 0px #101e3626;
+
   p {
     margin-bottom: 0px;
     font-weight: bold;
   }
+
   a {
     text-decoration: none !important;
   }
 }
+
 @media only screen and (max-width: 600px) {
   .background_image {
     margin-bottom: 500px;
     margin-top: -500px;
   }
+
   .nav-btn a {
     width: 95px;
   }
+
   .img-fluid {
     width: 40%;
   }
+
   main {
     display: flex;
   }
+
   .nav-btn p {
     display: none;
   }
+
   .btn-2 {
     width: 176px;
     font-size: 14px;
   }
+
   .background_image img {
     height: 865px;
     max-width: 200px;

@@ -1,2234 +1,1624 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>Title</title>
 
-    <!-- Bootstrap CSS v5.3.2 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Title</title>
 
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
-  </head>
+  <!-- Bootstrap CSS v5.3.2 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <body>
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <div class="main_modal">
-              <div class="one">
-                <h5>StandUp™</h5>
-              </div>
+  <link rel="stylesheet" href="./assets/css/main.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+</head>
+
+<body>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="main_modal">
+            <div class="one">
+              <h5>StandUp™</h5>
             </div>
-            <div class="modal_two d-flex">
-              <button class="one_button p-2">
-                Feedback <img src="./assets/images/home/export.svg" alt="" />
+          </div>
+          <div class="modal_two d-flex">
+            <button class="one_button p-2">
+              Feedback <img src="./assets/images/home/export.svg" alt="" />
+            </button>
+            <img src="./assets/images/home/idea.svg" width="20px" alt="" />
+            <img src="./assets/images/home/menu_dot.svg" width="20px" alt="" />
+            <button type="button" class="btn-close my-2" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="modal_one_content my-2">
+            <h5>Automate work updates with AI StandUp™</h5>
+            <p>
+              Track daily progress and insights with real-time task updates.
+            </p>
+          </div>
+          <div class="mt-5">
+            <p>People or Teams</p>
+            <img src="./assets/images/user_profile.svg" width="40px" alt="" />
+          </div>
+
+          <div class="mt-4">
+            <p>Since</p>
+            <div class="dropdown open">
+              <button class="btn btn dropdown-toggle Since_drp col-12" type="button" id="triggerId"
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Last 7 days
               </button>
-              <img src="./assets/images/home/idea.svg" width="20px" alt="" />
-              <img
-                src="./assets/images/home/menu_dot.svg"
-                width="20px"
-                alt=""
-              />
-              <button
-                type="button"
-                class="btn-close my-2"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-          </div>
-          <div class="modal-body">
-            <div class="modal_one_content my-2">
-              <h5>Automate work updates with AI StandUp™</h5>
-              <p>
-                Track daily progress and insights with real-time task updates.
-              </p>
-            </div>
-            <div class="mt-5">
-              <p>People or Teams</p>
-              <img src="./assets/images/user_profile.svg" width="40px" alt="" />
-            </div>
+              <div class="dropdown-menu col-12" aria-labelledby="triggerId">
+                <button class="dropdown-item" href="#">Action</button>
+              </div>
+              <div class="mt-4">
+                <p>Format</p>
+              </div>
 
-            <div class="mt-4">
-              <p>Since</p>
-              <div class="dropdown open">
-                <button
-                  class="btn btn dropdown-toggle Since_drp col-12"
-                  type="button"
-                  id="triggerId"
-                  data-bs-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Last 7 days
-                </button>
-                <div class="dropdown-menu col-12" aria-labelledby="triggerId">
-                  <button class="dropdown-item" href="#">Action</button>
-                </div>
-                <div class="mt-4">
-                  <p>Format</p>
-                </div>
-
-                <div class="format_button d-flex">
-                  <button>Traditional</button>
-                  <button class="format_check">Short</button>
-                  <button>Traditional</button>
-                </div>
+              <div class="format_button d-flex">
+                <button>Traditional</button>
+                <button class="format_check">Short</button>
+                <button>Traditional</button>
               </div>
             </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn_gray_button">Generate</button>
-          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn_gray_button">Generate</button>
         </div>
       </div>
     </div>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark h_main_nav">
-        <div class="container-fluid">
-          <a class="navbar-brand mx-2" href="javascript:void(0)"
-            ><img src="assets/images/logo.png" width="70px" alt=""
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mynavbar"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="mynavbar">
-            <form class="d-flex mx-auto gap-2 nav_search_form">
-              <button class="search-button">
-                <i class="bi bi-search"></i>
-                <span>Search...</span>
+  </div>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark h_main_nav">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-2" href="javascript:void(0)"><img src="assets/images/logo.png" width="70px"
+            alt="" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <form class="d-flex mx-auto gap-2 nav_search_form">
+            <button class="search-button">
+              <i class="bi bi-search"></i>
+              <span>Search...</span>
+            </button>
+            <button class="border-0 ask-ai d-flex align-items-center">
+              <div class="image">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                  <g clip-path="url(#clip0_6616_14831)">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.9274 1.45473C10.7695 0.909621 9.93725 0.909621 9.77931 1.45473L9.55578 2.22685C9.07358 3.89044 8.41465 5.18994 6.62438 5.63787L5.79354 5.84578C5.20684 5.99253 5.20684 6.76593 5.79354 6.91268L6.62438 7.12056C8.41465 7.5685 9.07358 8.86803 9.55578 10.5316L9.77931 11.3037C9.93725 11.8488 10.7695 11.8488 10.9274 11.3037L11.1512 10.5316C11.6332 8.86803 12.2924 7.5685 14.0826 7.12056L14.9135 6.91268C15.5002 6.76593 15.5002 5.99253 14.9135 5.84578C14.3268 5.69904 14.0826 5.63787 14.0826 5.63787C12.2924 5.18994 11.6332 3.89044 11.1512 2.22685L10.9274 1.45473Z"
+                      fill="url(#paint0_linear_6616_14831)" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M4.0299 9.30145C3.93515 8.96072 3.43577 8.96072 3.34102 9.30145L3.2069 9.78398C2.91759 10.8238 2.52224 11.6359 1.44807 11.9159L0.94956 12.0458C0.597542 12.1376 0.597542 12.6209 0.94956 12.7126L1.44807 12.8426C2.52224 13.1226 2.91759 13.9347 3.2069 14.9745L3.34102 15.457C3.43577 15.7978 3.93515 15.7978 4.0299 15.457L4.16419 14.9745C4.45333 13.9347 4.84885 13.1226 5.92303 12.8426L6.42153 12.7126C6.77355 12.6209 6.77355 12.1376 6.42153 12.0458C6.06951 11.9541 5.92303 11.9159 5.92303 11.9159C4.84885 11.6359 4.45333 10.8238 4.16419 9.78398L4.0299 9.30145Z"
+                      fill="url(#paint1_linear_6616_14831)" />
+                  </g>
+                  <defs>
+                    <linearGradient id="paint0_linear_6616_14831" x1="10.2602" y1="11.5792" x2="15.3802" y2="1.33926"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#FF02F0" />
+                      <stop offset="1" stop-color="#FFC800" />
+                    </linearGradient>
+                    <linearGradient id="paint1_linear_6616_14831" x1="3.53891" y1="15.7392" x2="6.73888" y2="9.33925"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#8930FD" />
+                      <stop offset="1" stop-color="#49CCF9" />
+                    </linearGradient>
+                    <clipPath id="clip0_6616_14831">
+                      <rect width="16" height="16" fill="white" transform="translate(0.0195312 0.378906)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <span>Ask AI</span>
+            </button>
+          </form>
+          <div class="d-flex h_nav_end">
+            <ul class="navbar-end_button mb-0">
+              <button class="mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                <img src="assets/images/add.png" alt="" /><span> New </span>
               </button>
-              <button class="border-0 ask-ai d-flex align-items-center">
-                <div class="image">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                  >
-                    <g clip-path="url(#clip0_6616_14831)">
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M10.9274 1.45473C10.7695 0.909621 9.93725 0.909621 9.77931 1.45473L9.55578 2.22685C9.07358 3.89044 8.41465 5.18994 6.62438 5.63787L5.79354 5.84578C5.20684 5.99253 5.20684 6.76593 5.79354 6.91268L6.62438 7.12056C8.41465 7.5685 9.07358 8.86803 9.55578 10.5316L9.77931 11.3037C9.93725 11.8488 10.7695 11.8488 10.9274 11.3037L11.1512 10.5316C11.6332 8.86803 12.2924 7.5685 14.0826 7.12056L14.9135 6.91268C15.5002 6.76593 15.5002 5.99253 14.9135 5.84578C14.3268 5.69904 14.0826 5.63787 14.0826 5.63787C12.2924 5.18994 11.6332 3.89044 11.1512 2.22685L10.9274 1.45473Z"
-                        fill="url(#paint0_linear_6616_14831)"
-                      />
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M4.0299 9.30145C3.93515 8.96072 3.43577 8.96072 3.34102 9.30145L3.2069 9.78398C2.91759 10.8238 2.52224 11.6359 1.44807 11.9159L0.94956 12.0458C0.597542 12.1376 0.597542 12.6209 0.94956 12.7126L1.44807 12.8426C2.52224 13.1226 2.91759 13.9347 3.2069 14.9745L3.34102 15.457C3.43577 15.7978 3.93515 15.7978 4.0299 15.457L4.16419 14.9745C4.45333 13.9347 4.84885 13.1226 5.92303 12.8426L6.42153 12.7126C6.77355 12.6209 6.77355 12.1376 6.42153 12.0458C6.06951 11.9541 5.92303 11.9159 5.92303 11.9159C4.84885 11.6359 4.45333 10.8238 4.16419 9.78398L4.0299 9.30145Z"
-                        fill="url(#paint1_linear_6616_14831)"
-                      />
-                    </g>
-                    <defs>
-                      <linearGradient
-                        id="paint0_linear_6616_14831"
-                        x1="10.2602"
-                        y1="11.5792"
-                        x2="15.3802"
-                        y2="1.33926"
-                        gradientUnits="userSpaceOnUse"
-                      >
-                        <stop stop-color="#FF02F0" />
-                        <stop offset="1" stop-color="#FFC800" />
-                      </linearGradient>
-                      <linearGradient
-                        id="paint1_linear_6616_14831"
-                        x1="3.53891"
-                        y1="15.7392"
-                        x2="6.73888"
-                        y2="9.33925"
-                        gradientUnits="userSpaceOnUse"
-                      >
-                        <stop stop-color="#8930FD" />
-                        <stop offset="1" stop-color="#49CCF9" />
-                      </linearGradient>
-                      <clipPath id="clip0_6616_14831">
-                        <rect
-                          width="16"
-                          height="16"
-                          fill="white"
-                          transform="translate(0.0195312 0.378906)"
-                        />
-                      </clipPath>
-                    </defs>
-                  </svg>
+              <button class="mx-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling4"
+                aria-controls="offcanvasScrolling">
+                <img src="assets/images/check_navbar.svg" alt="Check" />
+              </button>
+              <button class="mx-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling3"
+                aria-controls="offcanvasScrolling">
+                <img src="assets/images/doc2.svg" alt="Documents" />
+              </button>
+              <button class="mx-1">
+                <img src="assets/images/video2.svg" alt="Video" />
+              </button>
+              <button class="mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                <img src="assets/images/clock.svg" alt="Clock" />
+              </button>
+              <button class="mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                <img src="assets/images/doc_left.svg" alt="Left Document" />
+              </button>
+              <button class="mx-1">
+                <img src="assets/images/menu.svg" alt="Menu" />
+              </button>
+              <button class="mx-1">
+                <div class="dropdown">
+                  <button class="btn btn dropdown-toggle" type="button" id="dropdownMenuButton2"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="./assets/images/user_profile.svg" alt="" />
+                  </button>
+                  <ul class="dropdown-menu h_main_profile" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
                 </div>
-                <span>Ask AI</span>
               </button>
-            </form>
-            <div class="d-flex h_nav_end">
-              <ul class="navbar-end_button mb-0">
-                <button
-                  class="mx-1"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal2"
-                >
-                  <img src="assets/images/add.png" alt="" /><span> New </span>
-                </button>
-                <button
-                  class="mx-1"
-                  type="button"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#offcanvasScrolling4"
-                  aria-controls="offcanvasScrolling"
-                >
-                  <img src="assets/images/check_navbar.svg" alt="Check" />
-                </button>
-                <button
-                  class="mx-1"
-                  type="button"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#offcanvasScrolling3"
-                  aria-controls="offcanvasScrolling"
-                >
-                  <img src="assets/images/doc2.svg" alt="Documents" />
-                </button>
-                <button class="mx-1">
-                  <img src="assets/images/video2.svg" alt="Video" />
-                </button>
-                <button
-                  class="mx-1"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal2"
-                >
-                  <img src="assets/images/clock.svg" alt="Clock" />
-                </button>
-                <button
-                  class="mx-1"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal2"
-                >
-                  <img src="assets/images/doc_left.svg" alt="Left Document" />
-                </button>
-                <button class="mx-1">
-                  <img src="assets/images/menu.svg" alt="Menu" />
-                </button>
-                <button class="mx-1">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="d-flex">
+    <aside class="sidebarnew inactive">
+      <header>
+        <div class="dropdown">
+          <button class="dropdown-toggle border-0 bg-transparent p-1 d-flex align-items-center gap-2" type="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="/assets/images/user_profile.svg" alt="" />
+            <span class="person-name hide-text">Ning Lam's W…</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </header>
+
+      <hr />
+      <ul class="nav d-block top-nav">
+        <li class="nav-item active">
+          <a href="" class="nav-link"><span class="hide-text">Home</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="inbox.html" class="nav-link"><span class="hide-text">Inbox</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link"><span class="hide-text">Docs</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link"><span class="hide-text">Dashboards</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link"><span class="hide-text">Clips</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link"><span class="hide-text">Timesheets</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link"><span class="hide-text">More</span></a>
+        </li>
+      </ul>
+      <hr />
+      <ul class="nav d-block h_sidebar_two">
+        <li class="nav-item">
+          <a class="nav-link" href="#"><span class="hide-text">Favorites </span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#" aria-current="page"><span class="hide-text">Spaces</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link"><img src="./assets/images/sno.svg" alt="" /><span
+              class="hide-text">Everything</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link"><img src="./assets/images/e.svg" alt="" /><span
+              class="hide-text">Engineering</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link"><img src="./assets/images/d.svg" alt="" /><span class="hide-text">DCA</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link"><img src="./assets/images/m.svg" alt="" /><span class="hide-text">M
+              Automation</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link"><img src="./assets/images/menu_more.svg" alt="" /><span class="hide-text">View all
+              Spaces</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="" class="nav-link"><img src="./assets/images/add.svg" alt="" /><span class="hide-text">Create
+              Space</span></a>
+        </li>
+      </ul>
+    </aside>
+
+    <div id="main_inbox">
+      <div class="nav_2 d">
+        <div class="i_nav_one_side d-flex">
+          <button class="btn btn h_sidebar_button mt-3" type="button" id="sidebartoggle">
+            <img src="./assets/images/menu2.svg" alt="" />
+          </button>
+          <div class="mt-4">
+            <img src="./assets/images/inbox.svg" alt="" />
+            <span>Inbox</span>
+          </div>
+          <ul class="nav nav-underline mt-3" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="Important-tab" data-bs-toggle="tab" data-bs-target="#Important"
+                type="button" role="tab" aria-controls="Important" aria-selected="true">
+                Important
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="Other-tab" data-bs-toggle="tab" data-bs-target="#Other" type="button"
+                role="tab" aria-controls="Other" aria-selected="false">
+                Other
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="Snoozed-tab" data-bs-toggle="tab" data-bs-target="#Snoozed" type="button"
+                role="tab" aria-controls="Snoozed" aria-selected="false">
+                Snoozed
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="Cleared-tab" data-bs-toggle="tab" data-bs-target="#Cleared" type="button"
+                role="tab" aria-controls="Cleared" aria-selected="false">
+                Cleared
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="i_nav_two_side d-flex mt-2">
+          <button class="btn">
+            <img src="./assets/images/home/filter.svg" alt="" />
+            <span>Filter</span>
+          </button>
+          <button class="btn">
+            <img src="./assets/images/home/clearall.svg" alt="" />
+            <span>Clear all</span>
+          </button>
+          <button class="btn">
+            <img src="./assets/images/home/customize.svg" alt="" />
+            <span>Customize</span>
+          </button>
+        </div>
+      </div>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="Important" role="tabpanel" aria-labelledby="Important-tab">
+          <div>
+            <div class="i_content_one">
+              <div class="i_card_notification">
+                <img src="./assets/images/home/inboxZero.svg" alt="" />
+                <h4>Inbox Zero</h4>
+                <p>
+                  Congratulations! You cleared your important notifications 🎉
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="i_clickTip d-flex">
+            <hr class="w-50" />
+            <div class="rounded-4 border p-2">Motivational Quote</div>
+            <hr class="w-50" />
+          </div>
+          <div class="i_content_two">
+            <h3>
+              The difference between a successful person and others is not a
+              lack of strength, not a lack of knowledge, but rather a lack of
+              will.
+            </h3>
+            <p>— Vince Lombardi</p>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="Other" role="tabpanel" aria-labelledby="Other-tab">
+          <div>
+            <div class="i_content_one">
+              <div class="i_card_notification">
+                <img src="./assets/images/home/inboxZero.svg" alt="" />
+                <h4>Inbox Zero</h4>
+                <p>
+                  Congratulations! You cleared your important notifications 🎉
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="i_clickTip d-flex">
+            <hr class="w-50" />
+            <div class="rounded-4 border p-2">Motivational Quote</div>
+            <hr class="w-50" />
+          </div>
+          <div class="i_content_two">
+            <h3>
+              Success is walking from failure to failure with no loss of
+              enthusiasm.
+            </h3>
+            <p>— Winston Churchill</p>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="Snoozed" role="tabpanel" aria-labelledby="Snoozed-tab">
+          <div>
+            <div class="i_content_one">
+              <div class="i_card_notification">
+                <img src="./assets/images/home/inboxZero.svg" alt="" />
+                <h4>You don’t have any snoozed notifications</h4>
+                <p>Learn how to snooze in Inbox</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="i_clickTip d-flex">
+            <hr class="w-50" />
+            <div class="rounded-4 border p-2">Motivational Quote</div>
+            <hr class="w-50" />
+          </div>
+          <div class="i_content_two">
+            <h3>
+              My mission in life is not merely to survive, but to thrive; and
+              to do so with some passion, some compassion, some humor, and
+              some style.
+            </h3>
+            <p>— Maya Angelou</p>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="Cleared" role="tabpanel" aria-labelledby="Cleared-tab">
+          <div>
+            <div class="i_content_one">
+              <div class="i_card_notification">
+                <img src="./assets/images/home/inboxZero.svg" alt="" />
+                <h4>You don’t have any cleared notifications</h4>
+                <p>Learn how to clear in Inbox</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="i_clickTip d-flex">
+            <hr class="w-50" />
+            <div class="rounded-4 border p-2">Motivational Quote</div>
+            <hr class="w-50" />
+          </div>
+          <div class="i_content_two">
+            <h3>
+              You can’t just sit there and wait for people to give you that
+              golden dream. You’ve got to get out there and make it happen for
+              yourself.
+            </h3>
+            <p>— Diana Ross</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Launch static backdrop modal
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog i_modal_dialog_invite">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel" class="modal_title">
+                Invite people
+              </h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                New members will gain access to public Spaces, Docs and
+                Dashboards. An admin will be prompted to approve your invite
+                request.
+              </p>
+              <div>
+                <label for="">Invite by email</label>
+                <div class="i_modal_invite">
+                  <input type="text" class="border-0 p-2 col-9" placeholder="Email, comma or space separated" />
                   <div class="dropdown">
-                    <button
-                      class="btn btn dropdown-toggle"
-                      type="button"
-                      id="dropdownMenuButton2"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <img src="./assets/images/user_profile.svg" alt="" />
+                    <button class="btn dropdown-toggle mx-1" type="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Member
                     </button>
-                    <ul
-                      class="dropdown-menu h_main_profile"
-                      aria-labelledby="dropdownMenuButton2"
-                    >
+                    <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="#">Action</a></li>
                       <li>
                         <a class="dropdown-item" href="#">Another action</a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#"
-                          >Something else here</a
-                        >
+                        <a class="dropdown-item" href="#">Something else here</a>
                       </li>
                     </ul>
                   </div>
-                </button>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main class="d-flex">
-      <aside class="sidebarnew inactive">
-        <header>
-          <div class="dropdown">
-            <button
-              class="dropdown-toggle border-0 bg-transparent p-1 d-flex align-items-center gap-2"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              <img src="/assets/images/user_profile.svg" alt="" />
-              <span class="person-name hide-text">Ning Lam's W…</span>
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </div>
-        </header>
-
-        <hr />
-        <ul class="nav d-block top-nav">
-          <li class="nav-item active">
-            <a href="" class="nav-link"><span class="hide-text">Home</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="inbox.html" class="nav-link"
-              ><span class="hide-text">Inbox</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link"><span class="hide-text">Docs</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link"
-              ><span class="hide-text">Dashboards</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link"><span class="hide-text">Clips</span></a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link"
-              ><span class="hide-text">Timesheets</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link"><span class="hide-text">More</span></a>
-          </li>
-        </ul>
-        <hr />
-        <ul class="nav d-block h_sidebar_two">
-          <li class="nav-item">
-            <a class="nav-link" href="#"
-              ><span class="hide-text">Favorites </span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#" aria-current="page"
-              ><span class="hide-text">Spaces</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link"
-              ><img src="./assets/images/sno.svg" alt="" /><span
-                class="hide-text"
-                >Everything</span
-              ></a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link"
-              ><img src="./assets/images/e.svg" alt="" /><span class="hide-text"
-                >Engineering</span
-              ></a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link"
-              ><img src="./assets/images/d.svg" alt="" /><span class="hide-text"
-                >DCA</span
-              ></a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link"
-              ><img src="./assets/images/m.svg" alt="" /><span class="hide-text"
-                >M Automation</span
-              ></a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link"
-              ><img src="./assets/images/menu_more.svg" alt="" /><span
-                class="hide-text"
-                >View all Spaces</span
-              ></a
-            >
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link"
-              ><img src="./assets/images/add.svg" alt="" /><span
-                class="hide-text"
-                >Create Space</span
-              ></a
-            >
-          </li>
-        </ul>
-      </aside>
-
-      <div id="main_inbox">
-        <div class="nav_2 d">
-          <div class="i_nav_one_side d-flex">
-            <button
-              class="btn btn h_sidebar_button mt-3"
-              type="button"
-              id="sidebartoggle"
-            >
-              <img src="./assets/images/menu2.svg" alt="" />
-            </button>
-            <div class="mt-4">
-              <img src="./assets/images/inbox.svg" alt="" />
-              <span>Inbox</span>
-            </div>
-            <ul class="nav nav-underline mt-3" id="myTab" role="tablist">
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link active"
-                  id="Important-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#Important"
-                  type="button"
-                  role="tab"
-                  aria-controls="Important"
-                  aria-selected="true"
-                >
-                  Important
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="Other-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#Other"
-                  type="button"
-                  role="tab"
-                  aria-controls="Other"
-                  aria-selected="false"
-                >
-                  Other
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="Snoozed-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#Snoozed"
-                  type="button"
-                  role="tab"
-                  aria-controls="Snoozed"
-                  aria-selected="false"
-                >
-                  Snoozed
-                </button>
-              </li>
-              <li class="nav-item" role="presentation">
-                <button
-                  class="nav-link"
-                  id="Cleared-tab"
-                  data-bs-toggle="tab"
-                  data-bs-target="#Cleared"
-                  type="button"
-                  role="tab"
-                  aria-controls="Cleared"
-                  aria-selected="false"
-                >
-                  Cleared
-                </button>
-              </li>
-            </ul>
-          </div>
-          <div class="i_nav_two_side d-flex mt-2">
-            <button class="btn">
-              <img src="./assets/images/home/filter.svg" alt="" />
-              <span>Filter</span>
-            </button>
-            <button class="btn">
-              <img src="./assets/images/home/clearall.svg" alt="" />
-              <span>Clear all</span>
-            </button>
-            <button class="btn">
-              <img src="./assets/images/home/customize.svg" alt="" />
-              <span>Customize</span>
-            </button>
-          </div>
-        </div>
-        <div class="tab-content" id="myTabContent">
-          <div
-            class="tab-pane fade show active"
-            id="Important"
-            role="tabpanel"
-            aria-labelledby="Important-tab"
-          >
-            <div>
-              <div class="i_content_one">
-                <div class="i_card_notification">
-                  <img src="./assets/images/home/inboxZero.svg" alt="" />
-                  <h4>Inbox Zero</h4>
-                  <p>
-                    Congratulations! You cleared your important notifications 🎉
-                  </p>
                 </div>
               </div>
             </div>
-
-            <div class="i_clickTip d-flex">
-              <hr class="w-50" />
-              <div class="rounded-4 border p-2">Motivational Quote</div>
-              <hr class="w-50" />
-            </div>
-            <div class="i_content_two">
-              <h3>
-                The difference between a successful person and others is not a
-                lack of strength, not a lack of knowledge, but rather a lack of
-                will.
-              </h3>
-              <p>— Vince Lombardi</p>
-            </div>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="Other"
-            role="tabpanel"
-            aria-labelledby="Other-tab"
-          >
-            <div>
-              <div class="i_content_one">
-                <div class="i_card_notification">
-                  <img src="./assets/images/home/inboxZero.svg" alt="" />
-                  <h4>Inbox Zero</h4>
-                  <p>
-                    Congratulations! You cleared your important notifications 🎉
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="i_clickTip d-flex">
-              <hr class="w-50" />
-              <div class="rounded-4 border p-2">Motivational Quote</div>
-              <hr class="w-50" />
-            </div>
-            <div class="i_content_two">
-              <h3>
-                Success is walking from failure to failure with no loss of
-                enthusiasm.
-              </h3>
-              <p>— Winston Churchill</p>
-            </div>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="Snoozed"
-            role="tabpanel"
-            aria-labelledby="Snoozed-tab"
-          >
-            <div>
-              <div class="i_content_one">
-                <div class="i_card_notification">
-                  <img src="./assets/images/home/inboxZero.svg" alt="" />
-                  <h4>You don’t have any snoozed notifications</h4>
-                  <p>Learn how to snooze in Inbox</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="i_clickTip d-flex">
-              <hr class="w-50" />
-              <div class="rounded-4 border p-2">Motivational Quote</div>
-              <hr class="w-50" />
-            </div>
-            <div class="i_content_two">
-              <h3>
-                My mission in life is not merely to survive, but to thrive; and
-                to do so with some passion, some compassion, some humor, and
-                some style.
-              </h3>
-              <p>— Maya Angelou</p>
-            </div>
-          </div>
-          <div
-            class="tab-pane fade"
-            id="Cleared"
-            role="tabpanel"
-            aria-labelledby="Cleared-tab"
-          >
-            <div>
-              <div class="i_content_one">
-                <div class="i_card_notification">
-                  <img src="./assets/images/home/inboxZero.svg" alt="" />
-                  <h4>You don’t have any cleared notifications</h4>
-                  <p>Learn how to clear in Inbox</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="i_clickTip d-flex">
-              <hr class="w-50" />
-              <div class="rounded-4 border p-2">Motivational Quote</div>
-              <hr class="w-50" />
-            </div>
-            <div class="i_content_two">
-              <h3>
-                You can’t just sit there and wait for people to give you that
-                golden dream. You’ve got to get out there and make it happen for
-                yourself.
-              </h3>
-              <p>— Diana Ross</p>
-            </div>
-          </div>
-        </div>
-
-        <style>
-          .i_card_notification {
-            height: 500px;
-            text-align: center;
-          }
-          .i_card_notification img {
-            margin-top: 8%;
-          }
-          .i_card_notification p,
-          .i_content_two p {
-            color: var(--gray);
-          }
-          .i_clickTip div {
-            width: 200px;
-            text-align: center;
-          }
-          .i_content_two {
-            text-align: center;
-            padding: 50px 35%;
-          }
-          .i_modal_invite {
-            justify-content: space-between;
-            display: flex;
-            border: 1px solid var(--gray);
-            padding: 3px;
-            border-radius: 10px;
-          }
-          .i_modal_dialog_invite {
-            max-width: 587px;
-          }
-          .i_modal_dialog_invite p {
-            font-size: 12px;
-          }
-          .i_content_one h4 {
-            font-size: 18px;
-          }
-          .i_modal_dialog_invite label {
-            font-size: 13px;
-            font-weight: 700;
-          }
-          .i_content_two h3 {
-            font-size: 20px;
-            font-weight: 600;
-          }
-          .i_clickUp_brain {
-            margin: 70px 20px;
-            width: 500px !important;
-            border-radius: 10px;
-            box-shadow: 1px 11px 33px 8px var(--gray);
-          }
-          .i_click_content {
-            padding: 10px 20px;
-          }
-          .i_click_content span {
-            color: var(--gray);
-          }
-          .i_modal_body_invite p{
-            font-size: 14px;
-          }
-          .i_modal_para_clickupBrain span{
-            font-size: 14px;
-          }
-          .i_click_content_line{
-            font-size: 12px;
-            color: var(--gray);
-          }
-          .i_brain_button button{
-            border: 1px solid var(--button_border_color);
-            color: var(--button_text_color);
-            background:var(--button_bg_color);
-          }
-          .i_brain_button button:hover{
-            border: 1px solid var(--button_active_border_color);
-            color: var(--button_active_text_color);
-            background:var(--button_active_bg_color);
-          }
-          .i_projectUpdate_modal{
-            gap: 116px;
-            display: flex;
-          }
-          
-        
-          @media only screen and (max-width: 600px) {
-            .nav_2 {
-              flex-wrap: wrap;
-            }
-            .i_content_two {
-              padding: 50px 2%;
-            }
-            .i_card_notification {
-              height: 300px;
-            }
-
-            .i_clickTip div {
-              width: 268px;
-            }
-            .i_nav_one_side {
-              gap: 7px;
-            }
-            .i_clickUp_brain {
-              margin: 0;
-            }
-            .i_brand_send img{
-            margin-left: 0 !important;
-          }
-          .modal_title{
-            font-size: 10px;
-          }
-          }
-        </style>
-
-        <!-- Button trigger modal -->
-        <button
-          type="button"
-          class="btn btn-primary"
-          data-bs-toggle="modal"
-          data-bs-target="#staticBackdrop"
-        >
-          Launch static backdrop modal
-        </button>
-
-        <!-- Modal -->
-        <div
-          class="modal fade"
-          id="staticBackdrop"
-          data-bs-backdrop="static"
-          data-bs-keyboard="false"
-          tabindex="-1"
-          aria-labelledby="staticBackdropLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog i_modal_dialog_invite">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h1 class="modal-title fs-5" id="staticBackdropLabel" class="modal_title">
-                  Invite people
-                </h1>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body">
-                <p>
-                  New members will gain access to public Spaces, Docs and
-                  Dashboards. An admin will be prompted to approve your invite
-                  request.
-                </p>
-                <div>
-                  <label for="">Invite by email</label>
-                  <div class="i_modal_invite">
-                    <input
-                      type="text"
-                      class="border-0 p-2 col-9"
-                      placeholder="Email, comma or space separated"
-                    />
-                    <div class="dropdown">
-                      <button
-                        class="btn dropdown-toggle mx-1"
-                        type="button"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Member
-                      </button>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#"
-                            >Something else here</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn" data-bs-dismiss="modal">
-                  Close
-                </button>
-                <div class="h_modal_button_action">
-                  <button type="button" class="btn">Understood</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <button
-          class="btn btn-primary"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasScrolling"
-          aria-controls="offcanvasScrolling"
-        >
-          sidebar
-        </button>
-
-        <div
-          class="offcanvas offcanvas-end i_clickUp_brain"
-          data-bs-scroll="true"
-          data-bs-backdrop="false"
-          tabindex="-1"
-          id="offcanvasScrolling"
-          aria-labelledby="offcanvasScrollingLabel"
-        >
-          <div class="offcanvas-header">
-            <div>
-              <img src="./assets/images/start.svg" class="mx-2" alt="" /><span class="modal_title"
-                >ClickUp Brain</span
-              >
-            </div>
-            <div>
-              <button class="btn h_modal_outline_button">
-                <span>Feedback</span>
-                <img src="./assets/images/home/export.svg" alt="" />
+            <div class="modal-footer">
+              <button type="button" class="btn" data-bs-dismiss="modal">
+                Close
               </button>
-              <img src="./assets/images/home/idea.svg" width="20px" alt="" />
-              <img
-                src="./assets/images/home/menu_dot.svg"
-                width="20px"
-                alt=""
-              />
-
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
+              <div class="h_modal_button_action">
+                <button type="button" class="btn">Understood</button>
+              </div>
             </div>
           </div>
-          <div class="offcanvas-body ">
-            <div class="text-center i_click_content mt-3">
-              <img src="./assets/images/start.svg" width="24" alt="" />
-              <h5>Ask anything or write with AI</h5>
+        </div>
+      </div>
+
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+        aria-controls="offcanvasScrolling">
+        sidebar
+      </button>
+
+      <div class="offcanvas offcanvas-end i_clickUp_brain" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+          <div>
+            <img src="./assets/images/start.svg" class="mx-2" alt="" /><span class="modal_title">ClickUp Brain</span>
+          </div>
+          <div>
+            <button class="btn h_modal_outline_button">
+              <span>Feedback</span>
+              <img src="./assets/images/home/export.svg" alt="" />
+            </button>
+            <img src="./assets/images/home/idea.svg" width="20px" alt="" />
+            <img src="./assets/images/home/menu_dot.svg" width="20px" alt="" />
+
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="offcanvas-body ">
+          <div class="text-center i_click_content mt-3">
+            <img src="./assets/images/start.svg" width="24" alt="" />
+            <h5>Ask anything or write with AI</h5>
+            <span>
+              Use ClickUp AI to write for you, or answer questions about tasks
+              and Docs in your Workspace.
+            </span>
+          </div>
+          <div class="i_click_content_line mt-4">
+            <span>Ask about Docs in your Workspace based on role:</span>
+            <span>add your role, i.e. CEO</span>
+          </div>
+          <div class="i_modal_para_clickupBrain mt-4">
+
+            <div>
+              <img src="./assets/images/home/bulb.svg" alt="" />
               <span>
-                Use ClickUp AI to write for you, or answer questions about tasks
-                and Docs in your Workspace.
+                What details are provided in the 'Office Information'
+                document?
               </span>
             </div>
-            <div class="i_click_content_line mt-4">
-                <span>Ask about Docs in your Workspace based on role:</span>
-                <span>add your role, i.e. CEO</span>
-              </div>
-            <div class="i_modal_para_clickupBrain mt-4">
-            
-              <div >
-                <img src="./assets/images/home/bulb.svg" alt="" />
-                <span>
-                  What details are provided in the 'Office Information'
-                  document?
-                </span>
-              </div>
-              <div >
-                <img src="./assets/images/home/bulb.svg" alt="" />
-                <span>Who is the owner of the Employee Handbook document?</span>
-              </div>
-              <div >
-                <img src="./assets/images/home/bulb.svg" alt="" />
-                <span>
-                  Where can feedback or questions be submitted regarding the
-                  What…
-                </span>
-              </div>
+            <div>
+              <img src="./assets/images/home/bulb.svg" alt="" />
+              <span>Who is the owner of the Employee Handbook document?</span>
             </div>
-            <div class="i_click_content_line mt-4">
-                <span>Ask about Docs in your Workspace based on role:</span>
-                <span>add your role, i.e. CEO</span>
-              </div>
-            <div class="i_modal_para_clickupBrain mt-4">
-            
-              <div >
-                <img src="./assets/images/home/bulb.svg" alt="" />
-                <span>What tasks are created by me and closed?
-                </span>
-              </div>
-              <div >
-                <img src="./assets/images/home/bulb.svg" alt="" />
-                <span>What tasks am I working on?</span>
-              </div>
-              <div >
-                <img src="./assets/images/home/bulb.svg" alt="" />
-                <span>
-                    What should I work on next?
-                </span>
-              </div>
+            <div>
+              <img src="./assets/images/home/bulb.svg" alt="" />
+              <span>
+                Where can feedback or questions be submitted regarding the
+                What…
+              </span>
             </div>
+          </div>
+          <div class="i_click_content_line mt-4">
+            <span>Ask about Docs in your Workspace based on role:</span>
+            <span>add your role, i.e. CEO</span>
+          </div>
+          <div class="i_modal_para_clickupBrain mt-4">
+
+            <div>
+              <img src="./assets/images/home/bulb.svg" alt="" />
+              <span>What tasks are created by me and closed?
+              </span>
+            </div>
+            <div>
+              <img src="./assets/images/home/bulb.svg" alt="" />
+              <span>What tasks am I working on?</span>
+            </div>
+            <div>
+              <img src="./assets/images/home/bulb.svg" alt="" />
+              <span>
+                What should I work on next?
+              </span>
+            </div>
+          </div>
           <div class="d-flex mt-4">
             <p class="mt-1">Ideas for writing:</p>
             <div class="dropdown ">
-                <button type="button" class="btn dropdown-toggle h_modal_outline_button mx-2" data-bs-toggle="dropdown">
-                    Choose a department
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Link 1</a></li>
-                  <li><a class="dropdown-item" href="#">Link 2</a></li>
-                  <li><a class="dropdown-item" href="#">Link 3</a></li>
-                </ul>
-              </div>
+              <button type="button" class="btn dropdown-toggle h_modal_outline_button mx-2" data-bs-toggle="dropdown">
+                Choose a department
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Link 1</a></li>
+                <li><a class="dropdown-item" href="#">Link 2</a></li>
+                <li><a class="dropdown-item" href="#">Link 3</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="i_brain_button mt-4" >
-            <button class="btn rounded-5 my-1"><img src="./assets/images/home/doc.svg"  alt="">Project Update</button>
-            <button class="btn rounded-5 my-1"><img src="./assets/images/home/doc.svg"  alt="">Project Update</button>
-            <button class="btn rounded-5 my-1"><img src="./assets/images/home/doc.svg"  alt="">Project Update</button>
-            <button class="btn rounded-5 my-1"><img src="./assets/images/home/doc.svg"  alt="">Project Update</button>
+          <div class="i_brain_button mt-4">
+            <button class="btn rounded-5 my-1"><img src="./assets/images/home/doc.svg" alt="">Project Update</button>
+            <button class="btn rounded-5 my-1"><img src="./assets/images/home/doc.svg" alt="">Project Update</button>
+            <button class="btn rounded-5 my-1"><img src="./assets/images/home/doc.svg" alt="">Project Update</button>
+            <button class="btn rounded-5 my-1"><img src="./assets/images/home/doc.svg" alt="">Project Update</button>
           </div>
           <div class="border p-2 rounded-3 mt-5 i_brand_send">
             <input type="text" class="col-10 p-1 border-0 " placeholder="Ask, write, or search for anything">
-            <img src="./assets/images/home/send.svg" class="ms-4"  alt="">
-          </div>
+            <img src="./assets/images/home/send.svg" class="ms-4" alt="">
           </div>
         </div>
+      </div>
 
 
-        <style>
-          .i_checkbox_modal{
-            background-color:var(--button_switch_bg_color);
-          }
-          .i_checkbox_modal:checked{
-            background-color:var(--button_switch_active_bg_color);
-          }
-          .i_projectUpdate_card{
-            padding: 11px;
-            background: var(--background_color_modal);
-            color: var(--text_color_modal);;
-            border-radius: 10px;
-          }
-          .i_projectUpdate_card p{
-            font-size: 14px;
-          }
-          .h_modal_button_action{
-            justify-content: end;
-            display: flex;
-          }
-        </style>
 
-        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling2" aria-controls="offcanvasScrolling">Enable body scrolling</button>
 
-<div class="offcanvas offcanvas-end i_clickUp_brain" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling2" aria-labelledby="offcanvasScrollingLabel">
-       <div class="offcanvas-header">
-            <div>
-              <img src="./assets/images/home/lessden.svg" class="mx-2" alt="" />
-              <img src="./assets/images/home/wifi.svg" class="mx-2" width="18px" alt="" />
-              <span class="modal_title">Project Update</span>
-            </div>
-            <div>
-              <button class="btn h_modal_outline_button">
-                <span>Feedback</span>
-                <img src="./assets/images/home/export.svg" alt="" />
-              </button>
-              <img src="./assets/images/home/idea.svg" width="20px" alt="" />
-              <img
-                src="./assets/images/home/menu_dot.svg"
-                width="20px"
-                alt=""
-              />
 
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
+
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling2"
+        aria-controls="offcanvasScrolling">Enable body scrolling</button>
+
+      <div class="offcanvas offcanvas-end i_clickUp_brain" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling2" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+          <div>
+            <img src="./assets/images/home/lessden.svg" class="mx-2" alt="" />
+            <img src="./assets/images/home/wifi.svg" class="mx-2" width="18px" alt="" />
+            <span class="modal_title">Project Update</span>
           </div>
-  <div class="offcanvas-body">
-  <div>
-    <p>Choose a list</p>
-    <div class="dropdown open ">
-      <button
-        class="btn h_modal_outline_button col-12 dropdown-toggle text-start"
-        type="button"
-        id="triggerId"
-        data-bs-toggle="dropdown"
-        aria-haspopup="true"
-        aria-expanded="false"
-      >
-      <img src="./assets/images/menu_list.svg" alt="">
-        Dropdown Button
-     <span></span>
-      </button>
-      <div class="dropdown-menu" aria-labelledby="triggerId">
-        <button class="dropdown-item" href="#">Action</button>
-        <button class="dropdown-item disabled" href="#">
-          Disabled action
-        </button>
-      </div>
-    </div>
-    
-  </div>
-  <div class="mt-4">
-    <p>Choose a list</p>
-    <div>
-      <img src="./assets/images/down_arrow.svg" alt="">
-      <span>Last 24 hours</span>
-    </div>
-    
-      <p class="my-3">Configurations</p>
-
-  
-
-
-
-
-
-<div class="i_projectUpdate_card">
-    <p>Update on tasks by status for tasks updated in the past 24 hours</p>
-    <div class="form-check my-2">
-      <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
-        Created
-      </label>
-    </div>
-    <div class="form-check my-2">
-      <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
-        Not Started
-      </label>
-    </div>
-    <div class="form-check my-2">
-      <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
-        In Progress
-      </label>
-    </div>
-    <div class="form-check my-2">
-      <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
-        Completed
-      </label>
-    </div>
- 
-  </div>
-
-
-  <div class="mt-3 i_projectUpdate_card">
-    <p>Reporting for tasks updated in the past 24 hours</p>
-    <div class="form-check my-2">
-      <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
-        Task Types
-      </label>
-    </div>
-    <div class="form-check my-2">
-      <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
-        Tasks by Status
-      </label>
-    </div>
-    <div class="form-check my-2">
-      <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
-        Tasks by Assignee
-      </label>
-    </div>
-    <div class="form-check my-2">
-      <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
-        Tasks by Priority
-      </label>
-    </div>
-    <div class="form-check my-2">
-      <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
-        Overdue tasks
-      </label>
-    </div>
-    <div class="form-check my-2">
-      <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
-        Tasks by Due Date
-      </label>
-    </div>
-  </div>
-  </div>
- 
-  </div>
-</div>
-
-
-
-
-<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling3" aria-controls="offcanvasScrolling">Enable body scrolling</button>
-
-<div class="offcanvas offcanvas-end i_clickUp_brain" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling3" aria-labelledby="offcanvasScrollingLabel">
-       <div class="offcanvas-header">
-            <div>
-              <img src="./assets/images/home/lessden.svg" class="mx-2" alt="" />
-              <img src="./assets/images/home/users_modal.svg" class="mx-2" width="18px" alt="" />
-              <span class="modal_title">Get team updates</span>
-            </div>
-            <div>
-              <button class="btn h_modal_outline_button">
-                <span>Feedback</span>
-                <img src="./assets/images/home/export.svg" alt="" />
-              </button>
-              <img src="./assets/images/home/idea.svg" width="20px" alt="" />
-              <img
-                src="./assets/images/home/menu_dot.svg"
-                width="20px"
-                alt=""
-              />
-
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-          </div>
-  <div class="offcanvas-body">
- 
-
-<div class="h_modal_button_action">
-  <button class="btn">Get team updates</button>
-</div>
-  
-
-<style>
-  .modal_get_team_update{
-
-
-  
-  .modal_content_header h5{
-    font-size: 14px;
-
-  }
-  .dropdown-toggle::after{
-    margin-top: 10px;
-  }
-  .user_drop{
-    display: flex;
-    justify-content: space-between;
-    height: 40px;
-  }
-  .modal_button{
-    background-color: var(--background_color_modal);
-    border-radius: 10px;
-  }
-  .modal_button button:hover{
-   border: 1px solid var(--text_color_hover_modal);
-   background-color: var(--background_color_hover_modal);
-   color: var(--text_color_hover_modal);
-
-  }
-  .modal_button button{
-    width: 32%;
-    font-size: 12px;
-    
-  }
-
-  .modal_content_one h5{
-    font-size: 16px;
-  } 
-  p{
-    font-size: 14px;
-  } 
-
-
-
-
-}
-</style>
-
-
-
-
-
-
-
-
-
-<div class="modal_get_team_update d-flex  mt-2">
-<div class="modal_img mx-2">
-  <img class="p-2 border border-1 rounded-5" src="./assets/images/start.svg" alt="">
-</div>
-<div class="modal_content border border-1 rounded-4">
-  <div class="modal_content_header border-bottom ">
-   <h5 class="my-3 ms-3">StandUp™</h5>
-
-  </div>
-  <div class="p-2 modal_content_one">
-    <h5>Automate work updates with AI StandUp™</h5>
-    <p>Track daily progress and insights with real-time task updates.</p>
-  </div>
-  <div class="p-2">
-    <p>People or Teams</p>
-    <div class="dropdown open ">
-      <button
-        class="btn dropdown-toggle col-12 user_drop border border-1"
-        type="button"
-        id="triggerId"
-        data-bs-toggle="dropdown"
-        aria-haspopup="true"
-        aria-expanded="false"
-      >
-        <img src="./assets/images/user_profile.svg" alt="">
-      </button>
-      <div class="dropdown-menu" aria-labelledby="triggerId">
-        <button class="dropdown-item" href="#">Action</button>
-        <button class="dropdown-item disabled" href="#">
-          Disabled action
-        </button>
-      </div>
-    </div>
-    <p class="mt-3">Since</p>
-    <div class="dropdown open ">
-      <button
-        class="btn dropdown-toggle col-12 user_drop border border-1"
-        type="button"
-        id="triggerId"
-        data-bs-toggle="dropdown"
-        aria-haspopup="true"
-        aria-expanded="false"
-      >
-       <p>Last 24 hours</p>
-      </button>
-      <div class="dropdown-menu" aria-labelledby="triggerId">
-        <button class="dropdown-item" href="#">Action</button>
-        <button class="dropdown-item disabled" href="#">
-          Disabled action
-        </button>
-      </div>
-    </div>
-    <p class="mt-3">Since</p>
-<div class="modal_button">
-  <button class="btn ">Bulleted list</button>
-  <button class="btn ">Short</button>
-  <button class="btn ">Traditional</button>
-</div>
-<button class="btn col-12 mt-4 action_button">Generate</button>
-  </div>
-  <div>
-    <p></p>
-    
-  </div>
-</div>
-</div>
-
-
-
- 
-  </div>
- 
-  </div>
-
-
-<style>
-.template_Center{
-  .modal_dialog{
-    max-width: 1300px !important;
-}
-.Complexity div,.template_type div{
-  padding: 8px;
-
-}
-.Complexity div label,.template_type label{
-  margin-left: 5px;
-  color: var(--text_templates_sidebar_modal);
-  font-size: 14px;
-
-}
-.modal_sidebar{
-  margin-top: -65px;
-  background-color: var(--background_templates_sidebar_modal);
-  color:var(--text_templates_sidebar_modal) ;
-  border-radius: 10px;
-}
-.modal_sidebar h1{
-  font-size: 16px;
-  
-
-  margin: 8px  0 0 4px;
-}
-.Complexity h5,.template_type h5{
-  color: var(----text_templates_sidebar_modal);
-  font-size: 12px;
-
-}
-.activityLog{
-  margin-top: 40%;
-}
-.one_content span,.activityLog span{
-  font-size: 14px;
-  color: var(--text_templates_sidebar_modal);
-
-}
-.input_buttons span{
-  font-size: 14px;
-}
-.alert-dismissible button{
-  height: 28.99px;
-    font-size: 12px;
-}
-.alert-dismissible{
-  height: 65px;
-  background-color: var(--background_colour_alert_modal);
-  color: var(--text_colour_alert_modal);
-}
-
-.two_content h1
-{
-  font-size: 18px;
-}
-.template_card h1{
-  font-size: 16px;
-}
-.Card_formate{
-  background: var(--background_templates_card_modal);
-    padding: 2px;
-    border-radius: 10px;
-}
-.Card_footer span{
-  font-size: 14px;
-}
-.card_main{
-    height: 650px;
-    overflow: scroll;
-    border: none;
-}
-
-@media only screen and (max-width: 600px) {
-  .activityLog{
-  margin-top:0;
-  margin-bottom: 10px;
-}
-.alert-dismissible {
-        height: 85px;
-    }
-    .alert-dismissible button {
-        height: 50px;
-      
-       
-    }
-}
-
-
-
-
-}
-
-</style>
-
-
-<!-- Button trigger modal -->
-<!-- Button trigger modal -->
-<div class="template_Center">
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
-    Template Center
-  </button>
-
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
-  <div class="modal-dialog modal_dialog ">
-    <div class="modal-content ">
-      <div class="modal-header border-0">
-        
-        <button type="button" class="btn-close p-3" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="row">
-          <div class="col-sm-3 modal_sidebar">
-            <div class="d-flex pt-3">
-              <img src="./assets/images/home/template_magic.svg" width="35px" alt="">
-              <h1>Template Center</h1>
-            </div>
-            <div class="one_content my-1 d-flex">
-              <button class="justify-content-between btn d-flex col-12">
-              <div >
-              <img src="./assets/images/home/n.svg" alt="">
-              <span class="ms-3">Template Center</span>
-            </div>
-              <span>0</span>
+          <div>
+            <button class="btn h_modal_outline_button">
+              <span>Feedback</span>
+              <img src="./assets/images/home/export.svg" alt="" />
             </button>
+            <img src="./assets/images/home/idea.svg" width="20px" alt="" />
+            <img src="./assets/images/home/menu_dot.svg" width="20px" alt="" />
+
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <p>Choose a list</p>
+            <div class="dropdown open ">
+              <button class="btn h_modal_outline_button col-12 dropdown-toggle text-start" type="button" id="triggerId"
+                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="./assets/images/menu_list.svg" alt="">
+                Dropdown Button
+                <span></span>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="triggerId">
+                <button class="dropdown-item" href="#">Action</button>
+                <button class="dropdown-item disabled" href="#">
+                  Disabled action
+                </button>
+              </div>
             </div>
-            <div class="one_content my-1 d-flex">
-              <button class="justify-content-between btn d-flex col-12">
-              <div >
-              <img src="./assets/images/home/n.svg" alt="">
-              <span  class="ms-3"> ClickUp Templates</span>
+
+          </div>
+          <div class="mt-4">
+            <p>Choose a list</p>
+            <div>
+              <img src="./assets/images/down_arrow.svg" alt="">
+              <span>Last 24 hours</span>
             </div>
-              <span>1523</span>
+
+            <p class="my-3">Configurations</p>
+
+
+
+
+
+
+
+            <div class="i_projectUpdate_card">
+              <p>Update on tasks by status for tasks updated in the past 24 hours</p>
+              <div class="form-check my-2">
+                <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Created
+                </label>
+              </div>
+              <div class="form-check my-2">
+                <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Not Started
+                </label>
+              </div>
+              <div class="form-check my-2">
+                <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  In Progress
+                </label>
+              </div>
+              <div class="form-check my-2">
+                <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Completed
+                </label>
+              </div>
+
+            </div>
+
+
+            <div class="mt-3 i_projectUpdate_card">
+              <p>Reporting for tasks updated in the past 24 hours</p>
+              <div class="form-check my-2">
+                <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Task Types
+                </label>
+              </div>
+              <div class="form-check my-2">
+                <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Tasks by Status
+                </label>
+              </div>
+              <div class="form-check my-2">
+                <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Tasks by Assignee
+                </label>
+              </div>
+              <div class="form-check my-2">
+                <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Tasks by Priority
+                </label>
+              </div>
+              <div class="form-check my-2">
+                <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Overdue tasks
+                </label>
+              </div>
+              <div class="form-check my-2">
+                <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Tasks by Due Date
+                </label>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling3"
+        aria-controls="offcanvasScrolling">Enable body scrolling</button>
+
+      <div class="offcanvas offcanvas-end i_clickUp_brain" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling3" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+          <div>
+            <img src="./assets/images/home/lessden.svg" class="mx-2" alt="" />
+            <img src="./assets/images/home/users_modal.svg" class="mx-2" width="18px" alt="" />
+            <span class="modal_title">Get team updates</span>
+          </div>
+          <div>
+            <button class="btn h_modal_outline_button">
+              <span>Feedback</span>
+              <img src="./assets/images/home/export.svg" alt="" />
             </button>
+            <img src="./assets/images/home/idea.svg" width="20px" alt="" />
+            <img src="./assets/images/home/menu_dot.svg" width="20px" alt="" />
+
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="offcanvas-body">
+
+
+          <div class="h_modal_button_action">
+            <button class="btn">Get team updates</button>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="modal_get_team_update d-flex  mt-2">
+            <div class="modal_img mx-2">
+              <img class="p-2 border border-1 rounded-5" src="./assets/images/start.svg" alt="">
             </div>
-            <div class="template_type">
-              <h5>Template Types</h5>
-              <div>
-              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                Space
-              </label>
-            </div>
-            <div>
-              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                Folder
-              </label>
-            </div>
-            <div>
-              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                List
-              </label>
-            </div>
-            <div>
-              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                Task
-              </label>
-            </div>
-            <div>
-              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                Doc
-              </label>
-            </div>
-            <div>
-              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                View
-              </label>
-            </div>
-            <div>
-              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                Checklist
-              </label>
-            </div>
-            <div>
-              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                Whiteboard
-              </label>
-            </div>
-              
-              <div>
+            <div class="modal_content border border-1 rounded-4">
+              <div class="modal_content_header border-bottom ">
+                <h5 class="my-3 ms-3">StandUp™</h5>
 
               </div>
-            </div>
-            <div class="Complexity">
-              <h5>Complexity</h5>
-              <div >
-              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                Beginner
-              </label>
-            </div>
-            <div>
-              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                Intermediate
-              </label>
-            </div>
-            <div>
-              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                Advanced
-              </label>
-            </div>
-    
-              
-              <div>
-
+              <div class="p-2 modal_content_one">
+                <h5>Automate work updates with AI StandUp™</h5>
+                <p>Track daily progress and insights with real-time task updates.</p>
               </div>
-            </div>
-            <div class="activityLog ">
-              <img src="./assets/images/home/activityLog.svg" alt="">
-              <span>Activity Log</span>
-            </div>
-
-
-          </div>
-          <div class="col-sm-9">
-            <div class="d-flex ">
-              <button class="btn col-7 border border-1  d-flex">
-
-                <img src="./assets/images/home/serach.svg" class="mt-1 mx-2" alt="">
-                <input type="text" name="" class="border-0 col-11" placeholder="Search templates..." id="">
-                
-              </button>
-              <div class="input_buttons">
-              <button class="btn mx-2 border border-1 ">
-                <img src="./assets/images/home/bag.svg" alt="">
-                <span>Use Cases</span>
-              </button>
-              <button class="btn mx-2 border border-1 ">
-                <img src="./assets/images/home/tags.svg" alt="">
-                <span>Tags</span>
-              </button>
-              <button class="btn mx-2  border border-1">
-                <img src="./assets/images/home/create_user.svg" alt="">
-                <span>Created by</span>
-              </button>
-            </div>
-            </div>
-            <div class="alert alert-primary  alert-dismissible fade show justify-content-between mt-2 d-flex" role="alert">
-              <p class="my-1"> Create your first template and eliminate repetitive work!</p>
-              <button type="button " class="btn border border-1 "  data-bs-dismiss="alert" aria-label="Close">Learn more</button>
-            </div>
-            <div class="two_content ">
-              <h1>Templates by ClickUp</h1>
-            </div>
-            <div class="card_main">
-            <div class="template_card d-flex justify-content-between my-3">
-              <h1>Marketing</h1>
-              <span>See 161 more</span>
-       </div>
-       <div>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="border border-1 rounded-4">
-            <div class="Card_formate">
-              <img src="./assets/images/logo.png" width="50px" alt="">
-            <img src="./assets/images/home/SocialMediaContent.svg"  width="90%"  alt="">
-          </div>
-            <div class="p-3 Card_footer ">
-              <img src="assets/images/home/check_modal.svg" alt="">
-              <span>Social Media Content Plan</span>
-            </div>
-          </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="border border-1 rounded-4">
-              <div class="Card_formate">
-                <img src="./assets/images/logo.png" width="50px" alt="">
-              <img src="./assets/images/home/PriorityMatrix.svg"  width="90%"  alt="">
-            </div>
-              <div class="p-3 Card_footer ">
-                <img src="assets/images/home/priority_icon.svg" alt="">
-                <span>2x2 Priority Matrix</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="border border-1 rounded-4">
-              <div class="Card_formate">
-                <img src="./assets/images/logo.png" width="50px" alt="">
-              <img src="./assets/images/home/InstagramSuccessCheck.svg"  width="90%"  alt="">
-            </div>
-              <div class="p-3 Card_footer">
-                <img src="assets/images/home/instagram_icon.svg" alt="">
-                <span>90 Day Instagram Success Checklist</span>
-              </div>
-            </div>
-          </div>
-        </div>
-       </div>
-
- <div>
-  <div class="row mt-3">
-    <div class="col-sm-4">
-      <div class="border border-1 rounded-4">
-      <div class="Card_formate">
-        <img src="./assets/images/logo.png" width="50px" alt="">
-      <img src="./assets/images/home/ContentManagement&testing.svg"  width="90%"  alt="">
-    </div>
-      <div class="p-3 Card_footer ">
-        <img src="assets/images/home/instagram_icon.svg" alt="">
-        <span>A/B Content Management & Testing</span>
-      </div>
-    </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="border border-1 rounded-4">
-        <div class="Card_formate">
-          <img src="./assets/images/logo.png" width="50px" alt="">
-        <img src="./assets/images/home/A_B_Testing.svg" width="90%" alt="">
-      </div>
-        <div class="p-3 Card_footer ">
-          <img src="assets/images/home/folder.svg" alt="">
-          <span>A/B Testing</span>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="border border-1 rounded-4">
-        <div class="Card_formate">
-          <img src="./assets/images/logo.png" width="50px" alt="">
-        <img src="./assets/images/home/ActionPlan.svg"  width="90%"  alt="">
-      </div>
-        <div class="p-3 Card_footer">
-          <img src="assets/images/home/instagram_icon.svg" alt="">
-          <span>Action Plan</span>
-        </div>
-      </div>
-    </div>
-  </div>
- </div>
- <div class="template_card d-flex justify-content-between my-3">
-  <h1>Other</h1>
-  <span>See 328 more</span>
-</div>
-<div>
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="border border-1 rounded-4">
-      <div class="Card_formate">
-        <img src="./assets/images/logo.png" width="50px" alt="">
-      <img src="./assets/images/home/SocialMediaContent.svg"  width="90%"  alt="">
-    </div>
-      <div class="p-3 Card_footer ">
-        <img src="assets/images/home/check_modal.svg" alt="">
-        <span>Social Media Content Plan</span>
-      </div>
-    </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="border border-1 rounded-4">
-        <div class="Card_formate">
-          <img src="./assets/images/logo.png" width="50px" alt="">
-        <img src="./assets/images/home/PriorityMatrix.svg"  width="90%"  alt="">
-      </div>
-        <div class="p-3 Card_footer ">
-          <img src="assets/images/home/priority_icon.svg" alt="">
-          <span>2x2 Priority Matrix</span>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="border border-1 rounded-4">
-        <div class="Card_formate">
-          <img src="./assets/images/logo.png" width="50px" alt="">
-        <img src="./assets/images/home/InstagramSuccessCheck.svg"  width="90%"  alt="">
-      </div>
-        <div class="p-3 Card_footer">
-          <img src="assets/images/home/instagram_icon.svg" alt="">
-          <span>90 Day Instagram Success Checklist</span>
-        </div>
-      </div>
-    </div>
-  </div>
- </div>
-</div>
-          </div>
-  
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="template_Center">
-  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal6">
-    Template Center
-  </button>
-
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
-  <div class="modal-dialog modal_dialog ">
-    <div class="modal-content ">
-      <div class="modal-header border-0">
-        
-        <button type="button" class="btn-close p-3" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="row">
-          <div class="col-sm-3 modal_sidebar">
-            <div class="d-flex pt-3">
-              <img src="./assets/images/home/template_magic.svg" width="35px" alt="">
-              <h1>Template Center</h1>
-            </div>
-            <div class="one_content my-1 d-flex">
-              <button class="justify-content-between btn d-flex col-12">
-              <div >
-              <img src="./assets/images/home/n.svg" alt="">
-              <span class="ms-3">Template Center</span>
-            </div>
-              <span>0</span>
-            </button>
-            </div>
-            <div class="one_content my-1 d-flex">
-              <button class="justify-content-between btn d-flex col-12">
-              <div >
-              <img src="./assets/images/home/n.svg" alt="">
-              <span  class="ms-3"> ClickUp Templates</span>
-            </div>
-              <span>1523</span>
-            </button>
-            </div>
-            <div class="template_type">
-              <h5>Template Types</h5>
-              <div>
-              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                Space
-              </label>
-            </div>
-            <div>
-              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                Folder
-              </label>
-            </div>
-            <div>
-              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                List
-              </label>
-            </div>
-            <div>
-              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                Task
-              </label>
-            </div>
-            <div>
-              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                Doc
-              </label>
-            </div>
-            <div>
-              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                View
-              </label>
-            </div>
-            <div>
-              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                Checklist
-              </label>
-            </div>
-            <div>
-              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                Whiteboard
-              </label>
-            </div>
-              
-              <div>
-
-              </div>
-            </div>
-            <div class="Complexity">
-              <h5>Complexity</h5>
-              <div >
-              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                Beginner
-              </label>
-            </div>
-            <div>
-              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                Intermediate
-              </label>
-            </div>
-            <div>
-              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label" for="flexCheckDefault">
-                Advanced
-              </label>
-            </div>
-    
-              
-              <div>
-
-              </div>
-            </div>
-            <div class="activityLog ">
-              <img src="./assets/images/home/activityLog.svg" alt="">
-              <span>Activity Log</span>
-            </div>
-
-
-          </div>
-          <div class="col-sm-9">
-            <div class="d-flex ">
-              <button class="btn col-7 border border-1  d-flex">
-
-                <img src="./assets/images/home/serach.svg" class="mt-1 mx-2" alt="">
-                <input type="text" name="" class="border-0 col-11" placeholder="Search templates..." id="">
-                
-              </button>
-              <div class="input_buttons">
-              <button class="btn mx-2 border border-1 ">
-                <img src="./assets/images/home/bag.svg" alt="">
-                <span>Use Cases</span>
-              </button>
-              <button class="btn mx-2 border border-1 ">
-                <img src="./assets/images/home/tags.svg" alt="">
-                <span>Tags</span>
-              </button>
-              <button class="btn mx-2  border border-1">
-                <img src="./assets/images/home/create_user.svg" alt="">
-                <span>Created by</span>
-              </button>
-            </div>
-            </div>
-            <div class="alert alert-primary  alert-dismissible fade show justify-content-between mt-2 d-flex" role="alert">
-              <p class="my-1"> Create your first template and eliminate repetitive work!</p>
-              <button type="button " class="btn border border-1 "  data-bs-dismiss="alert" aria-label="Close">Learn more</button>
-            </div>
-            <div class="two_content ">
-              <h1>Templates by ClickUp</h1>
-            </div>
-            <div class="card_main">
-            <div class="template_card d-flex justify-content-between my-3">
-              <h1>Marketing</h1>
-              <span>See 161 more</span>
-       </div>
-       <div>
-        <div class="row">
-          <div class="col-sm-4">
-            <div class="border border-1 rounded-4">
-            <div class="Card_formate">
-              <img src="./assets/images/logo.png" width="50px" alt="">
-            <img src="./assets/images/home/blank_image.svg"  width="90%"  alt="">
-          </div>
-            <div class="p-3 Card_footer ">
-              <img src="assets/images/home/jupiter_icon.svg" alt="">
-              <span>Agency Management</span>
-            </div>
-          </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="border border-1 rounded-4">
-              <div class="Card_formate">
-                <img src="./assets/images/logo.png" width="50px" alt="">
-              <img src="./assets/images/home/blank_image.svg"  width="90%"  alt="">
-            </div>
-              <div class="p-3 Card_footer ">
-                <img src="assets/images/home/jupiter_icon.svg" alt="">
-                <span>Marketing Team Operations</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="border border-1 rounded-4">
-              <div class="Card_formate">
-                <img src="./assets/images/logo.png" width="50px" alt="">
-              <img src="./assets/images/home/blank_image.svg"  width="90%"  alt="">
-            </div>
-              <div class="p-3 Card_footer">
-                <img src="assets/images/home/jupiter_icon.svg" alt="">
-                <span>Marketing Teams</span>
-              </div>
-            </div>
-          </div>
-        </div>
-       </div>
-
- <div>
-  <div class="row mt-3">
-    <div class="col-sm-4">
-      <div class="border border-1 rounded-4">
-      <div class="Card_formate">
-        <img src="./assets/images/logo.png" width="50px" alt="">
-      <img src="./assets/images/home/blank_image.svg"  width="90%"  alt="">
-    </div>
-      <div class="p-3 Card_footer ">
-        <img src="assets/images/home/jupiter_icon.svg" alt="">
-        <span>Quick Start: Marketing</span>
-      </div>
-    </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="border border-1 rounded-4">
-        <div class="Card_formate">
-          <img src="./assets/images/logo.png" width="50px" alt="">
-        <img src="./assets/images/home/blank_image.svg" width="90%" alt="">
-      </div>
-        <div class="p-3 Card_footer ">
-          <img src="assets/images/home/jupiter_icon.svg" alt="">
-          <span>SEO Project Management</span>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="border border-1 rounded-4">
-        <div class="Card_formate">
-          <img src="./assets/images/logo.png" width="50px" alt="">
-        <img src="./assets/images/home/blank_image.svg"  width="90%"  alt="">
-      </div>
-        <div class="p-3 Card_footer">
-          <img src="assets/images/home/jupiter_icon.svg" alt="">
-          <span>Start a Social Media Marketing Ag…</span>
-        </div>
-      </div>
-    </div>
-  </div>
- </div>
- <div class="template_card d-flex justify-content-between my-3">
-  <h1>Other</h1>
-  <span>See 328 more</span>
-</div>
-<div>
-  <div class="row">
-    <div class="col-sm-4">
-      <div class="border border-1 rounded-4">
-      <div class="Card_formate">
-        <img src="./assets/images/logo.png" width="50px" alt="">
-      <img src="./assets/images/home/blank_image.svg"  width="90%"  alt="">
-    </div>
-      <div class="p-3 Card_footer ">
-        <img src="assets/images/home/jupiter_icon.svg" alt="">
-        <span>Social Media Content Plan</span>
-      </div>
-    </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="border border-1 rounded-4">
-        <div class="Card_formate">
-          <img src="./assets/images/logo.png" width="50px" alt="">
-        <img src="./assets/images/home/blank_image.svg"  width="90%"  alt="">
-      </div>
-        <div class="p-3 Card_footer ">
-          <img src="assets/images/home/jupiter_icon.svg" alt="">
-          <span>2x2 Priority Matrix</span>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="border border-1 rounded-4">
-        <div class="Card_formate">
-          <img src="./assets/images/logo.png" width="50px" alt="">
-        <img src="./assets/images/home/blank_image.svg"  width="90%"  alt="">
-      </div>
-        <div class="p-3 Card_footer">
-          <img src="assets/images/home/jupiter_icon.svg" alt="">
-          <span>90 Day Instagram Success Checklist</span>
-        </div>
-      </div>
-    </div>
-  </div>
- </div>
-</div>
-          </div>
-  
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
-</div>
-
-
-
-
-
-
-
-<style>
-  .templates_more_info{
-    .modal-dialog {
-    max-width: 1300px;
-}
-.modal_content {
-  display: flex;
-  gap: 20px;
-}
-.modal_content h3{
-  font-size: 24px;
-}
-.profile_description p span{
-  font-size: 12px;
-  
-}
-.profile_description span{
-  width: 89px;
-  text-align: center;
-background-color:var(--bg_templates_buget_modal);
-color: var(--text_templates_buget_modal);
-border-radius: 5px;
-height: 28px;
-}
-.user_title{
-  gap: 10px;
-}
-.modal-header h5{
-  font-size: 16px;
-}
-.null_button{
-  height: 100px;
-  width: 100px;
-  
-}
-.content_two h3{
-  font-size: 14px;
- 
-}
-.content_two p{
-  font-weight: 400;
-  font-size: 12px;
-}
-.sidear_content_two h4{
-font-size: 11px;
-color:var(--text_templates_sidebar_modal);
-}
-.sidear_content_two p{
-font-size: 14px;
-}
-.Social_card {
-  background-color: var(--background_templates_card_modal);
-}
-.card_detail h3 {
-  font-size: 16px;
-}
-.card_detail p {
-  font-size: 14px;
-}
-.drop_down_button{
-  display: flex;
-    justify-content: space-between;
-}
-.dropend .dropdown-toggle::after {
-
-    margin-top: 20px;
-}
-.content_three h3{
-  font-size: 16px;
-}
-.modal-content{
-  height: 750px;
-}
-@media only screen and (max-width: 600px) {
-  .modal-content{
-  height: 1000px;
-}
-.use_templates{
-  font-size: 10px;
-  width: 90px; 
-  
-}
-}
-  }
-
-</style>
-
-
-<!-- Button trigger modal -->
- <div class="templates_more_info">
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal7">
-  Launch demo modal
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header d-flex justify-content-between">
-       <div>
-        <h5 class="modal-title" id="exampleModalLabel">
-          <img src="./assets/images/home/backspace.svg" alt=""> Back</h5>
-        </div>
-        <div class="mt-2">
-          <h5>Template Center</h5>
-        </div>
-       <div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      </div>
-
-
-
-
-
-    
-
-
-
-
-
-      <div class="modal-body">
-        <div class="row">
-          <!-- Main Content Section -->
-          <div class="col-sm-9">
-            <div class="d-flex justify-content-between">
-              <!-- Main Content Header and Button -->
-              <div class="d-flex user_title">
-                <div class="mt-3">
-                  <img src="./assets/images/home/socialMediaCheck.svg" width="63px" alt="">
+              <div class="p-2">
+                <p>People or Teams</p>
+                <div class="dropdown open ">
+                  <button class="btn dropdown-toggle col-12 user_drop border border-1" type="button" id="triggerId"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="./assets/images/user_profile.svg" alt="">
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="triggerId">
+                    <button class="dropdown-item" href="#">Action</button>
+                    <button class="dropdown-item disabled" href="#">
+                      Disabled action
+                    </button>
+                  </div>
                 </div>
-                <div class="ms-3">
-                  <div class="mt-3">
-                    <h3>Social Media Content Plan</h3>
-                    <div class="d-flex profile_description">
-                      <p>Complexity:</p>
-                      <span>Beginner</span>
+                <p class="mt-3">Since</p>
+                <div class="dropdown open ">
+                  <button class="btn dropdown-toggle col-12 user_drop border border-1" type="button" id="triggerId"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <p>Last 24 hours</p>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="triggerId">
+                    <button class="dropdown-item" href="#">Action</button>
+                    <button class="dropdown-item disabled" href="#">
+                      Disabled action
+                    </button>
+                  </div>
+                </div>
+                <p class="mt-3">Since</p>
+                <div class="modal_button">
+                  <button class="btn ">Bulleted list</button>
+                  <button class="btn ">Short</button>
+                  <button class="btn ">Traditional</button>
+                </div>
+                <button class="btn col-12 mt-4 action_button">Generate</button>
+              </div>
+              <div>
+                <p></p>
+
+              </div>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+      <!-- Button trigger modal -->
+      <!-- Button trigger modal -->
+      <div class="template_Center">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+          Template Center
+        </button>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5"
+          aria-hidden="true">
+          <div class="modal-dialog modal_dialog ">
+            <div class="modal-content ">
+              <div class="modal-header border-0">
+
+                <button type="button" class="btn-close p-3" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-sm-3 modal_sidebar">
+                    <div class="d-flex pt-3">
+                      <img src="./assets/images/home/template_magic.svg" width="35px" alt="">
+                      <h1>Template Center</h1>
+                    </div>
+                    <div class="one_content my-1 d-flex">
+                      <button class="justify-content-between btn d-flex col-12">
+                        <div>
+                          <img src="./assets/images/home/n.svg" alt="">
+                          <span class="ms-3">Template Center</span>
+                        </div>
+                        <span>0</span>
+                      </button>
+                    </div>
+                    <div class="one_content my-1 d-flex">
+                      <button class="justify-content-between btn d-flex col-12">
+                        <div>
+                          <img src="./assets/images/home/n.svg" alt="">
+                          <span class="ms-3"> ClickUp Templates</span>
+                        </div>
+                        <span>1523</span>
+                      </button>
+                    </div>
+                    <div class="template_type">
+                      <h5>Template Types</h5>
+                      <div>
+                        <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Space
+                        </label>
+                      </div>
+                      <div>
+                        <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Folder
+                        </label>
+                      </div>
+                      <div>
+                        <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          List
+                        </label>
+                      </div>
+                      <div>
+                        <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Task
+                        </label>
+                      </div>
+                      <div>
+                        <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Doc
+                        </label>
+                      </div>
+                      <div>
+                        <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          View
+                        </label>
+                      </div>
+                      <div>
+                        <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Checklist
+                        </label>
+                      </div>
+                      <div>
+                        <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Whiteboard
+                        </label>
+                      </div>
+
+                      <div>
+
+                      </div>
+                    </div>
+                    <div class="Complexity">
+                      <h5>Complexity</h5>
+                      <div>
+                        <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Beginner
+                        </label>
+                      </div>
+                      <div>
+                        <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Intermediate
+                        </label>
+                      </div>
+                      <div>
+                        <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Advanced
+                        </label>
+                      </div>
+
+
+                      <div>
+
+                      </div>
+                    </div>
+                    <div class="activityLog ">
+                      <img src="./assets/images/home/activityLog.svg" alt="">
+                      <span>Activity Log</span>
+                    </div>
+
+
+                  </div>
+                  <div class="col-sm-9">
+                    <div class="d-flex ">
+                      <button class="btn col-7 border border-1  d-flex">
+
+                        <img src="./assets/images/home/serach.svg" class="mt-1 mx-2" alt="">
+                        <input type="text" name="" class="border-0 col-11" placeholder="Search templates..." id="">
+
+                      </button>
+                      <div class="input_buttons">
+                        <button class="btn mx-2 border border-1 ">
+                          <img src="./assets/images/home/bag.svg" alt="">
+                          <span>Use Cases</span>
+                        </button>
+                        <button class="btn mx-2 border border-1 ">
+                          <img src="./assets/images/home/tags.svg" alt="">
+                          <span>Tags</span>
+                        </button>
+                        <button class="btn mx-2  border border-1">
+                          <img src="./assets/images/home/create_user.svg" alt="">
+                          <span>Created by</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="alert alert-primary  alert-dismissible fade show justify-content-between mt-2 d-flex"
+                      role="alert">
+                      <p class="my-1"> Create your first template and eliminate repetitive work!</p>
+                      <button type="button " class="btn border border-1 " data-bs-dismiss="alert"
+                        aria-label="Close">Learn more</button>
+                    </div>
+                    <div class="two_content ">
+                      <h1>Templates by ClickUp</h1>
+                    </div>
+                    <div class="card_main">
+                      <div class="template_card d-flex justify-content-between my-3">
+                        <h1>Marketing</h1>
+                        <span>See 161 more</span>
+                      </div>
+                      <div>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <div class="border border-1 rounded-4">
+                              <div class="Card_formate">
+                                <img src="./assets/images/logo.png" width="50px" alt="">
+                                <img src="./assets/images/home/SocialMediaContent.svg" width="90%" alt="">
+                              </div>
+                              <div class="p-3 Card_footer ">
+                                <img src="assets/images/home/check_modal.svg" alt="">
+                                <span>Social Media Content Plan</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="border border-1 rounded-4">
+                              <div class="Card_formate">
+                                <img src="./assets/images/logo.png" width="50px" alt="">
+                                <img src="./assets/images/home/PriorityMatrix.svg" width="90%" alt="">
+                              </div>
+                              <div class="p-3 Card_footer ">
+                                <img src="assets/images/home/priority_icon.svg" alt="">
+                                <span>2x2 Priority Matrix</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="border border-1 rounded-4">
+                              <div class="Card_formate">
+                                <img src="./assets/images/logo.png" width="50px" alt="">
+                                <img src="./assets/images/home/InstagramSuccessCheck.svg" width="90%" alt="">
+                              </div>
+                              <div class="p-3 Card_footer">
+                                <img src="assets/images/home/instagram_icon.svg" alt="">
+                                <span>90 Day Instagram Success Checklist</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div>
+                        <div class="row mt-3">
+                          <div class="col-sm-4">
+                            <div class="border border-1 rounded-4">
+                              <div class="Card_formate">
+                                <img src="./assets/images/logo.png" width="50px" alt="">
+                                <img src="./assets/images/home/ContentManagement&testing.svg" width="90%" alt="">
+                              </div>
+                              <div class="p-3 Card_footer ">
+                                <img src="assets/images/home/instagram_icon.svg" alt="">
+                                <span>A/B Content Management & Testing</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="border border-1 rounded-4">
+                              <div class="Card_formate">
+                                <img src="./assets/images/logo.png" width="50px" alt="">
+                                <img src="./assets/images/home/A_B_Testing.svg" width="90%" alt="">
+                              </div>
+                              <div class="p-3 Card_footer ">
+                                <img src="assets/images/home/folder.svg" alt="">
+                                <span>A/B Testing</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="border border-1 rounded-4">
+                              <div class="Card_formate">
+                                <img src="./assets/images/logo.png" width="50px" alt="">
+                                <img src="./assets/images/home/ActionPlan.svg" width="90%" alt="">
+                              </div>
+                              <div class="p-3 Card_footer">
+                                <img src="assets/images/home/instagram_icon.svg" alt="">
+                                <span>Action Plan</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="template_card d-flex justify-content-between my-3">
+                        <h1>Other</h1>
+                        <span>See 328 more</span>
+                      </div>
+                      <div>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <div class="border border-1 rounded-4">
+                              <div class="Card_formate">
+                                <img src="./assets/images/logo.png" width="50px" alt="">
+                                <img src="./assets/images/home/SocialMediaContent.svg" width="90%" alt="">
+                              </div>
+                              <div class="p-3 Card_footer ">
+                                <img src="assets/images/home/check_modal.svg" alt="">
+                                <span>Social Media Content Plan</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="border border-1 rounded-4">
+                              <div class="Card_formate">
+                                <img src="./assets/images/logo.png" width="50px" alt="">
+                                <img src="./assets/images/home/PriorityMatrix.svg" width="90%" alt="">
+                              </div>
+                              <div class="p-3 Card_footer ">
+                                <img src="assets/images/home/priority_icon.svg" alt="">
+                                <span>2x2 Priority Matrix</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="border border-1 rounded-4">
+                              <div class="Card_formate">
+                                <img src="./assets/images/logo.png" width="50px" alt="">
+                                <img src="./assets/images/home/InstagramSuccessCheck.svg" width="90%" alt="">
+                              </div>
+                              <div class="p-3 Card_footer">
+                                <img src="assets/images/home/instagram_icon.svg" alt="">
+                                <span>90 Day Instagram Success Checklist</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="template_Center">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+          Template Center
+        </button>
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel5"
+          aria-hidden="true">
+          <div class="modal-dialog modal_dialog ">
+            <div class="modal-content ">
+              <div class="modal-header border-0">
+
+                <button type="button" class="btn-close p-3" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-sm-3 modal_sidebar">
+                    <div class="d-flex pt-3">
+                      <img src="./assets/images/home/template_magic.svg" width="35px" alt="">
+                      <h1>Template Center</h1>
+                    </div>
+                    <div class="one_content my-1 d-flex">
+                      <button class="justify-content-between btn d-flex col-12">
+                        <div>
+                          <img src="./assets/images/home/n.svg" alt="">
+                          <span class="ms-3">Template Center</span>
+                        </div>
+                        <span>0</span>
+                      </button>
+                    </div>
+                    <div class="one_content my-1 d-flex">
+                      <button class="justify-content-between btn d-flex col-12">
+                        <div>
+                          <img src="./assets/images/home/n.svg" alt="">
+                          <span class="ms-3"> ClickUp Templates</span>
+                        </div>
+                        <span>1523</span>
+                      </button>
+                    </div>
+                    <div class="template_type">
+                      <h5>Template Types</h5>
+                      <div>
+                        <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Space
+                        </label>
+                      </div>
+                      <div>
+                        <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Folder
+                        </label>
+                      </div>
+                      <div>
+                        <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          List
+                        </label>
+                      </div>
+                      <div>
+                        <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Task
+                        </label>
+                      </div>
+                      <div>
+                        <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Doc
+                        </label>
+                      </div>
+                      <div>
+                        <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          View
+                        </label>
+                      </div>
+                      <div>
+                        <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Checklist
+                        </label>
+                      </div>
+                      <div>
+                        <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Whiteboard
+                        </label>
+                      </div>
+
+                      <div>
+
+                      </div>
+                    </div>
+                    <div class="Complexity">
+                      <h5>Complexity</h5>
+                      <div>
+                        <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Beginner
+                        </label>
+                      </div>
+                      <div>
+                        <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Intermediate
+                        </label>
+                      </div>
+                      <div>
+                        <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Advanced
+                        </label>
+                      </div>
+
+
+                      <div>
+
+                      </div>
+                    </div>
+                    <div class="activityLog ">
+                      <img src="./assets/images/home/activityLog.svg" alt="">
+                      <span>Activity Log</span>
+                    </div>
+
+
+                  </div>
+                  <div class="col-sm-9">
+                    <div class="d-flex ">
+                      <button class="btn col-7 border border-1  d-flex">
+
+                        <img src="./assets/images/home/serach.svg" class="mt-1 mx-2" alt="">
+                        <input type="text" name="" class="border-0 col-11" placeholder="Search templates..." id="">
+
+                      </button>
+                      <div class="input_buttons">
+                        <button class="btn mx-2 border border-1 ">
+                          <img src="./assets/images/home/bag.svg" alt="">
+                          <span>Use Cases</span>
+                        </button>
+                        <button class="btn mx-2 border border-1 ">
+                          <img src="./assets/images/home/tags.svg" alt="">
+                          <span>Tags</span>
+                        </button>
+                        <button class="btn mx-2  border border-1">
+                          <img src="./assets/images/home/create_user.svg" alt="">
+                          <span>Created by</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="alert alert-primary  alert-dismissible fade show justify-content-between mt-2 d-flex"
+                      role="alert">
+                      <p class="my-1"> Create your first template and eliminate repetitive work!</p>
+                      <button type="button " class="btn border border-1 " data-bs-dismiss="alert"
+                        aria-label="Close">Learn more</button>
+                    </div>
+                    <div class="two_content ">
+                      <h1>Templates by ClickUp</h1>
+                    </div>
+                    <div class="card_main">
+                      <div class="template_card d-flex justify-content-between my-3">
+                        <h1>Marketing</h1>
+                        <span>See 161 more</span>
+                      </div>
+                      <div>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <div class="border border-1 rounded-4">
+                              <div class="Card_formate">
+                                <img src="./assets/images/logo.png" width="50px" alt="">
+                                <img src="./assets/images/home/blank_image.svg" width="90%" alt="">
+                              </div>
+                              <div class="p-3 Card_footer ">
+                                <img src="assets/images/home/jupiter_icon.svg" alt="">
+                                <span>Agency Management</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="border border-1 rounded-4">
+                              <div class="Card_formate">
+                                <img src="./assets/images/logo.png" width="50px" alt="">
+                                <img src="./assets/images/home/blank_image.svg" width="90%" alt="">
+                              </div>
+                              <div class="p-3 Card_footer ">
+                                <img src="assets/images/home/jupiter_icon.svg" alt="">
+                                <span>Marketing Team Operations</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="border border-1 rounded-4">
+                              <div class="Card_formate">
+                                <img src="./assets/images/logo.png" width="50px" alt="">
+                                <img src="./assets/images/home/blank_image.svg" width="90%" alt="">
+                              </div>
+                              <div class="p-3 Card_footer">
+                                <img src="assets/images/home/jupiter_icon.svg" alt="">
+                                <span>Marketing Teams</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div>
+                        <div class="row mt-3">
+                          <div class="col-sm-4">
+                            <div class="border border-1 rounded-4">
+                              <div class="Card_formate">
+                                <img src="./assets/images/logo.png" width="50px" alt="">
+                                <img src="./assets/images/home/blank_image.svg" width="90%" alt="">
+                              </div>
+                              <div class="p-3 Card_footer ">
+                                <img src="assets/images/home/jupiter_icon.svg" alt="">
+                                <span>Quick Start: Marketing</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="border border-1 rounded-4">
+                              <div class="Card_formate">
+                                <img src="./assets/images/logo.png" width="50px" alt="">
+                                <img src="./assets/images/home/blank_image.svg" width="90%" alt="">
+                              </div>
+                              <div class="p-3 Card_footer ">
+                                <img src="assets/images/home/jupiter_icon.svg" alt="">
+                                <span>SEO Project Management</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="border border-1 rounded-4">
+                              <div class="Card_formate">
+                                <img src="./assets/images/logo.png" width="50px" alt="">
+                                <img src="./assets/images/home/blank_image.svg" width="90%" alt="">
+                              </div>
+                              <div class="p-3 Card_footer">
+                                <img src="assets/images/home/jupiter_icon.svg" alt="">
+                                <span>Start a Social Media Marketing Ag…</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="template_card d-flex justify-content-between my-3">
+                        <h1>Other</h1>
+                        <span>See 328 more</span>
+                      </div>
+                      <div>
+                        <div class="row">
+                          <div class="col-sm-4">
+                            <div class="border border-1 rounded-4">
+                              <div class="Card_formate">
+                                <img src="./assets/images/logo.png" width="50px" alt="">
+                                <img src="./assets/images/home/blank_image.svg" width="90%" alt="">
+                              </div>
+                              <div class="p-3 Card_footer ">
+                                <img src="assets/images/home/jupiter_icon.svg" alt="">
+                                <span>Social Media Content Plan</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="border border-1 rounded-4">
+                              <div class="Card_formate">
+                                <img src="./assets/images/logo.png" width="50px" alt="">
+                                <img src="./assets/images/home/blank_image.svg" width="90%" alt="">
+                              </div>
+                              <div class="p-3 Card_footer ">
+                                <img src="assets/images/home/jupiter_icon.svg" alt="">
+                                <span>2x2 Priority Matrix</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-4">
+                            <div class="border border-1 rounded-4">
+                              <div class="Card_formate">
+                                <img src="./assets/images/logo.png" width="50px" alt="">
+                                <img src="./assets/images/home/blank_image.svg" width="90%" alt="">
+                              </div>
+                              <div class="p-3 Card_footer">
+                                <img src="assets/images/home/jupiter_icon.svg" alt="">
+                                <span>90 Day Instagram Success Checklist</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- Button trigger modal -->
+      <div class="templates_more_info">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+          Launch demo modal
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header d-flex justify-content-between">
+                <div>
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    <img src="./assets/images/home/backspace.svg" alt=""> Back
+                  </h5>
+                </div>
+                <div class="mt-2">
+                  <h5>Template Center</h5>
+                </div>
+                <div>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+              <div class="modal-body">
+                <div class="row">
+                  <!-- Main Content Section -->
+                  <div class="col-sm-9">
+                    <div class="d-flex justify-content-between">
+                      <!-- Main Content Header and Button -->
+                      <div class="d-flex user_title">
+                        <div class="mt-3">
+                          <img src="./assets/images/home/socialMediaCheck.svg" width="63px" alt="">
+                        </div>
+                        <div class="ms-3">
+                          <div class="mt-3">
+                            <h3>Social Media Content Plan</h3>
+                            <div class="d-flex profile_description">
+                              <p>Complexity:</p>
+                              <span>Beginner</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="mt-4">
+                          <img src="./assets/images/home/menu_dot.svg" alt="">
+                        </div>
+                      </div>
+                      <div class="h_modal_button_action mt-3">
+                        <div>
+                          <button type="button" class="btn use_templates mx-2">Use Template</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Additional Content Section -->
+                    <div class="mt-4">
+                      <div class="row border border-1 rounded-4">
+                        <div class="col-sm-4">
+                          <div class="pb-3 pt-3  rounded-3 Social_card">
+                            <img src="./assets/images/home/SocialMediaContent.svg" width="90%" height="90%" alt="">
+                          </div>
+                        </div>
+                        <div class="col-sm-8 card_detail my-2">
+                          <h3>Template Description</h3>
+                          <p>A Social Media Content Plan ensures that you post on your social media pages
+                            consistently by laying out your posts ahead of time. Use this ClickUp Social Media
+                            Content Plan template to make your life easier when it comes to the ideation and
+                            creation of social media posts.</p>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="content_three ">
+                      <h3 class="my-4 "> Template includes</h3>
+                      <!-- Default dropend button -->
+                      <div class="btn-group dropend col-12 border border-1 rounded-3">
+                        <button type="button" class="btn drop_down_button dropdown-toggle " data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          <div class="d-flex">
+                            <img src="./assets/images/home/customize_icon.svg" alt="">
+                            <div class="d-flex flex-column align-items-start ms-2">
+                              <span class="fw-bold mb-1">Custom Fields</span>
+                              <span class="text-muted">5 Custom Fields included</span>
+                            </div>
+
+                          </div>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <!-- Dropdown menu links -->
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Sidebar Content Section -->
+                  <div class="col-sm-3 ">
+                    <div class="border border-1 content_two rounded-3 p-2 mt-3">
+                      <div class="d-flex justify-content-between">
+                        <div><img src="./assets/images/home/NullImage.svg" alt=""></div>
+                        <div class="profile_description"><span class="p-2 text-center">Verified</span></div>
+                      </div>
+                      <h3 class="mt-3">By ClickUp</h3>
+                      <p>This template was built by the ClickUp Crew!</p>
+                    </div>
+                    <div class="sidear_content_two mt-3">
+                      <h4>CREATED DATE</h4>
+                      <p>December 12, 2022</p>
+                    </div>
+                    <div class="sidear_content_two">
+                      <h4>USED</h4>
+                      <p>15.2K times</p>
                     </div>
                   </div>
                 </div>
-                <div class="mt-4">
-                  <img src="./assets/images/home/menu_dot.svg" alt="">
-                </div>
               </div>
-              <div class="h_modal_button_action mt-3">
-                <div>
-                <button type="button" class="btn use_templates mx-2">Use Template</button>
-              </div>
-              </div>
-            </div>
-            
-            <!-- Additional Content Section -->
-            <div class="mt-4">
-              <div class="row border border-1 rounded-4">
-                <div class="col-sm-4">
-                 <div class="pb-3 pt-3  rounded-3 Social_card">
-                  <img src="./assets/images/home/SocialMediaContent.svg" width="90%" height="90%" alt="">
-                 </div>
-                </div>
-                <div class="col-sm-8 card_detail my-2">
-                  <h3>Template Description</h3>
-                  <p>A Social Media Content Plan ensures that you post on your social media pages
-                    consistently by laying out your posts ahead of time. Use this ClickUp Social Media
-                    Content Plan template to make your life easier when it comes to the ideation and
-                    creation of social media posts.</p>
-                </div>
-             
-              </div>
-            </div>
-            <div class="content_three ">
-              <h3 class="my-4 " > Template includes</h3>
-             <!-- Default dropend button -->
-<div class="btn-group dropend col-12 border border-1 rounded-3">
-  <button type="button" class="btn drop_down_button dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
-    <div class="d-flex">
-      <img src="./assets/images/home/customize_icon.svg" alt="">
-      <div class="d-flex flex-column align-items-start ms-2">
-        <span class="fw-bold mb-1">Custom Fields</span>
-        <span class="text-muted">5 Custom Fields included</span>
-      </div>
-      
-    </div>
-  </button>
-  <ul class="dropdown-menu">
-    <!-- Dropdown menu links -->
-  </ul>
-</div>
-            </div>
-          </div>
-          
-          <!-- Sidebar Content Section -->
-          <div class="col-sm-3 ">
-            <div class="border border-1 content_two rounded-3 p-2 mt-3">
-              <div class="d-flex justify-content-between">
-                <div><img src="./assets/images/home/NullImage.svg" alt=""></div>
-                <div class="profile_description"><span class="p-2 text-center">Verified</span></div>
-              </div>
-              <h3 class="mt-3">By ClickUp</h3>
-              <p>This template was built by the ClickUp Crew!</p>
-            </div>
-            <div class="sidear_content_two mt-3">
-              <h4>CREATED DATE</h4>
-              <p>December 12, 2022</p>
-            </div>
-            <div class="sidear_content_two">
-              <h4>USED</h4>
-              <p>15.2K times</p>
+
+
             </div>
           </div>
         </div>
       </div>
-      
+
+
+
+
+
+
+
+
+
 
     </div>
-  </div>
-</div>
-</div>
 
 
 
 
+    </div>
+  </main>
 
+  <script src="./assets/js/script.js"></script>
 
+  <footer>
+    <!-- place footer here -->
+  </footer>
 
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
 
-
-
-</div>
-
-
-
-
-      </div>
-    </main>
-
-    <script src="./assets/js/script.js"></script>
-
-    <footer>
-      <!-- place footer here -->
-    </footer>
-
-    <!-- Bootstrap JavaScript Libraries -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $("#sidebartoggle").click(function () {
-          $(".sidebarnew").toggleClass("inactive");
-        });
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#sidebartoggle").click(function () {
+        $(".sidebarnew").toggleClass("inactive");
       });
-    </script>
-  </body>
+    });
+  </script>
+</body>
+
 </html>

@@ -33,13 +33,13 @@
   --button_active_modal_bg_color: #808080;
   --button_active_modal_text_color: #ffffff;
   /* notepad nav */
-  --notepad_nav_bg_color:yellow;
-  --notepad_nav_text_color:rgb(255, 255, 255);
+  --notepad_nav_bg_color: yellow;
+  --notepad_nav_text_color: rgb(255, 255, 255);
 
   /* switch & checkbox button */
   --button_switch_bg_color: rgb(255, 255, 255);
   /* switch & checkbox active button */
-  --button_switch_active_bg_color:  #544dc9;
+  --button_switch_active_bg_color: #544dc9;
   /* sidebar */
   --sidebar_nav_active_bg_color: #e5e4fc;
   --sidebar_nav_active_text_color: #544dc9;
@@ -52,8 +52,8 @@
   /* nav tabs  */
   --nav_tabs_text_color: #000000;
   --nav_tabs_border_color: #5f55ee;
-/* discount modal color */
---discount_modal_background_color:#F2F1FE;
+  /* discount modal color */
+  --discount_modal_background_color: #F2F1FE;
   /* primary button */
   --button-primary-bg-color: #5f55ee;
   --button-primary-text-color: white;
@@ -67,38 +67,34 @@
   --navbar-search-bg-color: #ffffff1a;
   --navbar-ask-ai-bg-color: #43418d !important;
   /* modal Brain */
-  --button_bg_color:rgba(242, 241, 254, 1);
-  --button_border_color:rgba(204, 201, 250, 1);
-  --button_text_color:rgba(84, 77, 201, 1);
-  --button_active_bg_color:rgba(253, 243, 236, 1);
-  --button_active_border_color:rgba(245, 208, 180, 1);
-  --button_active_text_color:rgba(188, 95, 28, 1);
+  --button_bg_color: rgba(242, 241, 254, 1);
+  --button_border_color: rgba(204, 201, 250, 1);
+  --button_text_color: rgba(84, 77, 201, 1);
+  --button_active_bg_color: rgba(253, 243, 236, 1);
+  --button_active_border_color: rgba(245, 208, 180, 1);
+  --button_active_text_color: rgba(188, 95, 28, 1);
   /* modal update */
   --background_color_modal: rgba(247, 248, 249, 1);
   --text_color_modal: rgba(79, 87, 98, 1);
-<<<<<<< HEAD
+  <<<<<<< HEAD
   /* modal update hover */
   --background_color_hover_modal: rgb(255, 255, 255);
-  --text_color_hover_modal:#808080;
+  --text_color_hover_modal: #808080;
   /* alerts color */
-  --background_colour_alert_modal : #F2F1FE;
-  --text_colour_alert_modal : black;
+  --background_colour_alert_modal: #F2F1FE;
+  --text_colour_alert_modal: black;
   /* templates Card */
-  --background_templates_card_modal : #F7F8F9;
+  --background_templates_card_modal: #F7F8F9;
   /* templates Card */
-  --background_templates_sidebar_modal : #F7F8F9;
-  --text_templates_sidebar_modal :#808080;
+  --background_templates_sidebar_modal: #F7F8F9;
+  --text_templates_sidebar_modal: #808080;
   /* modal buget */
-  --bg_templates_buget_modal : #F7F8F9;
-  --text_templates_buget_modal :#808080;
-=======
-
-
-  --primary-color:#5F55EE;
-  --secondary-color:white;
-  --thirdary-color:#f7f8f9;
-  --primary-text-color:#2A2E34;
-  --secondary-text-color:#656f7d;
->>>>>>> a56c07520deefb94f7cbaa6ae702dc477b282a43
+  --bg_templates_buget_modal: #F7F8F9;
+  --text_templates_buget_modal: #808080;
+  =======--primary-color: #5F55EE;
+  --secondary-color: white;
+  --thirdary-color: #f7f8f9;
+  --primary-text-color: #2A2E34;
+  --secondary-text-color: #656f7d;
+  >>>>>>>a56c07520deefb94f7cbaa6ae702dc477b282a43
 }
-
