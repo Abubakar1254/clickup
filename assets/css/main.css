@@ -416,6 +416,8 @@ body {
 .h_modal_outline_button{
     border:1px solid var(--button_outline_modal_border_color);
     color: var(--button_outline_modal_text_color);
+    height: 29px;
+    font-size: 12px;
 }
 
 .nav-underline .nav-link.active, .nav-underline .show>.nav-link {
@@ -437,7 +439,7 @@ body {
     border:1px solid var(--button_outline_modal_border_color);
     color: var(--button_outline_modal_border_color);
 }
-.first_start button,.h_modal_button_action button ,.profile_button{
+.first_start button,.h_modal_button_action button ,.profile_button,.action_button{
     background-color: var(--button_modal_bg_color);
     color: var(--button_modal_text_color);
 }
