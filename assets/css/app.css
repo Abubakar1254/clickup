@@ -77,4 +77,11 @@
   --background_color_modal: rgba(247, 248, 249, 1);
   --text_color_modal: rgba(79, 87, 98, 1);
 
+
+  --primary-color:#5F55EE;
+  --secondary-color:white;
+  --thirdary-color:#f7f8f9;
+  --primary-text-color:#2A2E34;
+  --secondary-text-color:#656f7d;
 }
+
