@@ -76,5 +76,18 @@
   /* modal update */
   --background_color_modal: rgba(247, 248, 249, 1);
   --text_color_modal: rgba(79, 87, 98, 1);
-
+  /* modal update hover */
+  --background_color_hover_modal: rgb(255, 255, 255);
+  --text_color_hover_modal:#808080;
+  /* alerts color */
+  --background_colour_alert_modal : #F2F1FE;
+  --text_colour_alert_modal : black;
+  /* templates Card */
+  --background_templates_card_modal : #F7F8F9;
+  /* templates Card */
+  --background_templates_sidebar_modal : #F7F8F9;
+  --text_templates_sidebar_modal :#808080;
+  /* modal buget */
+  --bg_templates_buget_modal : #F7F8F9;
+  --text_templates_buget_modal :#808080;
 }

@@ -890,7 +890,7 @@
               </div>
             </div>
           <div class="d-flex mt-4">
-            <p class="mt-2">Ideas for writing:</p>
+            <p class="mt-1">Ideas for writing:</p>
             <div class="dropdown ">
                 <button type="button" class="btn dropdown-toggle h_modal_outline_button mx-2" data-bs-toggle="dropdown">
                     Choose a department
@@ -1125,9 +1125,7 @@
   .modal_get_team_update{
 
 
-  .modal_content{
-
-  }
+  
   .modal_content_header h5{
     font-size: 14px;
 
@@ -1139,6 +1137,16 @@
     display: flex;
     justify-content: space-between;
     height: 40px;
+  }
+  .modal_button{
+    background-color: var(--background_color_modal);
+    border-radius: 10px;
+  }
+  .modal_button button:hover{
+   border: 1px solid var(--text_color_hover_modal);
+   background-color: var(--background_color_hover_modal);
+   color: var(--text_color_hover_modal);
+
   }
   .modal_button button{
     width: 32%;
@@ -1221,9 +1229,9 @@
     </div>
     <p class="mt-3">Since</p>
 <div class="modal_button">
-  <button class="btn border border-1 ">Bulleted list</button>
-  <button class="btn border border-1 ">Short</button>
-  <button class="btn border border-1 ">Traditional</button>
+  <button class="btn ">Bulleted list</button>
+  <button class="btn ">Short</button>
+  <button class="btn ">Traditional</button>
 </div>
 <button class="btn col-12 mt-4 action_button">Generate</button>
   </div>
@@ -1240,6 +1248,944 @@
   </div>
  
   </div>
+
+
+<style>
+.template_Center{
+  .modal_dialog{
+    max-width: 1300px !important;
+}
+.Complexity div,.template_type div{
+  padding: 8px;
+
+}
+.Complexity div label,.template_type label{
+  margin-left: 5px;
+  color: var(--text_templates_sidebar_modal);
+  font-size: 14px;
+
+}
+.modal_sidebar{
+  margin-top: -65px;
+  background-color: var(--background_templates_sidebar_modal);
+  color:var(--text_templates_sidebar_modal) ;
+  border-radius: 10px;
+}
+.modal_sidebar h1{
+  font-size: 16px;
+  
+
+  margin: 8px  0 0 4px;
+}
+.Complexity h5,.template_type h5{
+  color: var(----text_templates_sidebar_modal);
+  font-size: 12px;
+
+}
+.activityLog{
+  margin-top: 40%;
+}
+.one_content span,.activityLog span{
+  font-size: 14px;
+  color: var(--text_templates_sidebar_modal);
+
+}
+.input_buttons span{
+  font-size: 14px;
+}
+.alert-dismissible button{
+  height: 28.99px;
+    font-size: 12px;
+}
+.alert-dismissible{
+  height: 65px;
+  background-color: var(--background_colour_alert_modal);
+  color: var(--text_colour_alert_modal);
+}
+
+.two_content h1
+{
+  font-size: 18px;
+}
+.template_card h1{
+  font-size: 16px;
+}
+.Card_formate{
+  background: var(--background_templates_card_modal);
+    padding: 2px;
+    border-radius: 10px;
+}
+.Card_footer span{
+  font-size: 14px;
+}
+.card_main{
+    height: 650px;
+    overflow: scroll;
+    border: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .activityLog{
+  margin-top:0;
+  margin-bottom: 10px;
+}
+.alert-dismissible {
+        height: 85px;
+    }
+    .alert-dismissible button {
+        height: 50px;
+      
+       
+    }
+}
+
+
+
+
+}
+
+</style>
+
+
+<!-- Button trigger modal -->
+<!-- Button trigger modal -->
+<div class="template_Center">
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+    Template Center
+  </button>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+  <div class="modal-dialog modal_dialog ">
+    <div class="modal-content ">
+      <div class="modal-header border-0">
+        
+        <button type="button" class="btn-close p-3" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-sm-3 modal_sidebar">
+            <div class="d-flex pt-3">
+              <img src="./assets/images/home/template_magic.svg" width="35px" alt="">
+              <h1>Template Center</h1>
+            </div>
+            <div class="one_content my-1 d-flex">
+              <button class="justify-content-between btn d-flex col-12">
+              <div >
+              <img src="./assets/images/home/n.svg" alt="">
+              <span class="ms-3">Template Center</span>
+            </div>
+              <span>0</span>
+            </button>
+            </div>
+            <div class="one_content my-1 d-flex">
+              <button class="justify-content-between btn d-flex col-12">
+              <div >
+              <img src="./assets/images/home/n.svg" alt="">
+              <span  class="ms-3"> ClickUp Templates</span>
+            </div>
+              <span>1523</span>
+            </button>
+            </div>
+            <div class="template_type">
+              <h5>Template Types</h5>
+              <div>
+              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Space
+              </label>
+            </div>
+            <div>
+              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Folder
+              </label>
+            </div>
+            <div>
+              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                List
+              </label>
+            </div>
+            <div>
+              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Task
+              </label>
+            </div>
+            <div>
+              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Doc
+              </label>
+            </div>
+            <div>
+              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                View
+              </label>
+            </div>
+            <div>
+              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Checklist
+              </label>
+            </div>
+            <div>
+              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Whiteboard
+              </label>
+            </div>
+              
+              <div>
+
+              </div>
+            </div>
+            <div class="Complexity">
+              <h5>Complexity</h5>
+              <div >
+              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Beginner
+              </label>
+            </div>
+            <div>
+              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Intermediate
+              </label>
+            </div>
+            <div>
+              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Advanced
+              </label>
+            </div>
+    
+              
+              <div>
+
+              </div>
+            </div>
+            <div class="activityLog ">
+              <img src="./assets/images/home/activityLog.svg" alt="">
+              <span>Activity Log</span>
+            </div>
+
+
+          </div>
+          <div class="col-sm-9">
+            <div class="d-flex ">
+              <button class="btn col-7 border border-1  d-flex">
+
+                <img src="./assets/images/home/serach.svg" class="mt-1 mx-2" alt="">
+                <input type="text" name="" class="border-0 col-11" placeholder="Search templates..." id="">
+                
+              </button>
+              <div class="input_buttons">
+              <button class="btn mx-2 border border-1 ">
+                <img src="./assets/images/home/bag.svg" alt="">
+                <span>Use Cases</span>
+              </button>
+              <button class="btn mx-2 border border-1 ">
+                <img src="./assets/images/home/tags.svg" alt="">
+                <span>Tags</span>
+              </button>
+              <button class="btn mx-2  border border-1">
+                <img src="./assets/images/home/create_user.svg" alt="">
+                <span>Created by</span>
+              </button>
+            </div>
+            </div>
+            <div class="alert alert-primary  alert-dismissible fade show justify-content-between mt-2 d-flex" role="alert">
+              <p class="my-1"> Create your first template and eliminate repetitive work!</p>
+              <button type="button " class="btn border border-1 "  data-bs-dismiss="alert" aria-label="Close">Learn more</button>
+            </div>
+            <div class="two_content ">
+              <h1>Templates by ClickUp</h1>
+            </div>
+            <div class="card_main">
+            <div class="template_card d-flex justify-content-between my-3">
+              <h1>Marketing</h1>
+              <span>See 161 more</span>
+       </div>
+       <div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="border border-1 rounded-4">
+            <div class="Card_formate">
+              <img src="./assets/images/logo.png" width="50px" alt="">
+            <img src="./assets/images/home/SocialMediaContent.svg"  width="90%"  alt="">
+          </div>
+            <div class="p-3 Card_footer ">
+              <img src="assets/images/home/check_modal.svg" alt="">
+              <span>Social Media Content Plan</span>
+            </div>
+          </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="border border-1 rounded-4">
+              <div class="Card_formate">
+                <img src="./assets/images/logo.png" width="50px" alt="">
+              <img src="./assets/images/home/PriorityMatrix.svg"  width="90%"  alt="">
+            </div>
+              <div class="p-3 Card_footer ">
+                <img src="assets/images/home/priority_icon.svg" alt="">
+                <span>2x2 Priority Matrix</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="border border-1 rounded-4">
+              <div class="Card_formate">
+                <img src="./assets/images/logo.png" width="50px" alt="">
+              <img src="./assets/images/home/InstagramSuccessCheck.svg"  width="90%"  alt="">
+            </div>
+              <div class="p-3 Card_footer">
+                <img src="assets/images/home/instagram_icon.svg" alt="">
+                <span>90 Day Instagram Success Checklist</span>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+
+ <div>
+  <div class="row mt-3">
+    <div class="col-sm-4">
+      <div class="border border-1 rounded-4">
+      <div class="Card_formate">
+        <img src="./assets/images/logo.png" width="50px" alt="">
+      <img src="./assets/images/home/ContentManagement&testing.svg"  width="90%"  alt="">
+    </div>
+      <div class="p-3 Card_footer ">
+        <img src="assets/images/home/instagram_icon.svg" alt="">
+        <span>A/B Content Management & Testing</span>
+      </div>
+    </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="border border-1 rounded-4">
+        <div class="Card_formate">
+          <img src="./assets/images/logo.png" width="50px" alt="">
+        <img src="./assets/images/home/A_B_Testing.svg" width="90%" alt="">
+      </div>
+        <div class="p-3 Card_footer ">
+          <img src="assets/images/home/folder.svg" alt="">
+          <span>A/B Testing</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="border border-1 rounded-4">
+        <div class="Card_formate">
+          <img src="./assets/images/logo.png" width="50px" alt="">
+        <img src="./assets/images/home/ActionPlan.svg"  width="90%"  alt="">
+      </div>
+        <div class="p-3 Card_footer">
+          <img src="assets/images/home/instagram_icon.svg" alt="">
+          <span>Action Plan</span>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+ <div class="template_card d-flex justify-content-between my-3">
+  <h1>Other</h1>
+  <span>See 328 more</span>
+</div>
+<div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="border border-1 rounded-4">
+      <div class="Card_formate">
+        <img src="./assets/images/logo.png" width="50px" alt="">
+      <img src="./assets/images/home/SocialMediaContent.svg"  width="90%"  alt="">
+    </div>
+      <div class="p-3 Card_footer ">
+        <img src="assets/images/home/check_modal.svg" alt="">
+        <span>Social Media Content Plan</span>
+      </div>
+    </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="border border-1 rounded-4">
+        <div class="Card_formate">
+          <img src="./assets/images/logo.png" width="50px" alt="">
+        <img src="./assets/images/home/PriorityMatrix.svg"  width="90%"  alt="">
+      </div>
+        <div class="p-3 Card_footer ">
+          <img src="assets/images/home/priority_icon.svg" alt="">
+          <span>2x2 Priority Matrix</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="border border-1 rounded-4">
+        <div class="Card_formate">
+          <img src="./assets/images/logo.png" width="50px" alt="">
+        <img src="./assets/images/home/InstagramSuccessCheck.svg"  width="90%"  alt="">
+      </div>
+        <div class="p-3 Card_footer">
+          <img src="assets/images/home/instagram_icon.svg" alt="">
+          <span>90 Day Instagram Success Checklist</span>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+</div>
+          </div>
+  
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="template_Center">
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal6">
+    Template Center
+  </button>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel5" aria-hidden="true">
+  <div class="modal-dialog modal_dialog ">
+    <div class="modal-content ">
+      <div class="modal-header border-0">
+        
+        <button type="button" class="btn-close p-3" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-sm-3 modal_sidebar">
+            <div class="d-flex pt-3">
+              <img src="./assets/images/home/template_magic.svg" width="35px" alt="">
+              <h1>Template Center</h1>
+            </div>
+            <div class="one_content my-1 d-flex">
+              <button class="justify-content-between btn d-flex col-12">
+              <div >
+              <img src="./assets/images/home/n.svg" alt="">
+              <span class="ms-3">Template Center</span>
+            </div>
+              <span>0</span>
+            </button>
+            </div>
+            <div class="one_content my-1 d-flex">
+              <button class="justify-content-between btn d-flex col-12">
+              <div >
+              <img src="./assets/images/home/n.svg" alt="">
+              <span  class="ms-3"> ClickUp Templates</span>
+            </div>
+              <span>1523</span>
+            </button>
+            </div>
+            <div class="template_type">
+              <h5>Template Types</h5>
+              <div>
+              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Space
+              </label>
+            </div>
+            <div>
+              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Folder
+              </label>
+            </div>
+            <div>
+              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                List
+              </label>
+            </div>
+            <div>
+              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Task
+              </label>
+            </div>
+            <div>
+              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Doc
+              </label>
+            </div>
+            <div>
+              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                View
+              </label>
+            </div>
+            <div>
+              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Checklist
+              </label>
+            </div>
+            <div>
+              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Whiteboard
+              </label>
+            </div>
+              
+              <div>
+
+              </div>
+            </div>
+            <div class="Complexity">
+              <h5>Complexity</h5>
+              <div >
+              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Beginner
+              </label>
+            </div>
+            <div>
+              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Intermediate
+              </label>
+            </div>
+            <div>
+              <input class="form-check-input i_checkbox_modal" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Advanced
+              </label>
+            </div>
+    
+              
+              <div>
+
+              </div>
+            </div>
+            <div class="activityLog ">
+              <img src="./assets/images/home/activityLog.svg" alt="">
+              <span>Activity Log</span>
+            </div>
+
+
+          </div>
+          <div class="col-sm-9">
+            <div class="d-flex ">
+              <button class="btn col-7 border border-1  d-flex">
+
+                <img src="./assets/images/home/serach.svg" class="mt-1 mx-2" alt="">
+                <input type="text" name="" class="border-0 col-11" placeholder="Search templates..." id="">
+                
+              </button>
+              <div class="input_buttons">
+              <button class="btn mx-2 border border-1 ">
+                <img src="./assets/images/home/bag.svg" alt="">
+                <span>Use Cases</span>
+              </button>
+              <button class="btn mx-2 border border-1 ">
+                <img src="./assets/images/home/tags.svg" alt="">
+                <span>Tags</span>
+              </button>
+              <button class="btn mx-2  border border-1">
+                <img src="./assets/images/home/create_user.svg" alt="">
+                <span>Created by</span>
+              </button>
+            </div>
+            </div>
+            <div class="alert alert-primary  alert-dismissible fade show justify-content-between mt-2 d-flex" role="alert">
+              <p class="my-1"> Create your first template and eliminate repetitive work!</p>
+              <button type="button " class="btn border border-1 "  data-bs-dismiss="alert" aria-label="Close">Learn more</button>
+            </div>
+            <div class="two_content ">
+              <h1>Templates by ClickUp</h1>
+            </div>
+            <div class="card_main">
+            <div class="template_card d-flex justify-content-between my-3">
+              <h1>Marketing</h1>
+              <span>See 161 more</span>
+       </div>
+       <div>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="border border-1 rounded-4">
+            <div class="Card_formate">
+              <img src="./assets/images/logo.png" width="50px" alt="">
+            <img src="./assets/images/home/blank_image.svg"  width="90%"  alt="">
+          </div>
+            <div class="p-3 Card_footer ">
+              <img src="assets/images/home/jupiter_icon.svg" alt="">
+              <span>Agency Management</span>
+            </div>
+          </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="border border-1 rounded-4">
+              <div class="Card_formate">
+                <img src="./assets/images/logo.png" width="50px" alt="">
+              <img src="./assets/images/home/blank_image.svg"  width="90%"  alt="">
+            </div>
+              <div class="p-3 Card_footer ">
+                <img src="assets/images/home/jupiter_icon.svg" alt="">
+                <span>Marketing Team Operations</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="border border-1 rounded-4">
+              <div class="Card_formate">
+                <img src="./assets/images/logo.png" width="50px" alt="">
+              <img src="./assets/images/home/blank_image.svg"  width="90%"  alt="">
+            </div>
+              <div class="p-3 Card_footer">
+                <img src="assets/images/home/jupiter_icon.svg" alt="">
+                <span>Marketing Teams</span>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+
+ <div>
+  <div class="row mt-3">
+    <div class="col-sm-4">
+      <div class="border border-1 rounded-4">
+      <div class="Card_formate">
+        <img src="./assets/images/logo.png" width="50px" alt="">
+      <img src="./assets/images/home/blank_image.svg"  width="90%"  alt="">
+    </div>
+      <div class="p-3 Card_footer ">
+        <img src="assets/images/home/jupiter_icon.svg" alt="">
+        <span>Quick Start: Marketing</span>
+      </div>
+    </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="border border-1 rounded-4">
+        <div class="Card_formate">
+          <img src="./assets/images/logo.png" width="50px" alt="">
+        <img src="./assets/images/home/blank_image.svg" width="90%" alt="">
+      </div>
+        <div class="p-3 Card_footer ">
+          <img src="assets/images/home/jupiter_icon.svg" alt="">
+          <span>SEO Project Management</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="border border-1 rounded-4">
+        <div class="Card_formate">
+          <img src="./assets/images/logo.png" width="50px" alt="">
+        <img src="./assets/images/home/blank_image.svg"  width="90%"  alt="">
+      </div>
+        <div class="p-3 Card_footer">
+          <img src="assets/images/home/jupiter_icon.svg" alt="">
+          <span>Start a Social Media Marketing Ag…</span>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+ <div class="template_card d-flex justify-content-between my-3">
+  <h1>Other</h1>
+  <span>See 328 more</span>
+</div>
+<div>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="border border-1 rounded-4">
+      <div class="Card_formate">
+        <img src="./assets/images/logo.png" width="50px" alt="">
+      <img src="./assets/images/home/blank_image.svg"  width="90%"  alt="">
+    </div>
+      <div class="p-3 Card_footer ">
+        <img src="assets/images/home/jupiter_icon.svg" alt="">
+        <span>Social Media Content Plan</span>
+      </div>
+    </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="border border-1 rounded-4">
+        <div class="Card_formate">
+          <img src="./assets/images/logo.png" width="50px" alt="">
+        <img src="./assets/images/home/blank_image.svg"  width="90%"  alt="">
+      </div>
+        <div class="p-3 Card_footer ">
+          <img src="assets/images/home/jupiter_icon.svg" alt="">
+          <span>2x2 Priority Matrix</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="border border-1 rounded-4">
+        <div class="Card_formate">
+          <img src="./assets/images/logo.png" width="50px" alt="">
+        <img src="./assets/images/home/blank_image.svg"  width="90%"  alt="">
+      </div>
+        <div class="p-3 Card_footer">
+          <img src="assets/images/home/jupiter_icon.svg" alt="">
+          <span>90 Day Instagram Success Checklist</span>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+</div>
+          </div>
+  
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+<style>
+  .templates_more_info{
+    .modal-dialog {
+    max-width: 1300px;
+}
+.modal_content {
+  display: flex;
+  gap: 20px;
+}
+.modal_content h3{
+  font-size: 24px;
+}
+.profile_description p span{
+  font-size: 12px;
+  
+}
+.profile_description span{
+  width: 89px;
+  text-align: center;
+background-color:var(--bg_templates_buget_modal);
+color: var(--text_templates_buget_modal);
+border-radius: 5px;
+height: 28px;
+}
+.user_title{
+  gap: 10px;
+}
+.modal-header h5{
+  font-size: 16px;
+}
+.null_button{
+  height: 100px;
+  width: 100px;
+  
+}
+.content_two h3{
+  font-size: 14px;
+ 
+}
+.content_two p{
+  font-weight: 400;
+  font-size: 12px;
+}
+.sidear_content_two h4{
+font-size: 11px;
+color:var(--text_templates_sidebar_modal);
+}
+.sidear_content_two p{
+font-size: 14px;
+}
+.Social_card {
+  background-color: var(--background_templates_card_modal);
+}
+.card_detail h3 {
+  font-size: 16px;
+}
+.card_detail p {
+  font-size: 14px;
+}
+.drop_down_button{
+  display: flex;
+    justify-content: space-between;
+}
+.dropend .dropdown-toggle::after {
+
+    margin-top: 20px;
+}
+.content_three h3{
+  font-size: 16px;
+}
+.modal-content{
+  height: 750px;
+}
+  }
+
+</style>
+
+
+<!-- Button trigger modal -->
+ <div class="templates_more_info">
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header d-flex justify-content-between">
+       <div>
+        <h5 class="modal-title" id="exampleModalLabel">
+          <img src="./assets/images/home/backspace.svg" alt=""> Back</h5>
+        </div>
+        <div class="mt-2">
+          <h5>Template Center</h5>
+        </div>
+       <div>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      </div>
+
+
+
+
+
+    
+
+
+
+
+
+      <div class="modal-body">
+        <div class="row">
+          <!-- Main Content Section -->
+          <div class="col-sm-9">
+            <div class="d-flex justify-content-between">
+              <!-- Main Content Header and Button -->
+              <div class="d-flex user_title">
+                <div class="mt-3">
+                  <img src="./assets/images/home/socialMediaCheck.svg" width="63px" alt="">
+                </div>
+                <div class="ms-3">
+                  <div class="mt-3">
+                    <h3>Social Media Content Plan</h3>
+                    <div class="d-flex profile_description">
+                      <p>Complexity:</p>
+                      <span>Beginner</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <img src="./assets/images/home/menu_dot.svg" alt="">
+                </div>
+              </div>
+              <div class="h_modal_button_action mt-3">
+                <div>
+                <button type="button" class="btn">Use Template</button>
+              </div>
+              </div>
+            </div>
+            
+            <!-- Additional Content Section -->
+            <div class="mt-4">
+              <div class="row border border-1 rounded-4">
+                <div class="col-sm-4">
+                 <div class="pb-3 pt-3  rounded-3 Social_card">
+                  <img src="./assets/images/home/SocialMediaContent.svg" width="90%" height="90%" alt="">
+                 </div>
+                </div>
+                <div class="col-sm-8 card_detail my-2">
+                  <h3>Template Description</h3>
+                  <p>A Social Media Content Plan ensures that you post on your social media pages
+                    consistently by laying out your posts ahead of time. Use this ClickUp Social Media
+                    Content Plan template to make your life easier when it comes to the ideation and
+                    creation of social media posts.</p>
+                </div>
+             
+              </div>
+            </div>
+            <div class="content_three">
+              <h3 class="my-4" > Template includes</h3>
+             <!-- Default dropend button -->
+<div class="btn-group dropend col-12 border border-1 rounded-3">
+  <button type="button" class="btn drop_down_button dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false">
+    <div class="d-flex">
+      <img src="./assets/images/home/customize_icon.svg" alt="">
+      <div class="d-flex flex-column align-items-start ms-2">
+        <span class="fw-bold mb-1">Custom Fields</span>
+        <span class="text-muted">5 Custom Fields included</span>
+      </div>
+      
+    </div>
+  </button>
+  <ul class="dropdown-menu">
+    <!-- Dropdown menu links -->
+  </ul>
+</div>
+            </div>
+          </div>
+          
+          <!-- Sidebar Content Section -->
+          <div class="col-sm-3 ">
+            <div class="border border-1 content_two rounded-3 p-2">
+              <div class="d-flex justify-content-between">
+                <div><img src="./assets/images/home/NullImage.svg" alt=""></div>
+                <div class="profile_description"><span class="p-2 text-center">Verified</span></div>
+              </div>
+              <h3 class="mt-3">By ClickUp</h3>
+              <p>This template was built by the ClickUp Crew!</p>
+            </div>
+            <div class="sidear_content_two mt-3">
+              <h4>CREATED DATE</h4>
+              <p>December 12, 2022</p>
+            </div>
+            <div class="sidear_content_two">
+              <h4>USED</h4>
+              <p>15.2K times</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
 </div>
 
 
