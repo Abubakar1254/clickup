@@ -76,6 +76,7 @@
   /* modal update */
   --background_color_modal: rgba(247, 248, 249, 1);
   --text_color_modal: rgba(79, 87, 98, 1);
+<<<<<<< HEAD
   /* modal update hover */
   --background_color_hover_modal: rgb(255, 255, 255);
   --text_color_hover_modal:#808080;
@@ -90,4 +91,14 @@
   /* modal buget */
   --bg_templates_buget_modal : #F7F8F9;
   --text_templates_buget_modal :#808080;
+=======
+
+
+  --primary-color:#5F55EE;
+  --secondary-color:white;
+  --thirdary-color:#f7f8f9;
+  --primary-text-color:#2A2E34;
+  --secondary-text-color:#656f7d;
+>>>>>>> a56c07520deefb94f7cbaa6ae702dc477b282a43
 }
+
