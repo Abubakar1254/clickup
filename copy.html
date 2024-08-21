@@ -2875,6 +2875,18 @@
         .Content_sidebar h3{
             font-size: 16px;
         }
+        .content_four{
+            background-color: aliceblue;
+        }
+        .content_one h3,.content_two h3,.content_three h3,.content_four h3{
+            font-size: 16px;
+            
+        }
+        .content_paragrah p,.content_one p,.content_three p,.content_four p{
+            font-size: 12px;
+        }
+       
+       
     }
 </style>
 
@@ -2896,20 +2908,77 @@
         </div>
         <div class="modal-body">
             <div class="row">
-                <div class="col-sm-3 Content_sidebar d-flex">
-                    <div>
-                    <img src="/assets/images/home/setting.svg" width="12px" alt="">
-                </div>
-                    <h3 class="mx-2 mt-1">Search settings</h1>
+                <div class="col-sm-3 Content_sidebar d-flex flex-column">
+                    <div class="d-flex align-items-center mb-2">
+                        <img src="/assets/images/home/setting.svg" width="12px" alt="">
+                        <h3 class="mx-2 mt-1">Search settings</h3>
+                    </div>
+                    <div class="d-flex align-items-start">
+                        <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                          <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>
+                          <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
+                          <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</button>
+                          <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</button>
+                        </div>
+                    
+                      </div>
                 </div>
                 <div class="col-sm-9">
-                  <h3>Column 2</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                            <div class="content_one">
+                                <h3>Search Results</h3>
+                                <p>Configure search to match how you work.</p>
+                            </div>
+                            <div class="border border-1 rounded-3 p-3">
+                            <div class="d-flex justify-content-between ">
+                                <div class="d-flex content_two">
+                                    <img  src="/assets/images/home/box_sidebar.svg" alt="">
+                                    <h3 class="mx-2 mt-2">Include archived items</h3>
+                                </div>
+                                <div>
+                                <div class="form-check form-switch d-flex mt-2">
+                                    <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        id="flexSwitchCheckDefault"
+                                    />
+                                   
+                                </div>
+                            </div>
+                                
+                            </div>
+                            <div class="content_paragrah">
+                            <p>Archived items will be hidden in search results by default.</p>
+                        </div>
+                        </div> 
+                  
+                            <div class="content_three my-2">
+                                <h3>Desktop app</h3>
+                                <p>Customize how Command Center behaves in the desktop app.</p>
+                            </div>
+                        <div class="content_four justify-content-between  p-3 rounded-3 d-flex">
+                            <div class="d-flex">
+                                <div>
+                                <img src="/assets/images/home/NullImage.svg" alt="">
+                            </div>
+                                <div class="mx-2">
+                                    <h3>Desktop App</h3>
+                                    <p>Our desktop app allows you to search and run commands from anywhere.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary">Download</button>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+                      </div>
                 </div>
-
-              </div>
-        </div>
+            </div>
+            
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
           <button type="button" class="btn btn-primary">Save changes</button>

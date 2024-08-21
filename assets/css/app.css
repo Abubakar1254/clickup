@@ -92,8 +92,16 @@
   --bg_templates_buget_modal: #F7F8F9;
   --text_templates_buget_modal: #808080;
   
+  /* sign up  */
   
-  
+  --signup-text-color:gray;
+--signup-button-color-text:white;
+--signup-button-color-bg:#5F55EE;
+--signup-form-footer-bg:#FAFBFC;
+
+
+
+
   --primary-color: #5F55EE;
   --secondary-color: white;
   --thirdary-color: #f7f8f9;
