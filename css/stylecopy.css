@@ -264,7 +264,7 @@
     background: var(--bg-secondary-color);
     overflow: hidden;
     width: 500px;
-    height: 530px;
+    height: 535px;
     /* padding: 30px 60px 0px 60px; */
     border-radius: 12px;
     h5 {
@@ -352,6 +352,7 @@
     height: 40px;
     p{
       padding: 5px;
+      font-size: 13px;
       color: var(--secondary-text-color);
       a{
         color: var(--secondary-text-color);
@@ -543,7 +544,7 @@
 
 
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 766px) {
   .login-page {
     .header {
       margin: 10px 16px 0 16px;
@@ -621,7 +622,8 @@
         .form_footer{
           height: 45px;
           p{
-          padding: 0;
+          padding: 5px 15px;
+          font-size: 13px;
         }
         }
         .login_content{
