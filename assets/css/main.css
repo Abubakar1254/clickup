@@ -1,13 +1,166 @@
-@import url(./app.css);
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+
+
+
+
+  :root {
+    --primary-color:#ffcc00;
+    --secondary-color: #f4f5f8;
+    --thirdary-color: #f7f8f9;
+  
+    --bg-primary-color: #f4f5f8;
+    --bg-secondary-color: white;
+    --bg-thirdary-color: #fafbfc;
+  
+    --primary-text-color: #000000;
+    --secondary-text-color: #808080;
+    --thirdary-text-color: white;
+    --fourdary-text-color:#ffcc00;
+    --button-text-color: white;
+  
+  
+  
+    --bg-primary-nav-color:#ffcc00;
+    --bg-secondary-nav-color:#FFFBED;
+    --bg-thirdary-nav-color:#FFCC00;
+    
+  
+    --border-primary-color: #cdd4e0;
+    --border-secondary-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  :root {
+    --yellow: #ffcc00;
+    --black: #000000;
+    --gray: #808080;
+    --white: #ffffff;
+    --btn_y: #ffcc00;
+    --btn_b: #000000;
+    --btn_g: #808080;
+    --btn_w: #ffffff;
+  
+    /* Add card and home pages button */
+    --button_primary_bg_color: #544dc9;
+    --button_primary_text_color: white;
+    --button_dark_bg_color: #000000;
+    --button_dark_text_color: white;
+    /* Modal button button */
+    --button_modal_bg_color: #5f55ee;
+    --button_modal_text_color: white;
+    /* Modal submit button */
+    --button_modal_bg_color: #5f55ee;
+    --button_modal_text_color: white;
+    /* Modal outline button */
+    --button_outline_modal_border_color: #808080;
+    --button_outline_modal_text_color: #808080;
+    /* Modal active button */
+    --button_active_modal_border_color: #808080;
+    --button_active_modal_bg_color: #808080;
+    --button_active_modal_text_color: #ffffff;
+    /* notepad nav */
+    --notepad_nav_bg_color: yellow;
+    --notepad_nav_text_color: rgb(255, 255, 255);
+  
+    /* switch & checkbox button */
+    --button_switch_bg_color: rgb(255, 255, 255);
+    /* switch & checkbox active button */
+    --button_switch_active_bg_color: #544dc9;
+    /* sidebar */
+    --sidebar_nav_active_bg_color: #e5e4fc;
+    --sidebar_nav_active_text_color: #544dc9;
+    --sidebar_nav_border_color: #808080;
+    --sidebar_nav_text_color: #808080;
+    /* sidebar new */
+    --sidebar_new_bg_color: #f2f1fe;
+    --sidebar_new_text_color: #544dc9;
+    --sidebar_new_border_color: #ffffff;
+    /* nav tabs  */
+    --nav_tabs_text_color: #000000;
+    --nav_tabs_border_color: #5f55ee;
+    /* discount modal color */
+    --discount_modal_background_color: #F2F1FE;
+    /* primary button */
+    --button-primary-bg-color: #5f55ee;
+    --button-primary-text-color: white;
+    /* siderbar */
+    --sidebar_nav_active_bg: #e5e4fc;
+    --sidebar_nav_active_text_color: #544dc9;
+    --sidebar_nav_inactive_text_color: #2a2e34;
+    /* navbar */
+    --navbar_background_color: #323452;
+    --navbar_text_color: white;
+    --navbar-search-bg-color: #af70705b;
+    --navbar-ask-ai-bg-color: #43418d !important;
+    /* modal Brain */
+    --button_bg_color: rgba(242, 241, 254, 1);
+    --button_border_color: rgba(204, 201, 250, 1);
+    --button_text_color: rgba(84, 77, 201, 1);
+    --button_active_bg_color: rgba(253, 243, 236, 1);
+    --button_active_border_color: rgba(245, 208, 180, 1);
+    --button_active_text_color: rgba(188, 95, 28, 1);
+    /* modal update */
+    --background_color_modal: rgba(247, 248, 249, 1);
+    --text_color_modal: rgba(79, 87, 98, 1);
+    <<<<<<< HEAD
+    /* modal update hover */
+    --background_color_hover_modal: rgb(255, 255, 255);
+    --text_color_hover_modal: #808080;
+    /* alerts color */
+    --background_colour_alert_modal: #F2F1FE;
+    --text_colour_alert_modal: black;
+    /* templates Card */
+    --background_templates_card_modal: #F7F8F9;
+    /* templates Card */
+    --background_templates_sidebar_modal: #F7F8F9;
+    --text_templates_sidebar_modal: #808080;
+    /* modal buget */
+    --bg_templates_buget_modal: #F7F8F9;
+    --text_templates_buget_modal: #808080;
+    
+    /* sign up  */
+    
+    --signup-text-color:gray;
+  --signup-button-color-text:white;
+  --signup-button-color-bg:#5F55EE;
+  --signup-form-footer-bg:#FAFBFC;
+  
+  
+  
+  
+    --secondary-color: white;
+    --thirdary-color: #f7f8f9;
+    --primary-text-color: #2A2E34;
+    --secondary-text-color: #656f7d;
+  
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @import url(./app.css);
 @import url(./buttons.css);
 
 
 :root {}
 
-.btn.primary {
-    background-color: var(--button-primary-bg-color);
-    color: var(--button-primary-text-color);
-}
+
 
 body {
     overflow-y: hidden
@@ -15,7 +168,7 @@ body {
 
 .sidebarnew {
     max-width: 255px;
-    background-color: #F7F8F9;
+    background-color: var(--bg-secondary-nav-color);
     padding-top: 12px;
     width: 255px;
     min-width: 255px;
@@ -41,7 +194,7 @@ body {
     }
 
     .nav-item.active {
-        background-color: var(--sidebar_nav_active_bg);
+        background-color: var(--bg-thirdary-nav-color);
 
         .nav-link {
             color: var(--sidebar_nav_active_text_color);
@@ -167,13 +320,14 @@ body {
         padding: 7px;
         border-radius: 6px;
         color: var(--navbar_text_color);
-        background-color: var(--navbar-ask-ai-bg-color);
+        background-color: var(--navbar-search-bg-color);
     }
 }
 
 .home_crad_button {
-    background-color: var(--button_primary_bg_color);
-    color: var(--button_primary_text_color);
+  background-color: var(--primary-color);
+  color: var(--button-text-color);
+  border: none;
 }
 
 .user_name {
@@ -227,11 +381,11 @@ body {
 }
 
 .form-switch input {
-    background-color: var(--button_switch_bg_color);
+    background-color:var(--secondary-color) ;
 }
 
 .form-switch input:checked {
-    background-color: var(--button_switch_active_bg_color);
+    background-color: var(--primary-color);
 }
 
 #switch {
@@ -302,8 +456,9 @@ body {
 }
 
 .card_button button {
-    border: 1px solid var(--sidebar_nav_border_color);
+    border:none;
     color: var(--sidebar_nav_text_color);
+    background-color: transparent;
     /* padding: 6px; */
     justify-content: space-evenly;
     border-radius: 10px;
@@ -319,16 +474,17 @@ body {
 
 .card_button_2 button {
     border-radius: 10px;
-    background: var(--sidebar_new_bg_color);
-    color: var(--sidebar_new_text_color);
-    border: 1px solid var(--sidebar_new_border_color);
+    background: var(--primary-color);
+    color: var(--button-text-color);
+    border: none;
     padding: 0px 18px;
 }
 
 #check {
     width: auto;
-    background-color: var(--button-primary-bg-color);
+    background-color: var(--primary-color);
     color: var(--button-primary-text-color);
+    border: none;
     padding: 0pc 10px
 }
 
@@ -423,8 +579,6 @@ body {
 }
 
 .h_modal_outline_button {
-    border: 1px solid var(--button_outline_modal_border_color);
-    color: var(--button_outline_modal_text_color);
     height: 29px;
     font-size: 12px;
 }
@@ -443,11 +597,7 @@ body {
     gap: 10px;
 }
 
-.h_modal_button button:hover,
-.h_modal_outline_button:hover {
-    background-color: var(--button_active_modal_bg_color);
-    color: var(--button_active_modal_text_color);
-}
+
 
 .h_modal_button button {
     border: 1px solid var(--button_outline_modal_border_color);
@@ -458,8 +608,8 @@ body {
 .h_modal_button_action button,
 .profile_button,
 .action_button {
-    background-color: var(--button_modal_bg_color);
-    color: var(--button_modal_text_color);
+    background-color: var(--primary-color);
+    color: var(--button-text-color);
 }
 
 .h_drp_one button {
@@ -981,7 +1131,7 @@ body {
 
 .navbar {
 
-    background: var(--navbar_background_color) !important;
+    background: var(--bg-primary-nav-color) !important;
 }
 
 .h_main_profile {
@@ -1174,17 +1324,9 @@ body {
     width: 100px;
 }
 
-.h_profile_sidebar {
-    margin: 58px;
-    width: 506px !important;
-    box-shadow: 1px 11px 33px 8px var(--gray);
-    border-radius: 12px
-}
 
-.h_siderbar_button {
-    display: flex;
-    justify-content: end;
-}
+
+
 
 .h_sidebar_content2 {
     padding: 14px;
@@ -1240,12 +1382,12 @@ body {
 .profile_button_type {
     display: flex;
     justify-content: space-around;
-    padding-inline: 10px;
+    padding-inline: 5px;
 
 }
 
 .profile_button_type h4 {
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .profile_button_type p {
@@ -1796,15 +1938,19 @@ body {
     .sidebarnew {
         min-width: 200px;
     }
-
+    .nav_search_form
+     {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
     .nav_search_form,
     .h_nav_end {
         margin-top: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
-    /* #box_two h5,#box_three h5,#box_four h5,#box_five h5,#box_six h5,#box_seven h5,#box_eight h5,#box_ten h5{
-    font-size: 10px;
-   } */
+ 
 
     .edit_two h5,
     .edit_four h5,
@@ -1821,9 +1967,7 @@ body {
         font-size: 12px;
     }
 
-    .h_profile_sidebar {
-        margin: 0;
-    }
+    
 
     .h_notepad {
         margin: 0px;
@@ -1853,4 +1997,13 @@ body {
     .responsive_discount {
         margin-top: 50px;
     }
+   
+}
+@media only screen and (max-width: 900px) {
+  .nav_search_form {
+    width: 300px;
+  }
+  .ask-ai {
+    width: 180px;
+  }
 }
