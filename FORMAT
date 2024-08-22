@@ -1,0 +1,172 @@
+<div class="WriteStandUp">
+  <button
+    class="btn h_modal_outline_button"
+    type="button"
+    data-bs-toggle="offcanvas"
+    data-bs-target="#offcanvasScrolling2"
+    aria-controls="offcanvasScrolling"
+  >
+    profile
+  </button>
+
+  <div
+    class="offcanvas offcanvas-end profile_sidebar"
+    data-bs-scroll="true"
+    data-bs-backdrop="false"
+    tabindex="-1"
+    id="offcanvasScrolling2"
+    aria-labelledby="offcanvasScrollingLabel"
+  >
+    <div class="offcanvas-header">
+      <div>
+        <div class="d-flex">
+          <img
+            src="./assets/images/home/user_sidebar.svg"
+            width="25px"
+            alt=""
+          />
+          <h5>Write StandUp</h5>
+        </div>
+      </div>
+      <div>
+        <button class="feedback_sidebar h_modal_outline_button p-1 rounded-3">
+          Feedback <img src="./assets/images/home/arrowup.svg" alt="" />
+        </button>
+        <img src="./assets/images/home/idea.svg" width="25px" alt="" />
+        <img src="./assets/images/home/menu_dot.svg" width="25px" alt="" />
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+    </div>
+    <div class="offcanvas-body">
+      <div class="siderbar_button h_modal_button_action">
+        <button class="btn">Write StandUp</button>
+      </div>
+      <div class="h_sidebar_content mt-3 d-flex">
+        <div class="mt-3">
+          <img
+            src="./assets/images/start.svg"
+            class="h_modal_outline_button p-2 rounded-5"
+            alt=""
+          />
+        </div>
+        <div class="sidebar_content2">
+          <div class="justify-content-between d-flex">
+            <h5>StandUp™</h5>
+            <p>Edit</p>
+          </div>
+          <div>
+            <h5>Automate work updates with AI StandUp™</h5>
+            <p>
+              Track daily progress and insights with real-time task updates.
+            </p>
+          </div>
+          <div>
+            <p>People or Teams</p>
+            <div class="dropdown open">
+              <button
+                class="btn dropdown-toggle col-12 user_drop border d-flex justify-content-between border-1"
+                type="button"
+                id="triggerId"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <img src="./assets/images/user_profile.svg" alt="" />
+              </button>
+              <div class="dropdown-menu" aria-labelledby="triggerId">
+                <button class="dropdown-item" href="#">Action</button>
+                <button class="dropdown-item disabled" href="#">
+                  Disabled action
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="mt-3">
+            <p>Since</p>
+            <div class="dropdown open">
+              <button
+                class="btn h_modal_outline_button dropdown-toggle col-12 sibebar_button"
+                type="button"
+                id="triggerId"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <span>Last 24 hours</span>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="triggerId">
+                <button class="dropdown-item" href="#">Action</button>
+                <button class="dropdown-item disabled" href="#">
+                  Disabled action
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-3 sidebar1_button">
+            <p>Format</p>
+            <div class="h_sidebar_threeButton h_modal_button">
+              <button class="col-3 btn p-1 rounded-3">Bulleted list</button>
+              <button class="col-3 btn p-1 rounded-3">Short</button>
+              <button class="col-3 btn p-1 rounded-3">Traditional</button>
+            </div>
+          </div>
+          <div class="h_modal_button_action">
+            <button class="col-12 mt-3 p-2 rounded-3 h_generate">
+              Generate
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer_main_sidebar d-flex">
+        <div class="image_footer">
+          <img
+            src="./assets/images/start.svg"
+            class="h_modal_outline_button rounded-5"
+            alt=""
+          />
+        </div>
+        <div class="main_contain_footer">
+          <p>No updates in the last 24 hours.</p>
+          <div class="sibebar_footer_button d-flex">
+            <div class="h_modal_button">
+              <button class="btn p-2">
+                <img src="./assets/images/add.svg" alt="Create" />Create
+              </button>
+              <button class="btn p-2">Copy</button>
+              <button class="btn p-2">Regenerate</button>
+            </div>
+            <div class="mx-4 sidebar_button">
+              <span
+                ><img src="./assets/images/home/like.svg" alt="Like"
+              /></span>
+              <span
+                ><img src="./assets/images/home/unlike.svg" alt="Unlike"
+              /></span>
+            </div>
+          </div>
+          <div class="input_footer mt-3">
+            <div class="row">
+              <input
+                type="text"
+                class="col-9 p-2 mx-2 h_modal_outline_button rounded-3"
+                placeholder="Tell Al what to do next"
+              />
+              <img
+                src="./assets/images/home/send.svg"
+                class="send_button col-2"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

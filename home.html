@@ -110,7 +110,7 @@
         </div>
       </div>
     </div>
-    
+
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark h_main_nav">
         <div class="container-fluid">
@@ -1200,250 +1200,134 @@
         </div>
 
         <!-- Button to trigger modal -->
-         <div>
-        <button
-          type="button"
-          class="btn h_modal_outline_button"
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal2"
-        >
-          Open Modal
-        </button>
+        <div>
+          <button
+            type="button"
+            class="btn h_modal_outline_button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal2"
+          >
+            Open Modal
+          </button>
 
-        <!-- Modal -->
-        <div
-          class="modal fade"
-          id="exampleModal2"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <!-- Nav tabs -->
-                <ul class="nav nav-underline" id="myTab" role="tablist">
-                  <li class="nav-item">
-                    <a
-                      class="nav-link active"
-                      id="Task-tab"
-                      data-bs-toggle="tab"
-                      href="#Task"
-                      role="tab"
-                      aria-controls="Task"
-                      aria-selected="true"
-                      >Task</a
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal2"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-underline" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active"
+                        id="Task-tab"
+                        data-bs-toggle="tab"
+                        href="#Task"
+                        role="tab"
+                        aria-controls="Task"
+                        aria-selected="true"
+                        >Task</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        id="Doc-tab"
+                        data-bs-toggle="tab"
+                        href="#Doc"
+                        role="tab"
+                        aria-controls="Doc"
+                        aria-selected="false"
+                        >Doc</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        id="Reminder-tab"
+                        data-bs-toggle="tab"
+                        href="#Reminder"
+                        role="tab"
+                        aria-controls="Reminder"
+                        aria-selected="false"
+                        >Reminder</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        id="Chat-tab"
+                        data-bs-toggle="tab"
+                        href="#Chat"
+                        role="tab"
+                        aria-controls="Chat"
+                        aria-selected="false"
+                        >Chat</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        id="Whiteboard-tab"
+                        data-bs-toggle="tab"
+                        href="#Whiteboard"
+                        role="tab"
+                        aria-controls="Whiteboard"
+                        aria-selected="false"
+                        >Whiteboard</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        id="Dashboard-tab"
+                        data-bs-toggle="tab"
+                        href="#Dashboard"
+                        role="tab"
+                        aria-controls="Dashboard"
+                        aria-selected="false"
+                        >Dashboard</a
+                      >
+                    </li>
+                  </ul>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <!-- Tab content -->
+                  <div class="tab-content mt-3">
+                    <div
+                      class="tab-pane fade h_drp_one show active"
+                      id="Task"
+                      role="tabpanel"
+                      aria-labelledby="Task-tab"
                     >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      id="Doc-tab"
-                      data-bs-toggle="tab"
-                      href="#Doc"
-                      role="tab"
-                      aria-controls="Doc"
-                      aria-selected="false"
-                      >Doc</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      id="Reminder-tab"
-                      data-bs-toggle="tab"
-                      href="#Reminder"
-                      role="tab"
-                      aria-controls="Reminder"
-                      aria-selected="false"
-                      >Reminder</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      id="Chat-tab"
-                      data-bs-toggle="tab"
-                      href="#Chat"
-                      role="tab"
-                      aria-controls="Chat"
-                      aria-selected="false"
-                      >Chat</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      id="Whiteboard-tab"
-                      data-bs-toggle="tab"
-                      href="#Whiteboard"
-                      role="tab"
-                      aria-controls="Whiteboard"
-                      aria-selected="false"
-                      >Whiteboard</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      id="Dashboard-tab"
-                      data-bs-toggle="tab"
-                      href="#Dashboard"
-                      role="tab"
-                      aria-controls="Dashboard"
-                      aria-selected="false"
-                      >Dashboard</a
-                    >
-                  </li>
-                </ul>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="modal-body">
-                <!-- Tab content -->
-                <div class="tab-content mt-3">
-                  <div
-                    class="tab-pane fade h_drp_one show active"
-                    id="Task"
-                    role="tabpanel"
-                    aria-labelledby="Task-tab"
-                  >
-                    <div class="d-flex">
-                      <div class="dropdown">
-                        <button
-                          class="btn h_modal_outline_button dropdown-toggle mx-2"
-                          type="button"
-                          id="dropdownMenuButton1"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          <img src="./assets/images/menu_list.svg" alt="" />
-                          Select List...
-                        </button>
-                        <ul
-                          class="dropdown-menu"
-                          aria-labelledby="dropdownMenuButton1"
-                        >
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li>
-                            <a class="dropdown-item" href="#">Another action</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#"
-                              >Something else here</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="dropdown">
-                        <button
-                          class="btn h_modal_outline_button dropdown-toggle"
-                          type="button"
-                          id="dropdownMenuButton1"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        ></button>
-                        <ul
-                          class="dropdown-menu"
-                          aria-labelledby="dropdownMenuButton1"
-                        >
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li>
-                            <a class="dropdown-item" href="#">Another action</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#"
-                              >Something else here</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="input-group input-group-sm my-3 mx-2">
-                      <input
-                        type="text"
-                        class="form-control h_modal_input"
-                        placeholder="Task name"
-                        aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-sm"
-                      />
-                    </div>
-                    <div class="input-group input-group-sm my-3 mx-2">
-                      <img src="./assets/images/home/doc_blank.svg" alt="" />
-                      <input
-                        type="text"
-                        class="form-control h_modal_input mx-1"
-                        placeholder="Add description"
-                        aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-sm"
-                      />
-                    </div>
-                    <div class="input-group input-group-sm my-3 mx-2">
-                      <input
-                        type="text"
-                        class="form-control h_modal_input mx-4"
-                        placeholder="Write with AI"
-                        aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-sm"
-                      />
-                    </div>
-                    <div class="h_modal_button d-flex">
-                      <button type="button" class="btn">Open</button>
-                      <button type="button" class="btn">
-                        <img
-                          src="./assets/images/home/2users.svg"
-                          alt=""
-                        />Assignee
-                      </button>
-                      <button type="button" class="btn">
-                        <img src="./assets/images/home/Duedate.svg" alt="" />Due
-                        date
-                      </button>
-                      <button type="button" class="btn">
-                        <img
-                          src="./assets/images/home/priority.svg"
-                          alt=""
-                        />Priority
-                      </button>
-                      <button type="button" class="btn">
-                        <img src="./assets/images/home/tags.svg" alt="" />Tags
-                      </button>
-                      <button type="button" class="btn">
-                        <img src="./assets/images/menu_dot.png" alt="" />
-                      </button>
-                    </div>
-                    <hr />
-                    <div class="h_modal_first d-flex">
-                      <div class="  ">
-                        <button
-                          type="button"
-                          class="btn h_modal_outline_button"
-                        >
-                          <img
-                            src="./assets/images/magic.svg"
-                            alt=""
-                          />Templates
-                        </button>
-                      </div>
-                      <div class="first_end">
-                        <img src="./assets/images/home/attached.svg" alt="" />
-                        <img src="./assets/images/home/not_clock.svg" alt="" />
-                        <!-- Example split danger button -->
-                        <div class="btn-group h_modal_button_action">
-                          <button type="button" class="btn">Action</button>
+                      <div class="d-flex">
+                        <div class="dropdown">
                           <button
+                            class="btn h_modal_outline_button dropdown-toggle mx-2"
                             type="button"
-                            class="btn dropdown-toggle dropdown-toggle-split"
+                            id="dropdownMenuButton1"
                             data-bs-toggle="dropdown"
                             aria-expanded="false"
                           >
-                            <span class="visually-hidden">Toggle Dropdown</span>
+                            <img src="./assets/images/menu_list.svg" alt="" />
+                            Select List...
                           </button>
-                          <ul class="dropdown-menu">
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuButton1"
+                          >
                             <li>
                               <a class="dropdown-item" href="#">Action</a>
                             </li>
@@ -1457,466 +1341,628 @@
                                 >Something else here</a
                               >
                             </li>
+                          </ul>
+                        </div>
+                        <div class="dropdown">
+                          <button
+                            class="btn h_modal_outline_button dropdown-toggle"
+                            type="button"
+                            id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          ></button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuButton1"
+                          >
                             <li>
-                              <hr class="dropdown-divider" />
+                              <a class="dropdown-item" href="#">Action</a>
                             </li>
                             <li>
                               <a class="dropdown-item" href="#"
-                                >Separated link</a
+                                >Another action</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Something else here</a
                               >
                             </li>
                           </ul>
                         </div>
                       </div>
-                    </div>
-                  </div>
-                  <div
-                    class="tab-pane fade"
-                    id="Doc"
-                    role="tabpanel"
-                    aria-labelledby="Doc-tab"
-                  >
-                    <div class="d-flex">
-                      <div class="dropdown">
-                        <button
-                          class="btn dropdown-toggle h_modal_outline_button h_drp_button mx-2"
-                          type="button"
-                          id="dropdownMenuButton1"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          <img src="./assets/images/home/add_menu.svg" alt="" />
-                          Add to location
-                        </button>
-                        <ul
-                          class="dropdown-menu"
-                          aria-labelledby="dropdownMenuButton1"
-                        >
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li>
-                            <a class="dropdown-item" href="#">Another action</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#"
-                              >Something else here</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="input-group input-group-sm my-3 mx-2">
-                      <input
-                        type="text"
-                        class="form-control h_modal_input"
-                        placeholder="Name this Doc..."
-                        aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-sm"
-                      />
-                    </div>
-                    <div class="input-group input-group-sm my-3 mx-2">
-                      <img src="./assets/images/home/doc_blank.svg" alt="" />
-                      <input
-                        type="text"
-                        class="form-control h_modal_input mx-1"
-                        placeholder="Blank page"
-                        aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-sm"
-                      />
-                    </div>
-                    <div class="input-group input-group-sm my-3 mx-2">
-                      <input
-                        type="text"
-                        class="form-control h_modal_input mx-4"
-                        placeholder="Write with AI"
-                        aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-sm"
-                      />
-                    </div>
-
-                    <div class="h_modal_two">
-                      <p>Add new</p>
-                      <div class="d-flex modal_two">
-                        <img src="./assets/images/home/table_menu.svg" alt="" />
-                        <p>Table</p>
-                      </div>
-                      <div class="d-flex modal_two">
-                        <img src="./assets/images/home/column.svg" alt="" />
-                        <p>Column</p>
-                      </div>
-                      <div class="d-flex modal_two">
-                        <img
-                          src="./assets/images/home/dot_menu_list.svg"
-                          alt=""
-                        />
-                        <p>ClickUp List</p>
-                      </div>
-                      <div class="h_drp_button d-flex">
-                        <div class="dropdown open">
-                          <button
-                            class="btn h_modal_outline_button dropdown-toggle h_drp_list_modal"
-                            type="button"
-                            id="triggerId"
-                            data-bs-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                          >
-                            AI Tools: Choose a department
-                          </button>
-                          <div
-                            class="dropdown-menu"
-                            aria-labelledby="triggerId"
-                          >
-                            <button class="dropdown-item" href="#">
-                              Action
-                            </button>
-                            <button class="dropdown-item disabled" href="#">
-                              Disabled action
-                            </button>
-                          </div>
-                        </div>
-                        <div>
-                          <img
-                            src="./assets/images/home/serach.svg"
-                            class="mx-2 my-2"
-                            alt=""
-                          />
-                        </div>
-                      </div>
-
-                      <div class="h_bulb">
-                        <div class="h_bulb_img">
-                          <img
-                            src="./assets/images/home/bulb.svg"
-                            class="mx-2"
-                            alt=""
-                          />
-                          <p>Improve writing</p>
-                        </div>
-                        <div class="h_bulb_img">
-                          <img
-                            src="./assets/images/home/bulb.svg"
-                            class="mx-2"
-                            alt=""
-                          />
-                          <p>Generate template</p>
-                        </div>
-                        <div class="h_bulb_img">
-                          <img
-                            src="./assets/images/home/bulb.svg"
-                            class="mx-2"
-                            alt=""
-                          />
-                          <p>Write an email</p>
-                        </div>
-                        <div class="h_bulb_img">
-                          <img
-                            src="./assets/images/home/bulb.svg"
-                            class="mx-2"
-                            alt=""
-                          />
-                          <p>Summarize</p>
-                        </div>
-                        <div class="h_bulb_img">
-                          <img
-                            src="./assets/images/home/bulb.svg"
-                            class="mx-2"
-                            alt=""
-                          />
-                          <p>Table with data</p>
-                        </div>
-                        <div class="h_bulb_img">
-                          <img
-                            src="./assets/images/home/bulb.svg"
-                            class="mx-2"
-                            alt=""
-                          />
-                          <p>Blog post</p>
-                        </div>
-                        <div class="h_bulb_img">
-                          <img
-                            src="./assets/images/home/menu_dot.svg"
-                            class="mx-2"
-                            alt=""
-                          />
-                          <p>Pick department</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <hr />
-                    <div class="h_modal_first d-flex">
-                      <div class="first_start d-flex">
-                        <div class="form-check form-switch">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="flexSwitchCheckChecked"
-                            checked
-                          />
-                        </div>
-                        <span>Private</span>
-                      </div>
-                      <div class="first_end">
-                        <!-- Example split danger button -->
-                        <button class="btn action_button_modal">
-                          Create Doc
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="tab-pane fade"
-                    id="Reminder"
-                    role="tabpanel"
-                    aria-labelledby="Reminder-tab"
-                  >
-                    <div class="input-group input-group-lg">
-                      <input
-                        type="text"
-                        class="form-control h_reminder_input"
-                        aria-label="Sizing example input"
-                        placeholder="Reminder name or type '/' for commands"
-                        aria-describedby="inputGroup-sizing-lg"
-                      />
-                    </div>
-                    <div class="h_reminder_button mt-2 d-flex">
-                      <div class=" ">
-                        <button
-                          type="button"
-                          class="btn h_modal_outline_button ms-3"
-                        >
-                          <img
-                            src="./assets/images/home/check_calender.svg"
-                            alt=""
-                          />
-                          <span>Today</span>
-                        </button>
-                      </div>
-                      <div class=" ">
-                        <button
-                          type="button"
-                          class="btn h_modal_outline_button"
-                        >
-                          <img src="./assets/images/user_profile.svg" alt="" />
-                          <span>For me</span>
-                        </button>
-                      </div>
-                      <div class=" ">
-                        <button
-                          type="button"
-                          class="btn h_modal_outline_button"
-                        >
-                          <img
-                            src="./assets/images/home/not_clock.svg"
-                            alt=""
-                          />
-                          <span>Notify me</span>
-                        </button>
-                      </div>
-                    </div>
-                    <hr class="mt-5" />
-                    <div class="h_reminder_end d-flex">
-                      <img src="./assets/images/home/attached.svg" alt="" />
-                      <button class="btn action_button_modal">
-                        Create Reminder
-                      </button>
-                    </div>
-                  </div>
-                  <div
-                    class="tab-pane fade"
-                    id="Chat"
-                    role="tabpanel"
-                    aria-labelledby="Chat-tab"
-                  >
-                    <div>
-                      <div class="dropdown">
-                        <button
-                          class="btn h_modal_outline_button dropdown-toggle"
-                          type="button"
-                          id="dropdownMenuButton1"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          <img src="assets/images/home.svg" alt="" /> Workspace
-                        </button>
-                        <ul
-                          class="dropdown-menu"
-                          aria-labelledby="dropdownMenuButton1"
-                        >
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li>
-                            <a class="dropdown-item" href="#">Another action</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#"
-                              >Something else here</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="input-group input-group-lg my-3">
+                      <div class="input-group input-group-sm my-3 mx-2">
                         <input
                           type="text"
-                          class="form-control h_chat_input"
-                          placeholder="Name this Chat..."
-                          aria-label="Sizing example input"
-                          aria-describedby="inputGroup-sizing-lg"
-                        />
-                      </div>
-                      <div class="input-group input-group-sm my-3">
-                        <input
-                          type="text"
-                          class="form-control h_chat_input"
-                          placeholder="Add message"
+                          class="form-control h_modal_input"
+                          placeholder="Task name"
                           aria-label="Sizing example input"
                           aria-describedby="inputGroup-sizing-sm"
                         />
                       </div>
-                      <hr class="mt-5" />
-                      <div class="h_chat_footer d-flex">
-                        <div class="form-check form-switch">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            role="switch"
-                            id="flexSwitchCheckChecked"
-                            checked
-                          />
-                          <span>Private</span>
+                      <div class="input-group input-group-sm my-3 mx-2">
+                        <img src="./assets/images/home/doc_blank.svg" alt="" />
+                        <input
+                          type="text"
+                          class="form-control h_modal_input mx-1"
+                          placeholder="Add description"
+                          aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-sm"
+                        />
+                      </div>
+                      <div class="input-group input-group-sm my-3 mx-2">
+                        <input
+                          type="text"
+                          class="form-control h_modal_input mx-4"
+                          placeholder="Write with AI"
+                          aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-sm"
+                        />
+                      </div>
+                      <div class="h_modal_button d-flex">
+                        <button type="button" class="btn">Open</button>
+                        <button type="button" class="btn">
+                          <img
+                            src="./assets/images/home/2users.svg"
+                            alt=""
+                          />Assignee
+                        </button>
+                        <button type="button" class="btn">
+                          <img
+                            src="./assets/images/home/Duedate.svg"
+                            alt=""
+                          />Due date
+                        </button>
+                        <button type="button" class="btn">
+                          <img
+                            src="./assets/images/home/priority.svg"
+                            alt=""
+                          />Priority
+                        </button>
+                        <button type="button" class="btn">
+                          <img src="./assets/images/home/tags.svg" alt="" />Tags
+                        </button>
+                        <button type="button" class="btn">
+                          <img src="./assets/images/menu_dot.png" alt="" />
+                        </button>
+                      </div>
+                      <hr />
+                      <div class="h_modal_first d-flex">
+                        <div class="  ">
+                          <button
+                            type="button"
+                            class="btn h_modal_outline_button"
+                          >
+                            <img
+                              src="./assets/images/magic.svg"
+                              alt=""
+                            />Templates
+                          </button>
                         </div>
-                        <div class="h_chat_end d-flex">
+                        <div class="first_end">
+                          <img src="./assets/images/home/attached.svg" alt="" />
                           <img
                             src="./assets/images/home/not_clock.svg"
                             alt=""
                           />
-
-                          <button class="btn action_button_modal create_end">
-                            Create Chat
-                          </button>
+                          <!-- Example split danger button -->
+                          <div class="btn-group h_modal_button_action">
+                            <button type="button" class="btn">Action</button>
+                            <button
+                              type="button"
+                              class="btn dropdown-toggle dropdown-toggle-split"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="visually-hidden"
+                                >Toggle Dropdown</span
+                              >
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item" href="#">Action</a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  >Another action</a
+                                >
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  >Something else here</a
+                                >
+                              </li>
+                              <li>
+                                <hr class="dropdown-divider" />
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="#"
+                                  >Separated link</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div
-                    class="tab-pane fade"
-                    id="Whiteboard"
-                    role="tabpanel"
-                    aria-labelledby="Whiteboard-tab"
-                  >
-                    <div>
-                      <div class="dropdown">
-                        <button
-                          class="btn h_modal_outline_button dropdown-toggle"
-                          type="button"
-                          id="dropdownMenuButton1"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          <img src="assets/images/home.svg" alt="" /> Workspace
-                        </button>
-                        <ul
-                          class="dropdown-menu"
-                          aria-labelledby="dropdownMenuButton1"
-                        >
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li>
-                            <a class="dropdown-item" href="#">Another action</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#"
-                              >Something else here</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="input-group input-group-lg my-3">
-                        <input
-                          type="text"
-                          class="form-control h_chat_input"
-                          placeholder="Name this Whiteboard..."
-                          aria-label="Sizing example input"
-                          aria-describedby="inputGroup-sizing-lg"
-                        />
-                      </div>
-                      <hr class="mt-5" />
-                      <div class="h_chat_footer d-flex">
-                        <div class="form-check form-switch">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            role="switch"
-                            id="flexSwitchCheckChecked"
-                            checked
-                          />
-                          <span>Private</span>
-                        </div>
-                        <div class="h_whiteboard_end">
+                    <div
+                      class="tab-pane fade"
+                      id="Doc"
+                      role="tabpanel"
+                      aria-labelledby="Doc-tab"
+                    >
+                      <div class="d-flex">
+                        <div class="dropdown">
                           <button
-                            class="btn action_button_modal whiteboard_end"
+                            class="btn dropdown-toggle h_modal_outline_button h_drp_button mx-2"
+                            type="button"
+                            id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
                           >
-                            Create Whiteboard
+                            <img
+                              src="./assets/images/home/add_menu.svg"
+                              alt=""
+                            />
+                            Add to location
+                          </button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuButton1"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Another action</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Something else here</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="input-group input-group-sm my-3 mx-2">
+                        <input
+                          type="text"
+                          class="form-control h_modal_input"
+                          placeholder="Name this Doc..."
+                          aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-sm"
+                        />
+                      </div>
+                      <div class="input-group input-group-sm my-3 mx-2">
+                        <img src="./assets/images/home/doc_blank.svg" alt="" />
+                        <input
+                          type="text"
+                          class="form-control h_modal_input mx-1"
+                          placeholder="Blank page"
+                          aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-sm"
+                        />
+                      </div>
+                      <div class="input-group input-group-sm my-3 mx-2">
+                        <input
+                          type="text"
+                          class="form-control h_modal_input mx-4"
+                          placeholder="Write with AI"
+                          aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-sm"
+                        />
+                      </div>
+
+                      <div class="h_modal_two">
+                        <p>Add new</p>
+                        <div class="d-flex modal_two">
+                          <img
+                            src="./assets/images/home/table_menu.svg"
+                            alt=""
+                          />
+                          <p>Table</p>
+                        </div>
+                        <div class="d-flex modal_two">
+                          <img src="./assets/images/home/column.svg" alt="" />
+                          <p>Column</p>
+                        </div>
+                        <div class="d-flex modal_two">
+                          <img
+                            src="./assets/images/home/dot_menu_list.svg"
+                            alt=""
+                          />
+                          <p>ClickUp List</p>
+                        </div>
+                        <div class="h_drp_button d-flex">
+                          <div class="dropdown open">
+                            <button
+                              class="btn h_modal_outline_button dropdown-toggle h_drp_list_modal"
+                              type="button"
+                              id="triggerId"
+                              data-bs-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false"
+                            >
+                              AI Tools: Choose a department
+                            </button>
+                            <div
+                              class="dropdown-menu"
+                              aria-labelledby="triggerId"
+                            >
+                              <button class="dropdown-item" href="#">
+                                Action
+                              </button>
+                              <button class="dropdown-item disabled" href="#">
+                                Disabled action
+                              </button>
+                            </div>
+                          </div>
+                          <div>
+                            <img
+                              src="./assets/images/home/serach.svg"
+                              class="mx-2 my-2"
+                              alt=""
+                            />
+                          </div>
+                        </div>
+
+                        <div class="h_bulb">
+                          <div class="h_bulb_img">
+                            <img
+                              src="./assets/images/home/bulb.svg"
+                              class="mx-2"
+                              alt=""
+                            />
+                            <p>Improve writing</p>
+                          </div>
+                          <div class="h_bulb_img">
+                            <img
+                              src="./assets/images/home/bulb.svg"
+                              class="mx-2"
+                              alt=""
+                            />
+                            <p>Generate template</p>
+                          </div>
+                          <div class="h_bulb_img">
+                            <img
+                              src="./assets/images/home/bulb.svg"
+                              class="mx-2"
+                              alt=""
+                            />
+                            <p>Write an email</p>
+                          </div>
+                          <div class="h_bulb_img">
+                            <img
+                              src="./assets/images/home/bulb.svg"
+                              class="mx-2"
+                              alt=""
+                            />
+                            <p>Summarize</p>
+                          </div>
+                          <div class="h_bulb_img">
+                            <img
+                              src="./assets/images/home/bulb.svg"
+                              class="mx-2"
+                              alt=""
+                            />
+                            <p>Table with data</p>
+                          </div>
+                          <div class="h_bulb_img">
+                            <img
+                              src="./assets/images/home/bulb.svg"
+                              class="mx-2"
+                              alt=""
+                            />
+                            <p>Blog post</p>
+                          </div>
+                          <div class="h_bulb_img">
+                            <img
+                              src="./assets/images/home/menu_dot.svg"
+                              class="mx-2"
+                              alt=""
+                            />
+                            <p>Pick department</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <hr />
+                      <div class="h_modal_first d-flex">
+                        <div class="first_start d-flex">
+                          <div class="form-check form-switch">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="flexSwitchCheckChecked"
+                              checked
+                            />
+                          </div>
+                          <span>Private</span>
+                        </div>
+                        <div class="first_end">
+                          <!-- Example split danger button -->
+                          <button class="btn action_button_modal">
+                            Create Doc
                           </button>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div
-                    class="tab-pane fade"
-                    id="Dashboard"
-                    role="tabpanel"
-                    aria-labelledby="Dashboard-tab"
-                  >
-                    <div>
-                      <div class="dropdown">
-                        <button
-                          class="btn h_modal_outline_button dropdown-toggle"
-                          type="button"
-                          id="dropdownMenuButton1"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          <img src="assets/images/home.svg" alt="" /> Workspace
-                        </button>
-                        <ul
-                          class="dropdown-menu"
-                          aria-labelledby="dropdownMenuButton1"
-                        >
-                          <li><a class="dropdown-item" href="#">Action</a></li>
-                          <li>
-                            <a class="dropdown-item" href="#">Another action</a>
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="#"
-                              >Something else here</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="input-group input-group-lg my-3">
+                    <div
+                      class="tab-pane fade"
+                      id="Reminder"
+                      role="tabpanel"
+                      aria-labelledby="Reminder-tab"
+                    >
+                      <div class="input-group input-group-lg">
                         <input
                           type="text"
-                          class="form-control h_chat_input"
-                          placeholder="Name this Dashboard..."
+                          class="form-control h_reminder_input"
                           aria-label="Sizing example input"
+                          placeholder="Reminder name or type '/' for commands"
                           aria-describedby="inputGroup-sizing-lg"
                         />
                       </div>
-                      <hr class="mt-5" />
-                      <div class="h_chat_footer d-flex">
-                        <div class="form-check form-switch">
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            role="switch"
-                            id="flexSwitchCheckChecked"
-                            checked
-                          />
-                          <span>Private</span>
-                        </div>
-                        <div class="h_whiteboard_end">
-                          <button class="btn action_button_modal dashboard_end">
-                            Create Dashboard
+                      <div class="h_reminder_button mt-2 d-flex">
+                        <div class=" ">
+                          <button
+                            type="button"
+                            class="btn h_modal_outline_button ms-3"
+                          >
+                            <img
+                              src="./assets/images/home/check_calender.svg"
+                              alt=""
+                            />
+                            <span>Today</span>
                           </button>
+                        </div>
+                        <div class=" ">
+                          <button
+                            type="button"
+                            class="btn h_modal_outline_button"
+                          >
+                            <img
+                              src="./assets/images/user_profile.svg"
+                              alt=""
+                            />
+                            <span>For me</span>
+                          </button>
+                        </div>
+                        <div class=" ">
+                          <button
+                            type="button"
+                            class="btn h_modal_outline_button"
+                          >
+                            <img
+                              src="./assets/images/home/not_clock.svg"
+                              alt=""
+                            />
+                            <span>Notify me</span>
+                          </button>
+                        </div>
+                      </div>
+                      <hr class="mt-5" />
+                      <div class="h_reminder_end d-flex">
+                        <img src="./assets/images/home/attached.svg" alt="" />
+                        <button class="btn action_button_modal">
+                          Create Reminder
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="Chat"
+                      role="tabpanel"
+                      aria-labelledby="Chat-tab"
+                    >
+                      <div>
+                        <div class="dropdown">
+                          <button
+                            class="btn h_modal_outline_button dropdown-toggle"
+                            type="button"
+                            id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <img src="assets/images/home.svg" alt="" />
+                            Workspace
+                          </button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuButton1"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Another action</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Something else here</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="input-group input-group-lg my-3">
+                          <input
+                            type="text"
+                            class="form-control h_chat_input"
+                            placeholder="Name this Chat..."
+                            aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-lg"
+                          />
+                        </div>
+                        <div class="input-group input-group-sm my-3">
+                          <input
+                            type="text"
+                            class="form-control h_chat_input"
+                            placeholder="Add message"
+                            aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-sm"
+                          />
+                        </div>
+                        <hr class="mt-5" />
+                        <div class="h_chat_footer d-flex">
+                          <div class="form-check form-switch">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              role="switch"
+                              id="flexSwitchCheckChecked"
+                              checked
+                            />
+                            <span>Private</span>
+                          </div>
+                          <div class="h_chat_end d-flex">
+                            <img
+                              src="./assets/images/home/not_clock.svg"
+                              alt=""
+                            />
+
+                            <button class="btn action_button_modal create_end">
+                              Create Chat
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="Whiteboard"
+                      role="tabpanel"
+                      aria-labelledby="Whiteboard-tab"
+                    >
+                      <div>
+                        <div class="dropdown">
+                          <button
+                            class="btn h_modal_outline_button dropdown-toggle"
+                            type="button"
+                            id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <img src="assets/images/home.svg" alt="" />
+                            Workspace
+                          </button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuButton1"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Another action</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Something else here</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="input-group input-group-lg my-3">
+                          <input
+                            type="text"
+                            class="form-control h_chat_input"
+                            placeholder="Name this Whiteboard..."
+                            aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-lg"
+                          />
+                        </div>
+                        <hr class="mt-5" />
+                        <div class="h_chat_footer d-flex">
+                          <div class="form-check form-switch">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              role="switch"
+                              id="flexSwitchCheckChecked"
+                              checked
+                            />
+                            <span>Private</span>
+                          </div>
+                          <div class="h_whiteboard_end">
+                            <button
+                              class="btn action_button_modal whiteboard_end"
+                            >
+                              Create Whiteboard
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="Dashboard"
+                      role="tabpanel"
+                      aria-labelledby="Dashboard-tab"
+                    >
+                      <div>
+                        <div class="dropdown">
+                          <button
+                            class="btn h_modal_outline_button dropdown-toggle"
+                            type="button"
+                            id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                          >
+                            <img src="assets/images/home.svg" alt="" />
+                            Workspace
+                          </button>
+                          <ul
+                            class="dropdown-menu"
+                            aria-labelledby="dropdownMenuButton1"
+                          >
+                            <li>
+                              <a class="dropdown-item" href="#">Action</a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Another action</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"
+                                >Something else here</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="input-group input-group-lg my-3">
+                          <input
+                            type="text"
+                            class="form-control h_chat_input"
+                            placeholder="Name this Dashboard..."
+                            aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-lg"
+                          />
+                        </div>
+                        <hr class="mt-5" />
+                        <div class="h_chat_footer d-flex">
+                          <div class="form-check form-switch">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              role="switch"
+                              id="flexSwitchCheckChecked"
+                              checked
+                            />
+                            <span>Private</span>
+                          </div>
+                          <div class="h_whiteboard_end">
+                            <button
+                              class="btn action_button_modal dashboard_end"
+                            >
+                              Create Dashboard
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1926,7 +1972,6 @@
             </div>
           </div>
         </div>
-      </div>
         <!-- Button trigger modal -->
         <button
           type="button"
@@ -2053,16 +2098,123 @@
 
         <style>
           .WriteStandUp {
-            .h_profile_sidebar {
+            .sidebar-main-header{
+              span{
+                font-size: 14px;
+                padding: 2px 10px;
+              }
+            }
+            .profile_sidebar {
               margin: 58px;
-              width: 506px !important;
+              width: 500px !important;
               box-shadow: 1px 11px 33px 8px var(--gray);
               border-radius: 12px;
+              .btn-close{
+                font-size: 14px;
+              }
+              .feedback_sidebar{
+                height: 24px;
+                font-size: 12px;
+                color: var(--secondary-text-color);
+
+                border: none;
+              }
+               .icon-border{
+            border: 1px solid var(--primary-color) !important;
+          }
+            }
+            .header-contain {
+              border-radius: 10px;
+              border: 1px solid var(--primary-color);
+              margin: 15px;
+              .main-header{
+                background: var(--bg-secondary-nav-color);
+                height: 40px;
+                h5,a{
+                  font-size: 14px;
+                }
+                
+               
+              }
+              .sidebar-main{
+                padding: 12px;
+                h5{
+                  font-size: 16px;
+              font-weight: 600;
+                }
+                p{
+                  font-size: 14px;
+                  color:var(--secondary-text-color) ;
+                }
+              }
+            }
+            .sidebar-button {
+              justify-content: space-around;
+              display: flex;
+             
+
+              button {
+                justify-content: space-around;
+                display: flex;
+                width: 100px;
+                font-size: 14px;
+              }
+              button:hover{
+                background-color: var(--primary-color);
+                color: var(--button-text-color);
+              }
+            }
+            .footer-contain {
+              border: 1px solid var(--primary-color);
+              padding: 18px;
+              margin: 10px;
+              color: var(--button_outline_modal_text_color);
+              border-radius: 10px;
+              p{
+                font-size: 14px;
+              }
+            }
+            .second-contain{
+            
+              button{
+                font-size: 12px;
+              }
+               button:hover {
+                background-color: var(--primary-color);
+                color: var(--button-text-color);
+                
+              }
+             
+            }
+            .main-input{
+              border: 1px solid var(--primary-color) !important;
+            }
+            .send_button {
+              display: flex;
+            }
+            .dropdown-toggle::after {
+              margin-top: 10px;
             }
           }
+         
           @media only screen and (max-width: 600px) {
-            .h_profile_sidebar {
+            .profile_sidebar {
               margin: 0;
+            }
+            .WriteStandUp {
+              .profile_sidebar {
+                margin: 0;
+              }
+              .sidebar-button {
+                display: flex;
+                gap: 5px;
+                justify-content: normal;
+
+                button {
+                  width: 23vw;
+                  padding: 0;
+                }
+              }
             }
           }
         </style>
@@ -2079,7 +2231,7 @@
           </button>
 
           <div
-            class="offcanvas offcanvas-end h_profile_sidebar"
+            class="offcanvas offcanvas-end profile_sidebar"
             data-bs-scroll="true"
             data-bs-backdrop="false"
             tabindex="-1"
@@ -2088,52 +2240,54 @@
           >
             <div class="offcanvas-header">
               <div>
-                <div class="d-flex">
+                <div class="d-flex sidebar-main-header">
                   <img
                     src="./assets/images/home/user_sidebar.svg"
                     width="25px"
                     alt=""
                   />
-                  <h5>Write StandUp</h5>
+                  <span>Write StandUp</span>
                 </div>
               </div>
               <div>
                 <button
-                  class="h_feedback_sidebar h_modal_outline_button p-1 rounded-3"
+                  class="feedback_sidebar p-1 rounded-3"
                 >
                   Feedback <img src="./assets/images/home/arrowup.svg" alt="" />
                 </button>
-                <img src="./assets/images/home/idea.svg" width="25px" alt="" />
+                <img src="./assets/images/home/idea.svg" width="18px" alt="" />
                 <img
                   src="./assets/images/home/menu_dot.svg"
-                  width="25px"
+                  width="18px"
                   alt=""
                 />
                 <button
                   type="button"
                   class="btn-close"
                   data-bs-dismiss="offcanvas"
+                  width="14px"
                   aria-label="Close"
                 ></button>
               </div>
             </div>
             <div class="offcanvas-body">
-              <div class="h_siderbar_button h_modal_button_action">
+              <div class="siderbar-button h_modal_button_action">
                 <button class="btn">Write StandUp</button>
               </div>
-              <div class="h_sidebar_content mt-3 d-flex">
-                <div class="mt-3">
+              <div class="mt-3 d-flex">
+                <div class="mt-3 ">
                   <img
                     src="./assets/images/start.svg"
-                    class="h_modal_outline_button p-2 rounded-5"
+                    class="icon-border p-2 border border-1 rounded-5 "
                     alt=""
                   />
                 </div>
-                <div class="h_sidebar_content2">
-                  <div class="justify-content-between d-flex">
+                <div class="header-contain overflow-hidden col-10">
+                  <div class="justify-content-between d-flex pt-2 px-3 main-header">
                     <h5>StandUp™</h5>
-                    <p>Edit</p>
+                    <a href="" class="text-decoration-none"> Edit</a>
                   </div>
+                  <div class="sidebar-main">
                   <div>
                     <h5>Automate work updates with AI StandUp™</h5>
                     <p>
@@ -2166,7 +2320,7 @@
                     <p>Since</p>
                     <div class="dropdown open">
                       <button
-                        class="btn h_modal_outline_button dropdown-toggle col-12 h_sibebar_button"
+                        class="btn h_modal_outline_button dropdown-toggle col-12 sibebar_button d-flex justify-content-between
                         type="button"
                         id="triggerId"
                         data-bs-toggle="dropdown"
@@ -2184,9 +2338,9 @@
                     </div>
                   </div>
 
-                  <div class="mt-3 h_sidebar1_button">
+                  <div class="mt-3 sidebar1_button">
                     <p>Format</p>
-                    <div class="h_sidebar_threeButton h_modal_button">
+                    <div class="sidebar-button ">
                       <button class="col-3 btn p-1 rounded-3">
                         Bulleted list
                       </button>
@@ -2196,31 +2350,32 @@
                       </button>
                     </div>
                   </div>
-                  <div class="h_modal_button_action">
-                    <button class="col-12 mt-3 p-2 rounded-3 h_generate">
+                  <div class="h_modal_button_action ">
+                    <button class="col-12 mt-3 p-2 rounded-3 h_generate border-0">
                       Generate
                     </button>
                   </div>
                 </div>
+                </div>
               </div>
 
-              <div class="footer_main_sidebar d-flex">
-                <div class="image_footer">
+              <div class="d-flex second-contain border-1">
+                <div >
                   <img
                     src="./assets/images/start.svg"
-                    class="h_modal_outline_button rounded-5"
+                    class="icon-border border border-1 p-2 rounded-5"
                     alt=""
                   />
                 </div>
-                <div class="main_contain_footer">
+                <div class="footer-contain col-10">
                   <p>No updates in the last 24 hours.</p>
-                  <div class="sibebar_footer_button d-flex">
-                    <div class="h_modal_button">
-                      <button class="btn p-2">
+                  <div class="d-flex">
+                    <div >
+                      <button class="btn  border-3 ">
                         <img src="./assets/images/add.svg" alt="Create" />Create
                       </button>
-                      <button class="btn p-2">Copy</button>
-                      <button class="btn p-2">Regenerate</button>
+                      <button class="btn  border-3 ">Copy</button>
+                      <button class="btn  border-3 ">Regenerate</button>
                     </div>
                     <div class="mx-4 sidebar_button">
                       <span
@@ -2233,25 +2388,45 @@
                       /></span>
                     </div>
                   </div>
-                  <div class="input_footer mt-3">
-                    <div class="row">
-                      <input
-                        type="text"
-                        class="col-9 p-2 mx-2 h_modal_outline_button rounded-3"
-                        placeholder="Tell Al what to do next"
-                      />
-                      <img
-                        src="./assets/images/home/send.svg"
-                        class="send_button col-2"
-                        alt=""
-                      />
-                    </div>
+                </div>
+              </div>
+              <style>
+                input.form-control:focus {
+                  border: none;
+                  box-shadow: none;
+                  outline: none;
+                }
+              </style>
+              <div class="mt-3">
+                <div
+                  class="row border border-1 p-1 mx-2 rounded-3 align-items-center main-input mt-4"
+                >
+                  <div class="col-10 px-0">
+                    <input
+                      type="text"
+                      class="form-control border-0 rounded-3"
+                      placeholder="Tell AI what to do next"
+                    />
+                  </div>
+                  <div
+                    class="col-2 px-0 d-flex justify-content-center align-items-center"
+                  >
+                    <button class="btn p-0 send-button border-0 bg-transparent">
+                      <a href="#">
+                        <img
+                          src="./assets/images/home/send.svg"
+                          class="send-img"
+                          alt="Send"
+                        />
+                      </a>
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
         <button
           class="btn h_modal_outline_button"
           type="button"
