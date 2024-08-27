@@ -131,8 +131,7 @@
 @import url(./app.css);
 @import url(./buttons.css);
 
-:root {
-}
+
 
 body {
   overflow-y: hidden;
@@ -294,10 +293,7 @@ body {
   border: none;
 }
 
-.nav_2 {
-  justify-content: space-between;
-  display: flex;
-}
+
 
 .nav_2_two .btn_mang {
   background-color: var(--black);
@@ -319,14 +315,9 @@ body {
   background-color: var(--primary-color);
 }
 
-#switch {
-  width: 350px;
-}
 
 
-.modal-header .main_modal {
-  display: flex;
-}
+
 
 .btn-close {
   height: 2px;
@@ -336,9 +327,7 @@ body {
   max-width: 804px;
 }
 
-.modal_one_content {
-  justify-content: start;
-}
+
 
 .card {
   justify-content: space-between;
