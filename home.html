@@ -24,6 +24,7 @@
     />
 
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
@@ -31,91 +32,17 @@
   </head>
 
   <body class="home-page">
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <div class="main_modal">
-              <div class="one">
-                <h5>StandUp™</h5>
-              </div>
-            </div>
-            <div class="modal_two d-flex">
-              <button class="one_button p-2">
-                Feedback <img src="./assets/images/home/export.svg" alt="" />
-              </button>
-              <img src="./assets/images/home/idea.svg" width="20px" alt="" />
-              <img
-                src="./assets/images/home/menu_dot.svg"
-                width="20px"
-                alt=""
-              />
-              <button
-                type="button"
-                class="btn-close my-2"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-          </div>
-          <div class="modal-body">
-            <div class="modal_one_content my-2">
-              <h5>Automate work updates with AI StandUp™</h5>
-              <p>
-                Track daily progress and insights with real-time task updates.
-              </p>
-            </div>
-            <div class="mt-5">
-              <p>People or Teams</p>
-              <img src="./assets/images/user_profile.svg" width="40px" alt="" />
-            </div>
+     
 
-            <div class="mt-4">
-              <p>Since</p>
-              <div class="dropdown open">
-                <button
-                  class="btn btn dropdown-toggle Since_drp col-12"
-                  type="button"
-                  id="triggerId"
-                  data-bs-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Last 7 days
-                </button>
-                <div class="dropdown-menu col-12" aria-labelledby="triggerId">
-                  <button class="dropdown-item" href="#">Action</button>
-                </div>
-                <div class="mt-4">
-                  <p>Format</p>
-                </div>
-
-                <div class="format_button d-flex">
-                  <button>Traditional</button>
-                  <button class="format_check">Short</button>
-                  <button>Traditional</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn_gray_button">Generate</button>
-          </div>
-        </div>
-      </div>
-    </div>
+     
+    
+     
 
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark h_main_nav">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark h_main_nav">
         <div class="container-fluid">
           <a class="navbar-brand mx-2" href="javascript:void(0)"
-            ><img src="assets/images/logo.png" width="70px" alt=""
+            ><img src="assets/images/home/logo.svg" width="70px" alt=""
           /></a>
           <button
             class="navbar-toggler"
@@ -126,14 +53,352 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse d-flex justify-content-center flex-wrap"
+            class="collapse navbar-collapse justify-content-center  flex-wrap"
             id="mynavbar"
           >
-            <form class="d-flex mx-auto gap-2 nav_search_form">
-              <button class="search-button">
-                <i class="bi bi-search"></i>
-                <span>Search...</span>
-              </button>
+          <style>
+            .nav-end-side {
+    gap: 20px;
+}
+.nav-end-side button {
+    background-color: transparent;
+
+    border: none;
+    color: var(--navbar_text_color);
+
+    span {
+        color: var(--navbar_text_color);
+
+    }
+}
+         
+.navbar {
+.nav-form{
+
+.ask-ai {
+    height: 34px;
+    padding: 7px;
+    width: 80px;
+    border-radius: 6px;
+    color: var(--navbar_text_color);
+    background-color: var(--navbar-search-bg-color);
+}
+}
+
+                .search-button {
+                  background: var(--navbar-search-bg-color);
+                  color: var(--navbar_text_color);
+       
+                }
+        
+              
+                input{
+                  text-align: center;
+                  border: none;
+                  height: 35px;
+                  border-radius: 10px;
+                  width: 25vw;
+                }
+                input::placeholder{
+                
+                  color: #fff;
+                }
+                input:focus{
+                  outline: none;
+                }
+                .user-name{
+        font-family: "Segoe UI";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+        }
+      }
+       .home-card-main{
+            
+        h5{
+          font-size: 16px;
+    
+        font-weight: 600;
+        margin-top: 11px;
+        }
+        
+        #box-one{
+          height: 318px;
+          overflow-y: scroll;
+          .list-contain{
+          font-size: 14px;
+          .list{
+            display: flex;
+            padding: 7px;
+            img{
+    
+              margin: 0px 10px;
+            }
+           p{
+            margin: 0;
+           }
+           span{
+    
+            color: var(--secondary-text-color);
+            margin: 0px 5px;
+    
+           } 
+          }
+        }
+        }
+        #box-two{
+          height: 318px;
+          .second-header{
+          p{
+            font-size: 14px;
+            color: var( --secondary-text-color);
+          }
+        }
+        .content{
+          font-size: 14px;
+          p{
+            margin-top: 15px;
+            
+          }
+        }
+        }
+
+        #box-three{
+          height: 560px;
+         .main-content{
+          .nav-underline{
+            font-size: 14px;
+          }
+          .content-work{
+            font-size: 15px;
+            .row{
+
+              line-height: 45px;
+           .list-content{
+            
+            p{
+              display: contents;
+              font-size: 14px;
+            }
+            span{
+              color: var( --secondary-text-color);
+            }
+           }
+          }
+          }
+        }
+        }
+       #box-four{
+        height: 440px;
+        .right-side{
+          span{
+            font-size: 12px;
+            color: var(--secondary-text-color);
+            margin-top: 10px;
+          }
+        
+        }
+        .main-content{
+            p{
+              font-size: 14px;
+              padding: 0px 15px;
+            }
+          }
+       }
+       #box-five{
+        height: 440px;
+        .main-content{
+          
+          img{
+            width: 150px !important;
+          }
+          p{
+            color: var(--secondary-text-color);
+            font-size: 12px;
+            text-align: center;
+          }
+          a{
+            text-decoration: none;
+            color: var( --fourdary-text-color);
+          }
+          .btn {
+                width: 100px;
+                font-size: 12px;
+                padding: 0;
+            }
+        }
+        .card-contain{
+          display: flex;
+    height: calc(100% - 51px - 0.5rem);
+    justify-content: center;
+    align-items: center;
+        }
+       }
+       #box-six{
+        height: 560px;
+        .main-content{
+          
+          img{
+            width: 150px !important;
+          }
+          p{
+            color: var(--secondary-text-color);
+            font-size: 12px;
+            text-align: center;
+          }
+          a{
+            text-decoration: none;
+            color: var( --fourdary-text-color);
+          }
+          .btn {
+                width: 100px;
+                font-size: 12px;
+                padding: 0;
+            }
+        }
+        .card-contain{
+          display: flex;
+    height: calc(100% - 51px - 0.5rem);
+    justify-content: center;
+    align-items: center;
+        }
+       } 
+       #box-seven{
+        height: 320px;
+        .main-content{
+          
+          img{
+            width: 150px !important;
+          }
+          p{
+            color: var(--secondary-text-color);
+            font-size: 12px;
+            text-align: center;
+          }
+          a{
+            text-decoration: none;
+            color: var( --fourdary-text-color);
+          }
+          .btn {
+                width: 100px;
+                font-size: 12px;
+                padding: 0;
+            }
+        }
+        .card-contain{
+          display: flex;
+          height: calc(100% - 51px - 0.5rem);
+          justify-content: center;
+          align-items: center;
+        }
+       }
+       #box-eight{
+        height: 320px;
+        .main-content{
+          
+          img{
+            width: 150px !important;
+          }
+          p{
+            color: var(--secondary-text-color);
+            font-size: 12px;
+            text-align: center;
+          }
+          a{
+            text-decoration: none;
+            color: var( --fourdary-text-color);
+          }
+          .btn {
+                width: 100px;
+                font-size: 12px;
+                padding: 0;
+            }
+        }
+        .card-contain{
+          display: flex;
+          height: calc(100% - 51px - 0.5rem);
+          justify-content: center;
+          align-items: center;
+        }
+       }
+       #box-nine{
+        height: 440px;
+        .main-content{
+          .nav-underline{
+            font-size: 14px;
+          }
+          .content-work{
+            font-size: 15px;
+            .row{
+
+              line-height: 45px;
+           .list-content{
+            
+            p{
+              display: contents;
+              font-size: 14px;
+            }
+            span{
+              color: var( --secondary-text-color);
+            }
+           }
+          }
+          }
+          .tab-content{
+            font-size: 14px;
+            span{
+              color: var(--secondary-text-color);
+            }
+          .dropdown{
+            .dropdown-toggle::after {
+            display: none;
+          }
+          }
+        }
+       }
+      }
+     }
+     .sidebar-button-main {
+    margin-top: -9px;
+}
+.nav_2 button{
+          font-size: 14px;
+         
+        }
+   
+        
+@media only screen and (max-width: 800px) {
+  .nav-form{
+    justify-content: center;
+    input{
+      width: 50vw;
+    }
+  }
+  .nav-end-side {
+        gap: 0px !important;
+    }
+    .nav-end-side {
+        margin-top: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+}
+
+
+          </style>
+          
+            <form class="d-flex mx-auto gap-2 nav-form ">
+       
+              <style>
+  
+             
+            </style>
+              <div class="search-container border-0">
+                  <input class="search-button" placeholder="Search...">
+              </div>
+      
               <button class="border-0 ask-ai d-flex align-items-center">
                 <div class="image">
                   <svg
@@ -194,7 +459,7 @@
                 <span>Ask AI</span>
               </button>
             </form>
-            <div class="d-flex h_nav_end">
+            <div class="d-flex nav-end-side">
               <ul class="navbar-end_button mb-0">
                 <button
                   class="mx-1"
@@ -250,7 +515,7 @@
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      <img src="./assets/images/user_profile.svg" alt="" />
+                      <img src="/assets/images/user_profile.svg" alt="" />
                     </button>
                     <ul
                       class="dropdown-menu h_main_profile"
@@ -270,6 +535,7 @@
                 </button>
               </ul>
             </div>
+            
           </div>
         </div>
       </nav>
@@ -339,7 +605,7 @@
           </li>
           <li class="nav-item">
             <a href="" class="nav-link"
-              ><img src="./assets/images/sno.svg" alt="" /><span
+              ><img src="/assets/images/sno.svg" alt="" /><span
                 class="hide-text"
                 >Everything</span
               ></a
@@ -347,28 +613,28 @@
           </li>
           <li class="nav-item">
             <a href="" class="nav-link"
-              ><img src="./assets/images/e.svg" alt="" /><span class="hide-text"
+              ><img src="/assets/images/e.svg" alt="" /><span class="hide-text"
                 >Engineering</span
               ></a
             >
           </li>
           <li class="nav-item">
             <a href="" class="nav-link"
-              ><img src="./assets/images/d.svg" alt="" /><span class="hide-text"
+              ><img src="/assets/images/d.svg" alt="" /><span class="hide-text"
                 >DCA</span
               ></a
             >
           </li>
           <li class="nav-item">
             <a href="" class="nav-link"
-              ><img src="./assets/images/m.svg" alt="" /><span class="hide-text"
+              ><img src="/assets/images/m.svg" alt="" /><span class="hide-text"
                 >M Automation</span
               ></a
             >
           </li>
           <li class="nav-item">
             <a href="" class="nav-link"
-              ><img src="./assets/images/menu_more.svg" alt="" /><span
+              ><img src="/assets/images/menu_more.svg" alt="" /><span
                 class="hide-text"
                 >View all Spaces</span
               ></a
@@ -376,7 +642,7 @@
           </li>
           <li class="nav-item">
             <a href="" class="nav-link"
-              ><img src="./assets/images/add.svg" alt="" /><span
+              ><img src="/assets/images/add.svg" alt="" /><span
                 class="hide-text"
                 >Create Space</span
               ></a
@@ -384,648 +650,1854 @@
           </li>
         </ul>
       </aside>
+      <style>
+
+      </style>
+      <style>
+     
+      </style>
       <div id="main">
         <div class="nav_2">
           <div class="nav_2_one d-flex my-3">
             <div class="one mx-2 my-2">
-              <button
-                class="btn btn h_sidebar_button"
-                type="button"
+              <button 
+                class=" d-flex sidebar-button-main border-0 bg-transparent"
                 id="sidebartoggle"
               >
-                <img src="./assets/images/menu2.svg" alt="" />
+                <img src="/assets/images/menu2.svg" alt="" />
               </button>
             </div>
             <div class="main_2_bar d-flex">
               <div>
-                <button class="nav_2_one my-2 mx-2">
-                  <img src="./assets/images/home.svg" alt="" />
+                <button class="nav_2_one mt-1 my-2 mx-2">
+                  <img src="/assets/images/home.svg" alt="" />
                   <p>Home</p>
                 </button>
               </div>
             </div>
           </div>
-          <div class="nav_2_two d-flex">
+         
+            <!-- Button to trigger modal -->
+            <div class="d-flex">
             <button
-              class="btn fs-6 primary my-3"
-              type="button"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
+                class="btn  my-3"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
             >
-              Manage cards
+                Manage cards
             </button>
-            <button
-              class="btn btn_white_button dropdown-toggle btn_setting"
-              type="button"
-              id="dropdownMenuButton1"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
+             
+              <style>
+                 .Manage-modal-main {
+    .modal-dialog {
+      max-width: 746px;
+      .modal-header {
+        height: 48px;
+        h1 {
+          font-size: 14px !important;
+        }
+        button {
+          font-size: 12px;
+          border-radius: 5px;
+          height: 24px;
+          color: var(--button-secondary-text-color);
+        }
+      }
+      .modal-body {
+        h5 {
+          font-size: 16px;
+          font-weight: 600;
+        }
+        p {
+          font-size: 14px;
+          color: var(--secondary-text-color);
+        }
+        .modal-button .btn {
+          font-size: 14px;
+        }
+        .modal-button .btn:hover {
+          background-color: var(--primary-color);
+          color: var(--secondary-color);
+        }
+        .submit-button .btn {
+          background-color: var(--primary-color);
+          color: var(--secondary-color);
+        }
+        .dropdown-toggle {
+          font-size: 14px;
+        }
+        .dropdown-toggle::after {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+              </style>
+             
+            
+            <div class=" d-flex Manage-modal-main">
+            <!-- Modal -->
+            <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
             >
-              <img src="./assets/images/home/setting.svg" alt="" />
-            </button>
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header ">
+                            
+                             
+                                    <h1 class="my-2">StandUp™</h1>
+                                
+                           
+                            <div class="d-flex gap-2">
+                                <button class="px-2 border border-1 mt-3 " >
+                                    Feedback <img src="/assets/images/home/export.svg" alt="" />
+                                </button>
+                                <img src="/assets/images/home/idea.svg" width="20px" alt="" />
+                                <img src="/assets/images/home/menu_dot.svg" width="20px" alt="" />
+                                <button
+                                    type="button"
+                                    class="btn-close my-2"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                ></button>
+                            </div>
+                        </div>
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <div class="one-content">
+                                <h5>Automate work updates with AI StandUp™</h5>
+                                <p>
+                                    Track daily progress and insights with real-time task updates.
+                                </p>
+                            </div>
+                            <div  >
+                                <p>People or Teams</p>
+                                <img src="/assets/images/user_profile.svg" width="28px" alt="" />
+                            </div>
+                            <div class="mt-4">
+                                <p>Since</p>
+                                <div class="dropdown open">
+                                    <button
+                                        class="dropdown-button dropdown-toggle  col-12 justify-content-between d-flex border border-1"
+                                        type="button"
+                                        id="triggerId"
+                                        data-bs-toggle="dropdown"
+                                        aria-haspopup="true"
+                                        aria-expanded="false"
+                                    >
+                                        Last 7 days
+                                    </button>
+                                    <div class="dropdown-menu col-12" aria-labelledby="triggerId">
+                                        <button class="dropdown-item" href="#">Action</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-1" >
+                                <p>Format</p>
+                                <div class=" d-flex justify-content-center modal-button" >
+                                    <button class="btn-reverse border-0 col-3">Traditional</button>
+                                    <button class="btn-reverse border-0 col-3" >Short</button>
+                                    <button class="btn-reverse border-0 col-3">Traditional</button>
+                                </div>
+                            </div>
+                            <div class="justify-content-end d-flex submit-button mt-3">
+                              <button type="button" class="btn" >Generate</button>
+                            </div>
+                        </div>
 
+                    </div>
+                </div>
+            </div>
+            <div class="my-3">
+            <!-- Settings Dropdown Button -->
+            <button
+                class="dropdown-toggle bg-transparent btn-reverse border-0 p-0 mx-2"
+                type="button"
+                id="dropdownMenuButton1"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+            >
+                <img src="/assets/images/home/setting.svg" alt="" />
+            </button>
+        
+            <!-- Settings Dropdown Menu -->
+             <style>
+              #switch {
+
+  width: 220px;
+  
+  h5{
+    font-size: 12px;
+    color: var(--secondary-text-color);
+  }
+  p{
+    font-size: 14px;
+    color: var(--secondary-text-color);
+    margin-bottom: 0;
+  }
+
+  }
+             </style>
             <div class="dropdown">
-              <ul
-                id="switch"
-                class="dropdown-menu"
-                aria-labelledby="dropdownMenuButton1"
+                <ul
+                    id="switch"
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                >
+                    <li>
+                        <div class="form-switch py-2">
+                            <h5>Logout</h5>
+                            <div class="d-flex justify-content-between">
+                                <p>Page greeting</p>
+                                <input
+                                    class="form-check-input mx-2"
+                                    type="checkbox"
+                                    id="flexSwitchCheckChecked"
+                                    checked
+                                />
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </div>
+      </div>
+          <!-- Button trigger modal -->
+       
+       <style> 
+
+     </style>
+       
+          <!-- Modal -->
+        </div>
+        <div class="container-fluid">
+          <h3 class="user-name">Good afternoon, Arushi</h3>
+          <div class="home-card-main">
+
+  <div class="row">
+
+            <div class="col-sm-6 col-12">
+
+              <div id="box-one" class="my-3 border border-1 rounded-3 px-3 py-2">
+                <div class="flex-wrap justify-content-between d-flex">
+                  <div class="d-flex">
+                    <img class="box-logo" src="/assets/images/dot.svg" width="20px" />
+                    <h5 class="">React</h5>
+                  </div>
+                  <style>
+
+
+.box-logo ,.changing-button {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+#box-one:hover .box-logo,
+#box-two:hover .box-logo,
+#box-three:hover .box-logo,
+#box-four:hover .box-logo,
+#box-five:hover .box-logo,
+#box-six:hover .box-logo,
+#box-seven:hover .box-logo,
+#box-eight:hover .box-logo,
+#box-nine:hover .box-logo,
+#box-ten:hover .box-logo,
+#box-one:hover .changing-button , 
+#box-two:hover .changing-button , 
+#box-three:hover .changing-button ,
+#box-four:hover .changing-button ,
+#box-five:hover .changing-button ,
+#box-six:hover .changing-button , 
+#box-seven:hover .changing-button ,
+#box-eight:hover .changing-button ,
+#box-nine:hover .changing-button ,
+#box-ten:hover .changing-button  {
+  opacity: 1;
+  visibility: visible;
+}
+
+                  </style>
+                  <div class="changing-button d-flex justify-content-center gap-2" >
+                    <img src="/assets/images/home/size.svg" width="20px" alt="" />
+                    <img src="/assets/images/home/menu_dot.svg" width="20px" alt="" />
+                  </div>
+                </div>
+                <div class="list-contain ">
+                  <div class="list">
+                    <img src="/assets/images/home/doc.svg" alt="" />
+                    <p>lorem Ipsum</p>
+                    <span>abubakar</span>
+                  </div>
+                  <div class="list">
+                    <img src="/assets/images/home/doc.svg" fill="var( --primary-color)" alt="" />
+                    <p>Systems & Tools</p>
+                  </div>
+                  <style>
+                    
+                  </style>
+                  <div class="list">
+                    <img src="/assets/images/home/map.svg" alt="" />
+                    <p>Office Information</p>
+                  </div>
+                  <div class="list">
+                    <img src="/assets/images/home/book.svg" alt="" />
+                    <p>Employee Handbook</p>
+                  </div>
+                  <div class="list">
+                    <img src="/assets/images/home/flower.svg" alt="" />
+                    <p>Growth & Career</p>
+                  </div>
+                  <div class="list">
+                    <img src="/assets/images/home/users.svg" alt="" />
+                    <p>Departments</p>
+                  </div>
+                  <div class="list">
+                    <img src="/assets/images/home/menu_list.svg" alt="" />
+                    <p>Productivity Resources</p>
+                  </div>
+                  <div class="list">
+                    <img src="/assets/images/home/win.svg" alt="" />
+                    <p>Mission & Vision</p>
+                  </div>
+                  <div class="list">
+                    <img src="/assets/images/home/heart.svg" alt="" />
+                    <p>Core Values</p>
+                  </div>
+                </div>
+              </div>
+              <div id="box-three" class=" my-3 border border-1 rounded-3 px-3 py-2">
+                <div class="d-flex justify-content-between flex-wrap">
+                  <div class="d-flex">
+                    <img  class="box-logo" src="/assets/images/dot.svg" width="20px" alt="" />
+                    <h5>My work</h5>
+                  </div>
+                  <div class="align-items-center changing-button  d-flex gap-2 a">
+                    <img src="/assets/images/home/setting.svg" width="20px" alt="" />
+                    <img src="/assets/images/home/size.svg" width="20px" alt="" />
+                    <img src="/assets/images/home/menu_dot.svg" width="20px" alt="" />
+                  </div>
+                </div>
+  
+                <div class="main-content">
+                  
+                    <ul class="nav nav-underline mb-3" id="pills-tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">To Do</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Done</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Delegated</button>
+                      </li>
+                    </ul>
+                    <div class="tab-content content-work" id="pills-tabContent">
+                      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="row">
+                          <div class="list-content">
+                            <img src="/assets/images/home/left_side.svg" alt="" />
+                            <p>Today</p>
+                            <span>1</span>
+                          </div>
+                          <div class="list-content">
+                            <img src="/assets/images/home/left_side.svg" alt="" />
+                            <p>Overdue</p>
+                            <span>0</span>
+                          </div>
+                          <div class="list-content">
+                            <img src="/assets/images/home/left_side.svg" alt="" />
+                            <p>Next</p>
+                            <span>0</span>
+                          </div>
+                          <div class="list-content">
+                            <img src="/assets/images/home/left_side.svg" alt="" />
+                            <p>Unscheduled</p>
+                            <span>0</span>
+                          </div>
+                          <div class="list-content">
+                            <img src="/assets/images/home/left_side.svg" alt="" />
+                            <p>Today</p>
+                            <span>1</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                    </div>
+  
+                
+                </div>
+              </div>
+              <div id="box-five" class=" my-3 border border-1 rounded-3 px-3 py-2">
+                <div class=" d-flex flex-wrap justify-content-between">
+                  <div class=" d-flex my-2 ">
+                    <img  class="box-logo" src="/assets/images/dot.svg" width="20px" alt="" />
+                    <h5 class="mt-2">Personal List</h5>
+                    <img
+                      src="/assets/images/home/idea.svg"
+                      width="20px"
+                      alt=""
+                    />
+                  </div>
+                  <div class=" d-flex mt-3">
+                    <div class="four_image changing-button">
+                      <img src="/assets/images/add.svg" width="20px" alt="" />
+                      <img
+                        src="/assets/images/home/speed.svg"
+                        width="20px"
+                        alt=""
+                      />
+                      <img src="/assets/images/size.png" width="20px" alt="" />
+                      <img
+                        src="/assets/images/menu_dot.png"
+                        width="20px"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="card-contain" >
+                    <!-- Home Tab -->
+                    <div
+                      class="tab-pane fade show active"
+                      id="home"
+                      role="tabpanel"
+                      aria-labelledby="home-tab"
+                    >
+                      <div class="row  main-content justify-content-center d-flex">
+                        <img
+                          
+                          src="/assets/images/home/personal_list.svg"
+                         
+                          alt=""
+                        />
+                        <p>
+                          Personal List is a home for your tasks.
+                          <a href=""> Learn more</a>
+                        </p>
+                        <button class="btn ">+ Create a task</button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div id="box-seven" class="my-3 border border-1 rounded-3 px-3 py-2">
+                <div class="d-flex flex-wrap justify-content-between">
+                  <div class=" d-flex my-2">
+                    <img  class="box-logo" src="/assets/images/dot.svg" width="20px" alt="" />
+                    <h5 class="mt-2">Assigned comments</h5>
+                  </div>
+                  <div class="d-flex mt-3 changing-button">
+                    <div >
+                      <img src="/assets/images/add.svg" width="20px" alt="" />
+                      <img src="/assets/images/size.png" width="20px" alt="" />
+                      <img
+                        src="/assets/images/menu_dot.png"
+                        width="20px"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="card-contain" >
+                    <!-- Home Tab -->
+                    <div
+                      class="tab-pane fade show active "
+                      id="home"
+                      role="tabpanel"
+                      aria-labelledby="home-tab"
+                    >
+                    <div class="row  main-content justify-content-center d-flex ">
+                        <img
+                         
+                          src="/assets/images/home/commit_img.svg"
+                          alt=""
+                        />
+                        <h5 class="justify-content-center d-flex">No Comments</h5>
+                        <p>
+                          You don't have any assigned comments.
+                          <a href=""> Learn more</a>
+                        </p>
+                      </div>
+                    </div>
+                 
+                </div>
+              </div>
+        </div>
+
+
+        <div class="col-sm-6 col-12">
+
+              <div id="box-two" class=" my-3  border border-1 rounded-3 px-3 py-2">
+                <div class="d-flex justify-content-between flex-wrap">
+                  <div class="edit_two d-flex">
+                    <img  class="box-logo" src="/assets/images/dot.svg" width="20px" alt="" />
+                    <h5 >Agenda</h5>
+                  </div>
+                  <div class="d-flex my-2 gap-2 changing-button">
+                    <img
+                      src="/assets/images/home/size.svg"
+                      width="20px"
+                      alt=""
+                    />
+                    <img
+                      src="/assets/images/home/menu_dot.svg"
+                      width="20px"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between second-header flex-wrap">
+                  <div class="d-flex gap-3">
+                    <p class="mt-1">Jul 12,Fri</p>
+                    <div >
+                      <img src="/assets/images/home/lessden.svg" alt="" />
+                      <img src="/assets/images/home/greaterden.svg" alt="" />
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-center gap-2">
+                   
+                    <p class="mt-1">Today</p>
+                   <div>
+                    <img
+                    src="/assets/images/home/today.svg"
+                    width="20px"
+                    alt=""
+                  />
+                   </div>
+                  </div>
+                </div>
+               <hr class="m-0">
+  
+                <div class="flex-wrap content">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-3 ">
+                    <img
+                      src="/assets/images/home/timer_clock.svg"
+                      width="25px"
+                      alt=""
+                    />
+                    <p >Lorem Ipsum</p>
+                  </div>
+                  <div >
+                    <span>All day</span>
+                  </div>
+                  </div>
+                </div>
+              </div>
+  
+              
+  
+              <div id="box-four" class=" my-3 border border-1 rounded-3 px-3 py-2">
+                <div class="d-flex flex-wrap justify-content-between">
+                  <div class="d-flex my-2">
+                    <img  class="box-logo" src="/assets/images/dot.svg" width="20px" alt="" />
+                    <img src="/assets/images/start.svg" width="20px" alt="" />
+                    <h5 class="mt-2">AI StandUp (Last 7 days)</h5>
+                  </div>
+                  <div class=" d-flex mt-3">
+                    <div class="right-side d-flex gap-2 changing-button ">
+                      <span>Just now</span>
+                  
+                      <img src="/assets/images/home/update.svg" width="20px" alt="">
+                      <img src="/assets/images/home/copy.svg" width="20px" alt="">
+                      <img
+                        src="/assets/images/home/setting.svg"
+                        width="20px"
+                        alt=""
+                      />
+                      <img src="/assets/images/home/menu_dot.svg" width="20px" alt="" />
+
+                    </div>
+                  </div>
+                </div>
+  
+                <div >
+                  <div class="tab-content" id="myTabContent">
+                    <!-- Home Tab -->
+                    <div
+                      class="tab-pane fade show active"
+                      id="home"
+                      role="tabpanel"
+                      aria-labelledby="home-tab"
+                    >
+                      <div class="main-content mt-3">
+                        <p>No updates in the last 7 days.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           
+              <div id="box-six" class=" my-3 border border-1 rounded-3 px-3 py-2" >
+                <div class="d-flex flex-wrap justify-content-between">
+                  <div class="d-flex my-2">
+                    <img class="box-logo" src="/assets/images/dot.svg" width="20px" alt="" />
+                    <h5 class="mt-2">Assigned to me</h5>
+                  </div>
+                  <div class="d-flex mt-3 changing-button">
+                    <div >
+                      <img src="/assets/images/add.svg" width="20px" alt="" />
+                      <img src="/assets/images/size.png" width="20px" alt="" />
+                      <img
+                        src="/assets/images/menu_dot.png"
+                        width="20px"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="card-contain" >
+                    <!-- Home Tab -->
+                    <div
+                      class="tab-pane fade show active"
+                      id="home"
+                      role="tabpanel"
+                      aria-labelledby="home-tab"
+                    >
+                      <div class="row  main-content justify-content-center d-flex ">
+                        <img
+                          
+                          src="/assets/images/home/check_box_img.svg"
+                          alt=""
+                          width="60px"
+                        />
+
+                        <p>
+                          Tasks assigned to you will appear here.
+                          <a href=""> Learn more</a>
+                        </p>
+                        <button class="btn">+ Add task</button>
+                      </div>
+                    </div>
+                </div>
+              </div>
+             
+              <div id="box-eight" class=" my-3 border border-1 rounded-3 px-3 py-2">
+                <div class="d-flex flex-wrap justify-content-between">
+                  <div class=" d-flex my-2">
+                    <img class="box-logo" src="/assets/images/dot.svg" width="20px" alt="" />
+                    <h5 class="mt-2">LineUp</h5>
+                    <img
+                      src="/assets/images/home/idea.svg"
+                      width="20px"
+                      alt=""
+                    />
+                  </div>
+                  <div class="d-flex mt-3 changing-button">
+                    <div class="four_image">
+                      <img src="/assets/images/add.svg" width="20px" alt="" />
+                      <img src="/assets/images/size.png" width="20px" alt="" />
+                      <img
+                        src="/assets/images/menu_dot.png"
+                        width="20px"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+  
+                <div class="card-contain" >
+                    <!-- Home Tab -->
+                    <div
+                      class="tab-pane fade show active "
+                      id="home"
+                      role="tabpanel"
+                      aria-labelledby="home-tab"
+                    >
+                      <div class="row main-content justify-content-center d-flex">
+                        <img
+                          
+                          src="/assets/images/home/check_box_add.svg"
+                          alt=""
+                        />
+  
+                        <p>
+                          LineUp keeps your most important tasks in one list. Add
+                          your most important task to get started
+                          <a href=""> Learn more</a>
+                        </p>
+                        <button class="btn">+ Add task</button>
+                      </div>
+                    </div>
+
+                </div>
+              </div>
+            </div>
+            </div>
+
+              <div id="box-nine" class="my-3 border border-1 rounded-3 px-3 py-2 col-sm-12">
+                <div class="flex-wrap d-flex justify-content-between">
+                  <div class="d-flex">
+                    <img class="box-logo" src="/assets/images/dot.svg" width="20px" alt="" />
+                    <h5 class="mt-2">Reminders</h5>
+                  </div>
+                  <div class="changing-button">
+                    <img src="/assets/images/home/setting.svg" width="20px" alt="" />
+                    <img src="/assets/images/size.png" width="20px" alt="" />
+                    <img src="/assets/images/menu_dot.png" width="20px" alt="" />
+                  </div>
+                </div>
+                <div class="main-content">
+
+                <ul class="nav nav-underline mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#nine-one" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Home</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#nine-two" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#nine-three" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="v-pills-tabContent">
+                  <div class="tab-pane fade show active lh-lg" id="nine-one" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                <div class="dropdown open ">
+                  <button
+                    class="bg-transparent p-1 border-0 dropdown-toggle"
+                    type="button"
+                    id="triggerId"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                  <img src="/assets/images/home/left_side.svg" alt="">
+                    Dropdown Button
+                    <span>0</span>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="triggerId">
+                   
+                    <button class="btn bg-transparent border-0 p-1  ">
+                      <div>
+                      <img src="/assets/images/home/clock_white.svg" alt="">
+                      <span>Lorem Ipsum</span>
+                    </div>
+                    </button>
+                  </div>
+                </div>
+                <div>
+                  <img src="/assets/images/add.svg" alt="">
+                  <span>Add Reminder</span>
+                </div>
+                <div class="dropdown open ">
+                  <button
+                    class="bg-transparent p-1 border-0 dropdown-toggle"
+                    type="button"
+                    id="triggerId"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                  <img src="/assets/images/home/left_side.svg" alt="">
+                  Overdue
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="triggerId">
+                   
+                    <button class="btn bg-transparent border-0 p-1  ">
+                      <div>
+                      <img src="/assets/images/home/clock_white.svg" alt="">
+                      <span>Lorem Ipsum</span>
+                    </div>
+                    </button>
+                  </div>
+                </div>
+                <div class="dropdown open ">
+                  <button
+                    class="bg-transparent p-1 border-0 dropdown-toggle"
+                    type="button"
+                    id="triggerId"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                  <img src="/assets/images/home/left_side.svg" alt="">
+                  Next
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="triggerId">
+                   
+                    <button class="btn bg-transparent border-0 p-1  ">
+                      <div>
+                      <img src="/assets/images/home/clock_white.svg" alt="">
+                      <span>Lorem Ipsum</span>
+                    </div>
+                    </button>
+                  </div>
+                </div>
+                  </div>
+                  <div class="tab-pane fade" id="nine-two" role="tabpanel" aria-labelledby="v-pills-messages-tab">..b.</div>
+                  <div class="tab-pane fade" id="nine-three" role="tabpanel" aria-labelledby="v-pills-settings-tab">..c.</div>
+                </div>
+                </div>
+                
+                </div>
+             
+
+         
+ 
+ 
+ 
+<div class="sidebar-add-card">
+  <button
+    class="btn"
+    type="button"
+    data-bs-toggle="offcanvas"
+    data-bs-target="#offcanvasScrolling"
+    aria-controls="offcanvasScrolling"
+  >
+    Enable body scrolling
+  </button>
+
+  <div
+    class="offcanvas offcanvas-end"
+    data-bs-scroll="true"
+    data-bs-backdrop="false"
+    tabindex="-1"
+    id="offcanvasScrolling"
+    aria-labelledby="offcanvasScrollingLabel"
+  >
+    <div class="offcanvas-header">
+      <h5 >
+        Add Cards
+      </h5>
+      <button
+        type="button"
+        class="btn-close text-reset"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+
+    <div class="offcanvas-body ">
+      <div class="card-main">
+        <div class="card d-flex">
+          <div class="img">
+            <img src="/assets/images/home/start_sidebar.svg" alt="" />
+          </div>
+         
+            <button class="btn-reverse card-button d-flex">
+              <img
+                src="/assets/images/home/add_white.svg"
+                class="mt-1"
+                alt=""
+              />
+              <span>Add to Home</span>
+            </button>
+          
+        </div>
+        <div class=" mt-4">
+          <div class=" d-flex gap-2">
+            <h5>AI StandUp™</h5>
+            <button class="new-button">New</button>
+          </div>
+          <p>AI generated standup.</p>
+        </div>
+      </div>
+
+      <div class="card-main">
+        <div class="card d-flex">
+          <div class="img">
+            <img src="/assets/images/home/clock_sidebar.svg" alt="" />
+          </div>
+      
+            <button class="btn-reverse card-button d-flex">
+              <img
+                src="/assets/images/home/add_white.svg"
+                class="mt-1"
+                alt=""
+              />
+              <span>Add to Home</span>
+            </button>
+         
+        </div>
+        <div class=" mt-4">
+          <div class=" d-flex">
+            <h5>Recents</h5>
+          </div>
+          <p>
+            A list of all the ClickUp objects and locations you’ve
+            recently viewed.
+          </p>
+        </div>
+      </div>
+      <div class="card-main">
+        <div class="card d-flex">
+          <div class="img">
+            <img src="/assets/images/home/calender.svg" alt="" />
+          </div>
+          
+            <button  class="btn-reverse card-button d-flex">
+              <img
+                src="/assets/images/home/add_white.svg"
+                class="mt-1"
+                alt=""
+              />
+              <span>Add to Home</span>
+            </button>
+          
+        </div>
+        <div class=" mt-4">
+          <div class=" d-flex">
+            <h5>Agenda</h5>
+          </div>
+          <p>
+            Visualize tasks and events on your different calendars in one
+            place.
+          </p>
+        </div>
+      </div>
+      <div class="card-main">
+        <div class="card d-flex">
+          <div class="img">
+            <img
+              src="/assets/images/home/menu_list_sidebar.svg"
+              alt=""
+            />
+          </div>
+         
+            <button class="btn-reverse card-button d-flex">
+              <img
+                src="/assets/images/home/add_white.svg"
+                class="mt-1"
+                alt=""
+              />
+              <span>Add to Home</span>
+            </button>
+         
+        </div>
+        <div class=" mt-4">
+          <div class=" d-flex">
+            <h5>My Work</h5>
+          </div>
+          <p>A list for all of your assigned tasks and reminders.</p>
+        </div>
+      </div>
+      <div class="card-main">
+        <div class="card d-flex">
+          <div class="img">
+            <img
+              src="/assets/images/home/menu_list_sidebar.svg"
+              alt=""
+            />
+          </div>
+         
+            <button class="btn-reverse card-button d-flex">
+              <img
+                src="/assets/images/home/add_white.svg"
+                class="mt-1"
+                alt=""
+              />
+              <span>Add to Home</span>
+            </button>
+          
+        </div>
+        <div class=" mt-4">
+          <div class=" d-flex">
+            <h5>Assigned to me</h5>
+          </div>
+          <p>
+            Consolidate your tasks across different lists that you have as
+            an assignee.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Button to trigger modal -->
+
+
+ 
+<style>
+  .Quick-links-modal{
+
+  .modal-dialog{
+    
+    max-width: 638px;
+    .submit-button{
+          font-size: 14px;
+          height: 32px;
+        }
+    .modal-header{
+   
+    .nav-link{
+      font-size: 14px;
+    }
+    .btn-close{
+      font-size: 12px;
+    }
+    .down-close{
+      width: 30px;
+      padding: 0;
+    }
+  }
+  .modal-body{
+
+    .doc-modal{
+      .content-two{
+        span{
+          font-size: 11px;
+          color: var(--secondary-text-color);
+        }
+        p{
+          font-size:14px;
+          color: var(--secondary-text-color);
+        }
+        .btn-reverse{ 
+          height: 32px;
+       
+        }
+    
+   
+      }
+     
+      
+    }
+    .reminder-modal{
+        .submit-button{
+          font-size: 14px;
+          height: 32px;
+        }
+      }
+      .chat-modal{
+        p {
+          font-size: 14px;
+          color: var(--secondary-text-color);
+        }
+        .submit-button{
+          width: 105px;
+        }
+      }
+      .whiteboard-modal{
+        p{
+          font-size:14px;
+          color: var(--secondary-text-color);
+        }
+        .submit-button{
+          width: 150px;
+        }
+      }
+      .dashboard-modal{
+        p{
+          font-size:14px;
+          color: var(--secondary-text-color);
+        }
+        .submit-button{
+          width: 150px;
+        }
+      }
+ 
+ 
+ 
+    }
+  }
+}
+</style>
+ 
+
+
+  <div class="Quick-links-modal">
+    <button
+      type="button"
+      class="btn   "
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal2"
+    >
+      Open Modal
+    </button>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal2"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header border border-0">
+            <!-- Nav tabs -->
+            <ul class="nav nav-underline" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="Task-tab"
+                  data-bs-toggle="tab"
+                  href="#Task"
+                  role="tab"
+                  aria-controls="Task"
+                  aria-selected="true"
+                  >Task</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="Doc-tab"
+                  data-bs-toggle="tab"
+                  href="#Doc"
+                  role="tab"
+                  aria-controls="Doc"
+                  aria-selected="false"
+                  >Doc</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="Reminder-tab"
+                  data-bs-toggle="tab"
+                  href="#Reminder"
+                  role="tab"
+                  aria-controls="Reminder"
+                  aria-selected="false"
+                  >Reminder</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="Chat-tab"
+                  data-bs-toggle="tab"
+                  href="#Chat"
+                  role="tab"
+                  aria-controls="Chat"
+                  aria-selected="false"
+                  >Chat</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="Whiteboard-tab"
+                  data-bs-toggle="tab"
+                  href="#Whiteboard"
+                  role="tab"
+                  aria-controls="Whiteboard"
+                  aria-selected="false"
+                  >Whiteboard</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="Dashboard-tab"
+                  data-bs-toggle="tab"
+                  href="#Dashboard"
+                  role="tab"
+                  aria-controls="Dashboard"
+                  aria-selected="false"
+                  >Dashboard</a
+                >
+              </li>
+            </ul>
+            <div class="d-flex align-items-center">
+            <button class="dropdown-button down-close">
+              <img src="/assets/images/home/down-close.svg" alt="">
+            </button>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          </div>
+          <div class="modal-body">
+            <!-- Tab content -->
+            <div class="tab-content">
+              <div
+                class="tab-pane fade task-modal show active"
+                id="Task"
+                role="tabpanel"
+                aria-labelledby="Task-tab"
               >
-                <li>
-                  <div class="form-check form-switch">
-                    <h5>logout</h5>
-                    <div class="switch_button d-flex">
-                      <p>Page greeting</p>
+                <div class="d-flex">
+                  <div class="dropdown">
+                    <button
+                      class="dropdown-button border border-1 dropdown-toggle mx-2"
+                      type="button" 
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img src="/assets/images/menu_list.svg" alt="" />
+                      Select List...
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="#">Action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Another action</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button
+                      class="dropdown-button border border-1 px-2 dropdown-toggle"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    ></button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="#">Action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Another action</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="input-group input-group-sm my-3 mx-2">
+                  <input
+                    type="text"
+                    class="form-control border-0"
+                    placeholder="Task name"
+                    aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm"
+                  />
+                </div>
+                <div class="input-group input-group-sm my-3 mx-2">
+                  <img src="/assets/images/home/doc_blank.svg" alt="" />
+                  <input
+                    type="text"
+                    class="form-control border-0 mx-1"
+                    placeholder="Add description"
+                    aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm"
+                  />
+                </div>
+                <div class="input-group input-group-sm my-3 mx-2">
+                  <input
+                    type="text"
+                    class="form-control border-0 mx-4"
+                    placeholder="Write with AI"
+                    aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm"
+                  />
+                </div>
+                <div class="  d-flex gap-2 flex-wrap">
+                  <button type="button" class="btn-reverse border border-1 px-3">Open</button>
+                  <button type="button" class="btn-reverse border border-1 px-3">
+                    <img
+                      src="/assets/images/home/2users.svg"
+                      alt=""
+                    />Assignee
+                  </button>
+                  <button type="button" class="btn-reverse border border-1 px-3">
+                    <img
+                      src="/assets/images/home/Duedate.svg"
+                      alt=""
+                    />Due date
+                  </button>
+                  <button type="button" class="btn-reverse border border-1 px-3">
+                    <img
+                      src="/assets/images/home/priority.svg"
+                      alt=""
+                    />Priority
+                  </button>
+                  <button type="button" class="btn-reverse border border-1 px-3">
+                    <img src="/assets/images/home/tags.svg" alt="" />Tags
+                  </button>
+                  <button type="button" class="btn-reverse border border-1 px-3">
+                    <img src="/assets/images/menu_dot.png" alt="" />
+                  </button>
+                </div>
+                <hr />
+                <div class="justify-content-between d-flex">
+                  <div class="  ">
+                    <button
+                      type="button"
+                      class="btn-reverse border border-1 px-3  "
+                    >
+
+
+
+                      <img
+                        src="/assets/images/magic.svg"
+                        alt=""
+                      />Templates
+                    </button>
+                  </div>
+                  <div class="d-flex gap-3">
+             
+                    <div class="file-upload">
+                      <label for="file-input" class="upload-icon">
+                        <img src="/assets/images/home/attached.svg" alt="" />
+                      </label>
+                      <input type="file" id="file-input" class="file-input" />
+                  </div>
+                  <button class="border-0 px-2 bg-transparent d-flex mt-2">
+                    <img
+                      src="/assets/images/home/not_clock.svg"
+                      alt=""
+                    />
+                  </button>
+                    <!-- Example split danger button -->
+                    <div class="btn-group">
+                      <button type="button" class="btn">Action</button>
+                      <button
+                        type="button"
+                        class="btn dropdown-toggle dropdown-toggle-split"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        <span class="visually-hidden"
+                          >Toggle Dropdown</span
+                        >
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="#">Action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Another action</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                        <li>
+                          <hr class="dropdown-divider" />
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Separated link</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane doc-modal fade"
+                id="Doc"
+                role="tabpanel"
+                aria-labelledby="Doc-tab"
+              >
+              <div class="content-two">
+                <div class="d-flex">
+                  <div class="dropdown">
+                    <button
+                      class="dropdown-button border border-1 dropdown-toggle    "
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img
+                        src="/assets/images/home/add_menu.svg"
+                        alt=""
+                      />
+                      Add to location
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="#">Action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Another action</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="input-group input-group-sm my-3 mx-2">
+                  <input
+                    type="text"
+                    class="form-control border-0"
+                    placeholder="Name this Doc..."
+                    aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm"
+                  />
+                </div>
+                <div class="input-group input-group-sm my-3 mx-2">
+                  <img src="/assets/images/home/doc_blank.svg" alt="" />
+                  <input
+                    type="text"
+                    class="form-control border-0 mx-1"
+                    placeholder="Blank page"
+                    aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm"
+                  />
+                </div>
+                <div class="input-group input-group-sm my-3 mx-2">
+                  <input
+                    type="text"
+                    class="form-control border-0 mx-4"
+                    placeholder="Write with AI"
+                    aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-sm"
+                  />
+                </div>
+
+               
+                  <span>Add new</span>
+             
+                    <button class="btn-reverse   gap-2 col-12 my-2 justify-content-start d-flex">
+                    <img
+                      src="/assets/images/home/table_menu.svg"
+                      alt=""
+                    />
+                    <p>Table</p>
+                  </button>
+                 
+                  <button class="btn-reverse   gap-2 col-12 my-2 justify-content-start d-flex">
+                   
+                    <img src="/assets/images/home/column.svg" alt="" />
+                    <p>Column</p>
+                  </button>
+                  <button class="btn-reverse   gap-2 col-12 my-2 justify-content-start d-flex">
+                   
+                    <img
+                      src="/assets/images/home/dot_menu_list.svg"
+                      alt=""
+                    />
+                    <p>ClickUp List</p>
+                  </button>
+                  <div class="d-flex">
+                    <div class="dropdown open">
+                      <button
+                        class="dropdown-button border border-1    dropdown-toggle "
+                        type="button"
+                        id="triggerId"
+                        data-bs-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        AI Tools: Choose a department
+                      </button>
+                      <div
+                        class="dropdown-menu"
+                        aria-labelledby="triggerId"
+                      >
+                        <button class="dropdown-item" href="#">
+                          Action
+                        </button>
+                        <button class="dropdown-item disabled" href="#">
+                          Disabled action
+                        </button>
+                      </div>
+                    </div>
+                    <button class="bg-transparent border-0">
+                      <img
+                        src="/assets/images/home/serach.svg"
+                        class="mx-2 my-2"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+
+                  <div class="h_bulb">
+                    <button class="btn-reverse   gap-2 col-12 my-2 justify-content-start d-flex">
+                    
+                      <img
+                        src="/assets/images/home/bulb.svg"
+                        class="mx-2"
+                        alt=""
+                      />
+                      <p>Improve writing</p>
+                    </button>
+                    <button class="btn-reverse   gap-2 col-12 my-2 justify-content-start d-flex">
+                      <img
+                        src="/assets/images/home/bulb.svg"
+                        class="mx-2"
+                        alt=""
+                      />
+                      <p>Generate template</p>
+                    </button>
+                    <button class="btn-reverse   gap-2 col-12 my-2 justify-content-start d-flex">
+                      <img
+                        src="/assets/images/home/bulb.svg"
+                        class="mx-2"
+                        alt=""
+                      />
+                      <p>Write an email</p>
+                    </button>
+                    <button class="btn-reverse   gap-2 col-12 my-2 justify-content-start d-flex">
+                      <img
+                        src="/assets/images/home/bulb.svg"
+                        class="mx-2"
+                        alt=""
+                      />
+                      <p>Summarize</p>
+                    </button>
+                    <button class="btn-reverse   gap-2 col-12 my-2 justify-content-start d-flex">
+                      <img
+                        src="/assets/images/home/bulb.svg"
+                        class="mx-2"
+                        alt=""
+                      />
+                      <p>Table with data</p>
+                    </button>
+                    <button class="btn-reverse   gap-2 col-12 my-2 justify-content-start d-flex">
+                      <img
+                        src="/assets/images/home/bulb.svg"
+                        class="mx-2"
+                        alt=""
+                      />
+                      <p>Blog post</p>
+                    </button>
+                    <button class="btn-reverse   gap-2 col-12 my-2 justify-content-start d-flex">
+                      <img
+                        src="/assets/images/home/menu_dot.svg"
+                        class="mx-2"
+                        alt=""
+                      />
+                      <p>Pick department</p>
+                    </button>
+                  </div>
+               
+
+                <hr />
+                <div class="justify-content-between d-flex">
+                  <div class="first_start d-flex">
+                    <div class="form-check form-switch">
                       <input
-                        class="form-check-input mx-2"
+                        class="form-check-input"
                         type="checkbox"
                         id="flexSwitchCheckChecked"
                         checked
                       />
                     </div>
+                    <p>Private</p>
                   </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- Button trigger modal -->
-
-          <!-- Modal -->
-        </div>
-        <div class="container-fluid">
-          <h3 class="user_name">Good afternoon, Abubakar</h3>
-
-          <div class="row">
-            <!-- First Column -->
-            <div id="one_box" class="col-sm-5 mx-2 my-2">
-              <div class="box_one flex-wrap">
-                <div class="edit_one d-flex">
-                  <img src="./assets/images/dot.svg" class="" alt="" />
-                  <h5 class="mt-1">React</h5>
-                </div>
-
-                <div class="other_one">
-                  <img src="./assets/images/size.png" alt="" />
-                  <img src="./assets/images/menu_dot.png" alt="" />
+                  
+                    
+                  <button class="btn submit-button align-items-center d-flex">
+                      Create Doc
+                    </button>
+                  
                 </div>
               </div>
-              <div class="details_one">
-                <div class="list">
-                  <img src="./assets/images/home/doc.svg" alt="" />
-                  <p>lorem Ipsum</p>
-                </div>
-                <div class="list">
-                  <img src="./assets/images/home/doc.svg" alt="" />
-                  <p>Systems & Tools</p>
-                </div>
-                <div class="list">
-                  <img src="./assets/images/home/map.svg" alt="" />
-                  <p>Office Information</p>
-                </div>
-                <div class="list">
-                  <img src="./assets/images/home/book.svg" alt="" />
-                  <p>Employee Handbook</p>
-                </div>
-                <div class="list">
-                  <img src="./assets/images/home/flower.svg" alt="" />
-                  <p>Growth & Career</p>
-                </div>
-                <div class="list">
-                  <img src="./assets/images/home/users.svg" alt="" />
-                  <p>Departments</p>
-                </div>
-                <div class="list">
-                  <img src="./assets/images/home/menu_list.svg" alt="" />
-                  <p>Productivity Resources</p>
-                </div>
-                <div class="list">
-                  <img src="./assets/images/home/win.svg" alt="" />
-                  <p>Mission & Vision</p>
-                </div>
-                <div class="list">
-                  <img src="./assets/images/home/heart.svg" alt="" />
-                  <p>Core Values</p>
-                </div>
               </div>
-            </div>
-
-            <!-- Second Column -->
-
-            <div id="box-two" class="col-sm-6 mx-2 my-2">
-              <div class="box_two flex-wrap">
-                <div class="edit_two d-flex">
-                  <img src="./assets/images/dot.svg" width="25px" alt="" />
-                  <h5 class="mt-2">Agenda</h5>
-                </div>
-                <div class="other_two d-flex my-2">
-                  <img
-                    src="./assets/images/size.png"
-                    width="25px"
-                    height="25px"
-                    alt=""
-                  />
-                  <img
-                    src="./assets/images/menu_dot.png"
-                    width="25px"
-                    height="25px"
-                    alt=""
+              <div
+                class="tab-pane fade reminder-modal"
+                id="Reminder"
+                role="tabpanel"
+                aria-labelledby="Reminder-tab"
+              >
+                <div class="input-group input-group-md">
+                  <input
+                    type="text"
+                    class="form-control border-0"
+                    aria-label="Sizing example input"
+                    placeholder="Reminder name or type '/' for commands"
+                    aria-describedby="inputGroup-sizing-lg"
                   />
                 </div>
-              </div>
-              <div class="date_main d-flex flex-wrap">
-                <div class="date_one d-flex">
-                  <p>Jul 12,Fri</p>
-                  <div class="image">
-                    <img src="./assets/images/home/lessden.svg" alt="" />
-                    <img src="./assets/images/home/greaterden.svg" alt="" />
-                  </div>
-                </div>
-                <div class="today d-flex">
-                  <p class="mt-2">Today</p>
-                  <img
-                    src="./assets/images/home/today.svg"
-                    width="20px"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <hr />
-
-              <div class="box-two d-flex flex-wrap">
-                <div class="image d-flex">
-                  <img
-                    src="./assets/images/home/timer_clock.svg"
-                    width="25px"
-                    alt=""
-                  />
-                  <p class="mt-3">Lorem Ipsum</p>
-                </div>
-                <div class="content">
-                  <p>All day</p>
-                </div>
-              </div>
-            </div>
-
-            <div id="box-three" class="col-sm-6 mx-2 my-2">
-              <div class="box_two flex-wrap">
-                <div class="edit_two d-flex">
-                  <img src="./assets/images/dot.svg" alt="" />
-                  <h5 class="mt-2">My work</h5>
-                </div>
-                <div class="other_two">
-                  <img src="./assets/images/home/setting.svg" alt="" />
-                  <img src="./assets/images/size.png" alt="" />
-                  <img src="./assets/images/menu_dot.png" alt="" />
-                </div>
-              </div>
-
-              <div class="myWork">
-                <div class="nav_tabs">
-                  <ul class="nav nav-underline" id="myTab" role="tablist">
-                    <li class="nav-item">
-                      <a
-                        class="nav-link active"
-                        id="home-tab"
-                        data-toggle="tab"
-                        href="#home"
-                        role="tab"
-                        aria-controls="home"
-                        aria-selected="true"
-                        >Home</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        class="nav-link"
-                        id="profile-tab"
-                        data-toggle="tab"
-                        href="#profile"
-                        role="tab"
-                        aria-controls="profile"
-                        aria-selected="false"
-                        >Profile</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        class="nav-link"
-                        id="contact-tab"
-                        data-toggle="tab"
-                        href="#contact"
-                        role="tab"
-                        aria-controls="contact"
-                        aria-selected="false"
-                        >Contact</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="tab-content" id="myTabContent">
-                  <!-- Home Tab -->
-                  <div
-                    class="tab-pane fade show active"
-                    id="home"
-                    role="tabpanel"
-                    aria-labelledby="home-tab"
-                  >
-                    <div class="row mt-3 list_main">
-                      <div class="myWork_list">
-                        <img src="./assets/images/home/left_side.svg" alt="" />
-                        <p>Today</p>
-                        <span>1</span>
-                      </div>
-                      <div class="myWork_list">
-                        <img src="./assets/images/home/left_side.svg" alt="" />
-                        <p>Overdue</p>
-                        <span>0</span>
-                      </div>
-                      <div class="myWork_list">
-                        <img src="./assets/images/home/left_side.svg" alt="" />
-                        <p>Next</p>
-                        <span>0</span>
-                      </div>
-                      <div class="myWork_list">
-                        <img src="./assets/images/home/left_side.svg" alt="" />
-                        <p>Unscheduled</p>
-                        <span>0</span>
-                      </div>
-                      <div class="myWork_list">
-                        <img src="./assets/images/home/left_side.svg" alt="" />
-                        <p>Today</p>
-                        <span>1</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div id="box-four" class="col-sm-5 mx-2 my-2">
-              <div class="four_two d-flex flex-wrap">
-                <div class="edit_four d-flex my-2">
-                  <img src="./assets/images/dot.svg" width="25px" alt="" />
-                  <img src="./assets/images/start.svg" width="25px" alt="" />
-                  <h5 class="mt-2">AI StandUp (Last 7 days)</h5>
-                </div>
-                <div class="other_four d-flex mt-3">
-                  <div class="sentense">
-                    <p>Today</p>
-                  </div>
-                  <div class="four_image">
-                    <img
-                      src="./assets/images/home/setting.svg"
-                      width="20px"
-                      alt=""
-                    />
-                    <img src="./assets/images/size.png" width="20px" alt="" />
-                    <img
-                      src="./assets/images/menu_dot.png"
-                      width="20px"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div class="myWork">
-                <div class="tab-content" id="myTabContent">
-                  <!-- Home Tab -->
-                  <div
-                    class="tab-pane fade show active"
-                    id="home"
-                    role="tabpanel"
-                    aria-labelledby="home-tab"
-                  >
-                    <div class="row mt-3 list_main">
-                      <p>No updates in the last 7 days.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="box-five" class="col-sm-5 mx-2 my-2">
-              <div class="four_two d-flex flex-wrap">
-                <div class="edit_four d-flex my-2">
-                  <img src="./assets/images/dot.svg" width="20px" alt="" />
-                  <h5 class="mt-2">Personal List</h5>
-                  <img
-                    src="./assets/images/home/idea.svg"
-                    width="20px"
-                    alt=""
-                  />
-                </div>
-                <div class="other_four d-flex mt-3">
-                  <div class="four_image">
-                    <img src="./assets/images/add.svg" width="20px" alt="" />
-                    <img
-                      src="./assets/images/home/speed.svg"
-                      width="20px"
-                      alt=""
-                    />
-                    <img src="./assets/images/size.png" width="20px" alt="" />
-                    <img
-                      src="./assets/images/menu_dot.png"
-                      width="20px"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div class="myWork">
-                <div class="tab-content" id="myTabContent">
-                  <!-- Home Tab -->
-                  <div
-                    class="tab-pane fade show active responsive_card"
-                    id="home"
-                    role="tabpanel"
-                    aria-labelledby="home-tab"
-                  >
-                    <div class="row mt-3 Personal_list_content">
+                <div class=" mt-3 gap-2 mb-5 d-flex flex-wrap">
+               
+                    <button
+                      type="button"
+                      class="btn-reverse border border-1 px-2"
+                    >
                       <img
-                        class="personal_list"
-                        src="./assets/images/home/personal_list.svg"
+                        src="/assets/images/home/check_calender.svg"
                         alt=""
                       />
-                      <p>
-                        Personal List is a home for your tasks.
-                        <a href=""> Learn more</a>
-                      </p>
-                      <button class="home_crad_button">+ Create a task</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="box-six" class="col-sm-6 mx-2 my-2">
-              <div class="four_two d-flex flex-wrap">
-                <div class="edit_four d-flex my-2">
-                  <img src="./assets/images/dot.svg" width="20px" alt="" />
-                  <h5 class="mt-2">Assigned to me</h5>
-                </div>
-                <div class="other_four d-flex mt-3">
-                  <div class="four_image">
-                    <img src="./assets/images/add.svg" width="20px" alt="" />
-                    <img src="./assets/images/size.png" width="20px" alt="" />
-                    <img
-                      src="./assets/images/menu_dot.png"
-                      width="20px"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div class="myWork">
-                <div class="tab-content" id="myTabContent">
-                  <!-- Home Tab -->
-                  <div
-                    class="tab-pane fade show active responsive_card"
-                    id="home"
-                    role="tabpanel"
-                    aria-labelledby="home-tab"
-                  >
-                    <div class="row mt-3 Personal_list_content">
+                      <span>Today</span>
+                    </button>
+                 
+                 
+                    <button
+                      type="button"
+                      class="btn-reverse border border-1 px-2   "
+                    >
                       <img
-                        class="check_box_img"
-                        src="./assets/images/home/check_box_img.svg"
+                        src="/assets/images/user_profile.svg"
                         alt=""
                       />
-                      <p>
-                        Tasks assigned to you will appear here.
-                        <a href=""> Learn more</a>
-                      </p>
-                      <button class="home_crad_button">+ Add task</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="box-seven" class="col-sm-6 mx-2 my-2">
-              <div class="four_two d-flex flex-wrap">
-                <div class="edit_four d-flex my-2">
-                  <img src="./assets/images/dot.svg" width="20px" alt="" />
-                  <h5 class="mt-2">Assigned comments</h5>
-                </div>
-                <div class="other_four d-flex mt-3">
-                  <div class="four_image">
-                    <img src="./assets/images/add.svg" width="20px" alt="" />
-                    <img src="./assets/images/size.png" width="20px" alt="" />
-                    <img
-                      src="./assets/images/menu_dot.png"
-                      width="20px"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div class="myWork">
-                <div class="tab-content" id="myTabContent">
-                  <!-- Home Tab -->
-                  <div
-                    class="tab-pane fade show active responsive_card"
-                    id="home"
-                    role="tabpanel"
-                    aria-labelledby="home-tab"
-                  >
-                    <div class="row mt-3 Personal_list_content">
+                      <span>For me</span>
+                    </button>
+                 
+                 
+                    <button
+                      type="button"
+                      class="btn-reverse border border-1 px-2   "
+                    >
                       <img
-                        class="check_box_img"
-                        src="./assets/images/home/commit_img.svg"
+                        src="/assets/images/home/not_clock.svg"
                         alt=""
                       />
-                      <h5>No Comments</h5>
-                      <p>
-                        You don't have any assigned comments.
-                        <a href=""> Learn more</a>
-                      </p>
-                    </div>
-                  </div>
+                      <span>Notify me</span>
+                    </button>
+                
+                </div>
+                <hr  />
+                <div class="justify-content-end gap-3 d-flex">
+                  <div class="file-upload">
+                    <label for="file-input" class="upload-icon">
+                      <img src="/assets/images/home/attached.svg" alt="" />
+                    </label>
+                    <input type="file" id="file-input" class="file-input" />
+                </div>
+                  <button class="btn submit-button align-items-center d-flex">
+                    Create Reminder
+                  </button>
                 </div>
               </div>
-            </div>
-            <div id="box-eight" class="col-sm-5 mx-2 my-2">
-              <div class="four_two d-flex flex-wrap">
-                <div class="edit_four d-flex my-2">
-                  <img src="./assets/images/dot.svg" width="20px" alt="" />
-                  <h5 class="mt-2">LineUp</h5>
-                  <img
-                    src="./assets/images/home/idea.svg"
-                    width="20px"
-                    alt=""
-                  />
-                </div>
-                <div class="other_four d-flex mt-3">
-                  <div class="four_image">
-                    <img src="./assets/images/add.svg" width="20px" alt="" />
-                    <img src="./assets/images/size.png" width="20px" alt="" />
-                    <img
-                      src="./assets/images/menu_dot.png"
-                      width="20px"
-                      alt=""
+              <div
+                class="tab-pane fade chat-modal"
+                id="Chat"
+                role="tabpanel"
+                aria-labelledby="Chat-tab"
+              >
+                <div>
+                  <div class="dropdown">
+                    <button
+                      class="dropdown-button border border-1    dropdown-toggle"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img src="assets/images/home.svg" alt="" />
+                      Workspace
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="#">Action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Another action</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="input-group input-group-md my-3">
+                    <input
+                      type="text"
+                      class="form-control h_chat_input"
+                      placeholder="Name this Chat..."
+                      aria-label="Sizing example input"
+                      aria-describedby="inputGroup-sizing-lg"
                     />
                   </div>
-                </div>
-              </div>
-
-              <div class="myWork">
-                <div class="tab-content" id="myTabContent">
-                  <!-- Home Tab -->
-                  <div
-                    class="tab-pane fade show active responsive_card"
-                    id="home"
-                    role="tabpanel"
-                    aria-labelledby="home-tab"
-                  >
-                    <div class="row mt-3 Personal_list_content">
-                      <img
-                        class="check_box_img"
-                        src="./assets/images/home/check_box_add.svg"
-                        alt=""
+                  <div class="input-group input-group-sm mb-5 my-3">
+                    <input
+                      type="text"
+                      class="form-control h_chat_input"
+                      placeholder="Add message"
+                      aria-label="Sizing example input"
+                      aria-describedby="inputGroup-sizing-sm"
+                    />
+                  </div>
+                  <hr />
+                  <div class="d-flex">
+                    <div class="form-check form-switch">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        role="switch"
+                        id="flexSwitchCheckChecked"
+                        checked
                       />
+                      <p>Private</p>
+                    </div>
+                    <div class="gap-3 d-flex">
+                      <button class="border-0 bg-transparent d-flex mt-2">
+                        <img
+                          src="/assets/images/home/not_clock.svg"
+                          alt=""
+                        />
+                      </button>
 
-                      <p>
-                        LineUp keeps your most important tasks in one list. Add
-                        your most important task to get started
-                        <a href=""> Learn more</a>
-                      </p>
-                      <button class="home_crad_button">+ Add task</button>
+                      <button class="btn submit-button d-flex">
+                        Create Chat
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div id="box-ten" class="col-sm-11 mx-2 my-2">
-              <div class="box_two flex-wrap d-flex">
-                <div class="edit_two d-flex">
-                  <img src="./assets/images/dot.svg" alt="" />
-                  <h5 class="mt-2">Reminders</h5>
-                </div>
-                <div class="other_two">
-                  <img src="./assets/images/home/setting.svg" alt="" />
-                  <img src="./assets/images/size.png" alt="" />
-                  <img src="./assets/images/menu_dot.png" alt="" />
+              <div
+                class="tab-pane fade whiteboard-modal"
+                id="Whiteboard"
+                role="tabpanel"
+                aria-labelledby="Whiteboard-tab"
+              >
+                <div>
+                  <div class="dropdown">
+                    <button
+                      class="dropdown-button border border-1 dropdown-toggle"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img src="assets/images/home.svg" alt="" />
+                      Workspace
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="#">Action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Another action</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="input-group input-group-md mb-5 my-3">
+                    <input
+                      type="text"
+                      class="form-control h_chat_input"
+                      placeholder="Name this Whiteboard..."
+                      aria-label="Sizing example input"
+                      aria-describedby="inputGroup-sizing-lg"
+                    />
+                  </div>
+                  <hr  />
+                  <div class=" d-flex">
+                    <div class="form-check form-switch">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        role="switch"
+                        id="flexSwitchCheckChecked"
+                        checked
+                      />
+                      <p>Private</p>
+                    </div>
+                    <div>
+                      <button
+                        class="btn submit-button"
+                      >
+                        Create Whiteboard
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
-
-              <div class="myWork">
-                <div class="nav_tabs">
-                  <ul class="nav nav-underline" id="myTab" role="tablist">
-                    <li class="nav-item">
-                      <a
-                        class="nav-link active"
-                        id="home-tab"
-                        data-toggle="tab"
-                        href="#ToDo"
-                        role="tab"
-                        aria-controls="home"
-                        aria-selected="true"
-                        >To Do</a
+              <div
+                class="tab-pane fade dashboard-modal"
+                id="Dashboard"
+                role="tabpanel"
+                aria-labelledby="Dashboard-tab"
+              >
+                <div>
+                  <div class="dropdown">
+                    <button
+                      class="dropdown-button border border-1  dropdown-toggle"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img src="assets/images/home.svg" alt="" />
+                      Workspace
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="#">Action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Another action</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="input-group input-group-md my-3  mb-5">
+                    <input
+                      type="text"
+                      class="form-control border-0 "
+                      placeholder="Name this Dashboard..."
+                      aria-label="Sizing example input"
+                      aria-describedby="inputGroup-sizing-lg"
+                    />
+                  </div>
+                  <hr />
+                  <div class=" d-flex">
+                    <div class="form-check form-switch">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        role="switch"
+                        id="flexSwitchCheckChecked"
+                        checked
+                      />
+                      <p>Private</p>
+                    </div>
+                    <div >
+                      <button
+                        class="btn submit-button "
                       >
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        class="nav-link"
-                        id="profile-tab"
-                        data-toggle="tab"
-                        href="#Done"
-                        role="tab"
-                        aria-controls="profile"
-                        aria-selected="false"
-                        >Done</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        class="nav-link"
-                        id="contact-tab"
-                        data-toggle="tab"
-                        href="#Delegated"
-                        role="tab"
-                        aria-controls="contact"
-                        aria-selected="false"
-                        >Delegated</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="tab-content" id="myTabContent">
-                  <!-- Home Tab -->
-                  <div
-                    class="tab-pane fade show active"
-                    id="home"
-                    role="tabpanel"
-                    aria-labelledby="home-tab"
-                  >
-                    <div class="row mt-3 list_main">
-                      <div class="">
-                        <div class="dropdown">
-                          <button
-                            class="btn btn dropdown-toggle"
-                            type="button"
-                            id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                          >
-                            Today
-                          </button>
-                          <span>1</span>
-
-                          <ul
-                            class="dropdown-menu"
-                            aria-labelledby="dropdownMenuButton1"
-                          >
-                            <li class="d-flex nine_dropdown">
-                              <img
-                                class="mx-2"
-                                src="./assets/images/home/clock_white.svg"
-                                alt=""
-                              />
-                              <p>Lorem Ipsum</p>
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="dropdown">
-                          <button
-                            class="btn btn dropdown-toggle drp_down_2"
-                            type="button"
-                            id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                          >
-                            <img src="./assets/images/add.svg" alt="" /> Add
-                            Reminder
-                          </button>
-
-                          <ul
-                            class="dropdown-menu drp_down_list_2"
-                            aria-labelledby="dropdownMenuButton1"
-                          >
-                            <li>
-                              <div class="myWork_list">
-                                <img
-                                  src="./assets/images/home/left_side.svg"
-                                  alt=""
-                                />
-                                <p>Overdue</p>
-                                <span>0</span>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="myWork_list">
-                                <img
-                                  src="./assets/images/home/left_side.svg"
-                                  alt=""
-                                />
-                                <p>Next</p>
-                                <span>0</span>
-                              </div>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
+                        Create Dashboard
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -1033,949 +2505,61 @@
             </div>
           </div>
         </div>
-        <button
-          class="btn h_modal_outline_button"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasScrolling"
-          aria-controls="offcanvasScrolling"
-        >
-          Enable body scrolling
-        </button>
+      </div>
+    </div>
+  </div>
 
-        <div
-          class="offcanvas offcanvas-end"
-          data-bs-scroll="true"
-          data-bs-backdrop="false"
-          tabindex="-1"
-          id="offcanvasScrolling"
-          aria-labelledby="offcanvasScrollingLabel"
-        >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
-              Add Cards
-            </h5>
-            <button
-              type="button"
-              class="btn-close text-reset"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
+<style>
+  .modal-header{
+    p{
+      font-size: 14px;
+    }
+    h5{
+    
+     font-size: 24px;
+    span{
+      color: var( --fourdary-text-color);
+    }
+  }
+  }
+  .modal-body{
+    h4{
+      font-size: 20px;
+    }
+    p,li,span{
+      font-size: 14px;
+      color: var( --secondary-text-color);
+    }
+  .discount_two {
+  right: 0;
+  margin-top: -80px;
 
-          <div class="offcanvas-body img_sidebar">
-            <div class="card_main">
-              <div class="card d-flex">
-                <div class="img">
-                  <img src="./assets/images/home/start_sidebar.svg" alt="" />
-                </div>
-                <div class="card_button d-flex">
-                  <button>
-                    <img
-                      src="./assets/images/home/add_white.svg"
-                      class="mt-1"
-                      alt=""
-                    />
-                    <p class="">Add to Home</p>
-                  </button>
-                </div>
-              </div>
-              <div class="second_contain mt-4">
-                <div class="card_button_2 d-flex">
-                  <h5>AI StandUp™</h5>
-                  <button>New</button>
-                </div>
-                <p>AI generated standup.</p>
-              </div>
-            </div>
+  }
+  .discount-first{
+    background-color: var(--bg-fourdary-color);
+  }
+  .responsive-discount{
+    h1{
+      font-size: 60px;
+      color: var(--fourdary-text-color);
+    }
+  .btn-discount{
+    background-color: var(--bg-fourdary-color) !important;
+    border-radius: 10px;
+    padding: 0px 10px;
+    border: none;
+  }
+}
+  }
+</style>
 
-            <div class="card_main my-2">
-              <div class="card d-flex">
-                <div class="img">
-                  <img src="./assets/images/home/clock_sidebar.svg" alt="" />
-                </div>
-                <div class="card_button d-flex">
-                  <button id="check" class="button_checked">
-                    <img
-                      src="./assets/images/home/check_black.svg"
-                      class="mt-1"
-                      alt=""
-                    />
-                    <p class="">Added</p>
-                  </button>
-                </div>
-              </div>
-              <div class="second_contain mt-4">
-                <div class="card_button_2 d-flex">
-                  <h5>Recents</h5>
-                </div>
-                <p>
-                  A list of all the ClickUp objects and locations you’ve
-                  recently viewed.
-                </p>
-              </div>
-            </div>
-            <div class="card_main my-2">
-              <div class="card d-flex">
-                <div class="img">
-                  <img src="./assets/images/home/calender.svg" alt="" />
-                </div>
-                <div class="card_button d-flex">
-                  <button>
-                    <img
-                      src="./assets/images/home/add_white.svg"
-                      class="mt-1"
-                      alt=""
-                    />
-                    <p class="">Add to Home</p>
-                  </button>
-                </div>
-              </div>
-              <div class="second_contain mt-4">
-                <div class="card_button_2 d-flex">
-                  <h5>Agenda</h5>
-                </div>
-                <p>
-                  Visualize tasks and events on your different calendars in one
-                  place.
-                </p>
-              </div>
-            </div>
-            <div class="card_main my-2">
-              <div class="card d-flex">
-                <div class="img">
-                  <img
-                    src="./assets/images/home/menu_list_sidebar.svg"
-                    alt=""
-                  />
-                </div>
-                <div class="card_button d-flex">
-                  <button>
-                    <img
-                      src="./assets/images/home/add_white.svg"
-                      class="mt-1"
-                      alt=""
-                    />
-                    <p class="">Add to Home</p>
-                  </button>
-                </div>
-              </div>
-              <div class="second_contain mt-4">
-                <div class="card_button_2 d-flex">
-                  <h5>My Work</h5>
-                </div>
-                <p>A list for all of your assigned tasks and reminders.</p>
-              </div>
-            </div>
-            <div class="card_main my-2">
-              <div class="card d-flex">
-                <div class="img">
-                  <img
-                    src="./assets/images/home/menu_list_sidebar.svg"
-                    alt=""
-                  />
-                </div>
-                <div class="card_button d-flex">
-                  <button>
-                    <img
-                      src="./assets/images/home/add_white.svg"
-                      class="mt-1"
-                      alt=""
-                    />
-                    <p class="">Add to Home</p>
-                  </button>
-                </div>
-              </div>
-              <div class="second_contain mt-4">
-                <div class="card_button_2 d-flex">
-                  <h5>Assigned to me</h5>
-                </div>
-                <p>
-                  Consolidate your tasks across different lists that you have as
-                  an assignee.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <!-- Button to trigger modal -->
-        <div>
-          <button
-            type="button"
-            class="btn h_modal_outline_button"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal2"
-          >
-            Open Modal
-          </button>
 
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="exampleModal2"
-            tabindex="-1"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <!-- Nav tabs -->
-                  <ul class="nav nav-underline" id="myTab" role="tablist">
-                    <li class="nav-item">
-                      <a
-                        class="nav-link active"
-                        id="Task-tab"
-                        data-bs-toggle="tab"
-                        href="#Task"
-                        role="tab"
-                        aria-controls="Task"
-                        aria-selected="true"
-                        >Task</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        class="nav-link"
-                        id="Doc-tab"
-                        data-bs-toggle="tab"
-                        href="#Doc"
-                        role="tab"
-                        aria-controls="Doc"
-                        aria-selected="false"
-                        >Doc</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        class="nav-link"
-                        id="Reminder-tab"
-                        data-bs-toggle="tab"
-                        href="#Reminder"
-                        role="tab"
-                        aria-controls="Reminder"
-                        aria-selected="false"
-                        >Reminder</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        class="nav-link"
-                        id="Chat-tab"
-                        data-bs-toggle="tab"
-                        href="#Chat"
-                        role="tab"
-                        aria-controls="Chat"
-                        aria-selected="false"
-                        >Chat</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        class="nav-link"
-                        id="Whiteboard-tab"
-                        data-bs-toggle="tab"
-                        href="#Whiteboard"
-                        role="tab"
-                        aria-controls="Whiteboard"
-                        aria-selected="false"
-                        >Whiteboard</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        class="nav-link"
-                        id="Dashboard-tab"
-                        data-bs-toggle="tab"
-                        href="#Dashboard"
-                        role="tab"
-                        aria-controls="Dashboard"
-                        aria-selected="false"
-                        >Dashboard</a
-                      >
-                    </li>
-                  </ul>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <!-- Tab content -->
-                  <div class="tab-content mt-3">
-                    <div
-                      class="tab-pane fade h_drp_one show active"
-                      id="Task"
-                      role="tabpanel"
-                      aria-labelledby="Task-tab"
-                    >
-                      <div class="d-flex">
-                        <div class="dropdown">
-                          <button
-                            class="btn h_modal_outline_button dropdown-toggle mx-2"
-                            type="button"
-                            id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                          >
-                            <img src="./assets/images/menu_list.svg" alt="" />
-                            Select List...
-                          </button>
-                          <ul
-                            class="dropdown-menu"
-                            aria-labelledby="dropdownMenuButton1"
-                          >
-                            <li>
-                              <a class="dropdown-item" href="#">Action</a>
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="#"
-                                >Another action</a
-                              >
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="#"
-                                >Something else here</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="dropdown">
-                          <button
-                            class="btn h_modal_outline_button dropdown-toggle"
-                            type="button"
-                            id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                          ></button>
-                          <ul
-                            class="dropdown-menu"
-                            aria-labelledby="dropdownMenuButton1"
-                          >
-                            <li>
-                              <a class="dropdown-item" href="#">Action</a>
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="#"
-                                >Another action</a
-                              >
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="#"
-                                >Something else here</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="input-group input-group-sm my-3 mx-2">
-                        <input
-                          type="text"
-                          class="form-control h_modal_input"
-                          placeholder="Task name"
-                          aria-label="Sizing example input"
-                          aria-describedby="inputGroup-sizing-sm"
-                        />
-                      </div>
-                      <div class="input-group input-group-sm my-3 mx-2">
-                        <img src="./assets/images/home/doc_blank.svg" alt="" />
-                        <input
-                          type="text"
-                          class="form-control h_modal_input mx-1"
-                          placeholder="Add description"
-                          aria-label="Sizing example input"
-                          aria-describedby="inputGroup-sizing-sm"
-                        />
-                      </div>
-                      <div class="input-group input-group-sm my-3 mx-2">
-                        <input
-                          type="text"
-                          class="form-control h_modal_input mx-4"
-                          placeholder="Write with AI"
-                          aria-label="Sizing example input"
-                          aria-describedby="inputGroup-sizing-sm"
-                        />
-                      </div>
-                      <div class="h_modal_button d-flex">
-                        <button type="button" class="btn">Open</button>
-                        <button type="button" class="btn">
-                          <img
-                            src="./assets/images/home/2users.svg"
-                            alt=""
-                          />Assignee
-                        </button>
-                        <button type="button" class="btn">
-                          <img
-                            src="./assets/images/home/Duedate.svg"
-                            alt=""
-                          />Due date
-                        </button>
-                        <button type="button" class="btn">
-                          <img
-                            src="./assets/images/home/priority.svg"
-                            alt=""
-                          />Priority
-                        </button>
-                        <button type="button" class="btn">
-                          <img src="./assets/images/home/tags.svg" alt="" />Tags
-                        </button>
-                        <button type="button" class="btn">
-                          <img src="./assets/images/menu_dot.png" alt="" />
-                        </button>
-                      </div>
-                      <hr />
-                      <div class="h_modal_first d-flex">
-                        <div class="  ">
-                          <button
-                            type="button"
-                            class="btn h_modal_outline_button"
-                          >
-                            <img
-                              src="./assets/images/magic.svg"
-                              alt=""
-                            />Templates
-                          </button>
-                        </div>
-                        <div class="first_end">
-                          <img src="./assets/images/home/attached.svg" alt="" />
-                          <img
-                            src="./assets/images/home/not_clock.svg"
-                            alt=""
-                          />
-                          <!-- Example split danger button -->
-                          <div class="btn-group h_modal_button_action">
-                            <button type="button" class="btn">Action</button>
-                            <button
-                              type="button"
-                              class="btn dropdown-toggle dropdown-toggle-split"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              <span class="visually-hidden"
-                                >Toggle Dropdown</span
-                              >
-                            </button>
-                            <ul class="dropdown-menu">
-                              <li>
-                                <a class="dropdown-item" href="#">Action</a>
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  >Another action</a
-                                >
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  >Something else here</a
-                                >
-                              </li>
-                              <li>
-                                <hr class="dropdown-divider" />
-                              </li>
-                              <li>
-                                <a class="dropdown-item" href="#"
-                                  >Separated link</a
-                                >
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="tab-pane fade"
-                      id="Doc"
-                      role="tabpanel"
-                      aria-labelledby="Doc-tab"
-                    >
-                      <div class="d-flex">
-                        <div class="dropdown">
-                          <button
-                            class="btn dropdown-toggle h_modal_outline_button h_drp_button mx-2"
-                            type="button"
-                            id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                          >
-                            <img
-                              src="./assets/images/home/add_menu.svg"
-                              alt=""
-                            />
-                            Add to location
-                          </button>
-                          <ul
-                            class="dropdown-menu"
-                            aria-labelledby="dropdownMenuButton1"
-                          >
-                            <li>
-                              <a class="dropdown-item" href="#">Action</a>
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="#"
-                                >Another action</a
-                              >
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="#"
-                                >Something else here</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="input-group input-group-sm my-3 mx-2">
-                        <input
-                          type="text"
-                          class="form-control h_modal_input"
-                          placeholder="Name this Doc..."
-                          aria-label="Sizing example input"
-                          aria-describedby="inputGroup-sizing-sm"
-                        />
-                      </div>
-                      <div class="input-group input-group-sm my-3 mx-2">
-                        <img src="./assets/images/home/doc_blank.svg" alt="" />
-                        <input
-                          type="text"
-                          class="form-control h_modal_input mx-1"
-                          placeholder="Blank page"
-                          aria-label="Sizing example input"
-                          aria-describedby="inputGroup-sizing-sm"
-                        />
-                      </div>
-                      <div class="input-group input-group-sm my-3 mx-2">
-                        <input
-                          type="text"
-                          class="form-control h_modal_input mx-4"
-                          placeholder="Write with AI"
-                          aria-label="Sizing example input"
-                          aria-describedby="inputGroup-sizing-sm"
-                        />
-                      </div>
-
-                      <div class="h_modal_two">
-                        <p>Add new</p>
-                        <div class="d-flex modal_two">
-                          <img
-                            src="./assets/images/home/table_menu.svg"
-                            alt=""
-                          />
-                          <p>Table</p>
-                        </div>
-                        <div class="d-flex modal_two">
-                          <img src="./assets/images/home/column.svg" alt="" />
-                          <p>Column</p>
-                        </div>
-                        <div class="d-flex modal_two">
-                          <img
-                            src="./assets/images/home/dot_menu_list.svg"
-                            alt=""
-                          />
-                          <p>ClickUp List</p>
-                        </div>
-                        <div class="h_drp_button d-flex">
-                          <div class="dropdown open">
-                            <button
-                              class="btn h_modal_outline_button dropdown-toggle h_drp_list_modal"
-                              type="button"
-                              id="triggerId"
-                              data-bs-toggle="dropdown"
-                              aria-haspopup="true"
-                              aria-expanded="false"
-                            >
-                              AI Tools: Choose a department
-                            </button>
-                            <div
-                              class="dropdown-menu"
-                              aria-labelledby="triggerId"
-                            >
-                              <button class="dropdown-item" href="#">
-                                Action
-                              </button>
-                              <button class="dropdown-item disabled" href="#">
-                                Disabled action
-                              </button>
-                            </div>
-                          </div>
-                          <div>
-                            <img
-                              src="./assets/images/home/serach.svg"
-                              class="mx-2 my-2"
-                              alt=""
-                            />
-                          </div>
-                        </div>
-
-                        <div class="h_bulb">
-                          <div class="h_bulb_img">
-                            <img
-                              src="./assets/images/home/bulb.svg"
-                              class="mx-2"
-                              alt=""
-                            />
-                            <p>Improve writing</p>
-                          </div>
-                          <div class="h_bulb_img">
-                            <img
-                              src="./assets/images/home/bulb.svg"
-                              class="mx-2"
-                              alt=""
-                            />
-                            <p>Generate template</p>
-                          </div>
-                          <div class="h_bulb_img">
-                            <img
-                              src="./assets/images/home/bulb.svg"
-                              class="mx-2"
-                              alt=""
-                            />
-                            <p>Write an email</p>
-                          </div>
-                          <div class="h_bulb_img">
-                            <img
-                              src="./assets/images/home/bulb.svg"
-                              class="mx-2"
-                              alt=""
-                            />
-                            <p>Summarize</p>
-                          </div>
-                          <div class="h_bulb_img">
-                            <img
-                              src="./assets/images/home/bulb.svg"
-                              class="mx-2"
-                              alt=""
-                            />
-                            <p>Table with data</p>
-                          </div>
-                          <div class="h_bulb_img">
-                            <img
-                              src="./assets/images/home/bulb.svg"
-                              class="mx-2"
-                              alt=""
-                            />
-                            <p>Blog post</p>
-                          </div>
-                          <div class="h_bulb_img">
-                            <img
-                              src="./assets/images/home/menu_dot.svg"
-                              class="mx-2"
-                              alt=""
-                            />
-                            <p>Pick department</p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <hr />
-                      <div class="h_modal_first d-flex">
-                        <div class="first_start d-flex">
-                          <div class="form-check form-switch">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              id="flexSwitchCheckChecked"
-                              checked
-                            />
-                          </div>
-                          <span>Private</span>
-                        </div>
-                        <div class="first_end">
-                          <!-- Example split danger button -->
-                          <button class="btn action_button_modal">
-                            Create Doc
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="tab-pane fade"
-                      id="Reminder"
-                      role="tabpanel"
-                      aria-labelledby="Reminder-tab"
-                    >
-                      <div class="input-group input-group-lg">
-                        <input
-                          type="text"
-                          class="form-control h_reminder_input"
-                          aria-label="Sizing example input"
-                          placeholder="Reminder name or type '/' for commands"
-                          aria-describedby="inputGroup-sizing-lg"
-                        />
-                      </div>
-                      <div class="h_reminder_button mt-2 d-flex">
-                        <div class=" ">
-                          <button
-                            type="button"
-                            class="btn h_modal_outline_button ms-3"
-                          >
-                            <img
-                              src="./assets/images/home/check_calender.svg"
-                              alt=""
-                            />
-                            <span>Today</span>
-                          </button>
-                        </div>
-                        <div class=" ">
-                          <button
-                            type="button"
-                            class="btn h_modal_outline_button"
-                          >
-                            <img
-                              src="./assets/images/user_profile.svg"
-                              alt=""
-                            />
-                            <span>For me</span>
-                          </button>
-                        </div>
-                        <div class=" ">
-                          <button
-                            type="button"
-                            class="btn h_modal_outline_button"
-                          >
-                            <img
-                              src="./assets/images/home/not_clock.svg"
-                              alt=""
-                            />
-                            <span>Notify me</span>
-                          </button>
-                        </div>
-                      </div>
-                      <hr class="mt-5" />
-                      <div class="h_reminder_end d-flex">
-                        <img src="./assets/images/home/attached.svg" alt="" />
-                        <button class="btn action_button_modal">
-                          Create Reminder
-                        </button>
-                      </div>
-                    </div>
-                    <div
-                      class="tab-pane fade"
-                      id="Chat"
-                      role="tabpanel"
-                      aria-labelledby="Chat-tab"
-                    >
-                      <div>
-                        <div class="dropdown">
-                          <button
-                            class="btn h_modal_outline_button dropdown-toggle"
-                            type="button"
-                            id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                          >
-                            <img src="assets/images/home.svg" alt="" />
-                            Workspace
-                          </button>
-                          <ul
-                            class="dropdown-menu"
-                            aria-labelledby="dropdownMenuButton1"
-                          >
-                            <li>
-                              <a class="dropdown-item" href="#">Action</a>
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="#"
-                                >Another action</a
-                              >
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="#"
-                                >Something else here</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="input-group input-group-lg my-3">
-                          <input
-                            type="text"
-                            class="form-control h_chat_input"
-                            placeholder="Name this Chat..."
-                            aria-label="Sizing example input"
-                            aria-describedby="inputGroup-sizing-lg"
-                          />
-                        </div>
-                        <div class="input-group input-group-sm my-3">
-                          <input
-                            type="text"
-                            class="form-control h_chat_input"
-                            placeholder="Add message"
-                            aria-label="Sizing example input"
-                            aria-describedby="inputGroup-sizing-sm"
-                          />
-                        </div>
-                        <hr class="mt-5" />
-                        <div class="h_chat_footer d-flex">
-                          <div class="form-check form-switch">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              role="switch"
-                              id="flexSwitchCheckChecked"
-                              checked
-                            />
-                            <span>Private</span>
-                          </div>
-                          <div class="h_chat_end d-flex">
-                            <img
-                              src="./assets/images/home/not_clock.svg"
-                              alt=""
-                            />
-
-                            <button class="btn action_button_modal create_end">
-                              Create Chat
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="tab-pane fade"
-                      id="Whiteboard"
-                      role="tabpanel"
-                      aria-labelledby="Whiteboard-tab"
-                    >
-                      <div>
-                        <div class="dropdown">
-                          <button
-                            class="btn h_modal_outline_button dropdown-toggle"
-                            type="button"
-                            id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                          >
-                            <img src="assets/images/home.svg" alt="" />
-                            Workspace
-                          </button>
-                          <ul
-                            class="dropdown-menu"
-                            aria-labelledby="dropdownMenuButton1"
-                          >
-                            <li>
-                              <a class="dropdown-item" href="#">Action</a>
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="#"
-                                >Another action</a
-                              >
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="#"
-                                >Something else here</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="input-group input-group-lg my-3">
-                          <input
-                            type="text"
-                            class="form-control h_chat_input"
-                            placeholder="Name this Whiteboard..."
-                            aria-label="Sizing example input"
-                            aria-describedby="inputGroup-sizing-lg"
-                          />
-                        </div>
-                        <hr class="mt-5" />
-                        <div class="h_chat_footer d-flex">
-                          <div class="form-check form-switch">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              role="switch"
-                              id="flexSwitchCheckChecked"
-                              checked
-                            />
-                            <span>Private</span>
-                          </div>
-                          <div class="h_whiteboard_end">
-                            <button
-                              class="btn action_button_modal whiteboard_end"
-                            >
-                              Create Whiteboard
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="tab-pane fade"
-                      id="Dashboard"
-                      role="tabpanel"
-                      aria-labelledby="Dashboard-tab"
-                    >
-                      <div>
-                        <div class="dropdown">
-                          <button
-                            class="btn h_modal_outline_button dropdown-toggle"
-                            type="button"
-                            id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                          >
-                            <img src="assets/images/home.svg" alt="" />
-                            Workspace
-                          </button>
-                          <ul
-                            class="dropdown-menu"
-                            aria-labelledby="dropdownMenuButton1"
-                          >
-                            <li>
-                              <a class="dropdown-item" href="#">Action</a>
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="#"
-                                >Another action</a
-                              >
-                            </li>
-                            <li>
-                              <a class="dropdown-item" href="#"
-                                >Something else here</a
-                              >
-                            </li>
-                          </ul>
-                        </div>
-                        <div class="input-group input-group-lg my-3">
-                          <input
-                            type="text"
-                            class="form-control h_chat_input"
-                            placeholder="Name this Dashboard..."
-                            aria-label="Sizing example input"
-                            aria-describedby="inputGroup-sizing-lg"
-                          />
-                        </div>
-                        <hr class="mt-5" />
-                        <div class="h_chat_footer d-flex">
-                          <div class="form-check form-switch">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              role="switch"
-                              id="flexSwitchCheckChecked"
-                              checked
-                            />
-                            <span>Private</span>
-                          </div>
-                          <div class="h_whiteboard_end">
-                            <button
-                              class="btn action_button_modal dashboard_end"
-                            >
-                              Create Dashboard
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  <div class="dicount-modal-main">
         <!-- Button trigger modal -->
         <button
           type="button"
-          class="btn h_modal_outline_button"
+          class="btn   "
           data-bs-toggle="modal"
           data-bs-target="#exampleModal3"
         >
@@ -1993,9 +2577,9 @@
           <div class="modal-dialog">
             <div class="modal-content p-2">
               <div class="modal-header">
-                <div class="">
+                <div >
                   <p>That feature isn't available on your current plan</p>
-                  <h5>Upgrade to Business to unlock Private Docs</h5>
+                  <h5>Upgrade to <span>Business</span>  to unlock Private Docs</h5>
                 </div>
                 <button
                   type="button"
@@ -2004,18 +2588,18 @@
                   aria-label="Close"
                 ></button>
               </div>
-              <div class="modal-body">
+              <div class="modal-body p-5">
                 <div>
                   <div class="row">
-                    <div class="col-sm-6 h_discount_first p-3">
+                    <div class="col-sm-6  discount-first p-3">
                       <h4>Private Docs</h4>
                       <p>
                         Upgrade to Unlimited to make Docs private and unlock
                         more amazing features.
                       </p>
                       <img
-                        src="./assets/images/home/boardview.svg"
-                        width="340px"
+                        src="/assets/images/home/boardview.svg"
+                        width="100%"
                         alt=""
                       />
                       <li class="mt-3">Make a Doc only visible to you</li>
@@ -2023,69 +2607,69 @@
                       <li>Access Notepad</li>
                     </div>
 
-                    <div class="col-sm-6 responsive_discount">
-                      <div class="h_discount_two">
-                        <img src="./assets/images/home/discount.svg" alt="" />
+                    <div class="col-sm-6 responsive-discount">
+                      <div class="discount_two position-absolute">
+                        <img src="/assets/images/home/discount.svg" alt="" />
                       </div>
                       <div
-                        class="d-flex h_business_title h_modal_button_action justify-content-start"
+                        class="d-flex justify-content-start gap-2"
                       >
-                        <h3>Business</h3>
-                        <button class="btn">Popular</button>
+                        <h4>Business</h4>
+                        <button class="btn-discount">Popular</button>
                       </div>
                       <p>Unlock Private Docs and much more</p>
-                      <div class="d-flex h_d_offer">
-                        <div>
+                      <div class="d-flex ">
+                       
                           <h1>$12</h1>
-                        </div>
-                        <div class="h_d_offer_end my-3">
-                          <p>member</p>
-                          <p>per month</p>
+                   
+                        <div class="flex-column d-flex justify-content-center mx-2">
+                          <span>member</span>
+                          <span>per month</span>
                         </div>
                       </div>
-                      <div class="h_modal_button_action">
-                        <button class="btn h_discount_text col-12">
+                      <div class=" my-2 ">
+                        <button class="btn  col-12">
                           Contact your admin
                         </button>
                       </div>
                       <div>
-                        <img src="./assets/images/home/check.svg" alt="" />
+                        <img src="/assets/images/home/check.svg" alt="" />
                         <span>Unlimited Activity View</span>
                       </div>
                       <div>
-                        <img src="./assets/images/home/check.svg" alt="" />
+                        <img src="/assets/images/home/check.svg" alt="" />
                         <span>Unlimited Mind Maps</span>
                       </div>
                       <div>
-                        <img src="./assets/images/home/check.svg" alt="" />
+                        <img src="/assets/images/home/check.svg" alt="" />
                         <span>Export Lists & Views</span>
                       </div>
                       <div>
-                        <img src="./assets/images/home/check.svg" alt="" />
+                        <img src="/assets/images/home/check.svg" alt="" />
                         <span>Export Gantt Charts</span>
                       </div>
                       <div>
-                        <img src="./assets/images/home/check.svg" alt="" />
+                        <img src="/assets/images/home/check.svg" alt="" />
                         <span>Required Custom Fields</span>
                       </div>
                       <div>
-                        <img src="./assets/images/home/check.svg" alt="" />
+                        <img src="/assets/images/home/check.svg" alt="" />
                         <span>Work-in-Progress Limits</span>
                       </div>
                       <div>
-                        <img src="./assets/images/home/check.svg" alt="" />
+                        <img src="/assets/images/home/check.svg" alt="" />
                         <span>Default views</span>
                       </div>
                       <div>
-                        <img src="./assets/images/home/check.svg" alt="" />
+                        <img src="/assets/images/home/check.svg" alt="" />
                         <span>Private docs</span>
                       </div>
                       <div>
-                        <img src="./assets/images/home/check.svg" alt="" />
+                        <img src="/assets/images/home/check.svg" alt="" />
                         <span>Private views</span>
                       </div>
                       <div>
-                        <img src="./assets/images/home/check.svg" alt="" />
+                        <img src="/assets/images/home/check.svg" alt="" />
                         <span>Additional Free Guests</span>
                       </div>
                     </div>
@@ -2096,132 +2680,130 @@
           </div>
         </div>
 
-        <style>
-          .WriteStandUp {
-            .sidebar-main-header{
-              span{
-                font-size: 14px;
-                padding: 2px 10px;
-              }
-            }
-            .profile_sidebar {
-              margin: 58px;
-              width: 500px !important;
-              box-shadow: 1px 11px 33px 8px var(--gray);
-              border-radius: 12px;
-              .btn-close{
-                font-size: 14px;
-              }
-              .feedback_sidebar{
-                height: 24px;
-                font-size: 12px;
-                color: var(--secondary-text-color);
+      </div>
 
-                border: none;
-              }
-               .icon-border{
-            border: 1px solid var(--primary-color) !important;
-          }
-            }
-            .header-contain {
-              border-radius: 10px;
-              border: 1px solid var(--primary-color);
-              margin: 15px;
-              .main-header{
-                background: var(--bg-secondary-nav-color);
-                height: 40px;
-                h5,a{
-                  font-size: 14px;
-                }
-                
-               
-              }
-              .sidebar-main{
-                padding: 12px;
-                h5{
-                  font-size: 16px;
-              font-weight: 600;
-                }
-                p{
-                  font-size: 14px;
-                  color:var(--secondary-text-color) ;
-                }
-              }
-            }
-            .sidebar-button {
-              justify-content: space-around;
-              display: flex;
-             
 
-              button {
-                justify-content: space-around;
-                display: flex;
-                width: 100px;
-                font-size: 14px;
-              }
-              button:hover{
-                background-color: var(--primary-color);
-                color: var(--button-text-color);
-              }
-            }
-            .footer-contain {
-              border: 1px solid var(--primary-color);
-              padding: 18px;
-              margin: 10px;
-              color: var(--button_outline_modal_text_color);
-              border-radius: 10px;
-              p{
-                font-size: 14px;
-              }
-            }
-            .second-contain{
-            
-              button{
-                font-size: 12px;
-              }
-               button:hover {
-                background-color: var(--primary-color);
-                color: var(--button-text-color);
-                
-              }
-             
-            }
-            .main-input{
-              border: 1px solid var(--primary-color) !important;
-            }
-            .send_button {
-              display: flex;
-            }
-            .dropdown-toggle::after {
-              margin-top: 10px;
-            }
-          }
-         
-          @media only screen and (max-width: 600px) {
-            .profile_sidebar {
-              margin: 0;
-            }
-            .WriteStandUp {
-              .profile_sidebar {
-                margin: 0;
-              }
-              .sidebar-button {
-                display: flex;
-                gap: 5px;
-                justify-content: normal;
+      <style>
 
-                button {
-                  width: 23vw;
-                  padding: 0;
-                }
-              }
-            }
-          }
-        </style>
+.WriteStandUp {
+    .sidebar-main-header {
+      span {
+        font-size: 14px;
+        padding: 2px 10px;
+      }
+    }
+    .profile_sidebar {
+      margin:65px 10px;
+      width: 500px !important;
+      box-shadow: 1px 11px 33px 8px;
+      box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.24);
+      border-radius: 12px;
+      .btn-close {
+        font-size: 14px;
+      }
+      .feedback_sidebar {
+        height: 24px;
+        font-size: 12px;
+        color: var(--secondary-text-color);
+
+        border: none;
+      }
+      .icon-border {
+        border: 1px solid var(--primary-color) !important;
+      }
+    }
+    .header-contain {
+      border-radius: 10px;
+      border: 1px solid var(--primary-color);
+      margin: 15px;
+      .main-header {
+        background: var(--bg-secondary-nav-color);
+        height: 40px;
+        h5,
+        a {
+          font-size: 14px;
+        }
+      }
+      .sidebar-main {
+        padding: 12px;
+        h5 {
+          font-size: 16px;
+          font-weight: 600;
+        }
+        p {
+          font-size: 14px;
+          color: var(--secondary-text-color);
+        }
+      }
+    }
+    .sidebar-button {
+      justify-content: space-around;
+      display: flex;
+
+      button {
+        justify-content: space-around;
+        display: flex;
+        width: 100px;
+        font-size: 14px;
+      }
+      button:hover {
+        background-color: var(--primary-color);
+        color: var(--button-text-color);
+      }
+    }
+    .footer-contain {
+      border: 1px solid var(--primary-color);
+      padding: 18px;
+      margin: 10px;
+      color: var(--button_outline_modal_text_color);
+      border-radius: 10px;
+      p {
+        font-size: 14px;
+      }
+    }
+    .second-contain {
+      button {
+        font-size: 12px;
+      }
+      button:hover {
+        background-color: var(--primary-color);
+        color: var(--button-text-color);
+      }
+    }
+    .main-input {
+      border: 1px solid var(--primary-color) !important;
+    }
+    .send_button {
+      display: flex;
+    }
+    .dropdown-toggle::after {
+      margin-top: 10px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+
+  .WriteStandUp {
+    .profile_sidebar {
+      margin: 0;
+    }
+    .sidebar-button {
+      display: flex;
+      
+      justify-content: normal;
+
+      button {
+        width: 23vw;
+        padding: 0;
+      }
+    }
+  }
+}
+
+      </style>
 
         <div class="WriteStandUp">
           <button
-            class="btn h_modal_outline_button"
+            class="btn   "
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasScrolling2"
@@ -2242,7 +2824,7 @@
               <div>
                 <div class="d-flex sidebar-main-header">
                   <img
-                    src="./assets/images/home/user_sidebar.svg"
+                    src="/assets/images/home/user_sidebar.svg"
                     width="25px"
                     alt=""
                   />
@@ -2253,11 +2835,11 @@
                 <button
                   class="feedback_sidebar p-1 rounded-3"
                 >
-                  Feedback <img src="./assets/images/home/arrowup.svg" alt="" />
+                  Feedback <img src="/assets/images/home/arrowup.svg" alt="" />
                 </button>
-                <img src="./assets/images/home/idea.svg" width="18px" alt="" />
+                <img src="/assets/images/home/idea.svg" width="18px" alt="" />
                 <img
-                  src="./assets/images/home/menu_dot.svg"
+                  src="/assets/images/home/menu_dot.svg"
                   width="18px"
                   alt=""
                 />
@@ -2271,21 +2853,21 @@
               </div>
             </div>
             <div class="offcanvas-body">
-              <div class="siderbar-button h_modal_button_action">
+              <div class="siderbar-button  d-flex justify-content-end  ">
                 <button class="btn">Write StandUp</button>
               </div>
               <div class="mt-3 d-flex">
                 <div class="mt-3 ">
                   <img
-                    src="./assets/images/start.svg"
+                    src="/assets/images/start.svg"
                     class="icon-border p-2 border border-1 rounded-5 "
                     alt=""
                   />
                 </div>
                 <div class="header-contain overflow-hidden col-10">
-                  <div class="justify-content-between d-flex pt-2 px-3 main-header">
+                  <div class="justify-content-between d-flex  px-3 main-header">
                     <h5>StandUp™</h5>
-                    <a href="" class="text-decoration-none"> Edit</a>
+                    <a href="" class="text-decoration-none d-flex align-items-center"> Edit</a>
                   </div>
                   <div class="sidebar-main">
                   <div>
@@ -2299,14 +2881,14 @@
                     <p>People or Teams</p>
                     <div class="dropdown open">
                       <button
-                        class="btn dropdown-toggle col-12 user_drop border d-flex justify-content-between border-1"
+                        class="dropdown-button dropdown-toggle col-12  border  border-1 d-flex justify-content-between"
                         type="button"
                         id="triggerId"
                         data-bs-toggle="dropdown"
                         aria-haspopup="true"
                         aria-expanded="false"
                       >
-                        <img src="./assets/images/user_profile.svg" alt="" />
+                        <img src="/assets/images/user_profile.svg" alt="" />
                       </button>
                       <div class="dropdown-menu" aria-labelledby="triggerId">
                         <button class="dropdown-item" href="#">Action</button>
@@ -2320,7 +2902,7 @@
                     <p>Since</p>
                     <div class="dropdown open">
                       <button
-                        class="btn h_modal_outline_button dropdown-toggle col-12 sibebar_button d-flex justify-content-between
+                        class="dropdown-button    dropdown-toggle col-12  border  border-1   d-flex justify-content-between
                         type="button"
                         id="triggerId"
                         data-bs-toggle="dropdown"
@@ -2340,18 +2922,18 @@
 
                   <div class="mt-3 sidebar1_button">
                     <p>Format</p>
-                    <div class="sidebar-button ">
-                      <button class="col-3 btn p-1 rounded-3">
+                    <div class="sidebar-button flex-wrap ">
+                      <button class="btn-reverse col-3  p-1 rounded-3">
                         Bulleted list
                       </button>
-                      <button class="col-3 btn p-1 rounded-3">Short</button>
-                      <button class="col-3 btn p-1 rounded-3">
+                      <button class="btn-reverse col-3  p-1 rounded-3">Short</button>
+                      <button class="btn-reverse col-3  p-1 rounded-3">
                         Traditional
                       </button>
                     </div>
                   </div>
-                  <div class="h_modal_button_action ">
-                    <button class="col-12 mt-3 p-2 rounded-3 h_generate border-0">
+                  <div class="   ">
+                    <button class=" btn col-12 mt-3 p-2 rounded-3 h_generate border-0">
                       Generate
                     </button>
                   </div>
@@ -2362,7 +2944,7 @@
               <div class="d-flex second-contain border-1">
                 <div >
                   <img
-                    src="./assets/images/start.svg"
+                    src="/assets/images/start.svg"
                     class="icon-border border border-1 p-2 rounded-5"
                     alt=""
                   />
@@ -2371,32 +2953,28 @@
                   <p>No updates in the last 24 hours.</p>
                   <div class="d-flex">
                     <div >
-                      <button class="btn  border-3 ">
-                        <img src="./assets/images/add.svg" alt="Create" />Create
+                      <button class="btn-reverse border  border-1 px-2 ">
+                        <img src="/assets/images/add.svg" alt="Create" />Create
                       </button>
-                      <button class="btn  border-3 ">Copy</button>
-                      <button class="btn  border-3 ">Regenerate</button>
+                      <button class="btn-reverse border  border-1 px-2 ">Copy</button>
+                      <button class="btn-reverse border  border-1 px-2 ">Regenerate</button>
                     </div>
                     <div class="mx-4 sidebar_button">
                       <span
-                        ><img src="./assets/images/home/like.svg" alt="Like"
+                        ><img src="/assets/images/home/like.svg" alt="Like"
                       /></span>
                       <span
                         ><img
-                          src="./assets/images/home/unlike.svg"
+                          src="/assets/images/home/unlike.svg"
                           alt="Unlike"
                       /></span>
                     </div>
                   </div>
                 </div>
               </div>
-              <style>
-                input.form-control:focus {
-                  border: none;
-                  box-shadow: none;
-                  outline: none;
-                }
-              </style>
+               
+             
+               
               <div class="mt-3">
                 <div
                   class="row border border-1 p-1 mx-2 rounded-3 align-items-center main-input mt-4"
@@ -2414,7 +2992,7 @@
                     <button class="btn p-0 send-button border-0 bg-transparent">
                       <a href="#">
                         <img
-                          src="./assets/images/home/send.svg"
+                          src="/assets/images/home/send.svg"
                           class="send-img"
                           alt="Send"
                         />
@@ -2426,9 +3004,40 @@
             </div>
           </div>
         </div>
+        <style>
+          .notepad-modal-main{
+            .h_notepad {
+               margin: 65px 10px;
+              border-radius: 10px;
+            height: 45%;
+            box-shadow: 0px 16px 48px 0px rgba(0, 0, 0, 0.24);
+          
+          .offcanvas-header{
+            background-color: var(--bg-fourdary-color);
+          .btn-close{
+            font-size: 14px;
+          }
+        }
+        .offcanvas-body{
+          h4{
+            font-size: 18px;
+          }
+          p{
+            font-size: 14px;
+            color: var(--secondary-text-color);
+          }
+          .btn{
 
+            font-size: 14px;
+          padding: 4px;
+          }
+        }
+      }
+      }
+        </style>
+<div class="notepad-modal-main">
         <button
-          class="btn h_modal_outline_button"
+          class="btn   "
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasScrolling3"
@@ -2445,39 +3054,58 @@
           id="offcanvasScrolling3"
           aria-labelledby="offcanvasScrollingLabel"
         >
-          <div class="offcanvas-header notepad_main">
-            <div class="title_notepad">
+          <div class="offcanvas-header px-3 py-2 ">
+            <div >
               <h5>Notepad</h5>
             </div>
-            <div class="note_pad_title">
-              <img src="./assets/images/home/serach.svg" width="25px" alt="" />
+            <div class="justify-content-center d-flex gap-3" >
+              <img src="/assets/images/home/serach.svg" width="16px" alt="" />
               <img
-                src="./assets/images/home/menu_dot.svg"
-                width="25px"
+                src="/assets/images/home/menu_dot.svg"
+                width="16px"
                 alt=""
               />
               <button
                 type="button"
-                class="btn-close"
+                class="btn-close mt-0"
+                
                 data-bs-dismiss="offcanvas"
-                aria-label="Close"
+                aria-label="Close" 
               ></button>
             </div>
           </div>
           <div class="offcanvas-body">
-            <div class="notepad_content mt-4 h_modal_button_action">
-              <img src="./assets/images/home/doc_add.svg" alt="" />
+            <div class="justify-content-center text-center mt-5">
+              <img src="/assets/images/home/doc_add.svg" alt="" />
               <h4>Create personal notes</h4>
               <p>
                 Capture your thoughts or ideas and access them anywhere in
                 ClickUp!
               </p>
-              <button class="p-2 rounded-3">Create a note</button>
+              <button class="btn">Create a note</button>
             </div>
           </div>
         </div>
+
+        
+        
+        
+        
+        
+      </div>
+
+<style>
+  .btn-close{
+    font-size: 12px;
+  }
+</style>
+
+
+
+<div class="profile-modal-main">
+
         <button
-          class="btn h_modal_outline_button"
+          class="btn   "
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasScrolling4"
@@ -2496,11 +3124,11 @@
         >
           <div class="offcanvas-header">
             <div class="d-flex">
-              <img src="./assets/images/user_profile.svg" width="50px" alt="" />
+              <img src="/assets/images/user_profile.svg" width="50px" alt="" />
               <h6 class="mt-3 mx-2">Arushi</h6>
             </div>
             <div>
-              <button class="h_modal_outline_button btn">Online</button>
+              <button class="btn-reverse border border-1">Online</button>
               <button
                 type="button"
                 class="btn-close"
@@ -2509,7 +3137,7 @@
               ></button>
             </div>
           </div>
-          <div class="profile_button_type d-flex h_modal_button">
+          <div class="profile_button_type d-flex  ">
             <div>
               <div>
                 <h4>Title</h4>
@@ -2536,12 +3164,12 @@
             </div>
           </div>
 
-          <button class="p-2 mx-5 rounded-3 profile_button">
-            <img src="./assets/images/start.svg" alt="" />Write StandUp
+          <button class="btn p-2 mx-5 rounded-3 profile_button">
+            <img src="/assets/images/start.svg" alt="" />Write StandUp
           </button>
           <div class="offcanvas-body">
             <nav>
-              <div class="nav nav-underline" id="myTab" role="tablist">
+              <div class="nav nav-underline top-nav-underline" id="myTab" role="tablist">
                 <button
                   class="nav-link active"
                   id="nav-activity-tab"
@@ -2604,20 +3232,20 @@
                     <h5>Activity</h5>
                   </div>
                   <div>
-                    <img src="./assets/images/home/serach.svg" alt="" /><span
+                    <img src="/assets/images/home/serach.svg" alt="" /><span
                       >Search tasks..</span
                     >
-                    <img src="./assets/images/home/connect.svg" alt="" /><span
+                    <img src="/assets/images/home/connect.svg" alt="" /><span
                       >Hide</span
                     >
                     <img
-                      src="./assets/images/home/style_menu.svg"
+                      src="/assets/images/home/style_menu.svg"
                       alt=""
                     /><span>Activities</span>
                   </div>
                 </div>
                 <div class="h_activity_profile mt-5">
-                  <img src="./assets/images/home/profile_cart1.svg" alt="" />
+                  <img src="/assets/images/home/profile_cart1.svg" alt="" />
                   <p>Nothing to see yet. Task activity will appear here.</p>
                 </div>
               </div>
@@ -2765,7 +3393,7 @@
                           track of it here. You can also see Reminders you
                           delegate in anyone's 
                         </p>
-                        <button class="p-2 rounded-3 h_modal_outline_button">
+                        <button class="p-2 rounded-3   ">
                           Learn more about delegating
                         </button>
                       </div>
@@ -2792,17 +3420,17 @@
                   <div>
                     <p>
                       <span> Jul 12,Friday </span>
-                      <img src="./assets/images/home/lessden.svg" alt="" />
-                      <img src="./assets/images/home/greaterden.svg" alt="" />
+                      <img src="/assets/images/home/lessden.svg" alt="" />
+                      <img src="/assets/images/home/greaterden.svg" alt="" />
                     </p>
                   </div>
                   <div>
                     <span> Today </span>
                     <span class="mx-2"
-                      ><img src="./assets/images/home/today.svg" alt="" />0
+                      ><img src="/assets/images/home/today.svg" alt="" />0
                       Calendars</span
                     >
-                    <img src="./assets/images/home/setting.svg" alt="" />
+                    <img src="/assets/images/home/setting.svg" alt="" />
                   </div>
                 </div>
                 <div>
@@ -2892,7 +3520,7 @@
                     <div class="vertical_row">
                       <div class="calendar_button">
                         <button class="border-0 calendar_one_button"></button>
-                        <button class="border-0 calendar_two_button"></button>
+                        <button class="border-0 calendar_two_button"></button> 
                       </div>
                     </div>
                   </div>
@@ -3046,9 +3674,10 @@
           </div>
         </div>
       </div>
+      </div>
     </main>
 
-    <script src="./assets/js/script.js"></script>
+    <script src="/assets/js/script.js"></script>
 
     <footer>
       <!-- place footer here -->
