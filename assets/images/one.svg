@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1152" height="1012" fill="none">
+  <defs>
+    <!-- Background gradient from yellow to gray -->
+   
+    <!-- Gradient from black to yellow for paths -->
+    <linearGradient id="pathGradient" x1="0" x2="1" y1="0" y2="1" gradientUnits="objectBoundingBox">
+      <!-- <stop offset="0%" stop-color="rgb(210, 210, 210)"/> Black -->
+      <stop offset="30%" stop-color="rgba(255, 204, 0, 0.4)"/> <!-- Bright Yellow -->
+      <stop offset="90%" stop-color="rgba(0, 0, 0, 0.4)"/> <!-- Bright Yellow -->
+    </linearGradient>
+    <clipPath id="a">
+      <path fill="#fff" d="M0 0h1152v1012H0z"/>
+    </clipPath>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#backgroundGradient)"/>
+  <g clip-path="url(#a)">
+    <path fill="#FAFBFC" d="M0 0h1152v1012H0z"/>
+    <!-- Gradient path from black to yellow -->
+    <path fill="url(#pathGradient)" d="M-6 1043h1388.53V134.893c0-87.203-70.69-157.894-157.89-157.894L81.632-23.004c-87.203 0-157.895 70.692-157.895 157.895v297.242L-6 1043Z"/>
+    <path fill="url(#pathGradient)" d="M-76.342 1023 1360 1013l22.45-750.341V136.888c0-87.203-70.69-157.895-157.9-157.895l-1142.997.003C-5.649-21.004-76.34 49.688-76.34 136.89l-.001 294.944V1023Z"/>
+  </g>
+</svg>
