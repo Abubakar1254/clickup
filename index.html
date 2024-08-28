@@ -17,12 +17,43 @@
         <!-- place navbar here -->
     </header>
     <main>
-        <nav class="nav justify-content-center  ">
-            <a class="nav-link" href="login.html">Login</a>
-            <a class="nav-link" href="signup.html">Signup</a>
-            <a class="nav-link" href="forgetpassword.html">Forget Password</a>
-            <a class="nav-link" href="multi-step.html">Multi Step</a>
-        </nav>
+        <!-- Nav tabs -->
+         <div class="d-flex justify-content-center my-5">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="milestone1-tab" data-bs-toggle="tab" data-bs-target="#milestone1" type="button"
+                        role="tab" aria-controls="milestone1" aria-selected="true">
+                        Milestone 1
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="milestone2-tab" data-bs-toggle="tab" data-bs-target="#milestone2" type="button"
+                        role="tab" aria-controls="milestone2" aria-selected="false">
+                        Milestone 2
+                    </button>
+                </li>
+            </ul>
+         </div>
+       
+
+        <!-- Tab panes -->
+        <div class="tab-content mt-4">
+            <div class="tab-pane active" id="milestone1" role="tabpanel" aria-labelledby="milestone1-tab">
+                <nav class="nav justify-content-center  ">
+                    <a class="nav-link" href="login.html">Login</a>
+                    <a class="nav-link" href="signup.html">Signup</a>
+                    <a class="nav-link" href="forgetpassword.html">Forget Password</a>
+                    <a class="nav-link" href="multi-step.html">Multi Step</a>
+                </nav>
+            </div>
+            <div class="tab-pane" id="milestone2" role="tabpanel" aria-labelledby="milestone2-tab">
+                <nav class="nav justify-content-center  ">
+                    <a class="nav-link" href="search.html">Search</a>
+                </nav>
+            </div>
+        </div>
+
+     
 
     </main>
     <footer>
