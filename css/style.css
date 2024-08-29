@@ -2300,11 +2300,12 @@ body {
 
   @media only screen and (max-width: 600px) {
     .home-page {
+      
       .sidebar-add-card {
         .offcanvas {
             width: 100%;
         }
-    }
+      }
        .WriteStandUp {
           .profile_sidebar {
             margin: 0;
@@ -2319,7 +2320,41 @@ body {
     
     }
   }
-
+  @media only screen and (max-width: 600px) {
+  
+    .sidebar-add-card{
+      .offcanvas {
+        width: 100vw;
+      }
+    }
+    .search-button{
+      width: 60vw !important;
+    }
+      .WriteStandUp {
+        .profile_sidebar {
+          margin: 0;
+        }
+    
+        .sidebar-button {
+          display: flex;
+    
+          justify-content: normal;
+    
+          button {
+            width: 23vw;
+            padding: 0;
+          }
+        }
+      }
+      .notepad-modal-main{
+        .h_notepad{
+          margin: 0;
+          height: 100vh;
+  
+        }
+      }
+    
+    }
 
   .new-sidebar {
     .sidebar-new {
@@ -2419,39 +2454,7 @@ body {
       }
     }
   }
-  @media only screen and (max-width: 600px) {
-  
-  .sidebar-add-card{
-    .offcanvas {
-      width: 100vw;
-    }
-  }
-  
-    .WriteStandUp {
-      .profile_sidebar {
-        margin: 0;
-      }
-  
-      .sidebar-button {
-        display: flex;
-  
-        justify-content: normal;
-  
-        button {
-          width: 23vw;
-          padding: 0;
-        }
-      }
-    }
-    .notepad-modal-main{
-      .h_notepad{
-        margin: 0;
-        height: 100vh;
 
-      }
-    }
-  
-  }
   
 
 
