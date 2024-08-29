@@ -16,9 +16,10 @@
     <!-- Modal -->
     <form action="">
         <div class="modal fade h-100 w-100" id="multiStepModal" tabindex="-1" role="dialog"
-            aria-labelledby="modalTitleId" aria-hidden="true">
+            aria-labelledby="modalTitleId" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
             <div class="modal-dialog d-flex align-items-center h-100 mt-0" role="document">
                 <div class="modal-content form-step modal-content-1">
+                    <button type="button" class="bg-transparent border-0 close-btn text-danger " data-bs-dismiss="modal">x</button>
                     <div class="modal-header border-0 d-flex justify-content-between">
                         <img src="./assets/images/logo.png" alt="Logo" width="95" />
                         <p class="user-name">Welcome, AbdulKareem!</p>
@@ -323,6 +324,7 @@
                     }
                 </style>
                 <div class="modal-content display-none modal-content-2">
+                    <button type="button" class="bg-transparent border-0 close-btn text-danger " data-bs-dismiss="modal">x</button>
                     <div class="image-block">
                         <img src="./assets/images/Iframe.png" alt="Welcome" />
                         <img src="./assets/images/Button - Video Play Button.png" alt="Play" class="play-button" />
@@ -334,7 +336,7 @@
                             <p>Watch this quick video to know how ARCerp
                                 can transform your productivity.</p>
                             <div class="d-flex justify-content-center">
-                                <a href="" class="watch-video">Watch Video</a>
+                                <a href="" class="watch-video btn">Watch Video</a>
                             </div>
                         </div>
                     </div>
