@@ -115,7 +115,18 @@ body {
 .display-none {
   display: none;
 }
-
+.select-list {
+  color: var(--secondary-text-color);
+  &:focus {
+    outline: none;
+  }
+}
+.form-check-input {
+  background-color: var(--button_switch_bg_color);
+  &:checked {
+    background-color: var(--fourdary-text-color);
+  }
+}
 /* 
 ===============================================================
 =======================  LOGIN - PAGE   =======================
@@ -1052,6 +1063,9 @@ body {
       }
 
       .modal-body {
+        .Workspace{
+          width: 120px;
+        }
         .doc-modal {
           .content-two {
             span {
@@ -1086,6 +1100,7 @@ body {
           .submit-button {
             width: 105px;
           }
+          
         }
 
         .whiteboard-modal {
@@ -1959,23 +1974,19 @@ line-height: 50px;
         .nav-underline {
           font-size: 14px;
         }
-
+        .dropdown-button .select-list {
+          appearance: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          PADDING: 0PX 10PX;
+        }
         .content-work {
           font-size: 15px;
 
           .row {
             line-height: 45px;
 
-            .list-content {
-              p {
-                display: contents;
-                font-size: 14px;
-              }
-
-              span {
-                color: var(--secondary-text-color);
-              }
-            }
+           
           }
         }
       }
@@ -2140,6 +2151,12 @@ line-height: 50px;
       height: 440px;
 
       .main-content {
+        .dropdown-button .select-list {
+          appearance: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          PADDING: 0PX 10PX;
+        }
         .nav-underline {
           font-size: 14px;
         }
