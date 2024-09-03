@@ -3578,7 +3578,9 @@ body {
 ===============================================================
 */
 
+
 .inbox-page {
+  width: 100vw;
 
   .Project-Update {
     .offcanvas {
@@ -3655,6 +3657,100 @@ body {
     }
   }
 
+  .templates_more_info {
+    .modal-dialog {
+      max-width: 1300px;
+
+      .modal-content {
+        height: 750px;
+
+        .modal-header h5 {
+          font-size: 16px;
+        }
+
+        .modal-body {
+          .select-list {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: 100%;
+          }
+
+          .user_title {
+            gap: 10px;
+
+            .profile_description {
+              p span {
+                font-size: 12px;
+              }
+
+              span {
+                width: 89px;
+                text-align: center;
+                background-color: var(--bg-fourdary-color);
+                color: var(--secondary-text-color);
+                border-radius: 5px;
+                height: 28px;
+              }
+            }
+          }
+
+          .Social_card {
+            background-color: var(--bg-fourdary-color);
+            height: 250px;
+          }
+
+          .card_detail {
+            h3 {
+              font-size: 16px;
+            }
+
+            p {
+              font-size: 14px;
+              color: var(--secondary-text-color);
+            }
+          }
+
+          .content_three h3 {
+            font-size: 16px;
+          }
+
+          .content_two {
+            h3 {
+              font-size: 14px;
+            }
+
+            p {
+              font-weight: 400;
+              font-size: 12px;
+            }
+          }
+
+          .button-verified {
+            height: 32px;
+          }
+
+          .sidear_content_two {
+            h4 {
+              font-size: 11px;
+              color: var(--secondary-text-color);
+            }
+
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+
+        .dropend .dropdown-toggle::after {
+          margin-top: 20px;
+        }
+      }
+    }
+
+  }
+
+
   @media only screen and (max-width: 600px) {
     .Project-Update {
       .offcanvas {
@@ -3667,16 +3763,14 @@ body {
         margin: 0;
       }
     }
-  }
 
-
-
-
-
-  .home_crad_button {
-    background-color: var(--primary-color);
-    color: var(--button-text-color);
-    border: none;
+    .templates_more_info {
+      & .modal-dialog {
+        .modal-content {
+          height: auto;
+        }
+      }
+    }
   }
 
 
@@ -3727,23 +3821,23 @@ body {
     color: var(--secondary-text-color);
   }
 
-  .modal_two p {
+  .modal_two{ 
+    p {
     margin-top: 0;
     margin-bottom: 0;
     line-height: 41px;
   }
 
-  .modal_two img {
+  img {
     gap: 2px;
   }
-
+}
   .h_nav_end {
     gap: 20px;
   }
 
   .h_nav_end button {
     background-color: transparent;
-    /* padding: 5px; */
     border: none;
     color: var(--thirdary-text-color);
 
@@ -3874,12 +3968,10 @@ body {
     width: 4px;
   }
 
-  /* Track */
   ::-webkit-scrollbar-track {
     background: #f1f1f1;
   }
 
-  /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #888;
     height: 20px;
@@ -3903,15 +3995,10 @@ body {
     left: 77% !important;
   }
 
-
-
-
-  /* INBOX AI */
-
   #main-inbox {
-    width: 100vw;
+
     overflow: scroll;
-    height: 100vh;
+    height: calc(100vh - 50px);
 
     .left-side {
       gap: 20px;
@@ -4111,7 +4198,6 @@ body {
     }
   }
 
-
   .template-Center {
     .btn-close {
       z-index: 1;
@@ -4140,17 +4226,102 @@ body {
       font-size: 14px;
     }
 
-    @media only screen and (max-width: 600px) {
-      .alert-dismissible {
-        height: 85px;
-      }
+    .modal-dialog {
+      max-width: 1300px !important;
 
-      .alert-dismissible button {
-        height: 50px;
+      .modal-body {
+        .modal_sidebar {
+          margin-top: -65px;
+          background-color: var(--bg-fourdary-color);
+          color: var(--secondary-text-color);
+          border-radius: 10px;
+
+          h1 {
+            font-size: 16px;
+            margin: 8px 0 0 4px;
+          }
+
+          .one_content span {
+            font-size: 14px;
+            color: var(--text_templates_sidebar_modal);
+          }
+
+          .template_type,
+          .Complexity {
+            div {
+              padding: 8px;
+            }
+
+            label {
+              margin-left: 5px;
+              color: var(--text_templates_sidebar_modal);
+              font-size: 14px;
+            }
+
+            h5 {
+              color: var(--text_templates_sidebar_modal);
+              font-size: 12px;
+            }
+          }
+
+          .activityLog {
+            margin-top: 40%;
+
+            span {
+              font-size: 14px;
+              color: var(--text_templates_sidebar_modal);
+            }
+          }
+
+          .input_buttons span {
+            font-size: 14px;
+          }
+        }
+
+        .input-form input {
+          color: var(--secondary-text-color);
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        .alert {
+          background: var(--bg-fourdary-color);
+        }
+
+        .two_content h1 {
+          font-size: 18px;
+        }
+
+        .card_main {
+          padding: 11px;
+          border-radius: 10px;
+          height: 650px;
+          overflow: scroll;
+          border: none;
+          overflow-x: hidden;
+        }
       }
     }
   }
 
+  @media only screen and (max-width: 600px) {
+    .alert-dismissible {
+      height: 85px;
+    }
+
+    .alert-dismissible button {
+      height: 50px;
+    }
+
+    .template-Center {
+      .activityLog {
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
 
   @media only screen and (max-width: 900px) {
     .nav_search_form {
@@ -4161,5 +4332,7 @@ body {
       width: 180px;
     }
   }
+
+
 
 }
