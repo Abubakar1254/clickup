@@ -67,10 +67,10 @@
           </form>
           <div class="d-flex nav-end-side justify-content-center ">
             <ul class="navbar-end_button mb-0">
-              <button class="mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal2" onclick="openTabsTab()">
+              <button class="mx-1" data-bs-toggle="modal"  data-bs-target="#exampleModal2" onclick="openTabsTab()">
                 <img src="assets/images/add.png" alt="" /><span> New </span>
               </button>
-              <button class="mx-1" id="openSidebar-new" class="btn">
+              <button class="mx-1"  id="openSidebar-new" class="btn">
                 <img src="assets/images/check_navbar.svg" alt="Check" />
               </button>
               <button class="mx-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling3"
@@ -569,8 +569,8 @@
     <div class="new-sidebar">
 
       <!-- Sidebar Structure -->
-      <div class="sidebar-new">
-        <button class="close-button-new">X</button>
+      <div class="sidebar-new  show">
+        <button class="close-button-new  show">X</button>
         <div class=" justify-content-between d-flex align-items-center modal-header">
           <div class="d-flex">
             <img src="/assets/images/user_profile.svg" width="50px" alt="" />
@@ -2081,6 +2081,11 @@
     }
   </script>
   <script src="./js/script.js"></script>
+  <script>
+    $(document).ready(function(){
+        $('#profileModalBtn').click();
+    })
+</script>
 
 
 

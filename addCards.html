@@ -1641,10 +1641,6 @@
 
 
               <div class="sidebar-add-card">
-                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
-                  aria-controls="offcanvasScrolling">
-                  Enable body scrolling
-                </button>
 
                 <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
                   id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
@@ -1911,7 +1907,7 @@
                         <span>Write StandUp</span>
                       </div>
                     </div>
-                    <div class="align-items-center d-flex gap-1">
+                    <div>
                       <button class="feedback_sidebar p-1 rounded-3">
                         Feedback <img src="/assets/images/home/arrowup.svg" alt="" />
                       </button>
@@ -2079,6 +2075,11 @@
       var reminderTab = new bootstrap.Tab(document.querySelector('#Doc-tab'));
       reminderTab.show();
     }
+  </script>
+  <script>
+    $(document).ready(function(){
+        $('#addCardButton').click();
+    })
   </script>
   <script src="./js/script.js"></script>
 

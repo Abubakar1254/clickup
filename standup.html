@@ -1068,7 +1068,7 @@
 
             <!-- Button to trigger modal -->
             <div class="d-flex">
-              <button class="btn  my-3" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <button class="btn  my-3" id="manageCards" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Manage cards
               </button>
 
@@ -1911,7 +1911,7 @@
                         <span>Write StandUp</span>
                       </div>
                     </div>
-                    <div class="align-items-center d-flex gap-1">
+                    <div>
                       <button class="feedback_sidebar p-1 rounded-3">
                         Feedback <img src="/assets/images/home/arrowup.svg" alt="" />
                       </button>
@@ -2082,6 +2082,11 @@
   </script>
   <script src="./js/script.js"></script>
 
+  <script>
+    $(document).ready(function(){
+        $('#manageCards').click();
+    })
+  </script>
 
 
 
