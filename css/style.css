@@ -3673,7 +3673,7 @@ body {
             appearance: none;
             -webkit-appearance: none;
             -moz-appearance: none;
-            width: 40vw;
+            width: 100%;
           }
 
           .user_title {
