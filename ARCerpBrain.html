@@ -1077,7 +1077,7 @@
                             class="hide-text">Create
                             Space</span></a>
                 </li>
-                
+
             </ul>
         </aside>
         <div class="inbox-page">
@@ -1240,8 +1240,123 @@
                         </div>
                     </div>
                 </div>
+                <div class="ClickUpBrain">
+                    <button class="btn d-none"  id="ARCerpBrain" type="" button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                        aria-controls="offcanvasScrolling">
+                        sidebar
+                    </button>
+
+                    <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                        <div class="offcanvas-header">
+                            <div>
+                                <img src="./assets/images/start.svg" class="mx-2" alt="" /><span>ARCerp Brain</span>
+                            </div>
+                            <div>
+                                <button class="dropdown-button border border-1  ">
+                                    <span>Feedback</span>
+                                    <img src="./assets/images/home/export.svg" alt="" />
+                                </button>
+                                <img src="./assets/images/home/idea.svg" width="20px" alt="" />
+                                <img src="./assets/images/home/menu_dot.svg" width="20px" alt="" />
+
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+                        <div class="offcanvas-body ">
+                            <div class="text-center  content-one mt-3">
+                                <img src="./assets/images/start.svg" width="24" alt="" />
+                                <h5>Ask anything or write with AI</h5>
+                                <span>
+                                    Use ClickUp AI to write for you, or answer questions about tasks
+                                    and Docs in your Workspace.
+                                </span>
+                            </div>
+                            <div class=" content-title mt-4">
+                                <span>Ask about Docs in your Workspace based on role:</span>
+                                <span>add your role, i.e. CEO</span>
+                            </div>
+                            <div class="content-questions mt-4">
+
+                                <button class="dropdown-button">
+                                    <img src="./assets/images/home/bulb.svg" alt="" />
+                                    <span>
+                                        What details are provided in the 'Office Information'
+                                        document?
+                                    </span>
+                                </button>
+                                <button class="dropdown-button">
+                                    <img src="./assets/images/home/bulb.svg" alt="" />
+                                    <span>Who is the owner of the Employee Handbook document?</span>
+                                </button>
+                                <button class="dropdown-button">
+                                    <img src="./assets/images/home/bulb.svg" alt="" />
+                                    <span>
+                                        Where can feedback or questions be submitted regarding the
+                                        What…
+                                    </span>
+                                </button>
+                            </div>
+                            <div class=" content-title mt-4">
+                                <span>Ask about Docs in your Workspace based on role:</span>
+                                <span>add your role, i.e. CEO</span>
+                            </div>
+                            <div class="content-questions mt-4">
+
+
+                                <button class="dropdown-button">
+                                    <img src="./assets/images/home/bulb.svg" alt="" />
+                                    <span>What tasks am I working on?</span>
+                                </button>
+                                <button class="dropdown-button">
+                                    <img src="./assets/images/home/bulb.svg" alt="" />
+                                    <span>What tasks are created by me and closed?
+                                    </span>
+                                </button>
+                                <button class="dropdown-button">
+                                    <img src="./assets/images/home/bulb.svg" alt="" />
+                                    <span>
+                                        What should I work on next?
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="d-flex mt-4 align-items-center">
+                                <p class="mt-3 dropdown-suggestion">Ideas for writing:</p>
+                                <select name="Choose a department" id="Choose a department"
+                                    class=" border-0 select-list">
+                                    <option value="1">Choose a department</option>
+                                    <option value="2">Choose a department</option>
+                                    <option value="3">Choose a department</option>
+                                    <option value="4">Choose a department</option>
+                                    <option value="5">Choose a department</option>
+                                </select>
+
+                            </div>
+                            <div class="button-checking mt-4">
+                                <button class="btn rounded-5 my-1"><img src="./assets/images/home/doc.svg"
+                                        alt="">Project Update</button>
+                                <button class="btn rounded-5 my-1"><img src="./assets/images/home/doc.svg"
+                                        alt="">Project Update</button>
+                                <button class="btn rounded-5 my-1"><img src="./assets/images/home/doc.svg"
+                                        alt="">Project Update</button>
+                                <button class="btn rounded-5 my-1"><img src="./assets/images/home/doc.svg"
+                                        alt="">Project Update</button>
+                            </div>
+                            <div class="border p-2 rounded-3 mt-3 send-form">
+                                <form action="#">
+                                    <input type="text" class="col-10 p-1 border-0 "
+                                        placeholder="Ask, write, or search for anything">
+                                    <button value="submit" class="dropdown-button"> <img
+                                            src="./assets/images/home/send.svg" class="ms-4" alt=""></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
     </div>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -1284,6 +1399,9 @@
             var reminderTab = new bootstrap.Tab(document.querySelector('#Doc-tab'));
             reminderTab.show();
         }
+        $(document).ready(function(){
+            $('#ARCerpBrain').click();
+        })
     </script>
     <script src="./js/script.js"></script>
 

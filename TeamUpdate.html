@@ -1077,7 +1077,7 @@
                             class="hide-text">Create
                             Space</span></a>
                 </li>
-                
+
             </ul>
         </aside>
         <div class="inbox-page">
@@ -1240,8 +1240,62 @@
                         </div>
                     </div>
                 </div>
+                <div class="invaite-people">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn d-none" id="invaite-people" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                        invite people
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog ">
+                            <div class="modal-content py-2">
+                                <div class="modal-header p-0 border-0 mx-3">
+                                    <h1 class="modal-title " id="staticBackdropLabel">
+                                        Invite people
+                                    </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>
+                                        New members will gain access to public Spaces, Docs and
+                                        Dashboards. An admin will be prompted to approve your invite
+                                        request.
+                                    </p>
+                                    <div>
+                                        <label for="">Invite by email</label>
+                                        <div
+                                            class="input-form justify-content-between d-flex p-2 align-items-center rounded-3 border border-1">
+                                            <input type="text" class="border-0 p-2 col-9"
+                                                placeholder="Email, comma or space separated" />
+                                            <select name="Member" id="Member" class=" border-0 select-list">
+                                                <option value="1">Member</option>
+                                                <option value="2">Member</option>
+                                                <option value="3">Member</option>
+                                                <option value="4">Member</option>
+                                                <option value="5">Member</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-end gap-2 mx-2">
+                                    <button type="button" class="btn-reverse px-3" data-bs-dismiss="modal">
+                                        Close
+                                    </button>
+                                    <div>
+                                        <button type="button" class="btn">Send invite request</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
     </div>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -1284,6 +1338,9 @@
             var reminderTab = new bootstrap.Tab(document.querySelector('#Doc-tab'));
             reminderTab.show();
         }
+        $(document).ready(function(){
+            $('#invaite-people').click();
+        })
     </script>
     <script src="./js/script.js"></script>
 

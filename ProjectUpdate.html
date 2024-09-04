@@ -1077,7 +1077,7 @@
                             class="hide-text">Create
                             Space</span></a>
                 </li>
-                
+
             </ul>
         </aside>
         <div class="inbox-page">
@@ -1240,8 +1240,144 @@
                         </div>
                     </div>
                 </div>
+                <div class="Project-Update">
+
+                    <button class="btn d-none" type="button" id="Project-Update" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasScrolling2" aria-controls="offcanvasScrolling">Enable body
+                        scrolling</button>
+
+                    <div class="offcanvas offcanvas-end " data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                        id="offcanvasScrolling2" aria-labelledby="offcanvasScrollingLabel">
+                        <div class="offcanvas-header">
+                            <div>
+                                <img src="./assets/images/home/lessden.svg" class="mx-2" alt="" />
+                                <img src="./assets/images/home/wifi.svg" class="mx-2" width="18px" alt="" />
+                                <span>Project Update</span>
+                            </div>
+                            <div>
+                                <button class="dropdown-button border border-1  ">
+                                    <span>Feedback</span>
+                                    <img src="./assets/images/home/export.svg" alt="" />
+                                </button>
+                                <img src="./assets/images/home/idea.svg" width="20px" alt="" />
+                                <img src="./assets/images/home/menu_dot.svg" width="20px" alt="" />
+
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div>
+                                <p>Choose a list</p>
+                                <div class=" border border-1 dropdown-button ">
+                                    <img src="./assets/images/menu_list.svg" alt="">
+                                    <select name="Select List..." id="Select List..."
+                                        class="col-md-11 col-sm-10 border-0 select-list">
+                                        <option value="1">Select List...</option>
+                                        <option value="2">Select List...</option>
+                                        <option value="3">Select List...</option>
+                                        <option value="4">Select List...</option>
+                                        <option value="5">Select List...</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+
+                            <div class="mt-4">
+                                <p>Since</p>
+
+                                <div class=" border border-1 dropdown-button  col-12">
+                                    <select name="Last 24 hours" id="Last 24 hours" class="col-12 border-0 select-list">
+                                        <option value="1">Last 24 hours</option>
+                                        <option value="2">Select List...</option>
+                                        <option value="3">Select List...</option>
+                                        <option value="4">Select List...</option>
+                                        <option value="5">Select List...</option>
+                                    </select>
+                                </div>
+                                <p class="my-3">Configurations</p>
+
+
+                                <div class="content-work">
+                                    <p>Update on tasks by status for tasks updated in the past 24 hours</p>
+                                    <div class="form-check my-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Created
+                                        </label>
+                                    </div>
+                                    <div class="form-check my-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Not Started
+                                        </label>
+                                    </div>
+                                    <div class="form-check my-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            In Progress
+                                        </label>
+                                    </div>
+                                    <div class="form-check my-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Completed
+                                        </label>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="mt-3 content-work">
+                                    <p>Reporting for tasks updated in the past 24 hours</p>
+                                    <div class="form-check my-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Task Types
+                                        </label>
+                                    </div>
+                                    <div class="form-check my-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Tasks by Status
+                                        </label>
+                                    </div>
+                                    <div class="form-check my-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Tasks by Assignee
+                                        </label>
+                                    </div>
+                                    <div class="form-check my-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Tasks by Priority
+                                        </label>
+                                    </div>
+                                    <div class="form-check my-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Overdue tasks
+                                        </label>
+                                    </div>
+                                    <div class="form-check my-2">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Tasks by Due Date
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
         </div>
+
     </div>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -1284,6 +1420,9 @@
             var reminderTab = new bootstrap.Tab(document.querySelector('#Doc-tab'));
             reminderTab.show();
         }
+        $(document).ready(function(){
+            $('#Project-Update').click();
+        })
     </script>
     <script src="./js/script.js"></script>
 
