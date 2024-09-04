@@ -52,9 +52,9 @@ body {
 .btn-reverse {
   background-color: var(--fourdary-color);
   padding: 5px;
-  border-radius: 10px;
+  border-radius: 6px;
   border: none;
-  font-size: 12px;
+  font-size: 14px;
   color: var(--secondary-text-color);
 }
 
@@ -1229,6 +1229,7 @@ body {
     /* Smooth slide effect */
     transform: translateX(100%);
     z-index: 1000;
+
     /* Initially hidden */
     .modal-body {
       .content-one {
@@ -1438,7 +1439,7 @@ body {
     .search-button {
       height: 34px;
       border-radius: 6px;
-      width:40vw;
+      width: 40vw;
       background: var(--bg-fourdary-nav-color);
       color: var(--thirdary-text-color);
       opacity: 0.8;
@@ -2709,7 +2710,8 @@ body {
     .offcanvas {
       width: 327px;
       height: calc(100vh - 64.3px);
-      margin-top: 64.3px;  
+      margin-top: 64.3px;
+
       .offcanvas-header {
         h5 {
           font-size: 16px;
@@ -3821,17 +3823,18 @@ body {
     color: var(--secondary-text-color);
   }
 
-  .modal_two{ 
+  .modal_two {
     p {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 41px;
+      margin-top: 0;
+      margin-bottom: 0;
+      line-height: 41px;
+    }
+
+    img {
+      gap: 2px;
+    }
   }
 
-  img {
-    gap: 2px;
-  }
-}
   .h_nav_end {
     gap: 20px;
   }
@@ -4335,4 +4338,204 @@ body {
 
 
 
+}
+
+
+
+/* 
+===============================================================
+====================  SETTING  - PAGE   =======================
+===============================================================
+*/
+
+
+.Spaces-page {
+  width: 100vw;
+
+  .sidebar-header {
+    background: var(--bg-secondary-nav-color);
+
+    span {
+      font-size: 14px;
+      color: var(--primary-text-color);
+    }
+
+    p {
+      font-size: 11px;
+      color: var(--secondary-text-color);
+    }
+
+    .nav-tabs {
+      width: 255px;
+      height: 100vh;
+      justify-content: start !important;
+      display: flex;
+      transition: width 0.3s ease;
+
+      .active {
+        background-color: var(--bg-primary-nav-color);
+        color: var(--thirdary-text-color);
+
+        span {
+          color: var(--thirdary-text-color) !important;
+        }
+      }
+
+      .nav-link {
+        display: flex;
+        justify-content: start;
+      }
+    }
+  }
+
+  &.menu-expanded {
+    .sidebar-header {
+
+      .nav-tabs,
+      .nav-link {
+        width: 200px;
+      }
+
+      p,
+      span {
+        display: block;
+      }
+    }
+  }
+
+  .sidebar-body {
+    width: 100%;
+
+
+    .create-spaces {
+      .modal-dialog {
+        width: 480px;
+
+        .modal-header {
+          h5 {
+            font-size: 18px;
+          }
+
+          .close-btn {
+            font-size: 15px;
+          }
+        }
+
+        .modal-body {
+
+          p,
+          label {
+            font-size: 14px;
+            color: var(--secondary-text-color);
+          }
+
+          .input-icon-name,
+          .description {
+            input {
+              color: var(--secondary-text-color);
+
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+
+          .checking {
+            p {
+              margin: 0;
+            }
+          }
+        }
+
+      }
+    }
+    .ImportExport {
+      .content-one {
+          h3 {
+              font-size: 24px;
+          }
+
+          p {
+              font-size: 13px;
+          }
+      }
+
+      .content-two {
+          padding: 10% 35%;
+          text-align: center;
+
+      }
+  }
+
+  }
+
+  @media only screen and (max-width: 600px) {
+    .sidebar-header {
+      .menu-icon {
+        display: block !important;
+        margin-top: 10px;
+        cursor: pointer;
+      }
+
+      p,
+      span {
+        display: none;
+      }
+
+      .nav-tabs,
+      .nav-link {
+        width: 60px;
+      }
+
+      &.menu-expanded {
+        .nav-tabs {
+          width: 200px;
+        }
+
+        p,
+        span {
+          display: block;
+        }
+      }
+    }
+
+    .create-spaces {
+      .modal-dialog {
+        width: auto !important;
+
+        .modal-body {
+          .input-icon-name {
+
+            .input-field {
+
+              flex-direction: column;
+              display: flex;
+
+              .one {
+                width: 40px !important;
+              }
+
+              .two {
+                width: 100% !important;
+              }
+
+            }
+
+          }
+        }
+      }
+    }
+    .sidebar-body {
+      & .ImportExport {
+          .content-one{
+              padding:10px  !important;
+          }
+          .content-two {
+              padding: 40% 20%;
+          }
+      }
+  
+}
+
+  }
 }

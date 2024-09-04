@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Title</title>
+
+    <!-- Bootstrap CSS v5.3.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md ">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-2" href="javascript:void(0)"><img src="assets/images/home/logo.svg"
+                        width="70px" alt="" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center  flex-wrap" id="mynavbar">
+                    <form class="d-flex mx-auto gap-2 nav-form justify-content-center">
+
+                        <div class=" border-0">
+                            <input class="search-button" placeholder="Search...">
+                        </div>
+
+                        <button class="border-0 ask-ai d-flex align-items-center">
+                            <div class="image">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_6616_14831)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.9274 1.45473C10.7695 0.909621 9.93725 0.909621 9.77931 1.45473L9.55578 2.22685C9.07358 3.89044 8.41465 5.18994 6.62438 5.63787L5.79354 5.84578C5.20684 5.99253 5.20684 6.76593 5.79354 6.91268L6.62438 7.12056C8.41465 7.5685 9.07358 8.86803 9.55578 10.5316L9.77931 11.3037C9.93725 11.8488 10.7695 11.8488 10.9274 11.3037L11.1512 10.5316C11.6332 8.86803 12.2924 7.5685 14.0826 7.12056L14.9135 6.91268C15.5002 6.76593 15.5002 5.99253 14.9135 5.84578C14.3268 5.69904 14.0826 5.63787 14.0826 5.63787C12.2924 5.18994 11.6332 3.89044 11.1512 2.22685L10.9274 1.45473Z"
+                                            fill="url(#paint0_linear_6616_14831)" />
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M4.0299 9.30145C3.93515 8.96072 3.43577 8.96072 3.34102 9.30145L3.2069 9.78398C2.91759 10.8238 2.52224 11.6359 1.44807 11.9159L0.94956 12.0458C0.597542 12.1376 0.597542 12.6209 0.94956 12.7126L1.44807 12.8426C2.52224 13.1226 2.91759 13.9347 3.2069 14.9745L3.34102 15.457C3.43577 15.7978 3.93515 15.7978 4.0299 15.457L4.16419 14.9745C4.45333 13.9347 4.84885 13.1226 5.92303 12.8426L6.42153 12.7126C6.77355 12.6209 6.77355 12.1376 6.42153 12.0458C6.06951 11.9541 5.92303 11.9159 5.92303 11.9159C4.84885 11.6359 4.45333 10.8238 4.16419 9.78398L4.0299 9.30145Z"
+                                            fill="url(#paint1_linear_6616_14831)" />
+                                    </g>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_6616_14831" x1="10.2602" y1="11.5792"
+                                            x2="15.3802" y2="1.33926" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#FF02F0" />
+                                            <stop offset="1" stop-color="#FFC800" />
+                                        </linearGradient>
+                                        <linearGradient id="paint1_linear_6616_14831" x1="3.53891" y1="15.7392"
+                                            x2="6.73888" y2="9.33925" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#8930FD" />
+                                            <stop offset="1" stop-color="#49CCF9" />
+                                        </linearGradient>
+                                        <clipPath id="clip0_6616_14831">
+                                            <rect width="16" height="16" fill="white"
+                                                transform="translate(0.0195312 0.378906)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <span>Ask AI</span>
+                        </button>
+                    </form>
+                    <div class="d-flex nav-end-side justify-content-center ">
+                        <ul class="navbar-end_button mb-0">
+                            <button class="mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal2"
+                                onclick="openTabsTab()">
+                                <img src="assets/images/add.png" alt="" /><span> New </span>
+                            </button>
+                            <button class="mx-1" id="openSidebar-new" class="btn">
+                                <img src="assets/images/check_navbar.svg" alt="Check" />
+                            </button>
+                            <button class="mx-1" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasScrolling3" aria-controls="offcanvasScrolling">
+                                <img src="assets/images/doc2.svg" alt="Documents" />
+                            </button>
+                            <button class="mx-1">
+                                <img src="assets/images/video2.svg" alt="Video" />
+                            </button>
+
+
+                            <button class="mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal2"
+                                onclick="openReminderTab()">
+                                <img src="assets/images/clock.svg" alt="Clock" />
+                            </button>
+
+                            <button class="mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal2"
+                                onclick="openDocTab()">
+                                <img src="assets/images/doc_left.svg" alt="Left Document" />
+                            </button>
+                            <button class="mx-1">
+                                <img src="assets/images/menu.svg" alt="Menu" />
+                            </button>
+                            <button class="mx-1">
+                                <div class="dropdown">
+                                    <button class="btn btn dropdown-toggle" type="button" id="dropdownMenuButton2"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <img src="/assets/images/user_profile.svg" alt="" />
+                                    </button>
+                                    <ul class="dropdown-menu h_main_profile" aria-labelledby="dropdownMenuButton2">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </button>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+
+
+        <div class="Quick-links-modal">
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header border border-0">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-underline" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="Task-tab" data-bs-toggle="tab" href="#Task"
+                                        role="tab" aria-controls="Task" aria-selected="true">Task</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="Doc-tab" data-bs-toggle="tab" href="#Doc" role="tab"
+                                        aria-controls="Doc" aria-selected="false">Doc</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="Reminder-tab" data-bs-toggle="tab" href="#Reminder"
+                                        role="tab" aria-controls="Reminder" aria-selected="false">Reminder</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="Chat-tab" data-bs-toggle="tab" href="#Chat" role="tab"
+                                        aria-controls="Chat" aria-selected="false">Chat</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="Whiteboard-tab" data-bs-toggle="tab" href="#Whiteboard"
+                                        role="tab" aria-controls="Whiteboard" aria-selected="false">Whiteboard</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="Dashboard-tab" data-bs-toggle="tab" href="#Dashboard"
+                                        role="tab" aria-controls="Dashboard" aria-selected="false">Dashboard</a>
+                                </li>
+                            </ul>
+                            <div class="d-flex align-items-center">
+                                <button class="dropdown-button down-close">
+                                    <img src="/assets/images/home/down-close.svg" alt="">
+                                </button>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Tab content -->
+                            <div class="tab-content">
+                                <div class="tab-pane fade task-modal show active" id="Task" role="tabpanel"
+                                    aria-labelledby="Task-tab">
+                                    <div class="d-flex gap-2">
+
+                                        <div class=" border border-1 dropdown-button d-flex ">
+                                            <img src="/assets/images/menu_list.svg" alt="" />
+                                            <select name="Select List..." id="Select List..."
+                                                class="border-0 select-list">
+                                                <option value="1">Select List...</option>
+                                                <option value="2">Select List...</option>
+                                                <option value="3">Select List...</option>
+                                                <option value="4">Select List...</option>
+                                                <option value="5">Select List...</option>
+                                            </select>
+                                        </div>
+
+                                        <div class=" border border-1 dropdown-button d-flex ">
+                                            <select name="Select List..." id="Select List..."
+                                                class="border-0 select-list">
+                                                <option value="1"></option>
+                                                <option value="2"></option>
+                                                <option value="3"></option>
+                                                <option value="4"></option>
+                                                <option value="5"></option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="input-group input-group-sm my-3 mx-2">
+                                        <input type="text" class="form-control border-0" placeholder="Task name"
+                                            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
+                                    </div>
+                                    <div class="input-group input-group-sm my-3 mx-2">
+                                        <img src="/assets/images/home/doc_blank.svg" alt="" />
+                                        <input type="text" class="form-control border-0 mx-1"
+                                            placeholder="Add description" aria-label="Sizing example input"
+                                            aria-describedby="inputGroup-sizing-sm" />
+                                    </div>
+                                    <div class="input-group input-group-sm my-3 mx-2">
+                                        <input type="text" class="form-control border-0 mx-4"
+                                            placeholder="Write with AI" aria-label="Sizing example input"
+                                            aria-describedby="inputGroup-sizing-sm" />
+                                    </div>
+                                    <div class="  d-flex gap-2 flex-wrap">
+                                        <button type="button" class="btn-reverse border border-1 px-3">Open</button>
+                                        <button type="button" class="btn-reverse border border-1 px-3">
+                                            <img src="/assets/images/home/2users.svg" alt="" />Assignee
+                                        </button>
+                                        <button type="button" class="btn-reverse border border-1 px-3">
+                                            <img src="/assets/images/home/Duedate.svg" alt="" />Due date
+                                        </button>
+                                        <button type="button" class="btn-reverse border border-1 px-3">
+                                            <img src="/assets/images/home/priority.svg" alt="" />Priority
+                                        </button>
+                                        <button type="button" class="btn-reverse border border-1 px-3">
+                                            <img src="/assets/images/home/tags.svg" alt="" />Tags
+                                        </button>
+                                        <button type="button" class="btn-reverse border border-1 px-3">
+                                            <img src="/assets/images/menu_dot.png" alt="" />
+                                        </button>
+                                    </div>
+                                    <hr />
+                                    <div class="justify-content-between d-flex flex-wrap">
+                                        <div class="  ">
+                                            <button type="button" class="btn-reverse border border-1 px-3  ">
+
+
+
+                                                <img src="/assets/images/magic.svg" alt="" />Templates
+                                            </button>
+                                        </div>
+                                        <div class="d-flex gap-3 flex-wrap">
+
+                                            <div class="file-upload">
+                                                <label for="file-input" class="upload-icon">
+                                                    <img src="/assets/images/home/attached.svg" alt="" />
+                                                </label>
+                                                <input type="file" id="file-input" class="file-input" />
+                                            </div>
+                                            <button class="border-0 px-2 bg-transparent d-flex mt-2">
+                                                <img src="/assets/images/home/not_clock.svg" alt="" />
+                                            </button>
+                                            <!-- Example split danger button -->
+                                            <div class="btn-group">
+                                                <button type="button" class="btn">Action</button>
+                                                <button type="button" class="btn dropdown-toggle dropdown-toggle-split"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    <span class="visually-hidden">Toggle Dropdown</span>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Action</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Another action</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Something else here</a>
+                                                    </li>
+                                                    <li>
+                                                        <hr class="dropdown-divider" />
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item" href="#">Separated link</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane doc-modal fade" id="Doc" role="tabpanel" aria-labelledby="Doc-tab">
+                                    <div class="content-two">
+                                        <div class="d-flex">
+
+                                            <div class=" border border-1 dropdown-button d-flex ">
+                                                <img src="/assets/images/home/add_menu.svg" alt="" />
+                                                <select name="Add to location" id="Add to location"
+                                                    class="border-0 select-list">
+
+                                                    <option value="1">Add to location</option>
+                                                    <option value="2">Add to location</option>
+                                                    <option value="3">Add to location</option>
+                                                    <option value="4">Add to location</option>
+                                                    <option value="5">Add to location</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="input-group input-group-sm my-3 mx-2">
+                                            <input type="text" class="form-control border-0"
+                                                placeholder="Name this Doc..." aria-label="Sizing example input"
+                                                aria-describedby="inputGroup-sizing-sm" />
+                                        </div>
+                                        <div class="input-group input-group-sm my-3 mx-2">
+                                            <img src="/assets/images/home/doc_blank.svg" alt="" />
+                                            <input type="text" class="form-control border-0 mx-1"
+                                                placeholder="Blank page" aria-label="Sizing example input"
+                                                aria-describedby="inputGroup-sizing-sm" />
+                                        </div>
+                                        <div class="input-group input-group-sm my-3 mx-2">
+                                            <input type="text" class="form-control border-0 mx-4"
+                                                placeholder="Write with AI" aria-label="Sizing example input"
+                                                aria-describedby="inputGroup-sizing-sm" />
+                                        </div>
+
+
+                                        <span>Add new</span>
+
+                                        <button class="btn-reverse   gap-2 col-12 my-2 justify-content-start d-flex">
+                                            <img src="/assets/images/home/table_menu.svg" alt="" />
+                                            <p>Table</p>
+                                        </button>
+
+                                        <button class="btn-reverse   gap-2 col-12 my-2 justify-content-start d-flex">
+
+                                            <img src="/assets/images/home/column.svg" alt="" />
+                                            <p>Column</p>
+                                        </button>
+                                        <button class="btn-reverse   gap-2 col-12 my-2 justify-content-start d-flex">
+
+                                            <img src="/assets/images/home/dot_menu_list.svg" alt="" />
+                                            <p>ClickUp List</p>
+                                        </button>
+                                        <div class="d-flex flex-wrap">
+
+                                            <div class=" border border-1 dropdown-button  ">
+                                                <select name="AI Tools: Choose a department"
+                                                    id="AI Tools: Choose a department" class="border-0 select-list">
+                                                    <option value="1">AI Tools: Choose a department</option>
+                                                    <option value="2">AI Tools: Choose a department</option>
+                                                    <option value="3">AI Tools: Choose a department</option>
+                                                    <option value="4">AI Tools: Choose a department</option>
+                                                    <option value="5">AI Tools: Choose a department</option>
+                                                </select>
+                                            </div>
+                                            <button class="bg-transparent border-0">
+                                                <img src="/assets/images/home/serach.svg" class="mx-2 my-2" alt="" />
+                                            </button>
+                                        </div>
+
+                                        <div class="h_bulb">
+                                            <button
+                                                class="btn-reverse   gap-2 col-12 my-2 justify-content-start d-flex">
+
+                                                <img src="/assets/images/home/bulb.svg" class="mx-2" alt="" />
+                                                <p>Improve writing</p>
+                                            </button>
+                                            <button
+                                                class="btn-reverse   gap-2 col-12 my-2 justify-content-start d-flex">
+                                                <img src="/assets/images/home/bulb.svg" class="mx-2" alt="" />
+                                                <p>Generate template</p>
+                                            </button>
+                                            <button
+                                                class="btn-reverse   gap-2 col-12 my-2 justify-content-start d-flex">
+                                                <img src="/assets/images/home/bulb.svg" class="mx-2" alt="" />
+                                                <p>Write an email</p>
+                                            </button>
+                                            <button
+                                                class="btn-reverse   gap-2 col-12 my-2 justify-content-start d-flex">
+                                                <img src="/assets/images/home/bulb.svg" class="mx-2" alt="" />
+                                                <p>Summarize</p>
+                                            </button>
+                                            <button
+                                                class="btn-reverse   gap-2 col-12 my-2 justify-content-start d-flex">
+                                                <img src="/assets/images/home/bulb.svg" class="mx-2" alt="" />
+                                                <p>Table with data</p>
+                                            </button>
+                                            <button
+                                                class="btn-reverse   gap-2 col-12 my-2 justify-content-start d-flex">
+                                                <img src="/assets/images/home/bulb.svg" class="mx-2" alt="" />
+                                                <p>Blog post</p>
+                                            </button>
+                                            <button
+                                                class="btn-reverse   gap-2 col-12 my-2 justify-content-start d-flex">
+                                                <img src="/assets/images/home/menu_dot.svg" class="mx-2" alt="" />
+                                                <p>Pick department</p>
+                                            </button>
+                                        </div>
+
+
+                                        <hr />
+                                        <div class="justify-content-between d-flex flex-wrap">
+                                            <div class="first_start d-flex">
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox"
+                                                        id="flexSwitchCheckChecked" checked />
+                                                </div>
+                                                <p>Private</p>
+                                            </div>
+
+
+                                            <button class="btn submit-button align-items-center d-flex">
+                                                Create Doc
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade reminder-modal" id="Reminder" role="tabpanel"
+                                    aria-labelledby="Reminder-tab">
+                                    <div class="input-group input-group-md">
+                                        <input type="text" class="form-control border-0"
+                                            aria-label="Sizing example input"
+                                            placeholder="Reminder name or type '/' for commands"
+                                            aria-describedby="inputGroup-sizing-lg" />
+                                    </div>
+                                    <div class=" mt-3 gap-2 mb-5 d-flex flex-wrap">
+
+                                        <button type="button" class="btn-reverse border border-1 px-2">
+                                            <img src="/assets/images/home/check_calender.svg" alt="" />
+                                            <span>Today</span>
+                                        </button>
+
+
+                                        <button type="button" class="btn-reverse border border-1 px-2   ">
+                                            <img src="/assets/images/user_profile.svg" alt="" />
+                                            <span>For me</span>
+                                        </button>
+
+
+                                        <button type="button" class="btn-reverse border border-1 px-2   ">
+                                            <img src="/assets/images/home/not_clock.svg" alt="" />
+                                            <span>Notify me</span>
+                                        </button>
+
+                                    </div>
+                                    <hr />
+                                    <div class="justify-content-end gap-3 d-flex flex-wrap">
+                                        <div class="file-upload">
+                                            <label for="file-input" class="upload-icon">
+                                                <img src="/assets/images/home/attached.svg" alt="" />
+                                            </label>
+                                            <input type="file" id="file-input" class="file-input" />
+                                        </div>
+                                        <button class="btn submit-button align-items-center d-flex">
+                                            Create Reminder
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade chat-modal" id="Chat" role="tabpanel"
+                                    aria-labelledby="Chat-tab">
+                                    <div>
+
+
+                                        <div class=" border border-1 dropdown-button d-flex Workspace ">
+                                            <img src="assets/images/home.svg" alt="" />
+                                            <select name="Workspace" id="Workspace" class="border-0 select-list">
+                                                <option value="1">Workspace</option>
+                                                <option value="2">Workspace</option>
+                                                <option value="3">Workspace</option>
+                                                <option value="4">Workspace</option>
+                                                <option value="5">Workspace</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-group input-group-md my-3">
+                                            <input type="text" class="form-control border-0"
+                                                placeholder="Name this Chat..." aria-label="Sizing example input"
+                                                aria-describedby="inputGroup-sizing-lg" />
+                                        </div>
+                                        <div class="input-group input-group-sm mb-5 my-3">
+                                            <input type="text" class="form-control border-0" placeholder="Add message"
+                                                aria-label="Sizing example input"
+                                                aria-describedby="inputGroup-sizing-sm" />
+                                        </div>
+                                        <hr />
+                                        <div class="d-flex justify-content-between  ">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch"
+                                                    id="flexSwitchCheckChecked" checked />
+                                                <p>Private</p>
+                                            </div>
+                                            <div class="gap-3 d-flex">
+                                                <button class="border-0 bg-transparent d-flex mt-2">
+                                                    <img src="/assets/images/home/not_clock.svg" alt="" />
+                                                </button>
+
+                                                <button class="btn submit-button d-flex">
+                                                    Create Chat
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade whiteboard-modal" id="Whiteboard" role="tabpanel"
+                                    aria-labelledby="Whiteboard-tab">
+                                    <div>
+                                        <div class=" border border-1 dropdown-button d-flex Workspace ">
+                                            <img src="assets/images/home.svg" alt="" />
+                                            <select name="Workspace" id="Workspace" class="border-0 select-list">
+                                                <option value="1">Workspace</option>
+                                                <option value="2">Workspace</option>
+                                                <option value="3">Workspace</option>
+                                                <option value="4">Workspace</option>
+                                                <option value="5">Workspace</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-group input-group-md mb-5 my-3">
+                                            <input type="text" class="form-control border-0"
+                                                placeholder="Name this Whiteboard..." aria-label="Sizing example input"
+                                                aria-describedby="inputGroup-sizing-lg" />
+                                        </div>
+                                        <hr />
+                                        <div class=" d-flex justify-content-between ">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch"
+                                                    id="flexSwitchCheckChecked" checked />
+                                                <p>Private</p>
+                                            </div>
+                                            <div>
+                                                <button class="btn submit-button">
+                                                    Create Whiteboard
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade dashboard-modal" id="Dashboard" role="tabpanel"
+                                    aria-labelledby="Dashboard-tab">
+                                    <div>
+                                        <div class=" border border-1 dropdown-button d-flex Workspace ">
+                                            <img src="assets/images/home.svg" alt="" />
+                                            <select name="Workspace" id="Workspace" class="border-0 select-list">
+                                                <option value="1">Workspace</option>
+                                                <option value="2">Workspace</option>
+                                                <option value="3">Workspace</option>
+                                                <option value="4">Workspace</option>
+                                                <option value="5">Workspace</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-group input-group-md my-3  mb-5">
+                                            <input type="text" class="form-control border-0 "
+                                                placeholder="Name this Dashboard..." aria-label="Sizing example input"
+                                                aria-describedby="inputGroup-sizing-lg" />
+                                        </div>
+                                        <hr />
+                                        <div class=" d-flex justify-content-between">
+                                            <div class="form-check form-switch">
+                                                <input class="form-check-input" type="checkbox" role="switch"
+                                                    id="flexSwitchCheckChecked" checked />
+                                                <p>Private</p>
+                                            </div>
+                                            <div>
+                                                <button class="btn submit-button ">
+                                                    Create Dashboard
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="notepad-modal-main">
+
+
+            <div class="offcanvas offcanvas-end h_notepad" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                id="offcanvasScrolling3" aria-labelledby="offcanvasScrollingLabel">
+                <div class="offcanvas-header px-3 py-2 ">
+                    <div>
+                        <h5>Notepad</h5>
+                    </div>
+                    <div class="justify-content-center d-flex gap-3">
+                        <img src="/assets/images/home/serach.svg" width="16px" alt="" />
+                        <img src="/assets/images/home/menu_dot.svg" width="16px" alt="" />
+                        <button type="button" class="btn-close mt-0" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="justify-content-center text-center mt-5">
+                        <img src="/assets/images/home/doc_add.svg" alt="" />
+                        <h4>Create personal notes</h4>
+                        <p>
+                            Capture your thoughts or ideas and access them anywhere in
+                            ClickUp!
+                        </p>
+                        <button class="btn">Create a note</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="new-sidebar">
+
+            <!-- Sidebar Structure -->
+            <div class="sidebar-new">
+                <button class="close-button-new">X</button>
+                <div class=" justify-content-between d-flex align-items-center modal-header">
+                    <div class="d-flex">
+                        <img src="/assets/images/user_profile.svg" width="50px" alt="" />
+                        <h6 class="mt-3 mx-2">Arushi</h6>
+                    </div>
+                    <div>
+                        <button class="btn-reverse border border-1">Online</button>
+                    </div>
+                </div>
+                <div class="profile_button_type d-flex my-3 flex-wrap ">
+                    <div>
+                        <div>
+                            <h4>Title</h4>
+                            <p>Add description...</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Manager</h4>
+                            <p>None</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>arushi@jarvisatwork…</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h4>Local time</h4>
+                            <p>4:30 pm</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn p-2 mx-1 rounded-3 col-12">
+                    <img src="/assets/images/start.svg" alt="" />Write StandUp
+                </button>
+                <div class="modal-body mt-3">
+                    <nav>
+                        <div class="nav nav-underline " id="myTab" role="tablist">
+                            <button class="nav-link active" id="nav-activity-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-activity" type="button" role="tab" aria-controls="nav-activity"
+                                aria-selected="true">
+                                Activity
+                            </button>
+                            <button class="nav-link" id="nav-work-tab" data-bs-toggle="tab" data-bs-target="#nav-work"
+                                type="button" role="tab" aria-controls="nav-work" aria-selected="false">
+                                My Work(1)
+                            </button>
+                            <button class="nav-link" id="nav-assigned-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-assigned" type="button" role="tab" aria-controls="nav-assigned"
+                                aria-selected="false">
+                                Assigned(0)
+                            </button>
+                            <button class="nav-link" id="nav-calendar-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-calendar" type="button" role="tab" aria-controls="nav-calendar"
+                                aria-selected="false">
+                                Calendar
+                            </button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-activity" role="tabpanel"
+                            aria-labelledby="nav-activity-tab">
+                            <div class="d-flex justify-content-between align-items-center mt-2 flex-wrap content-one">
+                                <div>
+                                    <h5>Activity</h5>
+                                </div>
+                                <div class="d-flex gap-2 flex-wrap">
+                                    <img src="/assets/images/home/serach.svg" alt="" /><span>Search tasks..</span>
+                                    <img src="/assets/images/home/connect.svg" alt="" /><span>Hide</span>
+                                    <img src="/assets/images/home/style_menu.svg" alt="" /><span>Activities</span>
+                                </div>
+                            </div>
+                            <div class="text-center mt-5">
+                                <img src="/assets/images/home/profile_cart1.svg" alt="" />
+                                <p>Nothing to see yet. Task activity will appear here.</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-work" role="tabpanel" aria-labelledby="nav-work-tab">
+                            <ul class="nav nav-underline mt-3" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                        data-bs-target="#home-tab-pane" type="button" role="tab"
+                                        aria-controls="home-tab-pane" aria-selected="true">
+                                        To do
+                                    </button>
+
+
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                        data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                        aria-controls="profile-tab-pane" aria-selected="false">
+                                        Done
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                        data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                        aria-controls="contact-tab-pane" aria-selected="false">
+                                        Delegated
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                                    aria-labelledby="home-tab" tabindex="0">
+                                    <div class="userid_button ">
+                                        <div>
+                                            <div class="btn-group dropend">
+                                                <button type="button" class="dropdown-button dropdown-toggle mt"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Today(0)
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <!-- Dropdown menu links -->
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="btn-group dropend">
+                                                <button type="button" class="dropdown-button dropdown-toggle mt"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Overdue
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <!-- Dropdown menu links -->
+
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="btn-group dropend">
+                                                <button type="button" class="dropdown-button dropdown-toggle mt"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    Next
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <!-- Dropdown menu links -->
+                                                    <li></li>
+                                                </ul>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel"
+                                    aria-labelledby="profile-tab" tabindex="0">
+                                    <div>
+                                        <p class="heading">Done</p>
+
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
+                                    aria-labelledby="contact-tab" tabindex="0">
+                                    <div>
+                                        <p class="heading">Delegated</p>
+                                        <hr class="mt-2" />
+                                        <div class="delegted-profile text-center">
+                                            <h4>
+                                                Forgetting? Forget about it! Delegate a Reminder to
+                                                make sure it gets done.
+                                            </h4>
+                                            <p>
+                                                <a href="">Assign a Reminder</a> to someone and keep
+                                                track of it here. You can also see Reminders you
+                                                delegate in anyone's  <a href="">profile</a>
+                                            </p>
+                                            <button class="p-2 rounded-3 btn  ">
+                                                Learn more about delegating
+                                            </button>
+                                        </div>
+                                        <hr class="mt-2" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-assigned" role="tabpanel" aria-labelledby="nav-assigned-tab">
+                            <p class="heading"> Texting</p>
+                        </div>
+                        <div class="tab-pane fade" id="nav-calendar" role="tabpanel" aria-labelledby="nav-calendar-tab">
+                            <div class="calender-top d-flex justify-content-between border-0">
+
+                                <style>
+
+                                </style>
+                                <div class="">
+                                    <p>
+                                        <span> Jul 12,Friday </span>
+                                        <img src="/assets/images/home/lessden.svg" alt="" />
+                                        <img src="/assets/images/home/greaterden.svg" alt="" />
+                                    </p>
+                                </div>
+                                <div>
+                                    <span> Today </span>
+                                    <span class="mx-2"><img src="/assets/images/home/today.svg" alt="" />0
+                                        Calendars</span>
+                                    <img src="/assets/images/home/setting.svg" alt="" />
+                                </div>
+                            </div>
+                            <div class="all-time">
+                                <p>All day</p>
+                            </div>
+                            <style>
+
+                            </style>
+
+                            <div class="calender-modal position-relative">
+                                <div class="time-sheet position-relative">
+                                    <div class="d-flex gap-3">
+                                        <h5>1pm</h5>
+                                        <div class="select border border-1">
+                                            <div class="one"></div>
+                                            <div class="two"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <h5>2pm</h5>
+                                        <div class="select border border-1">
+                                            <div class="one"></div>
+                                            <div class="two"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <h5>3pm</h5>
+                                        <div class="select border border-1">
+                                            <div class="one"></div>
+                                            <div class="two"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="time-check d-flex position-absolute ">
+                                        <div class="current-time position-absolute rounded-2">
+                                            <p>4:42 pm</p>
+                                        </div>
+                                        <div class="time-line">
+
+                                        </div>
+
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <h5>4pm</h5>
+                                        <div class="select border border-1">
+                                            <div class="one"></div>
+                                            <div class="two"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <h5>5pm</h5>
+                                        <div class="select border border-1">
+                                            <div class="one"></div>
+                                            <div class="two"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <h5>6pm</h5>
+                                        <div class="select border border-1">
+                                            <div class="one"></div>
+                                            <div class="two"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <h5>7pm</h5>
+                                        <div class="select border border-1">
+                                            <div class="one"></div>
+                                            <div class="two"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <h5>8pm</h5>
+                                        <div class="select border border-1">
+                                            <div class="one"></div>
+                                            <div class="two"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <h5>9pm</h5>
+                                        <div class="select border border-1">
+                                            <div class="one"></div>
+                                            <div class="two"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <h5>10pm</h5>
+                                        <div class="select border border-1">
+                                            <div class="one"></div>
+                                            <div class="two"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <h5>11pm</h5>
+                                        <div class="select border border-1">
+                                            <div class="one"></div>
+                                            <div class="two"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <h5>12pm</h5>
+                                        <div class="select border border-1">
+                                            <div class="one"></div>
+                                            <div class="two"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <h5>1am</h5>
+                                        <div class="select border border-1">
+                                            <div class="one"></div>
+                                            <div class="two"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <h5>2am</h5>
+                                        <div class="select border border-1">
+                                            <div class="one"></div>
+                                            <div class="two"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <h5>3am</h5>
+                                        <div class="select border border-1">
+                                            <div class="one"></div>
+                                            <div class="two"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <h5>4am</h5>
+                                        <div class="select border border-1">
+                                            <div class="one"></div>
+                                            <div class="two"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <h5>5am</h5>
+                                        <div class="select border border-1">
+                                            <div class="one"></div>
+                                            <div class="two"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <h5>6am</h5>
+                                        <div class="select border border-1">
+                                            <div class="one"></div>
+                                            <div class="two"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <h5>7am</h5>
+                                        <div class="select border border-1">
+                                            <div class="one"></div>
+                                            <div class="two"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <h5>8am</h5>
+                                        <div class="select border border-1">
+                                            <div class="one"></div>
+                                            <div class="two"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <h5>9am</h5>
+                                        <div class="select border border-1">
+                                            <div class="one"></div>
+                                            <div class="two"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <h5>10am</h5>
+                                        <div class="select border border-1">
+                                            <div class="one"></div>
+                                            <div class="two"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <h5>11am</h5>
+                                        <div class="select border border-1">
+                                            <div class="one"></div>
+                                            <div class="two"> </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex gap-3">
+                                        <h5>12am</h5>
+                                        <div class="select border border-1">
+                                            <div class="one"></div>
+                                            <div class="two"> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+    <div class="d-flex">
+        <div class="Spaces-page d-flex">
+            <div class="sidebar-header">
+                <div class="header-one justify-content-center d-flex  flex-column">
+                    <div class="d-flex mx-3">
+                        <img src="/assets/images/menu2.svg" width="20px" alt="" class="d-none menu-icon "
+                            id="menu-toggle">
+                    </div>
+                    <button class="gap-3 d-flex p-3 w-100 dropdown-button align-items-center">
+                        <img src="/assets/images/home/backspace.svg" alt="">
+                        <span>Back to Workspace</span>
+                    </button>
+
+                </div>
+                <hr class="m-0">
+                <p class="mx-3 mt-3">Ning Lam's Workspace</p>
+
+                <div class="d-flex align-items-start">
+                    <div class="nav flex-column nav-tabs " id="v-tabs-tab" role="tablist" aria-orientation="vertical">
+                        <button class="nav-link active gap-2" id="v-tabs-Spaces-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-tabs-Spaces" type="button" role="tab" aria-controls="v-tabs-Spaces"
+                            aria-selected="true">
+                            <img src="/assets/images/home/space.svg" alt="">
+                            <span>Spaces</span>
+                        </button>
+                        <button class="nav-link gap-2" id="v-tabs-import-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-tabs-import" type="button" role="tab" aria-controls="v-tabs-import"
+                            aria-selected="false">
+                            <img src="/assets/images/home/import.svg" alt="">
+                            <span>Imports / Exports</span>
+                        </button>
+                        <button class="nav-link gap-2" id="v-tabs-AppCenter-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-tabs-AppCenter" type="button" role="tab" aria-controls="v-tabs-AppCenter"
+                            aria-selected="false">
+                            <img src="/assets/images/home/logo-sidebar.svg" alt="">
+                            <span>App Center</span>
+                        </button>
+                        <button class="nav-link gap-2" id="v-tabs-trash-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-tabs-trash" type="button" role="tab" aria-controls="v-tabs-trash"
+                            aria-selected="false">
+                            <img src="/assets/images/home/trash.svg" alt="">
+                            <span>Trash</span>
+                        </button>
+                        <hr>
+                        <p class="mx-3">Arushi</p>
+                        <button class="nav-link gap-2" id="v-tabs-MySetting-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-tabs-MySetting" type="button" role="tab" aria-controls="v-tabs-MySetting"
+                            aria-selected="false">
+                            <img src="/assets/images/home/user-sidebar.svg" alt="">
+                            <span>My Setting</span>
+                        </button>
+                        <button class="nav-link gap-2" id="v-tabs-Workspaces-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-tabs-Workspaces" type="button" role="tab"
+                            aria-controls="v-tabs-Workspaces" aria-selected="false">
+                            <img src="/assets/images/home/workspace.svg" alt="">
+                            <span>Workspaces</span>
+                        </button>
+                        <button class="nav-link gap-2" id="v-tabs-Notifications-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-tabs-Notifications" type="button" role="tab"
+                            aria-controls="v-tabs-Notifications" aria-selected="false">
+                            <img src="/assets/images/home/not_clock.svg" alt="">
+                            <span>Notifications</span>
+                        </button>
+                        <button class="nav-link gap-2" id="v-tabs-Apps-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-tabs-Apps" type="button" role="tab" aria-controls="v-tabs-Apps"
+                            aria-selected="false">
+                            <img src="/assets/images/home/add-sidebar.svg" alt="">
+                            <span>Apps</span>
+                        </button>
+                        <button class="nav-link gap-2" id="v-tabs-CloudStorage-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-tabs-CloudStorage" type="button" role="tab"
+                            aria-controls="v-tabs-CloudStorage" aria-selected="false">
+                            <img src="/assets/images/home/cloud.svg" alt="">
+                            <span>CloudStorage</span>
+                        </button>
+                        <button class="nav-link gap-2" id="v-tabs-Calender-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-tabs-Calender" type="button" role="tab" aria-controls="v-tabs-Calender"
+                            aria-selected="false">
+                            <img src="/assets/images/home/calender-sidebar.svg" alt="">
+                            <span>Calender</span>
+                        </button>
+                        <button class="nav-link gap-2" id="v-tabs-Referrals-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-tabs-Referrals" type="button" role="tab" aria-controls="v-tabs-Referrals"
+                            aria-selected="false">
+                            <img src="/assets/images/home/user-add.svg" alt="">
+                            <span>Referrals</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="sidebar-body">
+                <div class="tab-content flex-grow-1" id="v-tabs-tabContent">
+                    <div class="tab-pane fade show active" id="v-tabs-Spaces" role="tabpanel"
+                        aria-labelledby="v-tabs-Spaces-tab">
+
+                        <div class="d-flex justify-content-between m-4 flex-wrap">
+                            <ul class="nav nav-underline" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active " id="home-tab" data-bs-toggle="tab"
+                                        data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                                        aria-selected="true">Home</button>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" id="create-spaces"><img
+                                    src="/assets/images/home/add.svg" alt=""> New Space</button>
+                        </div>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <!-- Your page data -->
+                            </div>
+                        </div>
+                        <div class="create-spaces">
+                            <!-- Modal -->
+                            <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header border-0 pb-0">
+                                            <h5>Create a Space</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body pt-0 ">
+                                            <p>A Space represents teams, departments, or groups, each with its
+                                                own Lists, workflows, and settings.</p>
+                                            <div class="input-icon-name my-3">
+                                                <label for="Icon & name" class="mb-2">Icon & name</label>
+                                                <div class="d-flex gap-3 input-field">
+                                                    <input type="text" placeholder="M" maxlength="1"
+                                                        class="border border-1 rounded-2 px-2 col-1 one">
+                                                    <input type="text" placeholder="e.g. Marketing, Engineering, HR"
+                                                        class="border border-1 rounded-2 px-2 col-10 two">
+                                                </div>
+                                            </div>
+                                            <div class="flex-column d-flex description my-3 gap-2">
+                                                <label for="Description ">Description (optional)</label>
+                                                <input type="text" class="border border-1 rounded-2 px-2 ">
+                                            </div>
+                                            <div class="d-flex justify-content-between checking align-items-center">
+                                                <div>
+                                                    <p> Make Private</p>
+                                                    <p>Only you and invited members have access</p>
+                                                </div>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" role="switch"
+                                                        id="flexSwitchCheckDefault">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer d-flex justify-content-between  ">
+                                            <button type="button" class="btn-reverse px-2 py-1">Use Templates</button>
+                                            <button type="button" class="btn  px-2 py-1">Continue</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-tabs-import" role="tabpanel" aria-labelledby="v-tabs-import-tab">
+                        Import</div>
+                    <div class="tab-pane fade" id="v-tabs-AppCenter" role="tabpanel"
+                        aria-labelledby="v-tabs-AppCenter-tab">App Center</div>
+                    <div class="tab-pane fade" id="v-tabs-trash" role="tabpanel" aria-labelledby="v-tabs-trash-tab">
+                        Trash</div>
+                    <div class="tab-pane fade" id="v-tabs-MySetting" role="tabpanel"
+                        aria-labelledby="v-tabs-MySetting-tab">My Setting</div>
+                    <div class="tab-pane fade" id="v-tabs-Workspaces" role="tabpanel"
+                        aria-labelledby="v-tabs-Workspaces-tab">Workspaces</div>
+                    <div class="tab-pane fade" id="v-tabs-Notifications" role="tabpanel"
+                        aria-labelledby="v-tabs-Notifications-tab">Notifications</div>
+                    <div class="tab-pane fade" id="v-tabs-Apps" role="tabpanel" aria-labelledby="v-tabs-Apps-tab">Apps
+                    </div>
+                    <div class="tab-pane fade" id="v-tabs-CloudStorage" role="tabpanel"
+                        aria-labelledby="v-tabs-CloudStorage-tab">Cloud Storage</div>
+                    <div class="tab-pane fade" id="v-tabs-Calender" role="tabpanel"
+                        aria-labelledby="v-tabs-Calender-tab">Calender</div>
+                    <div class="tab-pane fade" id="v-tabs-Referrals" role="tabpanel"
+                        aria-labelledby="v-tabs-Referrals-tab">Referrals</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#sidebartoggle").click(function () {
+                $(".sidebarnew").toggleClass("inactive");
+            });
+        });
+        const openButton = document.querySelector('#openSidebar-new');
+        const closeButton = document.querySelector('.close-button-new');
+        const sidebar = document.querySelector('.sidebar-new');
+
+        openButton.addEventListener('click', () => {
+            sidebar.classList.add('show');
+            closeButton.classList.add('show');
+        });
+
+        closeButton.addEventListener('click', () => {
+            sidebar.classList.remove('show');
+            closeButton.classList.remove('show');
+        });
+        function openReminderTab() {
+            var reminderTab = new bootstrap.Tab(document.querySelector('#Reminder-tab'));
+            reminderTab.show();
+
+        }
+        function openTabsTab() {
+            var reminderTab = new bootstrap.Tab(document.querySelector('#Task-tab'));
+            reminderTab.show();
+        }
+        function openDocTab() {
+            var reminderTab = new bootstrap.Tab(document.querySelector('#Doc-tab'));
+            reminderTab.show();
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.getElementById('menu-toggle');
+            const settingPage = document.querySelector('.setting-page');
+
+            menuToggle.addEventListener('click', function () {
+                settingPage.classList.toggle('menu-expanded');
+            });
+        });
+        $(document).ready(function(){
+            $('#create-spaces').click();
+        });
+    </script>
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>
