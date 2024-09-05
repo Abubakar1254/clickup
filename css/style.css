@@ -4384,6 +4384,7 @@ body {
       .nav-link {
         display: flex;
         justify-content: start;
+        width: 100%;
       }
     }
   }
@@ -4406,6 +4407,56 @@ body {
   .sidebar-body {
     width: 100%;
 
+    .app-center {
+      h3 {
+        font-size: 24px;
+        color: var(--primary-text-color);
+      }
+
+
+      .content-one {
+        p {
+          color: var(--secondary-text-color);
+          margin: 0;
+        }
+      }
+
+      .content-two,
+      .content-three {
+        .brand {
+          width: 300px;
+          opacity: 0.5;
+
+          &:hover {
+            opacity: 1;
+            border-color: var(--border-thirdary-nav-color) !important;
+          }
+
+          h4 {
+            font-size: 18px;
+            color: var(--primary-text-color);
+
+
+          }
+
+          p {
+            font-size: 12px;
+            color: var(--primary-text-color);
+          }
+        }
+
+      }
+
+      .content-three .brand {
+        width: 191px !important;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      }
+
+
+    }
 
     .create-spaces {
       .modal-dialog {
@@ -4449,23 +4500,177 @@ body {
 
       }
     }
+
     .ImportExport {
       .content-one {
-          h3 {
-              font-size: 24px;
-          }
+        h3 {
+          font-size: 24px;
+          color: var(--primary-text-color);
+        }
 
-          p {
-              font-size: 13px;
-          }
+        p {
+          font-size: 13px;
+          color: var(--primary-text-color);
+        }
       }
 
       .content-two {
-          padding: 10% 35%;
-          text-align: center;
+        padding: 10% 35%;
+        text-align: center;
+
+        p {
+          color: var(--primary-text-color);
+        }
+      }
+    }
+
+    .trash-setting {
+
+      h1 {
+        font-size: 24px;
+        color: var(--primary-text-color);
+      }
+
+      p {
+        font-size: 15px;
+        color: var(--primary-text-color);
+      }
+
+      h4 {
+        padding: 15% 35%;
+        display: flex;
+        justify-content: center;
+        font-size: 17px;
+        color: var(--primary-text-color);
+        text-align: center;
+      }
+
+      .input-form {
+        width: 450px;
+
+        input {
+          color: var(--secondary-text-color);
+
+          &:focus {
+            outline: none;
+            border: none;
+          }
+        }
+      }
+    }
+
+    .my-setting {
+      .content-one {
+        h1 {
+          font-size: 14px;
+          color: var(--primary-text-color);
+        }
+
+        p {
+          font-size: 12px;
+          color: var(--secondary-text-color);
+        }
+      }
+
+      .content-two {
+        height: 550px !important;
+        overflow-y: scroll;
+
+        .form-switch {
+          label {
+            h5 {
+              font-size: 14px;
+              color: var(--secondary-text-color);
+              margin: 0;
+            }
+
+            p,
+            span {
+              font-size: 12px;
+              color: var(--secondary-text-color);
+            }
+
+            a {
+              color: var(--fourdary-text-color);
+            }
+          }
+        }
+      }
+
+      .content-footer {
+        h4 {
+          font-size: 14px;
+          color: var(--primary-text-color);
+        }
+
+        p {
+          font-size: 12px;
+          color: var(--secondary-text-color);
+        }
+      }
+    }
+
+    .my-workspace {
+      h1 {
+        color: var(--primary-text-color);
+        font-size: 24px;
+      }
+
+      .user-one {
+        .user-profile {
+          cursor: pointer;
+          padding: 80px;
+          width: 220px;
+          border-radius: 100%;
+          background-color: var(--secondary-text-color);
+          color: var(--thirdary-text-color);
+        }
+      }
+
+      .add-user {
+        .user-profile {
+          cursor: pointer;
+          padding: 80px;
+          width: 220px;
+          border-radius: 100%;
+          border: 1px solid var(--secondary-text-color);
+          color: var(--secondary-text-color);
+        }
+      }
+    }
+
+    .notifications {
+      padding: 40px 15%;
+      height: calc(100vh - 50px);
+      overflow-y: scroll;
+
+      h1 {
+        font-size: 24px;
+        color: var(--primary-text-color);
+      }
+
+      h2 {
+        font-size: 16px;
+        color: var(--primary-text-color);
+      }
+
+      .options {
+        h4 {
+          font-size: 14px;
+          color: var(--primary-text-color);
+          margin: 0;
+        }
+
+        p {
+          font-size: 12px;
+          color: var(--secondary-text-color);
+          margin: 0;
+        }
+
 
       }
-  }
+
+    }
 
   }
 
@@ -4525,17 +4730,63 @@ body {
         }
       }
     }
+
     .sidebar-body {
-      & .ImportExport {
-          .content-one{
-              padding:10px  !important;
+      .app-center {
+        .main-content {
+          height: 70vh;
+          overflow-y: scroll;
+          overflow-x: hidden;
+
+          .content-three .brand {
+            width: 300px !important;
+            display: flex;
+            justify-content: center;
           }
-          .content-two {
-              padding: 40% 20%;
-          }
+        }
       }
-  
-}
+
+      .ImportExport {
+        .content-one {
+          padding: 10px !important;
+        }
+
+        .content-two {
+          padding: 40% 20%;
+        }
+      }
+
+      .trash-setting {
+        padding: 10px !important;
+
+        h4 {
+          padding: 45% 0px;
+        }
+
+        .input-form {
+          width: 50vw !important;
+        }
+      }
+
+      .my-workspace {
+
+        .user-one,
+        .add-user {
+          .user-profile {
+            padding: 45px !important;
+            width: 150px !important;
+          }
+
+          .content {
+            padding: 10px 0 !important;
+          }
+        }
+      }
+
+      .notifications {
+        padding: 40px 5%;
+      }
+    }
 
   }
 }

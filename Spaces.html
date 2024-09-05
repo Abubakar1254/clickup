@@ -1012,135 +1012,7 @@
     </header>
 
 
-    <style>
-        .Spaces-page {
-            width: 100vw;
 
-            .sidebar-header {
-                background: var(--bg-secondary-nav-color);
-
-                span {
-                    font-size: 14px;
-                    color: var(--primary-text-color);
-                }
-
-                p {
-                    font-size: 11px;
-                    color: var(--secondary-text-color);
-                }
-
-                .nav-tabs {
-                    width: 255px;
-                    height: 100vh;
-                    justify-content: start !important;
-                    display: flex;
-                    transition: width 0.3s ease;
-
-                    .active {
-                        background-color: var(--bg-primary-nav-color);
-                        color: var(--thirdary-text-color);
-
-                        span {
-                            color: var(--thirdary-text-color) !important;
-                        }
-                    }
-
-                    .nav-link {
-                        display: flex;
-                        justify-content: start;
-                    }
-                }
-            }
-
-            &.menu-expanded {
-                .sidebar-header {
-
-                    .nav-tabs,
-                    .nav-link {
-                        width: 200px;
-                    }
-
-                    p,
-                    span {
-                        display: block;
-                    }
-                }
-            }
-
-            .sidebar-body {
-                width: 100%;
-
-                .app-center {
-                    h3 {
-                        font-size: 24px;
-                    }
-
-                    .content-one {
-                        p {
-                            color: var(--secondary-text-color);
-                            margin: 0;
-                        }
-                    }
-
-                    .content-two {
-                        .brand {
-                            width: 300px;
-                            opacity: 0.8;
-                            &:hover{
-                                opacity: 1;
-                                border-color:var(--border-thirdary-nav-color) !important;
-                            }
-
-                            h4 {
-                                font-size: 18px;
-                                color: var(--primary-text-color);
-
-
-                            }
-
-                            p {
-                                font-size: 12px;
-                                color: var(--primary-text-color);
-                            }
-                        }
-                    }
-
-                }
-
-            }
-
-            @media only screen and (max-width: 600px) {
-                .sidebar-header {
-                    .menu-icon {
-                        display: block !important;
-                        margin-top: 10px;
-                        cursor: pointer;
-                    }
-
-                    p,
-                    span {
-                        display: none;
-                    }
-
-                    .nav-tabs,
-                    .nav-link {
-                        width: 60px;
-                    }
-
-                    &.menu-expanded {
-                        .nav-tabs {
-                            width: 200px;
-                        }
-
-                        p,
-                        span {
-                            display: block;
-                        }
-                    }
-                }
-            }
-        }
-    </style>
 
     <div class="d-flex">
         <div class="Spaces-page d-flex">
@@ -1309,7 +1181,7 @@
                     </div>
                     <div class="tab-pane fade" id="v-tabs-import" role="tabpanel" aria-labelledby="v-tabs-import-tab">
                         <div class="ImportExport">
-                            <div class="px-5 py-3 content-one">
+                            <div class="p-4 content-one">
                                 <h3>Import/Export</h3>
                                 <p class="mt-3">Easily import your data directly from another tool or by using a CSV
                                     file. You can
@@ -1333,81 +1205,461 @@
                                 <p>1</p>
                             </div>
                             <h3 class="text-center">Select Source of Import</h3>
-                            <div class="content-two d-flex gap-5 justify-content-center " >
-                                <div class="row  mt-4">
-                                    <div class="col-lg-6 justify-content-center d-flex my-2">
-                                        <div class="brand d-flex border border-1 p-2 gap-3 rounded-3">
-                                            <div>
-                                                <img src="/assets/images/home/doc-space.svg" alt="">
-                                            </div>
-                                            <div>
-                                                <h4>Any Spreadsheet</h4>
-                                                <p>e.g. Excel, Google Sheets, CSV ...</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 justify-content-center d-flex my-2">
-                                        <div class="brand d-flex border border-1 p-2 gap-3 rounded-3">
-                                            <div>
-                                                <img src="/assets/images/home/doc2-space.svg" alt="">
-                                            </div>
-                                            <div>
-                                                <h4>Any Document</h4>
-                                                <p>e.g. Word, Google Docs, Quip ...</p>
+
+                            <div class="main-content">
+                                <div class="content-two d-flex gap-5 justify-content-center ">
+                                    <div class="row  mt-3">
+                                        <div class="col-lg-6 justify-content-center d-flex my-2">
+                                            <div class="brand d-flex border border-1 p-2 gap-3 rounded-3">
+                                                <div>
+                                                    <img src="/assets/images/home/doc-space.svg" alt="">
+                                                </div>
+                                                <div>
+                                                    <h4>Any Spreadsheet</h4>
+                                                    <p>e.g. Excel, Google Sheets, CSV ...</p>
+                                                </div>
                                             </div>
                                         </div>
+                                        <div class="col-lg-6 justify-content-center d-flex my-2">
+                                            <div class="brand d-flex border border-1 p-2 gap-3 rounded-3">
+                                                <div>
+                                                    <img src="/assets/images/home/doc2-space.svg" alt="">
+                                                </div>
+                                                <div>
+                                                    <h4>Any Document</h4>
+                                                    <p>e.g. Word, Google Docs, Quip ...</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
-                                
-                                  </div>
+                                </div>
+                                <div class="content-three d-flex gap-5 justify-content-center ">
+                                    <div class="row  mt-3">
+                                        <div class="col-lg-4 my-2 d-flex justify-content-center">
+                                            <div class="brand border border-1 rounded-3 ">
+                                                <img src="/assets/images/home/asana.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 my-2 d-flex justify-content-center">
+                                            <div class="brand border border-1 rounded-3 ">
+                                                <img src="/assets/images/home/basecamp.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 my-2 d-flex justify-content-center">
+                                            <div class="brand border border-1 rounded-3 ">
+                                                <img src="/assets/images/home/confluence.svg" alt="">
+                                            </div>
+                                        </div>
 
+                                    </div>
+                                </div>
+                                <div class="content-three d-flex gap-5 justify-content-center ">
+                                    <div class="row  mt-3">
+                                        <div class="col-lg-4 my-2 d-flex justify-content-center">
+                                            <div class="brand border border-1 rounded-3 ">
+                                                <img src="/assets/images/home/JiraSoftware.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 my-2 d-flex justify-content-center">
+                                            <div class="brand border border-1 rounded-3 ">
+                                                <img src="/assets/images/home/monday.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 my-2 d-flex justify-content-center">
+                                            <div class="brand border border-1 rounded-3 ">
+                                                <img src="/assets/images/home/notion.svg" alt="">
+                                            </div>
+                                        </div>
 
+                                    </div>
+                                </div>
+                                <div class="content-three d-flex gap-5 justify-content-center ">
+                                    <div class="row  mt-3">
+                                        <div class="col-lg-4 my-2 d-flex justify-content-center">
+                                            <div class="brand border border-1 rounded-3 ">
+                                                <img src="/assets/images/home/todoist.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 my-2 d-flex justify-content-center">
+                                            <div class="brand border border-1 rounded-3 ">
+                                                <img src="/assets/images/home/trello.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 my-2 d-flex justify-content-center">
+                                            <div class="brand border border-1 rounded-3 ">
+                                                <img src="/assets/images/home/wrike.svg" alt="">
+                                            </div>
+                                        </div>
 
-
-                              
-                            
-                            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button class="btn ">Import any spreadsheet</button>
                             </div>
 
+                        </div>
+                    </div>
 
 
 
 
-
-
-
-
-
-
-
-
- 
-                  
-           
-                           
-
-
-
-
-
-
-
-
-
-
-
+                    <div class="tab-pane fade" id="v-tabs-trash" role="tabpanel" aria-labelledby="v-tabs-trash-tab">
+                        <div class="trash-setting p-4">
+                            <div>
+                                <h1>Trash</h1>
+                                <p>Items shown below will be automatically deleted forever after 30 days.</p>
+                                <div class="input-form border border-1 p-1 d-flex gap-3 rounded-2">
+                                    <img src="/assets/images/home/serach.svg" alt="">
+                                    <input type="text" name="" class="border-0 col-10" id="">
+                                    <div class="border-start  border-1 px-2">
+                                        <img src="/assets/images/home/filter2.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4>
+                                    There aren't any items you can recover.
+                                    All items are deleted permanently after 30 days.
+                                </h4>
+                            </div>
                         </div>
 
+                    </div>
+                    <div class="tab-pane fade" id="v-tabs-MySetting" role="tabpanel"
+                        aria-labelledby="v-tabs-MySetting-tab">
+                        <div class="my-setting">
+                            <div class="row">
+                                <div class="col-sm-3 content-one p-5">
+                                    <h1>Preferences</h1>
+                                    <p>Manage your in-app preferences.</p>
+                                </div>
+                                <div class="col-sm-9 content-two p-5 ">
+                                    <div>
+                                        <div class="form-check form-switch d-flex  ">
+                                            <input class="form-check-input me-3" type="checkbox"
+                                                id="flexSwitchCheckDefault" checked>
+                                            <label class="form-check-label" for="flexSwitchCheckDefault">
+                                                <div class="d-flex align-items-center gap-2 mb-1">
+                                                    <h5>Flyout Toast Message </h5>
+                                                    <img src="/assets/images/home/idea.svg" alt="">
+                                                </div>
+                                                <p>When performing actions, toast messages may appear in the bottom
+                                                    left-hand of your screen. You can disable that here.</p>
+                                            </label>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                    <div>
+                                        <div class="form-check form-switch d-flex ">
+                                            <input class="form-check-input me-3" type="checkbox"
+                                                id="flexSwitchCheckDefault">
+                                            <label class="form-check-label" for="flexSwitchCheckDefault">
+                                                <div class="d-flex align-items-center gap-2 mb-1">
+                                                    <h5>Don't post comments with </h5>
+                                                    <span class="border border-1 px-1 rounded-2">Enter</span>
+                                                </div>
+                                                <p>Use<span class="border border-1 px-1 rounded-2">Ctrl + Enter</span>
+                                                    to send
+                                                    comments instead of just  <span
+                                                        class="border border-1 px-1 rounded-2">Enter</span> </p>
+                                            </label>
+                                        </div>
+                                        <hr>
+                                    </div>
+                                    <div>
+                                        <div class="form-check form-switch d-flex  ">
+                                            <input class="form-check-input me-3" type="checkbox"
+                                                id="flexSwitchCheckDefault" checked>
+                                            <label class="form-check-label" for="flexSwitchCheckDefault">
+                                                <h5 class="mb-1">Markdown</h5>
+                                                <p>You can disable <a href="">Markdown</a> (shortcuts when typing) by
+                                                    turning it off here.</p>
+                                            </label>
+                                        </div>
 
+                                        <hr>
+                                    </div>
+                                    <div>
+                                        <div class="form-check form-switch d-flex  ">
+                                            <input class="form-check-input me-3" type="checkbox"
+                                                id="flexSwitchCheckDefault">
+                                            <label class="form-check-label" for="flexSwitchCheckDefault">
+                                                <h5 class="mb-1">Hotkeys</h5>
+                                                <p>Use <a href="">Hotkeys</a> to quickly navigate through ARCerp without
+                                                    using your mouse.</p>
+                                            </label>
+                                        </div>
+
+                                        <hr>
+                                    </div>
+                                    <div>
+                                        <div class="form-check form-switch d-flex  ">
+                                            <input class="form-check-input me-3" type="checkbox"
+                                                id="flexSwitchCheckDefault" checked>
+                                            <label class="form-check-label" for="flexSwitchCheckDefault">
+                                                <h5 class="mb-1">Notepad</h5>
+                                                <p>Turn this off to hide the  <a href="">notepad</a> in the bottom right
+                                                    corner of your screen.</p>
+                                            </label>
+                                        </div>
+
+                                        <hr>
+                                    </div>
+
+                                    <div>
+                                        <div class="form-check form-switch d-flex  ">
+                                            <input class="form-check-input me-3" type="checkbox"
+                                                id="flexSwitchCheckDefault">
+                                            <label class="form-check-label" for="flexSwitchCheckDefault">
+                                                <h5 class="mb-1">High Contrast Mode</h5>
+                                                <p>Enabling this mode adjusts contrast to make ARCerp easier on your
+                                                    eyes (Recommended for Windows and low resolution monitors).</p>
+                                            </label>
+                                        </div>
+
+                                        <hr>
+                                    </div>
+                                    <div>
+                                        <div class="form-check form-switch d-flex  ">
+                                            <input class="form-check-input me-3" type="checkbox"
+                                                id="flexSwitchCheckDefault">
+                                            <label class="form-check-label" for="flexSwitchCheckDefault">
+                                                <h5 class="mb-1">Dark Mode</h5>
+                                                <p>Don't like the brightness? Go to the dark side of ARCerp.</p>
+                                            </label>
+                                        </div>
+
+                                        <hr>
+                                    </div>
+                                    <div>
+                                        <div class="form-check form-switch d-flex  ">
+                                            <input class="form-check-input me-3" type="checkbox"
+                                                id="flexSwitchCheckDefault" checked>
+                                            <label class="form-check-label" for="flexSwitchCheckDefault">
+                                                <h5 class="mb-1">Show quotes</h5>
+                                                <p>Show celebratory quotes when you clear all your notifications or load
+                                                    certain pages</p>
+                                            </label>
+                                        </div>
+
+                                        <hr>
+                                    </div>
+                                    <div>
+                                        <div class="form-check form-switch d-flex  ">
+                                            <input class="form-check-input me-3" type="checkbox"
+                                                id="flexSwitchCheckDefault" checked>
+                                            <label class="form-check-label" for="flexSwitchCheckDefault">
+                                                <h5 class="mb-1">Show Celebrations</h5>
+                                                <p>Show confetti celebrations when you clear My Work, clear all
+                                                    notifications, or complete a Goal Target.</p>
+                                            </label>
+                                        </div>
+
+                                        <hr>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row content-footer">
+                                <div class="col-sm-3 p-5">
+                                    <h4>Proceed with caution.</h4>
+                                    <p>Proceed with caution.</p>
+                                </div>
+                                <div class="col-sm-9 p-5 pb-0">
+                                    <div class="d-flex justify-content-between flex-wrap">
+                                        <p>Log out all sessions including any session on mobile, iPad, and other
+                                            browsers</p>
+                                        <p>Log out of all sessions</p>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <button class="btn mt-2 ">Delete account</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="v-tabs-Workspaces" role="tabpanel"
+                        aria-labelledby="v-tabs-Workspaces-tab">
+                        <div class="my-workspace">
+                            <div class="p-4">
+                                <h1>My Workspaces</h1>
+                            </div>
+                            <div class="p-4 d-flex gap-3 flex-wrap">
+                                <div class="user-one ">
+                                    <div class="user-profile d-flex justify-content-center">
+                                        <h2>N</h2>
+                                    </div>
+                                    <div class="content p-4 ">
+                                        <p>Ning Lam's
+                                            Workspace</p>
+                                    </div>
+                                </div>
+                                <div class="add-user" onclick="document.getElementById('fileInput').click();">
+                                    <div class="user-profile d-flex justify-content-center ">
+                                        <h2>+</h2>
+                                    </div>
+                                    <div class="content p-4 mx-5">
+                                        <p>Add new</p>
+                                    </div>
+                                </div>
+                                <input type="file" id="fileInput" style="display:none;" />
+
+                            </div>
+                        </div>
 
                     </div>
-                    <div class="tab-pane fade" id="v-tabs-trash" role="tabpanel" aria-labelledby="v-tabs-trash-tab">
-                        Trash</div>
-                    <div class="tab-pane fade" id="v-tabs-MySetting" role="tabpanel"
-                        aria-labelledby="v-tabs-MySetting-tab">My Setting</div>
-                    <div class="tab-pane fade" id="v-tabs-Workspaces" role="tabpanel"
-                        aria-labelledby="v-tabs-Workspaces-tab">Workspaces</div>
+
+                    <style>
+                        .Spaces-page {
+                            .sidebar-body {
+                                width: 100%;
+
+                              
+                            }
+
+                            @media only screen and (max-width: 600px) {
+                               
+                                 
+                                    }
+                                }
+                      
+                    </style>
                     <div class="tab-pane fade" id="v-tabs-Notifications" role="tabpanel"
-                        aria-labelledby="v-tabs-Notifications-tab">Notifications</div>
+                        aria-labelledby="v-tabs-Notifications-tab">
+                        <div class="notifications">
+                            <h1>Notification Settings</h1>
+                            <div
+                                class="border border-1 d-flex  justify-content-between p-3 rounded-3 my-2 flex-wrap gap-2">
+                                <div class="d-flex options gap-2">
+                                    <div>
+                                        <img src="/assets/images/home/inbox-setting.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <h4>Inbox</h4>
+                                        <p>Default ARCerp's recommended settings</p>
+                                    </div>
+                                </div>
+                                <select name="Default" id="Default" class="border border-1 select-list rounded-2 ">
+                                    <option value="Default">Default</option>
+                                    <option value="Default">Default browser </option>
+                                    <option value="Default">Default on their sport </option>
+                                    <option value="Default">Default</option>
+                                </select>
+                            </div>
+                            <div
+                                class="border border-1 d-flex  justify-content-between p-3 rounded-3 my-2 flex-wrap gap-2">
+                                <div class="d-flex options gap-2">
+                                    <div>
+                                        <img src="/assets/images/home/email.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <h4>Email</h4>
+                                        <p>Default ARCerp's recommended settings</p>
+                                    </div>
+                                </div>
+                                <select name="Default" id="Default" class="border border-1 select-list rounded-2 ">
+                                    <option value="Default">Default</option>
+                                    <option value="Default">Default browser </option>
+                                    <option value="Default">Default on their sport </option>
+                                    <option value="Default">Default</option>
+                                </select>
+                            </div>
+                            <div
+                                class="border border-1 d-flex  justify-content-between p-3 rounded-3 my-2 flex-wrap gap-2">
+                                <div class="d-flex options gap-2">
+                                    <div>
+                                        <img src="/assets/images/home/browser.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <h4>Browser</h4>
+                                        <p>Notifications are disabled</p>
+                                    </div>
+                                </div>
+                                <button class="dropdown-button border border-1 ">Enable notifications</button>
+                            </div>
+                            <div
+                                class="border border-1 d-flex  justify-content-between p-3 rounded-3 my-2 flex-wrap gap-2">
+                                <div class="d-flex options gap-2">
+                                    <div>
+                                        <img src="/assets/images/home/mobile.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <h4>Mobile</h4>
+                                        <p> ARCerp's recommended settings</p>
+                                    </div>
+                                </div>
+                                <select name="Default" id="Default" class="border border-1 select-list rounded-2 ">
+                                    <option value="Default">Default</option>
+                                    <option value="Default">Default browser </option>
+                                    <option value="Default">Default on their sport </option>
+                                    <option value="Default">Default</option>
+                                </select>
+                            </div>
+                            <h2 class="mb-3 mt-5">Notification Settings</h2>
+                            <div
+                                class="border border-1 d-flex  justify-content-between p-3 rounded-3 my-2 flex-wrap gap-2">
+                                <div class="d-flex options gap-2">
+                                    <div>
+                                        <img src="/assets/images/home/slack.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <h4>Slack</h4>
+                                        <p>Sync activity that occurs in Spaces, Folders, or Lists to Slack channels of
+                                            your choice.</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex border border-1 p-1 rounded-3">
+                                    <img src="/assets/images/home/slack.svg" alt="">
+                                    <button class="dropdown-button">Connect account</button>
+                                </div>
+                            </div>
+                            <h2 class="mb-3 mt-5">Notification Settings</h2>
+                            <div
+                                class="border border-1 d-flex  justify-content-between p-3 rounded-3 my-2 flex-wrap gap-2">
+                                <div class="d-flex options gap-2 w-100">
+
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" type="checkbox" role="switch"
+                                            id="flexSwitchCheckChecked" checked>
+                                    </div>
+                                    <div class="w-100">
+                                        <h4>Slack</h4>
+                                        <select name="Default" id="Default"
+                                            class="select-list rounded-2 w-100 border-0 ">
+                                            <option value="Default">Default</option>
+                                            <option value="Default">Default browser </option>
+                                            <option value="Default">Default on their sport </option>
+                                            <option value="Default">Default</option>
+                                        </select>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+                            <div
+                                class="border border-1 d-flex  justify-content-between p-3 rounded-3 my-2 flex-wrap gap-2">
+                                <div class="d-flex options gap-2">
+                                    <div>
+                                        <img src="/assets/images/home/mobile.svg" alt="">
+                                    </div>
+                                    <div>
+                                        <h4>Mobile</h4>
+                                        <p> ARCerp's recommended settings</p>
+                                    </div>
+                                </div>
+                                <select name="Default" id="Default" class="border border-1 select-list rounded-2 ">
+                                    <option value="Default">Default</option>
+                                    <option value="Default">Default browser </option>
+                                    <option value="Default">Default on their sport </option>
+                                    <option value="Default">Default</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
                     <div class="tab-pane fade" id="v-tabs-Apps" role="tabpanel" aria-labelledby="v-tabs-Apps-tab">Apps
                     </div>
                     <div class="tab-pane fade" id="v-tabs-CloudStorage" role="tabpanel"
@@ -1464,12 +1716,13 @@
         }
         document.addEventListener('DOMContentLoaded', function () {
             const menuToggle = document.getElementById('menu-toggle');
-            const settingPage = document.querySelector('.setting-page');
+            const sidebarHeader = document.querySelector('.sidebar-header');
 
             menuToggle.addEventListener('click', function () {
-                settingPage.classList.toggle('menu-expanded');
+                sidebarHeader.classList.toggle('menu-expanded');
             });
         });
+
 
     </script>
     <script src="./js/script.js"></script>
