@@ -4445,84 +4445,85 @@ body {
 
   }
 
-/* 
+  /* 
 ===============================================================
 ================ Create Space  - PAGE   =======================
 ===============================================================
 */
 
-.create-spaces {
-  .modal-dialog {
-    width: 480px;
-
-    .modal-header {
-      h5 {
-        font-size: 18px;
-      }
-
-      .close-btn {
-        font-size: 15px;
-      }
-    }
-
-    .modal-body {
-
-      p,
-      label {
-        font-size: 14px;
-        color: var(--secondary-text-color);
-      }
-
-      .input-icon-name,
-      .description {
-        input {
-          color: var(--secondary-text-color);
-
-          &:focus {
-            outline: none;
-          }
-        }
-      }
-
-      .checking {
-        p {
-          margin: 0;
-        }
-      }
-    }
-
-  }
-}
-@media only screen and (max-width: 600px) {
   .create-spaces {
     .modal-dialog {
-      width: auto !important;
+      width: 480px;
 
-      .modal-body {
-        .input-icon-name {
+      .modal-header {
+        h5 {
+          font-size: 18px;
+        }
 
-          .input-field {
-
-            flex-direction: column;
-            display: flex;
-
-            .one {
-              width: 40px !important;
-            }
-
-            .two {
-              width: 100% !important;
-            }
-
-          }
-
+        .close-btn {
+          font-size: 15px;
         }
       }
+
+      .modal-body {
+
+        p,
+        label {
+          font-size: 14px;
+          color: var(--secondary-text-color);
+        }
+
+        .input-icon-name,
+        .description {
+          input {
+            color: var(--secondary-text-color);
+
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+
+        .checking {
+          p {
+            margin: 0;
+          }
+        }
+      }
+
     }
   }
 
+  @media only screen and (max-width: 600px) {
+    .create-spaces {
+      .modal-dialog {
+        width: auto !important;
 
-}
+        .modal-body {
+          .input-icon-name {
+
+            .input-field {
+
+              flex-direction: column;
+              display: flex;
+
+              .one {
+                width: 40px !important;
+              }
+
+              .two {
+                width: 100% !important;
+              }
+
+            }
+
+          }
+        }
+      }
+    }
+
+
+  }
 
 
   /* 
@@ -4781,109 +4782,291 @@ body {
     }
   }
 
-    /* 
+  /* 
 ===============================================================
 ================ MY WORKSPACE  - PAGE   =======================
 ===============================================================
 */
-.my-workspace {
-  height: 93vh;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  width: 100%;
-  h1 {
-    color: var(--primary-text-color);
-    font-size: 24px;
-  }
-
-  .user-one {
-    .user-profile {
-      cursor: pointer;
-      padding: 80px;
-      width: 220px;
-      border-radius: 100%;
-      background-color: var(--secondary-text-color);
-      color: var(--thirdary-text-color);
-    }
-  }
-
-  .add-user {
-    .user-profile {
-      cursor: pointer;
-      padding: 80px;
-      width: 220px;
-      border-radius: 100%;
-      border: 1px solid var(--secondary-text-color);
-      color: var(--secondary-text-color);
-    }
-  }
-}
-@media only screen and (max-width: 600px) {
   .my-workspace {
-.content-one{
-  padding-top: 10px !important;
-}
-    .user-one,
+    height: 93vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+
+    h1 {
+      color: var(--primary-text-color);
+      font-size: 24px;
+    }
+
+    .user-one {
+      .user-profile {
+        cursor: pointer;
+        padding: 80px;
+        width: 220px;
+        border-radius: 100%;
+        background-color: var(--secondary-text-color);
+        color: var(--thirdary-text-color);
+      }
+    }
+
     .add-user {
       .user-profile {
-        padding: 45px !important;
-        width: 150px !important;
-      }
-
-      .content {
-        padding: 10px 0 !important;
+        cursor: pointer;
+        padding: 80px;
+        width: 220px;
+        border-radius: 100%;
+        border: 1px solid var(--secondary-text-color);
+        color: var(--secondary-text-color);
       }
     }
   }
-}
+
+  @media only screen and (max-width: 600px) {
+    .my-workspace {
+      .content-one {
+        padding-top: 10px !important;
+      }
+
+      .user-one,
+      .add-user {
+        .user-profile {
+          padding: 45px !important;
+          width: 150px !important;
+        }
+
+        .content {
+          padding: 10px 0 !important;
+        }
+      }
+    }
+  }
 
 
-/* 
+  /* 
 ===============================================================
 ============= NOTIFICATION SETTING  - PAGE  ===================
 ===============================================================
 */
-.notifications {
-  
-  height: 93vh;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  width: 100%;
-  padding: 40px 15%;
+  .notifications {
 
-  h1 {
-    font-size: 24px;
-    color: var(--primary-text-color);
-  }
+    height: 93vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    padding: 40px 15%;
 
-  h2 {
-    font-size: 16px;
-    color: var(--primary-text-color);
-  }
-
-  .options {
-    h4 {
-      font-size: 14px;
+    h1 {
+      font-size: 24px;
       color: var(--primary-text-color);
-      margin: 0;
     }
 
-    p {
-      font-size: 12px;
-      color: var(--secondary-text-color);
-      margin: 0;
+    h2 {
+      font-size: 16px;
+      color: var(--primary-text-color);
     }
 
+    .options {
+      h4 {
+        font-size: 14px;
+        color: var(--primary-text-color);
+        margin: 0;
+      }
+
+      p {
+        font-size: 12px;
+        color: var(--secondary-text-color);
+        margin: 0;
+      }
+
+
+    }
 
   }
 
-}
-@media only screen and (max-width: 600px) {
-.notifications {
-  padding: 0 5%;
-}
-}
+  @media only screen and (max-width: 600px) {
+    .notifications {
+      padding: 0 5%;
+    }
+  }
 
+  /* 
+===============================================================
+======================= Apps  - PAGE  =========================
+===============================================================
+*/
+
+  .app-setting {
+    width: 100%;
+
+    .main-content {
+      .content-one {
+        h1 {
+          font-size: 24px;
+          color: var(--primary-text-color);
+          margin: 15px 0px;
+        }
+
+        .generate-button {
+          background-color: var(--bg-secondary-nav-color);
+          color: var(--secondary-text-color);
+
+          p {
+            margin: 0;
+          }
+        }
+      }
+
+      .content-two {
+        h2 {
+          font-size: 13px;
+          color: var(--primary-text-color);
+          margin: 0;
+        }
+
+        p {
+          font-size: 14px;
+          color: var(--secondary-text-color);
+          margin: 0;
+        }
+
+        a {
+          font-size: 14px;
+          color: var(--fourdary-text-color);
+        }
+      }
+
+      .content-three {
+        p {
+          font-size: 13px;
+          color: var(--primary-text-color);
+        }
+
+        .new-button {
+          height: 135px;
+          width: 270px;
+          color: var(--fourdary-text-color);
+          cursor: pointer;
+
+          span {
+            font-size: 16px;
+
+          }
+
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .app-setting {
+      padding: 10px 20px !important;
+
+      .content-three {
+        .new-button {
+          height: 100px !important;
+          width: 80% !important;
+        }
+      }
+    }
+  }
+
+  /* 
+===============================================================
+================= CLOUD STORAGE  - PAGE  ======================
+===============================================================
+*/
+
+  .cloud-storage {
+    width: 100%;
+
+    .main-content {
+      .content-one {
+        h1 {
+          font-size: 24px;
+          color: var(--primary-text-color);
+        }
+
+        p {
+          font-size: 13px;
+          color: var(--primary-text-color);
+        }
+      }
+
+      .content-two {
+        .suggestions {
+          h2 {
+            font-size: 18px;
+            color: var(--secondary-text-color);
+          }
+
+          p {
+            font-size: 15px;
+            color: var(--primary-text-color);
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .cloud-storage {
+      padding: 10px !important;
+    }
+  }
+
+  /* 
+===============================================================
+====================  Referrals  - PAGE  ======================
+===============================================================
+*/
+
+
+
+  .referrals {
+    width: 90vw;
+
+    h1 {
+      font-size: 24px;
+      color: var(--primary-text-color);
+    }
+
+    .main-content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+
+      .contain-center-box {
+        width: 280px;
+      }
+
+      h4 {
+        font-size: 20px;
+        font-weight: 400;
+        color: var(--primary-text-color);
+      }
+
+      p {
+        font-size: 12px;
+        font-weight: 400;
+        color: var(--secondary-text-color);
+
+        a {
+          color: var(--fourdary-text-color);
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .referrals {
+      & .main-content {
+        .contain-center-box {
+          width: 100%;
+        }
+      }
+    }
+  }
 
 
 }
