@@ -4349,444 +4349,541 @@ body {
 */
 
 
-.Spaces-page {
+
+
+
+.setting-page {
+
   width: 100vw;
 
-  .sidebar-header {
-    background: var(--bg-secondary-nav-color);
 
-    span {
-      font-size: 14px;
-      color: var(--primary-text-color);
-    }
+  /* 
+===============================================================
+====================  SIDEBAR  - PAGE   =======================
+===============================================================
+*/
 
-    p {
-      font-size: 11px;
-      color: var(--secondary-text-color);
-    }
 
-    .nav-tabs {
-      width: 255px;
-      height: 100vh;
-      justify-content: start !important;
-      display: flex;
-      transition: width 0.3s ease;
+  .sidebarnew {
+    height: 100vh;
 
-      .active {
-        background-color: var(--bg-primary-nav-color);
-        color: var(--thirdary-text-color);
 
-        span {
-          color: var(--thirdary-text-color) !important;
-        }
-      }
-
-      .nav-link {
-        display: flex;
-        justify-content: start;
-        width: 100%;
-      }
-    }
-  }
-
-  &.menu-expanded {
-    .sidebar-header {
-
-      .nav-tabs,
-      .nav-link {
-        width: 200px;
-      }
-
-      p,
+    .header-one {
       span {
-        display: block;
+        font-size: 14px;
+        color: var(--primary-text-color);
+      }
+    }
+
+    .h_sidebar_two {
+      p {
+        font-size: 11px;
+        color: var(--secondary-text-color);
+        margin: 0 20px;
+      }
+
+      .nav-item {
+        .nav-link {
+          width: 100%;
+
+          span {
+            color: var(--primary-text-color);
+          }
+        }
+
+        .active {
+          background-color: var(--bg-thirdary-nav-color);
+
+          span {
+            color: var(--thirdary-text-color) !important;
+          }
+        }
       }
     }
   }
 
-  .sidebar-body {
-    width: 100%;
-
-    .app-center {
-      h3 {
-        font-size: 24px;
-        color: var(--primary-text-color);
-      }
-
-
-      .content-one {
-        p {
-          color: var(--secondary-text-color);
-          margin: 0;
-        }
-      }
-
-      .content-two,
-      .content-three {
-        .brand {
-          width: 300px;
-          opacity: 0.5;
-
-          &:hover {
-            opacity: 1;
-            border-color: var(--border-thirdary-nav-color) !important;
-          }
-
-          h4 {
-            font-size: 18px;
-            color: var(--primary-text-color);
-
-
-          }
-
-          p {
-            font-size: 12px;
-            color: var(--primary-text-color);
-          }
-        }
-
-      }
-
-      .content-three .brand {
-        width: 191px !important;
-        height: 80px;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-      }
-
-
-    }
-
-    .create-spaces {
-      .modal-dialog {
-        width: 480px;
-
-        .modal-header {
-          h5 {
-            font-size: 18px;
-          }
-
-          .close-btn {
-            font-size: 15px;
-          }
-        }
-
-        .modal-body {
-
-          p,
-          label {
-            font-size: 14px;
-            color: var(--secondary-text-color);
-          }
-
-          .input-icon-name,
-          .description {
-            input {
-              color: var(--secondary-text-color);
-
-              &:focus {
-                outline: none;
-              }
-            }
-          }
-
-          .checking {
-            p {
-              margin: 0;
-            }
-          }
-        }
-
+  .sidebarnew.inactive {
+    .header-one {
+      span {
+        display: none;
       }
     }
 
-    .ImportExport {
-      .content-one {
-        h3 {
-          font-size: 24px;
-          color: var(--primary-text-color);
-        }
-
-        p {
-          font-size: 13px;
-          color: var(--primary-text-color);
-        }
-      }
-
-      .content-two {
-        padding: 10% 35%;
-        text-align: center;
-
-        p {
-          color: var(--primary-text-color);
-        }
-      }
-    }
-
-    .trash-setting {
-
-      h1 {
-        font-size: 24px;
-        color: var(--primary-text-color);
-      }
-
+    .h_sidebar_two {
       p {
-        font-size: 15px;
-        color: var(--primary-text-color);
-      }
-
-      h4 {
-        padding: 15% 35%;
-        display: flex;
-        justify-content: center;
-        font-size: 17px;
-        color: var(--primary-text-color);
-        text-align: center;
-      }
-
-      .input-form {
-        width: 450px;
-
-        input {
-          color: var(--secondary-text-color);
-
-          &:focus {
-            outline: none;
-            border: none;
-          }
-        }
+        display: none;
       }
     }
-
-    .my-setting {
-      .content-one {
-        h1 {
-          font-size: 14px;
-          color: var(--primary-text-color);
-        }
-
-        p {
-          font-size: 12px;
-          color: var(--secondary-text-color);
-        }
-      }
-
-      .content-two {
-        height: 550px !important;
-        overflow-y: scroll;
-
-        .form-switch {
-          label {
-            h5 {
-              font-size: 14px;
-              color: var(--secondary-text-color);
-              margin: 0;
-            }
-
-            p,
-            span {
-              font-size: 12px;
-              color: var(--secondary-text-color);
-            }
-
-            a {
-              color: var(--fourdary-text-color);
-            }
-          }
-        }
-      }
-
-      .content-footer {
-        h4 {
-          font-size: 14px;
-          color: var(--primary-text-color);
-        }
-
-        p {
-          font-size: 12px;
-          color: var(--secondary-text-color);
-        }
-      }
-    }
-
-    .my-workspace {
-      h1 {
-        color: var(--primary-text-color);
-        font-size: 24px;
-      }
-
-      .user-one {
-        .user-profile {
-          cursor: pointer;
-          padding: 80px;
-          width: 220px;
-          border-radius: 100%;
-          background-color: var(--secondary-text-color);
-          color: var(--thirdary-text-color);
-        }
-      }
-
-      .add-user {
-        .user-profile {
-          cursor: pointer;
-          padding: 80px;
-          width: 220px;
-          border-radius: 100%;
-          border: 1px solid var(--secondary-text-color);
-          color: var(--secondary-text-color);
-        }
-      }
-    }
-
-    .notifications {
-      padding: 40px 15%;
-      height: calc(100vh - 50px);
-      overflow-y: scroll;
-
-      h1 {
-        font-size: 24px;
-        color: var(--primary-text-color);
-      }
-
-      h2 {
-        font-size: 16px;
-        color: var(--primary-text-color);
-      }
-
-      .options {
-        h4 {
-          font-size: 14px;
-          color: var(--primary-text-color);
-          margin: 0;
-        }
-
-        p {
-          font-size: 12px;
-          color: var(--secondary-text-color);
-          margin: 0;
-        }
-
-
-      }
-
-    }
-
   }
 
   @media only screen and (max-width: 600px) {
-    .sidebar-header {
-      .menu-icon {
-        display: block !important;
-        margin-top: 10px;
-        cursor: pointer;
-      }
+    .sidebarnew {
+      min-width: 60px;
+      width: 60px;
 
       p,
       span {
         display: none;
       }
+    }
 
-      .nav-tabs,
-      .nav-link {
-        width: 60px;
-      }
+    .sidebarnew.inactive {
+      min-width: 200px;
+      width: 200px;
 
-      &.menu-expanded {
-        .nav-tabs {
-          width: 200px;
-        }
-
-        p,
-        span {
-          display: block;
-        }
+      p,
+      span {
+        display: block !important;
       }
     }
 
-    .create-spaces {
-      .modal-dialog {
-        width: auto !important;
 
-        .modal-body {
-          .input-icon-name {
+    #sidebartoggle {
+      display: block !important;
+    }
 
-            .input-field {
 
-              flex-direction: column;
-              display: flex;
+  }
 
-              .one {
-                width: 40px !important;
-              }
+/* 
+===============================================================
+================ Create Space  - PAGE   =======================
+===============================================================
+*/
 
-              .two {
-                width: 100% !important;
-              }
+.create-spaces {
+  .modal-dialog {
+    width: 480px;
 
-            }
+    .modal-header {
+      h5 {
+        font-size: 18px;
+      }
 
-          }
-        }
+      .close-btn {
+        font-size: 15px;
       }
     }
 
-    .sidebar-body {
-      .app-center {
-        .main-content {
-          height: 70vh;
-          overflow-y: scroll;
-          overflow-x: hidden;
+    .modal-body {
 
-          .content-three .brand {
-            width: 300px !important;
-            display: flex;
-            justify-content: center;
+      p,
+      label {
+        font-size: 14px;
+        color: var(--secondary-text-color);
+      }
+
+      .input-icon-name,
+      .description {
+        input {
+          color: var(--secondary-text-color);
+
+          &:focus {
+            outline: none;
           }
         }
       }
 
-      .ImportExport {
-        .content-one {
-          padding: 10px !important;
+      .checking {
+        p {
+          margin: 0;
         }
-
-        .content-two {
-          padding: 40% 20%;
-        }
-      }
-
-      .trash-setting {
-        padding: 10px !important;
-
-        h4 {
-          padding: 45% 0px;
-        }
-
-        .input-form {
-          width: 50vw !important;
-        }
-      }
-
-      .my-workspace {
-
-        .user-one,
-        .add-user {
-          .user-profile {
-            padding: 45px !important;
-            width: 150px !important;
-          }
-
-          .content {
-            padding: 10px 0 !important;
-          }
-        }
-      }
-
-      .notifications {
-        padding: 40px 5%;
       }
     }
 
   }
+}
+@media only screen and (max-width: 600px) {
+  .create-spaces {
+    .modal-dialog {
+      width: auto !important;
+
+      .modal-body {
+        .input-icon-name {
+
+          .input-field {
+
+            flex-direction: column;
+            display: flex;
+
+            .one {
+              width: 40px !important;
+            }
+
+            .two {
+              width: 100% !important;
+            }
+
+          }
+
+        }
+      }
+    }
+  }
+
+
+}
+
+
+  /* 
+===============================================================
+====================== IMPORT  - PAGE   =======================
+===============================================================
+*/
+
+  .ImportExport {
+    height: 93vh;
+    overflow-y: scroll;
+    width: 100%;
+
+    .content-one {
+      h3 {
+        font-size: 24px;
+        color: var(--primary-text-color);
+      }
+
+      p {
+        font-size: 13px;
+        color: var(--primary-text-color);
+      }
+
+    }
+
+
+    .content-two {
+      padding: 10% 35%;
+      text-align: center;
+
+      p {
+        color: var(--primary-text-color);
+      }
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .ImportExport {
+      .content-one {
+        padding: 10px !important;
+      }
+
+      .content-two {
+        padding: 40% 20%;
+      }
+    }
+  }
+
+
+  /* 
+===============================================================
+================== APP CENTER  - PAGE   =======================
+===============================================================
+*/
+
+  .app-center {
+    height: 93vh;
+    overflow-y: scroll;
+    width: 100%;
+
+    h3 {
+      font-size: 24px;
+      color: var(--primary-text-color);
+    }
+
+
+    .content-one {
+      p {
+        color: var(--secondary-text-color);
+        margin: 0;
+      }
+    }
+
+    .content-two,
+    .content-three {
+      .brand {
+        width: 300px;
+        opacity: 0.5;
+
+        &:hover {
+          opacity: 1;
+          border-color: var(--border-thirdary-nav-color) !important;
+        }
+
+        h4 {
+          font-size: 18px;
+          color: var(--primary-text-color);
+
+
+        }
+
+        p {
+          font-size: 12px;
+          color: var(--primary-text-color);
+        }
+      }
+
+    }
+
+    .content-three .brand {
+      width: 191px !important;
+      height: 80px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+
+
+  }
+
+  @media only screen and (max-width: 600px) {
+    .app-center {
+
+      .main-content {
+        height: 70vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        .content-three .brand {
+          width: 300px !important;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  /* 
+===============================================================
+======================= TRASH  - PAGE   =======================
+===============================================================
+*/
+  .trash-setting {
+
+    height: 93vh;
+    overflow-y: scroll;
+    width: 100%;
+
+    h1 {
+      font-size: 24px;
+      color: var(--primary-text-color);
+    }
+
+    p {
+      font-size: 15px;
+      color: var(--primary-text-color);
+    }
+
+    h4 {
+      padding: 15% 35%;
+      display: flex;
+      justify-content: center;
+      font-size: 17px;
+      color: var(--primary-text-color);
+      text-align: center;
+    }
+
+    .input-form {
+      width: 450px;
+
+      input {
+        color: var(--secondary-text-color);
+
+        &:focus {
+          outline: none;
+          border: none;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .trash-setting {
+      padding: 10px !important;
+
+      h4 {
+        padding: 45% 0px;
+      }
+
+      .input-form {
+        width: 50vw !important;
+      }
+    }
+  }
+
+  /* 
+===============================================================
+================== MY SETTING  - PAGE   =======================
+===============================================================
+*/
+  .my-setting {
+    height: 93vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+
+    .content-one {
+      h1 {
+        font-size: 14px;
+        color: var(--primary-text-color);
+      }
+
+      p {
+        font-size: 12px;
+        color: var(--secondary-text-color);
+      }
+    }
+
+    .content-two {
+      height: 550px !important;
+      overflow-y: scroll;
+
+      .form-switch {
+        label {
+          h5 {
+            font-size: 14px;
+            color: var(--secondary-text-color);
+            margin: 0;
+          }
+
+          p,
+          span {
+            font-size: 12px;
+            color: var(--secondary-text-color);
+          }
+
+          a {
+            color: var(--fourdary-text-color);
+          }
+        }
+      }
+    }
+
+    .content-footer {
+      h4 {
+        font-size: 14px;
+        color: var(--primary-text-color);
+      }
+
+      p {
+        font-size: 12px;
+        color: var(--secondary-text-color);
+      }
+    }
+  }
+
+
+  @media only screen and (max-width: 600px) {
+
+    & .my-setting {
+      .content-one {
+        padding-top: 10px !important;
+      }
+
+    }
+  }
+
+    /* 
+===============================================================
+================ MY WORKSPACE  - PAGE   =======================
+===============================================================
+*/
+.my-workspace {
+  height: 93vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%;
+  h1 {
+    color: var(--primary-text-color);
+    font-size: 24px;
+  }
+
+  .user-one {
+    .user-profile {
+      cursor: pointer;
+      padding: 80px;
+      width: 220px;
+      border-radius: 100%;
+      background-color: var(--secondary-text-color);
+      color: var(--thirdary-text-color);
+    }
+  }
+
+  .add-user {
+    .user-profile {
+      cursor: pointer;
+      padding: 80px;
+      width: 220px;
+      border-radius: 100%;
+      border: 1px solid var(--secondary-text-color);
+      color: var(--secondary-text-color);
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .my-workspace {
+.content-one{
+  padding-top: 10px !important;
+}
+    .user-one,
+    .add-user {
+      .user-profile {
+        padding: 45px !important;
+        width: 150px !important;
+      }
+
+      .content {
+        padding: 10px 0 !important;
+      }
+    }
+  }
+}
+
+
+/* 
+===============================================================
+============= NOTIFICATION SETTING  - PAGE  ===================
+===============================================================
+*/
+.notifications {
+  
+  height: 93vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100%;
+  padding: 40px 15%;
+
+  h1 {
+    font-size: 24px;
+    color: var(--primary-text-color);
+  }
+
+  h2 {
+    font-size: 16px;
+    color: var(--primary-text-color);
+  }
+
+  .options {
+    h4 {
+      font-size: 14px;
+      color: var(--primary-text-color);
+      margin: 0;
+    }
+
+    p {
+      font-size: 12px;
+      color: var(--secondary-text-color);
+      margin: 0;
+    }
+
+
+  }
+
+}
+@media only screen and (max-width: 600px) {
+.notifications {
+  padding: 0 5%;
+}
+}
+
+
+
 }

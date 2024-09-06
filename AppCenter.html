@@ -29,9 +29,11 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-center  flex-wrap" id="mynavbar">
                     <form class="d-flex mx-auto gap-2 nav-form justify-content-center">
+
                         <div class=" border-0">
                             <input class="search-button" placeholder="Search...">
                         </div>
+
                         <button class="border-0 ask-ai d-flex align-items-center">
                             <div class="image">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
@@ -81,10 +83,13 @@
                             <button class="mx-1">
                                 <img src="assets/images/video2.svg" alt="Video" />
                             </button>
+
+
                             <button class="mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal2"
                                 onclick="openReminderTab()">
                                 <img src="assets/images/clock.svg" alt="Clock" />
                             </button>
+
                             <button class="mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal2"
                                 onclick="openDocTab()">
                                 <img src="assets/images/doc_left.svg" alt="Left Document" />
@@ -111,10 +116,16 @@
                             </button>
                         </ul>
                     </div>
+
                 </div>
             </div>
         </nav>
+
+
+
         <div class="Quick-links-modal">
+
+
             <!-- Modal -->
             <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
@@ -174,6 +185,7 @@
                                                 <option value="5">Select List...</option>
                                             </select>
                                         </div>
+
                                         <div class=" border border-1 dropdown-button d-flex ">
                                             <select name="Select List..." id="Select List..."
                                                 class="border-0 select-list">
@@ -707,6 +719,7 @@
                                         <p class="heading">Done</p>
                                     </div>
                                 </div>
+
                                 <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
                                     aria-labelledby="contact-tab" tabindex="0">
                                     <div>
@@ -962,7 +975,7 @@
                             class="hide-text">Imports / Exports</span></a>
                 </li>
                 <li class="nav-item">
-                    <a href="AppCenter.html" class="nav-link "><img src="/assets/images/home/logo-sidebar.svg"
+                    <a href="AppCenter.html" class="nav-link active"><img src="/assets/images/home/logo-sidebar.svg"
                             alt="" /><span class="hide-text">App Center
                         </span></a>
                 </li>
@@ -986,7 +999,7 @@
                             alt="" /><span class="hide-text">Workspaces</span></a>
                 </li>
                 <li class="nav-item">
-                    <a href="NotificationSetting.html" class="nav-link  active"><img src="/assets/images/home/not_clock.svg" alt="" /><span
+                    <a href="NotificationSetting.html" class="nav-link "><img src="/assets/images/home/not_clock.svg" alt="" /><span
                             class="hide-text">Notifications</span></a>
                 </li>
                 <li class="nav-item">
@@ -1007,120 +1020,162 @@
                 </li>
             </ul>
         </aside>
-        <div class="sidebar-body w-100">
-            <div class="d-flex justify-content-between m-4 flex-wrap">
-                <ul class="nav nav-underline align-items-center" id="myTab" role="tablist">
-                    <button class=" d-flex sidebar-button-main border-0 bg-transparent d-none" id="sidebartoggle">
-                        <img src="/assets/images/menu2.svg" alt="" />
-                    </button>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-                            type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
-                    </li>
-                </ul>
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                    id="create-spaces"><img src="/assets/images/home/add.svg" alt=""> New Space</button>
+        <div class="app-center">
+            <button class=" d-flex sidebar-button-main border-0 bg-transparent d-none m-3" id="sidebartoggle">
+                <img src="/assets/images/menu2.svg" alt="" />
+            </button>
+            <div class="content-one text-center mb-3 mt-5">
+                <p>Step</p>
+                <p>1</p>
             </div>
-            <div class="create-spaces">
-                <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header border-0 pb-0">
-                                <h5>Create a Space</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body pt-0 ">
-                                <p>A Space represents teams, departments, or groups, each with its
-                                    own Lists, workflows, and settings.</p>
-                                <div class="input-icon-name my-3">
-                                    <label for="Icon & name" class="mb-2">Icon & name</label>
-                                    <div class="d-flex gap-3 input-field">
-                                        <input type="text" placeholder="M" maxlength="1"
-                                            class="border border-1 rounded-2 px-2 col-1 one">
-                                        <input type="text" placeholder="e.g. Marketing, Engineering, HR"
-                                            class="border border-1 rounded-2 px-2 col-10 two">
-                                    </div>
+            <h3 class="text-center">Select Source of Import</h3>
+
+            <div class="main-content">
+                <div class="content-two d-flex gap-5 justify-content-center ">
+                    <div class="row  mt-3">
+                        <div class="col-lg-6 justify-content-center d-flex my-2">
+                            <div class="brand d-flex border border-1 p-2 gap-3 rounded-3">
+                                <div>
+                                    <img src="/assets/images/home/doc-space.svg" alt="">
                                 </div>
-                                <div class="flex-column d-flex description my-3 gap-2">
-                                    <label for="Description ">Description (optional)</label>
-                                    <input type="text" class="border border-1 rounded-2 px-2 ">
-                                </div>
-                                <div class="d-flex justify-content-between checking align-items-center">
-                                    <div>
-                                        <p> Make Private</p>
-                                        <p>Only you and invited members have access</p>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" role="switch"
-                                            id="flexSwitchCheckDefault">
-                                    </div>
+                                <div>
+                                    <h4>Any Spreadsheet</h4>
+                                    <p>e.g. Excel, Google Sheets, CSV ...</p>
                                 </div>
                             </div>
-                            <div class="modal-footer d-flex justify-content-between  ">
-                                <button type="button" class="btn-reverse px-2 py-1">Use Templates</button>
-                                <button type="button" class="btn  px-2 py-1">Continue</button>
+                        </div>
+                        <div class="col-lg-6 justify-content-center d-flex my-2">
+                            <div class="brand d-flex border border-1 p-2 gap-3 rounded-3">
+                                <div>
+                                    <img src="/assets/images/home/doc2-space.svg" alt="">
+                                </div>
+                                <div>
+                                    <h4>Any Document</h4>
+                                    <p>e.g. Word, Google Docs, Quip ...</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="content-three d-flex gap-5 justify-content-center ">
+                    <div class="row  mt-3">
+                        <div class="col-lg-4 my-2 d-flex justify-content-center">
+                            <div class="brand border border-1 rounded-3 ">
+                                <img src="/assets/images/home/asana.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 my-2 d-flex justify-content-center">
+                            <div class="brand border border-1 rounded-3 ">
+                                <img src="/assets/images/home/basecamp.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 my-2 d-flex justify-content-center">
+                            <div class="brand border border-1 rounded-3 ">
+                                <img src="/assets/images/home/confluence.svg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="content-three d-flex gap-5 justify-content-center ">
+                    <div class="row  mt-3">
+                        <div class="col-lg-4 my-2 d-flex justify-content-center">
+                            <div class="brand border border-1 rounded-3 ">
+                                <img src="/assets/images/home/JiraSoftware.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 my-2 d-flex justify-content-center">
+                            <div class="brand border border-1 rounded-3 ">
+                                <img src="/assets/images/home/monday.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 my-2 d-flex justify-content-center">
+                            <div class="brand border border-1 rounded-3 ">
+                                <img src="/assets/images/home/notion.svg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="content-three d-flex gap-5 justify-content-center ">
+                    <div class="row  mt-3">
+                        <div class="col-lg-4 my-2 d-flex justify-content-center">
+                            <div class="brand border border-1 rounded-3 ">
+                                <img src="/assets/images/home/todoist.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 my-2 d-flex justify-content-center">
+                            <div class="brand border border-1 rounded-3 ">
+                                <img src="/assets/images/home/trello.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 my-2 d-flex justify-content-center">
+                            <div class="brand border border-1 rounded-3 ">
+                                <img src="/assets/images/home/wrike.svg" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <button class="btn mb-5 ">Import any spreadsheet</button>
             </div>
         </div>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"></script>
+    </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script>
-            $(document).ready(function () {
-                $("#sidebartoggle").click(function () {
-                    $(".sidebarnew").toggleClass("inactive");
-                });
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#sidebartoggle").click(function () {
+                $(".sidebarnew").toggleClass("inactive");
             });
-            const openButton = document.querySelector('#openSidebar-new');
-            const closeButton = document.querySelector('.close-button-new');
-            const sidebar = document.querySelector('.sidebar-new');
+        });
+        const openButton = document.querySelector('#openSidebar-new');
+        const closeButton = document.querySelector('.close-button-new');
+        const sidebar = document.querySelector('.sidebar-new');
 
-            openButton.addEventListener('click', () => {
-                sidebar.classList.add('show');
-                closeButton.classList.add('show');
+        openButton.addEventListener('click', () => {
+            sidebar.classList.add('show');
+            closeButton.classList.add('show');
+        });
+
+        closeButton.addEventListener('click', () => {
+            sidebar.classList.remove('show');
+            closeButton.classList.remove('show');
+        });
+        function openReminderTab() {
+            var reminderTab = new bootstrap.Tab(document.querySelector('#Reminder-tab'));
+            reminderTab.show();
+
+        }
+        function openTabsTab() {
+            var reminderTab = new bootstrap.Tab(document.querySelector('#Task-tab'));
+            reminderTab.show();
+        }
+        function openDocTab() {
+            var reminderTab = new bootstrap.Tab(document.querySelector('#Doc-tab'));
+            reminderTab.show();
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.getElementById('menu-toggle');
+            const sidebarHeader = document.querySelector('.sidebar-header');
+
+            menuToggle.addEventListener('click', function () {
+                sidebarHeader.classList.toggle('menu-expanded');
             });
+        });
 
-            closeButton.addEventListener('click', () => {
-                sidebar.classList.remove('show');
-                closeButton.classList.remove('show');
-            });
-            function openReminderTab() {
-                var reminderTab = new bootstrap.Tab(document.querySelector('#Reminder-tab'));
-                reminderTab.show();
-
-            }
-            function openTabsTab() {
-                var reminderTab = new bootstrap.Tab(document.querySelector('#Task-tab'));
-                reminderTab.show();
-            }
-            function openDocTab() {
-                var reminderTab = new bootstrap.Tab(document.querySelector('#Doc-tab'));
-                reminderTab.show();
-            }
-            document.addEventListener('DOMContentLoaded', function () {
-                const menuToggle = document.getElementById('menu-toggle');
-                const sidebarHeader = document.querySelector('.sidebar-header');
-
-                menuToggle.addEventListener('click', function () {
-                    sidebarHeader.classList.toggle('menu-expanded');
-                });
-            });
-            $(document).ready(function () {
-                $('#create-spaces').click();
-            })
-        </script>
-        <script src="./js/script.js"></script>
+    </script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

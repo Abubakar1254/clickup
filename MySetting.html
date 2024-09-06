@@ -29,9 +29,11 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-center  flex-wrap" id="mynavbar">
                     <form class="d-flex mx-auto gap-2 nav-form justify-content-center">
+
                         <div class=" border-0">
                             <input class="search-button" placeholder="Search...">
                         </div>
+
                         <button class="border-0 ask-ai d-flex align-items-center">
                             <div class="image">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
@@ -81,10 +83,13 @@
                             <button class="mx-1">
                                 <img src="assets/images/video2.svg" alt="Video" />
                             </button>
+
+
                             <button class="mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal2"
                                 onclick="openReminderTab()">
                                 <img src="assets/images/clock.svg" alt="Clock" />
                             </button>
+
                             <button class="mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal2"
                                 onclick="openDocTab()">
                                 <img src="assets/images/doc_left.svg" alt="Left Document" />
@@ -111,10 +116,16 @@
                             </button>
                         </ul>
                     </div>
+
                 </div>
             </div>
         </nav>
+
+
+
         <div class="Quick-links-modal">
+
+
             <!-- Modal -->
             <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
@@ -174,6 +185,7 @@
                                                 <option value="5">Select List...</option>
                                             </select>
                                         </div>
+
                                         <div class=" border border-1 dropdown-button d-flex ">
                                             <select name="Select List..." id="Select List..."
                                                 class="border-0 select-list">
@@ -707,6 +719,7 @@
                                         <p class="heading">Done</p>
                                     </div>
                                 </div>
+
                                 <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
                                     aria-labelledby="contact-tab" tabindex="0">
                                     <div>
@@ -978,7 +991,7 @@
                     Arushi
                 </p>
                 <li class="nav-item mt-1">
-                    <a href="MySetting.html" class="nav-link "><img src="/assets/images/home/user-sidebar.svg"
+                    <a href="MySetting.html" class="nav-link active"><img src="/assets/images/home/user-sidebar.svg"
                             alt="" /><span class="hide-text">My Settings</span></a>
                 </li>
                 <li class="nav-item">
@@ -986,7 +999,7 @@
                             alt="" /><span class="hide-text">Workspaces</span></a>
                 </li>
                 <li class="nav-item">
-                    <a href="NotificationSetting.html" class="nav-link  active"><img src="/assets/images/home/not_clock.svg" alt="" /><span
+                    <a href="NotificationSetting.html" class="nav-link "><img src="/assets/images/home/not_clock.svg" alt="" /><span
                             class="hide-text">Notifications</span></a>
                 </li>
                 <li class="nav-item">
@@ -1007,120 +1020,216 @@
                 </li>
             </ul>
         </aside>
-        <div class="sidebar-body w-100">
-            <div class="d-flex justify-content-between m-4 flex-wrap">
-                <ul class="nav nav-underline align-items-center" id="myTab" role="tablist">
-                    <button class=" d-flex sidebar-button-main border-0 bg-transparent d-none" id="sidebartoggle">
-                        <img src="/assets/images/menu2.svg" alt="" />
-                    </button>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active " id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-                            type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
-                    </li>
-                </ul>
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                    id="create-spaces"><img src="/assets/images/home/add.svg" alt=""> New Space</button>
-            </div>
-            <div class="create-spaces">
-                <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header border-0 pb-0">
-                                <h5>Create a Space</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body pt-0 ">
-                                <p>A Space represents teams, departments, or groups, each with its
-                                    own Lists, workflows, and settings.</p>
-                                <div class="input-icon-name my-3">
-                                    <label for="Icon & name" class="mb-2">Icon & name</label>
-                                    <div class="d-flex gap-3 input-field">
-                                        <input type="text" placeholder="M" maxlength="1"
-                                            class="border border-1 rounded-2 px-2 col-1 one">
-                                        <input type="text" placeholder="e.g. Marketing, Engineering, HR"
-                                            class="border border-1 rounded-2 px-2 col-10 two">
-                                    </div>
+        <div class="my-setting">
+            <button class=" d-flex sidebar-button-main border-0 bg-transparent d-none my-2"
+            id="sidebartoggle">
+            <img src="/assets/images/menu2.svg" alt="" />
+        </button>
+            <div class="row">
+                
+                <div class="col-sm-3 content-one p-5">
+                    <h1>Preferences</h1>
+                    <p>Manage your in-app preferences.</p>
+                </div>
+                <div class="col-sm-9 content-two p-5 ">
+                    <div>
+                        <div class="form-check form-switch d-flex  ">
+                            <input class="form-check-input me-3" type="checkbox" id="flexSwitchCheckDefault"
+                                checked>
+                            <label class="form-check-label" for="flexSwitchCheckDefault">
+                                <div class="d-flex align-items-center gap-2 mb-1">
+                                    <h5>Flyout Toast Message </h5>
+                                    <img src="/assets/images/home/idea.svg" alt="">
                                 </div>
-                                <div class="flex-column d-flex description my-3 gap-2">
-                                    <label for="Description ">Description (optional)</label>
-                                    <input type="text" class="border border-1 rounded-2 px-2 ">
-                                </div>
-                                <div class="d-flex justify-content-between checking align-items-center">
-                                    <div>
-                                        <p> Make Private</p>
-                                        <p>Only you and invited members have access</p>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input class="form-check-input" type="checkbox" role="switch"
-                                            id="flexSwitchCheckDefault">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="modal-footer d-flex justify-content-between  ">
-                                <button type="button" class="btn-reverse px-2 py-1">Use Templates</button>
-                                <button type="button" class="btn  px-2 py-1">Continue</button>
-                            </div>
+                                <p>When performing actions, toast messages may appear in the bottom
+                                    left-hand of your screen. You can disable that here.</p>
+                            </label>
                         </div>
+                        <hr>
+                    </div>
+                    <div>
+                        <div class="form-check form-switch d-flex ">
+                            <input class="form-check-input me-3" type="checkbox"
+                                id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">
+                                <div class="d-flex align-items-center gap-2 mb-1">
+                                    <h5>Don't post comments with </h5>
+                                    <span class="border border-1 px-1 rounded-2">Enter</span>
+                                </div>
+                                <p>Use<span class="border border-1 px-1 rounded-2">Ctrl + Enter</span>
+                                    to send
+                                    comments instead of just  <span
+                                        class="border border-1 px-1 rounded-2">Enter</span> </p>
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+                    <div>
+                        <div class="form-check form-switch d-flex  ">
+                            <input class="form-check-input me-3" type="checkbox" id="flexSwitchCheckDefault"
+                                checked>
+                            <label class="form-check-label" for="flexSwitchCheckDefault">
+                                <h5 class="mb-1">Markdown</h5>
+                                <p>You can disable <a href="">Markdown</a> (shortcuts when typing) by
+                                    turning it off here.</p>
+                            </label>
+                        </div>
+
+                        <hr>
+                    </div>
+                    <div>
+                        <div class="form-check form-switch d-flex  ">
+                            <input class="form-check-input me-3" type="checkbox"
+                                id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">
+                                <h5 class="mb-1">Hotkeys</h5>
+                                <p>Use <a href="">Hotkeys</a> to quickly navigate through ARCerp without
+                                    using your mouse.</p>
+                            </label>
+                        </div>
+
+                        <hr>
+                    </div>
+                    <div>
+                        <div class="form-check form-switch d-flex  ">
+                            <input class="form-check-input me-3" type="checkbox" id="flexSwitchCheckDefault"
+                                checked>
+                            <label class="form-check-label" for="flexSwitchCheckDefault">
+                                <h5 class="mb-1">Notepad</h5>
+                                <p>Turn this off to hide the  <a href="">notepad</a> in the bottom right
+                                    corner of your screen.</p>
+                            </label>
+                        </div>
+
+                        <hr>
+                    </div>
+
+                    <div>
+                        <div class="form-check form-switch d-flex  ">
+                            <input class="form-check-input me-3" type="checkbox"
+                                id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">
+                                <h5 class="mb-1">High Contrast Mode</h5>
+                                <p>Enabling this mode adjusts contrast to make ARCerp easier on your
+                                    eyes (Recommended for Windows and low resolution monitors).</p>
+                            </label>
+                        </div>
+
+                        <hr>
+                    </div>
+                    <div>
+                        <div class="form-check form-switch d-flex  ">
+                            <input class="form-check-input me-3" type="checkbox"
+                                id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">
+                                <h5 class="mb-1">Dark Mode</h5>
+                                <p>Don't like the brightness? Go to the dark side of ARCerp.</p>
+                            </label>
+                        </div>
+
+                        <hr>
+                    </div>
+                    <div>
+                        <div class="form-check form-switch d-flex  ">
+                            <input class="form-check-input me-3" type="checkbox" id="flexSwitchCheckDefault"
+                                checked>
+                            <label class="form-check-label" for="flexSwitchCheckDefault">
+                                <h5 class="mb-1">Show quotes</h5>
+                                <p>Show celebratory quotes when you clear all your notifications or load
+                                    certain pages</p>
+                            </label>
+                        </div>
+
+                        <hr>
+                    </div>
+                    <div>
+                        <div class="form-check form-switch d-flex  ">
+                            <input class="form-check-input me-3" type="checkbox" id="flexSwitchCheckDefault"
+                                checked>
+                            <label class="form-check-label" for="flexSwitchCheckDefault">
+                                <h5 class="mb-1">Show Celebrations</h5>
+                                <p>Show confetti celebrations when you clear My Work, clear all
+                                    notifications, or complete a Goal Target.</p>
+                            </label>
+                        </div>
+
+                        <hr>
                     </div>
                 </div>
             </div>
+            <div class="row content-footer">
+                <div class="col-sm-3 p-5">
+                    <h4>Proceed with caution.</h4>
+                    <p>Proceed with caution.</p>
+                </div>
+                <div class="col-sm-9 p-5 pb-0">
+                    <div class="d-flex justify-content-between flex-wrap">
+                        <p>Log out all sessions including any session on mobile, iPad, and other
+                            browsers</p>
+                        <p>Log out of all sessions</p>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button class="btn mt-2 mb-3 ">Delete account</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+            </div>
         </div>
-        <!-- Bootstrap JavaScript Libraries -->
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"></script>
+    </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-            crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script>
-            $(document).ready(function () {
-                $("#sidebartoggle").click(function () {
-                    $(".sidebarnew").toggleClass("inactive");
-                });
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#sidebartoggle").click(function () {
+                $(".sidebarnew").toggleClass("inactive");
             });
-            const openButton = document.querySelector('#openSidebar-new');
-            const closeButton = document.querySelector('.close-button-new');
-            const sidebar = document.querySelector('.sidebar-new');
+        });
+        const openButton = document.querySelector('#openSidebar-new');
+        const closeButton = document.querySelector('.close-button-new');
+        const sidebar = document.querySelector('.sidebar-new');
 
-            openButton.addEventListener('click', () => {
-                sidebar.classList.add('show');
-                closeButton.classList.add('show');
+        openButton.addEventListener('click', () => {
+            sidebar.classList.add('show');
+            closeButton.classList.add('show');
+        });
+
+        closeButton.addEventListener('click', () => {
+            sidebar.classList.remove('show');
+            closeButton.classList.remove('show');
+        });
+        function openReminderTab() {
+            var reminderTab = new bootstrap.Tab(document.querySelector('#Reminder-tab'));
+            reminderTab.show();
+
+        }
+        function openTabsTab() {
+            var reminderTab = new bootstrap.Tab(document.querySelector('#Task-tab'));
+            reminderTab.show();
+        }
+        function openDocTab() {
+            var reminderTab = new bootstrap.Tab(document.querySelector('#Doc-tab'));
+            reminderTab.show();
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.getElementById('menu-toggle');
+            const sidebarHeader = document.querySelector('.sidebar-header');
+
+            menuToggle.addEventListener('click', function () {
+                sidebarHeader.classList.toggle('menu-expanded');
             });
+        });
 
-            closeButton.addEventListener('click', () => {
-                sidebar.classList.remove('show');
-                closeButton.classList.remove('show');
-            });
-            function openReminderTab() {
-                var reminderTab = new bootstrap.Tab(document.querySelector('#Reminder-tab'));
-                reminderTab.show();
-
-            }
-            function openTabsTab() {
-                var reminderTab = new bootstrap.Tab(document.querySelector('#Task-tab'));
-                reminderTab.show();
-            }
-            function openDocTab() {
-                var reminderTab = new bootstrap.Tab(document.querySelector('#Doc-tab'));
-                reminderTab.show();
-            }
-            document.addEventListener('DOMContentLoaded', function () {
-                const menuToggle = document.getElementById('menu-toggle');
-                const sidebarHeader = document.querySelector('.sidebar-header');
-
-                menuToggle.addEventListener('click', function () {
-                    sidebarHeader.classList.toggle('menu-expanded');
-                });
-            });
-            $(document).ready(function () {
-                $('#create-spaces').click();
-            })
-        </script>
-        <script src="./js/script.js"></script>
+    </script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
